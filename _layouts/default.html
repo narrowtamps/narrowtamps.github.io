@@ -13,7 +13,17 @@
 
 {% seo %}
 
-  {% include head-custom.html %}
+  .box-wrapper {
+ font-family: sans-serif;
+ padding: 10rem;
+ display: flex;
+ justify-content: center;
+ background-color: white;
+}
+  .glow {
+ color: white;
+ text-shadow: rebeccapurple 0 0 10px;
+}
 </head>
 
 <body>
@@ -39,11 +49,16 @@
         <article class="markdown-body">
           {{ content }}
         </article>
+
+        <div class=”box-wrapper”>
+ <h2 class=”glow”>Test</h2>
+</div>
+        <a href="home.html" style="color: blue;">Home</a>
+    <a href="fish.html">FISH</a>
       </div>
     </div>
     
-    <a href="home.html" style="color: blue;">Home</a>
-    <a href="fish.html">FISH</a>
+    
     <footer>
     
       
