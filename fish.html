@@ -15,6 +15,22 @@
       background-repeat: repeat-x;
       position: relative;
     }
+.blink {
+  /* This ensures the animation works in most modern browsers */
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
     .bubbles {
       position: absolute;
@@ -480,7 +496,7 @@
   </style>
 </head>
 <body>
-   <blink><h1 style="color: red;">HELLO FEESHES</h1></blink>
+   <h1 style="color: red;" class="blink">HELLO FEESHES</h1>
   <h1 class="visuallyhidden">Fish Screensaver - After Dark in CSS</h1>
   <b class="bubbles"></b>
   <div class="butterfly fish row1 ltr"></div>
