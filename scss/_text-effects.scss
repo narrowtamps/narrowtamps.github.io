@@ -1,0 +1,49 @@
+.rainbow {
+  display: inline-block;
+  background: linear-gradient(
+    90deg,
+    #9c00ff,
+    #ff0000,
+    #ff8800,
+    #ffff00,
+    #02be02,
+    #0000ff,
+    #4f00ff,
+    #9c00ff
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  position: relative;
+  transform: scaleY(1.25);
+
+  &-wrapper {
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    line-height: 1.25;
+    &:before {
+      position: absolute;
+      content: attr(data-content);
+      transform: skew(60deg) scaleY(0.5);
+      transform-origin: bottom left;
+      color: black;
+      opacity: 0.2;
+    }
+  }
+}
+
+.wordart {
+  display: inline-block;
+  background: linear-gradient(#6726bf, #a62cc0 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform: skewY(-8deg);
+  font-family: "Impact";
+
+  &-wrap {
+    filter: drop-shadow(5px 5px 0px rgba(#828cfb, 0.8));
+  }
+}
