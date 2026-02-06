@@ -2,5 +2,8 @@
 
 cheese grommit
 
-title: [The title of your site]
-description: [A short description of your site's purpose]
+title: main page
+description: ????
+
+    <a href="home.html" style="color: blue;">Home</a>
+    <a href="fish.html">FISH</a>
