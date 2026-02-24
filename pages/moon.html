@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background: #1a1a2e;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  /* The "Wind" Streak */
+  .wind-line {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+    width: 150px;
+    left: -200px; /* Start off-screen */
+    animation: blow linear infinite;
+  }
+
+  /* Different speeds and positions for each line */
+  .wind-line:nth-child(1) { top: 20%; animation-duration: 2s; animation-delay: 0s; }
+  .wind-line:nth-child(2) { top: 50%; animation-duration: 1.5s; animation-delay: 0.5s; width: 200px; }
+  .wind-line:nth-child(3) { top: 80%; animation-duration: 2.5s; animation-delay: 1.2s; }
+  .wind-line:nth-child(4) { top: 35%; animation-duration: 1.8s; animation-delay: 0.3s; width: 100px; }
+
+  @keyframes blow {
+    0% { left: -200px; opacity: 0; }
+    50% { opacity: 1; }
+    100% { left: 110vw; opacity: 0; }
+  }
+</style>
+</head>
+<body>
+  <!-- Add as many as you want -->
+  <div class="wind-line"></div>
+  <div class="wind-line"></div>
+  <div class="wind-line"></div>
+  <div class="wind-line"></div>
+</body>
+</html>
