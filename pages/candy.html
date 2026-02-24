@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candywyld Campaign</title>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background-color: #1a1a1a;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        animation: float 10s infinite;
+    }
+
+    /* Randomizing sizes and positions using nth-child */
+    .circle:nth-child(1) { width: 50px; height: 50px; top: 10%; left: 20%; animation-delay: 0s; }
+    .circle:nth-child(2) { width: 100px; height: 100px; top: 50%; left: 70%; animation-delay: 2s; }
+    .circle:nth-child(3) { width: 30px; height: 30px; top: 80%; left: 10%; animation-delay: 4s; }
+    .circle:nth-child(4) { width: 80px; height: 80px; top: 30%; left: 50%; animation-delay: 1s; }
+    .circle:nth-child(5) { width: 60px; height: 60px; top: 70%; left: 40%; animation-delay: 3s; }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+    }
+
+    .content {
+        position: relative;
+        z-index: 10;
+        color: white;
+        text-align: center;
+        margin-top: 20vh;
+        font-family: sans-serif;
+    }
+</style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    
+    <div class="content">
+        <h1>Basic Site</h1>
+        <p>DMed by Echoeypie, players: blue, bread, harley, kim, treefrog</p>
+    </div>
+</body>
+</html>
