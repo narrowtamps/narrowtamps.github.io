@@ -8,10 +8,10 @@
     body {
         margin: 0;
         height: 100vh;
-        background-color: #1a1a1a;
+        background-color: MistyRose;
         overflow: hidden;
         position: relative;
-        font-family: luminari;
+        font-family: Luminari, fantasy;
     }
 
     .circle {
@@ -41,6 +41,39 @@
         margin-top: 20vh;
         font-family: sans-serif;
     }
+    .shape {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    animation: moveAndColor 10s infinite alternate forwards;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.square {
+    border-radius: 0;
+}
+
+/* Define a set of pastel colors */
+.s1 { background-color: #FFB6C1; left: 10%; top: 20%; animation-duration: 8s; } /* Light Pink */
+.s2 { background-color: #ADD8E6; right: 10%; top: 40%; animation-duration: 10s; } /* Light Blue */
+.s3 { background-color: #90EE90; left: 40%; bottom: 10%; animation-duration: 12s; } /* Light Green */
+.s4 { background-color: #FFDEAD; right: 30%; bottom: 30%; animation-duration: 9s; } /* Navajo White */
+.s5 { background-color: #E6E6FA; left: 20%; top: 10%; animation-duration: 11s; } /* Lavender */
+
+
+@keyframes moveAndColor {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translate(50vw, 50vh) scale(1.5);
+        opacity: 0.9;
+    }
+}
 </style>
 </head>
 <body>
