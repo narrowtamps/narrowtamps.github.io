@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Links</title>
+    <style>
+        body {
+            background-color: #111;
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+
+        /* The Shimmering Title */
+        .shimmer-title {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            /* Create a gradient with a "sparkle" in the middle */
+            background: linear-gradient(
+                to right, 
+                #444 20%, 
+                #fff 40%, 
+                #fff 60%, 
+                #444 80%
+            );
+            background-size: 200% auto;
+            color: transparent;
+            /* Clip the background to the text shape */
+            -webkit-background-clip: text;
+            background-clip: text;
+            /* Animate the movement of the gradient */
+            animation: shine 3s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        /* Basic Link Styling */
+        nav {
+            margin-top: 20px;
+        }
+
+        a {
+            display: block;
+            color: #888;
+            text-decoration: none;
+            margin: 10px 0;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="shimmer-title">Follow Us</h1>
+
+    <nav>
+        <a href="https://www.youtube.com/@narrowtamps">YouTube</a>
+        <a href="https://www.twitch.com/thenarrowtamps">Twitch</a>
+        <a href="https://www.instagram.com/narrowtamps">Instagram</a>
+        <a href="https://www.tiktok.com/narrowtamps">Tiktok</a>
+    </nav>
+
+</body>
+</html>
