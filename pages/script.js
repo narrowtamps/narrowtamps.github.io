@@ -5,8 +5,8 @@ style.textContent = `
         display: flex;
         flex-direction: column;
         
-    min-height: calc(100vh - 50px);
-    min-height: calc(100dvh - 50px); 
+    min-height: calc(100vh - 0px);
+    min-height: calc(100dvh - 0px); 
         margin: 0;
     }
 
