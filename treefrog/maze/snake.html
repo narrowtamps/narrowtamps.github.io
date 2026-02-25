@@ -26,7 +26,7 @@
         function gameLoop() {
             let head = {x: snake[0].x + velocity.x, y: snake[0].y + velocity.y};
             if (head.x < 0 || head.x >= 20 || head.y < 0 || head.y >= 20 || snake.some(s => s.x === head.x && s.y === head.y)) {
-                alert('Game Over! Score: ' + score);
+                
                 snake = [{x: 10, y: 10}]; velocity = {x: 0, y: 0}; score = 0; tailSize = 3;
             }
             snake.unshift(head);
