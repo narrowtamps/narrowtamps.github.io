@@ -17,22 +17,20 @@ style.textContent = `
 
     .site-footer {
         text-align: center;
-        padding: 20px 0;
-        border-top: 1px solid GreenYellow;
-        color: GreenYellow;
+        
     }
 
     .footer-links {
         display: flex;
         justify-content: center;
-        gap: 20px;
-        margin-top: 10px;
+        
+        
     }
 
     .footer-links a {
         display: inline-block !important;
         text-decoration: none;
-        color: GreenYellow;
+        
         font-size: 0.9rem;
     }
 `;
