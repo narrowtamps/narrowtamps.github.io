@@ -1,59 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌕</text></svg>">
+  <meta charset="UTF-8">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌕</text></svg>">
+  <title>Blood Moon Campaign</title>
+  <style>
+    body {
+      background: lightgray;
+      margin: 0;
+      overflow-x: hidden; /* Prevents side-scrolling from wind lines */
+      font-family: 'American Typewriter', serif;
+      color: darkred;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-<style>
-  body {
-    background: lightgray;
-    margin: 0;
-    overflow: auto;
-    font-family: 'American Typewriter', serif;
-    color: darkred;
-  }
-  
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+      /* Applying the flickering animation */
+      animation: flicker 4s infinite;
+      text-shadow: 0 0 8px rgba(139, 0, 0, 0.4);
+    }
 
-  /* The "Wind" Streak */
-  .wind-line {
-    position: absolute;
-    height: 2px;
-    /* Change this line in your .wind-line style */
-background: linear-gradient(to right, transparent, rgba(0,0,0,0.2), transparent); 
-/* Or use your Neon Teal for a magical wind: */
-/* background: linear-gradient(to right, transparent, #01F9C6, transparent); */
+    p { text-align: center; }
 
-    width: 150px;
-    left: -200px; /* Start off-screen */
-    animation: blow linear infinite;
-  }
+    /* --- The Wind Effect --- */
+    .wind-line {
+      position: absolute;
+      height: 3px; /* Slightly thicker for visibility */
+      /* Use a dark-red gradient to stand out on lightgray */
+      background: linear-gradient(to right, transparent, rgba(139, 0, 0, 0.3), transparent);
+      width: 150px;
+      left: -200px;
+      animation: blow linear infinite;
+      pointer-events: none; /* Allows clicking through the lines */
+    }
 
-  /* Different speeds and positions for each line */
-  .wind-line:nth-child(1) { top: 20%; animation-duration: 2s; animation-delay: 0s; }
-  .wind-line:nth-child(2) { top: 50%; animation-duration: 1.5s; animation-delay: 0.5s; width: 200px; }
-  .wind-line:nth-child(3) { top: 80%; animation-duration: 2.5s; animation-delay: 1.2s; }
-  .wind-line:nth-child(4) { top: 35%; animation-duration: 1.8s; animation-delay: 0.3s; width: 100px; }
+    .wind-line:nth-child(1) { top: 20%; animation-duration: 2.5s; animation-delay: 0s; }
+    .wind-line:nth-child(2) { top: 45%; animation-duration: 1.8s; animation-delay: 0.7s; width: 220px; }
+    .wind-line:nth-child(3) { top: 75%; animation-duration: 3s; animation-delay: 1.5s; }
+    .wind-line:nth-child(4) { top: 35%; animation-duration: 2s; animation-delay: 0.3s; width: 120px; }
 
-  @keyframes blow {
-    0% { left: -200px; opacity: 0; }
-    50% { opacity: 1; }
-    100% { left: 110vw; opacity: 0; }
-  }
-</style>
+    @keyframes blow {
+      0% { left: -200px; opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { left: 110vw; opacity: 0; }
+    }
+
+    /* --- The Text Flicker Effect --- */
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(139, 0, 0, 0.6);
+        transform: translateX(0);
+      }
+      20%, 24%, 55% {
+        opacity: 0.7;
+        text-shadow: none;
+        transform: translateX(1px); /* Slight shiver */
+      }
+    }
+  </style>
 </head>
 <body>
 
   <h1>Consumed by the Blood Moon</h1>
   <p>DMed by Kenny, players: blue, bread, echoeypie, harley, kim, treefrog</p>
 
-    <!-- Add as many as you want -->
+  <!-- Wind Lines -->
   <div class="wind-line"></div>
   <div class="wind-line"></div>
   <div class="wind-line"></div>
   <div class="wind-line"></div>
 
-  <div id="footer-placeholder"></div>
+  <!-- Shared Footer Placeholder -->
+  <div id="footer-placeholder" style="margin-top: auto;"></div>
 
-<!-- Link your JavaScript file -->
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
