@@ -9,12 +9,50 @@
     width: 200px; /* Adjust size */
     height: auto;
   }
+  spinningImage {
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        transition: transform 2s linear; /* Smooth transition */
+    }
+
+    /* Spinning animation class */
+    .spin {
+        animation: rotation 2s infinite linear;
+    }
+
+    @keyframes rotation {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(359deg); }
+    }
 </style>
 </head>
 <body>
-  <img src="fish.gif" id="bouncingImg">
-  <script>
-    const img = document.getElementById('bouncingImg');
+  
+  <!-- Image to be clicked -->
+    <img src="fish.gif" id="spinningImage" width="50%" onclick="playMusic()">
+
+    <!-- Audio element -->
+    <audio id="myAudio" src="oh-naur.mp3"></audio>
+
+    <script>
+        function playMusic() {
+            var image = document.getElementById("spinningImage");
+            var audio = document.getElementById("myAudio");
+            
+            // Toggle animation class
+            image.classList.toggle("spin");
+            
+            // Toggle play/pause
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0; // Reset music
+            }
+        }
+    
+    const img = document.getElementById('spinningImage');
     let x = 0, y = 0; // Positions
     let vx = 5, vy = 8; // Velocity
     
