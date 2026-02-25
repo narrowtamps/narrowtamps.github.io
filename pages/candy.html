@@ -77,6 +77,24 @@
     margin: 0 auto;    /* Centers the gallery */
     padding: 20px;
 }
+.grid-gallery {
+    display: grid;
+    /* Automatically creates as many equal columns as will fit */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;       /* Fills the column width */
+    height: 200px;     /* Sets a uniform height */
+    object-fit: cover; /* Crops the image to fit without stretching */
+    display: block;
+}
+
+.gallery-item p {
+    text-align: center;
+    padding-top: 10px;
+}
 
 @keyframes moveAndColor {
     0% {
@@ -107,8 +125,8 @@
         <h1 style="color:darkorchid;">Into the Candywyld</h1>
         <p style="color:darkorchid;">DMed by Echoeypie, players: blue, bread, harley, kim, treefrog</p>
     </div>
-    <div class="gallery">
-        <div class="gallery-container">
+    <div class="gallery-container">
+        <div class="grid-gallery">
     <div class="gallery-item">
         <img src="./img/buffy.png" alt="buffy.png">
         <p class="image-text">Buffy - treefrog</p>
