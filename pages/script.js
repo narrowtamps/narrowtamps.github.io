@@ -5,8 +5,8 @@ style.textContent = `
         display: flex;
         flex-direction: column;
         
-    min-height: calc(100vh - 0px);
-    min-height: calc(100dvh - 0px); 
+    min-height: 100vh;
+    min-height: 100dvh; 
         margin: 0;
     }
 
@@ -23,7 +23,7 @@ style.textContent = `
     .footer-links {
         display: flex;
         justify-content: center;
-         margin-top: 15px;
+         
     }
 
     .footer-links a {
