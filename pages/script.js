@@ -23,7 +23,7 @@ style.textContent = `
     .footer-links {
         display: flex;
         justify-content: center;
-         
+         margin-top: 15px;
     }
 
     .footer-links a {
