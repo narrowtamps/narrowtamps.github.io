@@ -46,6 +46,6 @@ document.getElementById('footer-placeholder').innerHTML = `
             <a href="../pages/socials.html">Socials</a>
             <a href="../index.html">Main</a>
             <a href="../fish.html">Fish</a>
-       <p><br></p>     
+           
     </div>
 </footer>`;
