@@ -2,82 +2,82 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-  #bouncingImg {
-    position: absolute;
-    width: 200px; /* Adjust size */
-    height: auto;
-  }
-  #spinningImage {
-        width: 150px;
-        height: 150px;
-        cursor: pointer;
-        transition: transform 2s linear; /* Smooth transition */
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden; /* Keeps scrollbars from appearing */
+      background-color: #f0f0f0;
     }
 
-    /* Spinning animation class */
+    #spinningImage {
+      position: absolute; /* Essential for bouncing movement */
+      width: 150px;
+      height: auto;
+      cursor: pointer;
+      /* Smoothly transition the spin class */
+      transition: filter 0.3s; 
+    }
+
+    /* This class is toggled by JavaScript */
     .spin {
-        animation: rotation 2s infinite linear;
+      animation: rotation 2s infinite linear;
     }
 
     @keyframes rotation {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(359deg); }
+      from { transform: rotate(0deg); }
+      to { transform: rotate(359deg); }
     }
-</style>
+  </style>
 </head>
 <body>
-  
-  <!-- Image to be clicked -->
-    <img src="fish.gif" id="spinningImage" width="50%" onclick="playMusic()">
 
-    <!-- Audio element -->
+    <img src="fish.gif" id="spinningImage" onclick="playMusic()">
     <audio id="myAudio" src="oh-naur.mp3"></audio>
 
     <script>
+        const img = document.getElementById("spinningImage");
+        const audio = document.getElementById("myAudio");
+        
+        let x = 0, y = 0; 
+        let vx = 4, vy = 4; // Movement speed
+
         function playMusic() {
-            var image = document.getElementById("spinningImage");
-            var audio = document.getElementById("myAudio");
+            // Toggle the CSS spin animation
+            img.classList.toggle("spin");
             
-            // Toggle animation class
-            image.classList.toggle("spin");
-            
-            // Toggle play/pause
             if (audio.paused) {
                 audio.play();
             } else {
                 audio.pause();
-                audio.currentTime = 0; // Reset music
+                audio.currentTime = 0;
             }
         }
-    
-    const img = document.getElementById('spinningImage');
-    let x = 0, y = 0; // Positions
-    let vx = 5, vy = 8; // Velocity
-    
-    function bounce() {
-      const w = window.innerWidth - img.width;
-      const h = window.innerHeight - img.height;
-      
-      x += vx; y += vy;
-      
-      // Collision detection
-      if (x >= w || x <= 0) vx *= -1;
-      if (y >= h || y <= 0) vy *= -1;
-      
-      img.style.left = x + 'px';
-      img.style.top = y + 'px';
-      requestAnimationFrame(bounce);
-    }
-    
-    // Start after image loads to get dimensions
-    window.onload = () => {
-      // Randomize initial direction
-      vx = Math.random() > 0.5 ? 5 : -5;
-      vy = Math.random() > 0.5 ? 5 : -5;
-      bounce();
-    };
-  </script>
+
+        function bounce() {
+            // Calculate boundaries based on current window size
+            const w = window.innerWidth - img.clientWidth;
+            const h = window.innerHeight - img.clientHeight;
+            
+            x += vx; 
+            y += vy;
+            
+            // Collision detection for walls
+            if (x >= w || x <= 0) vx *= -1;
+            if (y >= h || y <= 0) vy *= -1;
+            
+            // Apply movement
+            img.style.left = x + 'px';
+            img.style.top = y + 'px';
+            
+            requestAnimationFrame(bounce);
+        }
+
+        // Initialize bounce on load
+        window.onload = () => {
+            bounce();
+        };
+    </script>
 </body>
 </html>
+
