@@ -19,6 +19,31 @@
   border-collapse: collapse; /* Collapses double borders into a single border */
   padding: 8px; /* Adds space between border and cell content */
 }
+        .back-to-top {
+  display: flex;
+  justify-content: flex-end; /* Pushes content to the right */
+  width: 100%;
+  max-width: 800px; /* Match this to your table's width if they are centered */
+  margin: 10px auto; /* Centers the container itself, but keeps text right */
+  padding-right: 20px;
+}
+
+.back-to-top a {
+  color: darkred;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.back-to-top a:hover {
+  opacity: 0.6;
+  text-decoration: underline;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 
         /* Styles for all links (unvisited and visited) */
         a:link, a:visited {
@@ -46,6 +71,8 @@
 <body>
 
     <header>
+        <body id="top">
+
         <nav>
             <ul>
                 <li><a href="#table1">Into the Candywyld</a></li>
@@ -73,6 +100,10 @@
                     <tr><td>Ep 7: Save the Creature!</td><td>We fight bandits and discover Kit's dark powers. The caravan leader, sketchy frog dude who have us fake gold, is nowhere to be found. We find Pumpkin, a displacer beast kitten, who seems to be affected by the rot AND NOTHING IS ALLOWED TO HAPPEN TO HIM</td><td><a href="https://youtu.be/kSzQGhjS0Ys"></a></td><td>February 21st, 2026 7pm cst</td></tr>
                 </tbody>
             </table>
+            <div class="back-to-top">
+  <a href="#top">Back to Top ↑</a>
+</div>
+
         </section>
 
         <section id="table2">
@@ -89,6 +120,10 @@
                     
                 </tbody>
             </table>
+            <div class="back-to-top">
+  <a href="#top">Back to Top ↑</a>
+</div>
+
         </section>
 
         <section id="table3">
@@ -105,6 +140,10 @@
                     <tr><td>Irredeemable</td><td>What happens to the villains after they're defeated?</td><td>links</td><td>March 15th, 2026 1pm</td><td>Gem-ed by treefrog</td></tr>
                 </tbody>
             </table>
+            <div class="back-to-top">
+  <a href="#top">Back to Top ↑</a>
+</div>
+
         </section>
     </main>
 <div id="footer-placeholder"></div>
