@@ -72,64 +72,30 @@
 .s4 { background-color: #FFDEAD; right: 30%; bottom: 30%; animation-duration: 9s; } /* Navajo White */
 .s5 { background-color: #E6E6FA; left: 20%; top: 10%; animation-duration: 11s; } /* Lavender */
 
-.gallery-container {
-    max-width: 1200px; /* Limits the gallery width */
-    margin: 0 auto;    /* Centers the gallery */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;       /* Allows items to wrap to new rows */
+    justify-content: center; /* This centers the items in every row */
+    gap: 30px;             /* Space between tiles */
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
 }
-.grid-gallery {
-    display: grid;
-    /* Automatically creates as many equal columns as will fit */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
 
-.gallery-item img {
-    width: 33%;       /* Fills the column width */
-    height: 200px;     /* Sets a uniform height */
-    object-fit: cover; /* Crops the image to fit without stretching */
-    display: block;
-}
-
-.gallery-item p {
+.grid-item {
+    /* Each item takes up roughly 30% of the row (3 per row) */
+    flex: 0 1 250px; 
     text-align: center;
-    padding-top: 10px;
-}
-.grid-container {
-  display: grid;
-  /* Creates 3 columns that adjust to the container width */
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 20px; /* Space between grid items */
 }
 
 .grid-item img {
-  width: 100%; /* Makes image fill the column width */
-  height: auto;
-  object-fit: cover; /* Ensures images look good if sizes vary */
-}
-/* Centers the last item in a 3-column grid */
-.grid-item:last-child {
-    grid-column: 2;
+    width: 100%;           /* Fills the 250px width */
+    height: 250px;         /* Forced uniform height */
+    object-fit: cover;     /* Crops image to fit without stretching */
+    border-radius: 15px;
+    border: 3px solid DarkOrchid;
 }
 
-/* Also ensure images and text within the items are centered */
-.grid-item {
-    text-align: center;
-}
-.grid-container {
-  display: grid;
-  /* 6 small columns allow for half-step centering */
-  grid-template-columns: repeat(6, 1fr); 
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.grid-item {
-  /* Each item takes up 2 of the 6 columns (making 3 items per row) */
-  grid-column: span 2;
-  text-align: center;
-}
 
 /* 
    If the 4th item (the start of the second row) is also the 2nd to last item, 
