@@ -116,6 +116,34 @@
 .grid-item {
     text-align: center;
 }
+.grid-container {
+  display: grid;
+  /* 6 small columns allow for half-step centering */
+  grid-template-columns: repeat(6, 1fr); 
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  /* Each item takes up 2 of the 6 columns (making 3 items per row) */
+  grid-column: span 2;
+  text-align: center;
+}
+
+/* 
+   If the 4th item (the start of the second row) is also the 2nd to last item, 
+   we push it to start at column 2. This centers the last two items.
+*/
+.grid-item:nth-child(4):nth-last-child(2) {
+  grid-column-start: 2;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional: adds a nice candy-like curve */
+}
 
 @keyframes moveAndColor {
     0% {
