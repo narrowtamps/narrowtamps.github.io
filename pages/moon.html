@@ -3,48 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Consumed by the Blood Moon</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌕</text></svg>">
-  <title>Blood Moon Campaign</title>
+  
   <style>
-    body {
-      background: lightgray;
+    /* 1. Reset and Lock Background */
+    html, body {
+      background: rgba(211, 211, 211, 1); /* Light Gray RGBA */
       margin: 0;
-      overflow-x: auto; /* Prevents side-scrolling from wind lines */
+      padding: 0;
+      width: 100%;
+      min-height: 100vh;
+      overflow-x: hidden; /* Stops horizontal scrolling and text jumping */
       font-family: 'American Typewriter', serif;
       color: darkred;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      position: relative;
+    }
+
+    /* 2. Stable Content Container */
+    .content-container {
+      position: relative;
+      z-index: 2; /* Keeps text in front of wind */
+      text-align: center;
+      padding: 50px 20px;
+      box-sizing: border-box;
     }
 
     h1 {
-      text-align: center;
-      margin-top: 50px;
-      /* Applying the flickering animation */
+      margin: 0;
+      font-size: 2.5rem;
       animation: flicker 4s infinite;
-      text-shadow: 0 0 8px rgba(139, 0, 0, 0.4);
+      text-shadow: 0 0 10px rgba(139, 0, 0, 0.3);
     }
 
-    p { text-align: center; }
-
-    /* --- The Wind Effect --- */
+    /* 3. The Wind Lines (Fixed Layer) */
     .wind-line {
-      position: absolute;
-      height: 3px; /* Slightly thicker for visibility */
-      /* Use a dark-red gradient to stand out on lightgray */
-      background: linear-gradient(to right, transparent, rgba(211, 211, 211, 0.3), transparent);
+      position: fixed; /* Fixed so they don't push the page content */
+      z-index: 1;
+      height: 2px;
+      background: linear-gradient(to right, transparent, rgba(139, 0, 0, 0.4), transparent);
       width: 150px;
       left: -200px;
+      pointer-events: none;
       animation: blow linear infinite;
-      pointer-events: none; /* Allows clicking through the lines */
     }
 
-    .wind-line:nth-child(1) { top: 20%; animation-duration: 2.5s; animation-delay: 0s; }
-    .wind-line:nth-child(2) { top: 45%; animation-duration: 1.8s; animation-delay: 0.7s; width: 220px; }
-    .wind-line:nth-child(3) { top: 75%; animation-duration: 3s; animation-delay: 1.5s; }
-    .wind-line:nth-child(4) { top: 35%; animation-duration: 2s; animation-delay: 0.3s; width: 120px; }
+    .wind-line:nth-child(1) { top: 15%; animation-duration: 3s; animation-delay: 0s; }
+    .wind-line:nth-child(2) { top: 40%; animation-duration: 2.2s; animation-delay: 0.8s; width: 200px; }
+    .wind-line:nth-child(3) { top: 70%; animation-duration: 4s; animation-delay: 1.5s; }
+    .wind-line:nth-child(4) { top: 85%; animation-duration: 2.5s; animation-delay: 0.4s; width: 100px; }
 
+    /* 4. Animations */
     @keyframes blow {
       0% { left: -200px; opacity: 0; }
       20% { opacity: 1; }
@@ -52,34 +61,33 @@
       100% { left: 110vw; opacity: 0; }
     }
 
-    /* --- The Text Flicker Effect --- */
     @keyframes flicker {
-      0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        opacity: 1;
-        text-shadow: 0 0 10px rgba(139, 0, 0, 0.6);
-        transform: translateX(0);
-      }
-      20%, 24%, 55% {
-        opacity: 0.7;
-        text-shadow: none;
-        transform: translateX(1px); /* Slight shiver */
-      }
+      0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; transform: scale(1); }
+      20%, 24%, 55% { opacity: 0.85; transform: scale(0.995); }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      h1 { font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
 
-  <h1>Consumed by the Blood Moon</h1>
-  <p>DMed by Kenny, players: blue, bread, echoeypie, harley, kim, treefrog</p>
-
-  <!-- Wind Lines -->
+  <!-- Wind Lines Background -->
   <div class="wind-line"></div>
   <div class="wind-line"></div>
   <div class="wind-line"></div>
   <div class="wind-line"></div>
 
-  <!-- Shared Footer Placeholder -->
-  <div id="footer-placeholder" style="margin-top: auto;"></div>
+  <!-- Main Content -->
+  <div class="content-container">
+    <h1>Consumed by the Blood Moon</h1>
+    <p>DMed by Kenny, players: blue, bread, echoeypie, harley, kim, treefrog</p>
+  </div>
+
+  <!-- Shared Footer -->
+  <div id="footer-placeholder"></div>
 
   <script src="script.js"></script>
 </body>
