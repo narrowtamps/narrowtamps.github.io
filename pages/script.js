@@ -18,7 +18,7 @@ style.textContent = `
     .site-footer p {
         margin: 0; /* Removes default gap between 1st and 2nd line */
         font-size: 0.9rem;
-        padding-bottom: 15px; 
+        padding-bottom: 25px; 
     }
 
     .footer-links {
