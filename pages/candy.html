@@ -74,39 +74,46 @@
  
     
     
-    .grid-container {
+/* BASE STYLES (Desktop - 3 per row) */
+.grid-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centers everything in the row */
-    gap: 30px;
+    justify-content: center;
+    gap: 20px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 .grid-item {
-    /* (100% / 3) minus gap to ensure 3 per row */
-    flex: 0 1 calc(33% - 30px); 
-    min-width: 250px; 
+    /* 3 per row: 100% divided by 3, minus gap */
+    flex: 0 1 calc(33.33% - 20px); 
     text-align: center;
 }
 
-/* Forces a line break BEFORE the DM item so it starts its own row */
+/* MOBILE STYLES (2 per row) */
+@media (max-width: 600px) {
+    .grid-item {
+        /* 2 per row: 100% divided by 2, minus gap */
+        flex: 0 1 calc(50% - 20px);
+    }
+}
+
+/* THE DM (Echoey) - Always centered on its own row */
 .grid-item:last-child {
-    flex-basis: 100%; 
+    flex: 0 1 100%; 
     margin-top: 20px;
 }
 
-/* Keeps the DM image from stretching to 100% width */
-.grid-item:last-child img {
-    width: 250px; 
-}
-
+/* Keep all images the same size */
 .grid-item img {
     width: 100%;
-    height: 250px;     /* Ensures all images are same height */
-    object-fit: cover; /* Prevents stretching */
+    max-width: 250px; /* Limits size so they don't get too huge */
+    height: 250px;
+    object-fit: cover;
     border-radius: 15px;
+    border: 3px solid DarkOrchid;
 }
+
 
 
 @keyframes moveAndColor {
