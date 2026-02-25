@@ -23,7 +23,7 @@ style.textContent = `
     .footer-links {
         display: flex;
         justify-content: center;
-        margin-bottom: 25px; /* Creates the extra space after the 2nd line */
+        margin-bottom: 15px; /* Creates the extra space after the 2nd line */
     }
 
     .footer-links a {
