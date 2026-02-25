@@ -107,6 +107,15 @@
   height: auto;
   object-fit: cover; /* Ensures images look good if sizes vary */
 }
+/* Centers the last item in a 3-column grid */
+.grid-item:last-child {
+    grid-column: 2;
+}
+
+/* Also ensure images and text within the items are centered */
+.grid-item {
+    text-align: center;
+}
 
 @keyframes moveAndColor {
     0% {
@@ -139,42 +148,34 @@
     </div>
     
     <div class="grid-container">
-    <!-- Item 1 -->
     <div class="grid-item">
-        <img src="./img/buffy.png" alt="buffy.png">
+        <img src="./img/buffy.png" alt="buffy">
         <p class="image-text">Buffy - treefrog</p>
     </div>
-
-    <!-- Item 2 -->
     <div class="grid-item">
-        <img src="./img/dickie.png" alt="dicky.png">
+        <img src="./img/dickie.png" alt="dickie">
         <p class="image-text">Dicky - bread</p>
     </div>
-
-    <!-- Item 3 -->
     <div class="grid-item">
-        <img src="./img/kit.png" alt="kit.png">
+        <img src="./img/kit.png" alt="kit">
         <p class="image-text">Kit - harley</p>
     </div>
-
-    <!-- Item 4 -->
     <div class="grid-item">
-        <img src="./img/tart.png" alt="tart.png">
+        <img src="./img/tart.png" alt="tart">
         <p class="image-text">Tart - kim</p>
     </div>
-
-    <!-- Item 5 -->
     <div class="grid-item">
-        <img src="./img/sp.png" alt="sp.png">
+        <img src="./img/sp.png" alt="sp">
         <p class="image-text">Sugar Plum - blue</p>
     </div>
-
-    <!-- Item 6 -->
+    
+    <!-- This last item will now be centered because of the CSS rule above -->
     <div class="grid-item">
-        <img src="./img/echoey.png" alt="echoey.png">
+        <img src="./img/echoey.png" alt="echoey">
         <p class="image-text">DM - echoey</p>
     </div>
 </div>
+
 
 
 </body>
