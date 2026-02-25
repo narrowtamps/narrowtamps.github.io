@@ -30,7 +30,7 @@ style.textContent = `
     .footer-links a {
         display: inline-block !important;
         text-decoration: none;
-        
+        padding: 5px;
         font-size: 0.9rem;
     }
 `;
