@@ -14,6 +14,10 @@ body {
   font-size: var(--step-0);
   background: url("/tile-bg.webp");
   font-family: "Times New Roman", Times, serif;
+  min-height: calc(100vh - 50px);
+    min-height: calc(100dvh - 50px); 
+    margin: 0;
+
 }
 
 header {
