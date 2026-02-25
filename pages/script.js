@@ -21,14 +21,14 @@ style.textContent = `
     .footer-links {
         display: flex;
         justify-content: center;
-        margin-bottom: 15px; /* Creates the extra space after the 2nd line */
+        margin-bottom: 25px; /* Creates the extra space after the 2nd line */
     }
 
     .footer-links a {
         display: inline-block !important;
         text-decoration: none;
         padding: 5px 10px;
-        font-size: 0.9rem;
+        font-size: 1rem;
         color: darkred; /* Keeping your theme consistent */
     }
 `;
