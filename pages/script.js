@@ -1,12 +1,10 @@
 // 1. Create a style element to hold your global CSS
 const style = document.createElement('style');
 style.textContent = `
-    /* These styles apply to every page that loads this script */
     body {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
-        min-height: 100dvh;
         margin: 0;
     }
 
@@ -15,25 +13,26 @@ style.textContent = `
         width: 100%;
     }
 
-    .site-footer {
-        text-align: center;
-        
+    .site-footer p {
+        margin: 0; /* Removes default gap between 1st and 2nd line */
+        font-size: 0.9rem;
     }
 
     .footer-links {
         display: flex;
         justify-content: center;
-        
-        
+        margin-top: 15px; /* Creates the extra space after the 2nd line */
     }
 
     .footer-links a {
         display: inline-block !important;
         text-decoration: none;
-        padding: 5px;
+        padding: 5px 10px;
         font-size: 0.9rem;
+        color: darkred; /* Keeping your theme consistent */
     }
 `;
+
 document.head.appendChild(style);
 document.getElementById('footer-placeholder').innerHTML = `
 <footer class="site-footer" style="margin-top: 50px; text-align: center;">
