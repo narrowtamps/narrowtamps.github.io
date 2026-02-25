@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
   #bouncingImg {
     position: absolute;
-    width: 100px; /* Adjust size */
+    width: 200px; /* Adjust size */
     height: auto;
   }
 </style>
@@ -14,7 +16,7 @@
   <script>
     const img = document.getElementById('bouncingImg');
     let x = 0, y = 0; // Positions
-    let vx = 5, vy = 5; // Velocity
+    let vx = 5, vy = 8; // Velocity
     
     function bounce() {
       const w = window.innerWidth - img.width;
