@@ -12,11 +12,16 @@
     color: darkred;
   }
   
+
   /* The "Wind" Streak */
   .wind-line {
     position: absolute;
     height: 2px;
-    background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);
+    /* Change this line in your .wind-line style */
+background: linear-gradient(to right, transparent, rgba(0,0,0,0.2), transparent); 
+/* Or use your Neon Teal for a magical wind: */
+/* background: linear-gradient(to right, transparent, #01F9C6, transparent); */
+
     width: 150px;
     left: -200px; /* Start off-screen */
     animation: blow linear infinite;
