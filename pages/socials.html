@@ -17,7 +17,18 @@
             align-items: center;
             padding-top: 50px;
             color: GreenYellow;
-        }
+        
+    
+    min-height: 100vh;  /* Fallback for older browsers */
+    min-height: 100dvh; /* The "magic" mobile fix */
+    margin: 0;
+}
+
+#footer-placeholder {
+    margin-top: auto; /* Pushes footer to the bottom */
+    width: 100%;
+}
+
 /* Fix the footer links specifically */
 .footer-links a {
     display: inline-block !important; 
