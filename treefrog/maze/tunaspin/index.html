@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    /* Styling the image */
+    #spinningImage {
+        width: 150px;
+        height: 150px;
+        cursor: pointer;
+        transition: transform 2s linear; /* Smooth transition */
+    }
+
+    /* Spinning animation class */
+    .spin {
+        animation: rotation 2s infinite linear;
+    }
+
+    @keyframes rotation {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(359deg); }
+    }
+</style>
+</head>
+<body>
+
+    <!-- Image to be clicked -->
+    <img src="fish.gif" id="spinningImage" onclick="playMusic()">
+
+    <!-- Audio element -->
+    <audio id="myAudio" src="oh-naur.mp3"></audio>
+
+    <script>
+        function playMusic() {
+            var image = document.getElementById("spinningImage");
+            var audio = document.getElementById("myAudio");
+            
+            // Toggle animation class
+            image.classList.toggle("spin");
+            
+            // Toggle play/pause
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0; // Reset music
+            }
+        }
+    </script>
+
+</body>
+</html>
