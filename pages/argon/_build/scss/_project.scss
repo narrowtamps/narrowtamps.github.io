@@ -250,3 +250,109 @@ h1 {
     transition-duration: 0s !important;
   }
 }
+.circle-sign {
+  @extend [class$="-sign"];
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  
+  h1 {
+    width: 80%;
+    word-wrap: break-word;
+  }
+}
+.diamond-sign {
+  @extend [class$="-sign"];
+  border-radius: 0;
+  width: 280px;
+  height: 280px;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  
+  h1 {
+    transform: rotate(-45deg);
+    width: 100%;
+  }
+}
+.hexagon-sign {
+  @extend [class$="-sign"];
+  width: 280px;
+  height: 320px;
+  clip-path: polygon(
+    25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 0;
+}
+.star-sign {
+  @extend [class$="-sign"];
+  width: 300px;
+  height: 300px;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 0;
+}
+.banner-sign {
+  @extend [class$="-sign"];
+  width: 400px;
+  height: 120px;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  
+  // Add ribbon tails
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    width: 40px;
+    height: 30px;
+    background: inherit;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+  }
+  
+  &::before { left: 50px; }
+  &::after { right: 50px; }
+}
+[class$="-sign"] {
+  // ... existing styles ...
+  
+  &[class^="circle"] {
+    @include neon-glow-box(var(--neon-purple-color));
+    [data-js-flicker] { @include neon-glow-text(var(--neon-purple-color)); }
+  }
+  
+  &[class^="diamond"] {
+    @include neon-glow-box(var(--neon-cyan-color));
+    [data-js-flicker] { @include neon-glow-text(var(--neon-cyan-color)); }
+  }
+  
+  &[class^="hexagon"] {
+    @include neon-glow-box(var(--neon-green-color));
+    [data-js-flicker] { @include neon-glow-text(var(--neon-green-color)); }
+  }
+  
+  &[class^="star"] {
+    @include neon-glow-box(var(--neon-orange-color));
+    [data-js-flicker] { @include neon-glow-text(var(--neon-orange-color)); }
+  }
+}
