@@ -6,22 +6,24 @@
     body {
       margin: 0;
       height: 100vh;
-      overflow: hidden; /* Keeps scrollbars from appearing */
-      background-color: #f0f0f0;
+      overflow: hidden;
+      background-color: #222; /* Dark background so the fish pops */
     }
 
     #spinningImage {
-      position: absolute; /* Essential for bouncing movement */
+      position: absolute;
       width: 150px;
       height: auto;
       cursor: pointer;
-      /* Smoothly transition the spin class */
-      transition: filter 0.3s; 
+      /* Initial centering */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
 
-    /* This class is toggled by JavaScript */
     .spin {
-      animation: rotation 2s infinite linear;
+      /* The bounce script handles X/Y, this handles the rotation */
+      animation: rotation 1s infinite linear;
     }
 
     @keyframes rotation {
@@ -32,52 +34,62 @@
 </head>
 <body>
 
-    <img src="fish.gif" id="spinningImage" onclick="playMusic()">
+    <img src="fish.gif" id="spinningImage" onclick="toggleAction()">
     <audio id="myAudio" src="oh-naur.mp3"></audio>
 
     <script>
         const img = document.getElementById("spinningImage");
         const audio = document.getElementById("myAudio");
         
-        let x = 0, y = 0; 
-        let vx = 4, vy = 4; // Movement speed
+        let x, y; 
+        let vx = 5, vy = 5; 
+        let isActive = false;
 
-        function playMusic() {
-            // Toggle the CSS spin animation
+        function toggleAction() {
+            isActive = !isActive;
             img.classList.toggle("spin");
             
-            if (audio.paused) {
+            if (isActive) {
                 audio.play();
+                // Set initial X/Y to the current center position before movement starts
+                x = img.offsetLeft;
+                y = img.offsetTop;
+                img.style.transform = 'none'; // Remove CSS centering to let JS take over
             } else {
                 audio.pause();
                 audio.currentTime = 0;
             }
         }
 
-        function bounce() {
-            // Calculate boundaries based on current window size
-            const w = window.innerWidth - img.clientWidth;
-            const h = window.innerHeight - img.clientHeight;
-            
-            x += vx; 
-            y += vy;
-            
-            // Collision detection for walls
-            if (x >= w || x <= 0) vx *= -1;
-            if (y >= h || y <= 0) vy *= -1;
-            
-            // Apply movement
-            img.style.left = x + 'px';
-            img.style.top = y + 'px';
-            
-            requestAnimationFrame(bounce);
+        function animate() {
+            if (isActive) {
+                const w = window.innerWidth - img.clientWidth;
+                const h = window.innerHeight - img.clientHeight;
+                
+                x += vx; 
+                y += vy;
+                
+                // Bounce logic
+                if (x >= w || x <= 0) vx *= -1;
+                if (y >= h || y <= 0) vy *= -1;
+                
+                img.style.left = x + 'px';
+                img.style.top = y + 'px';
+            }
+            requestAnimationFrame(animate);
         }
 
-        // Initialize bounce on load
-        window.onload = () => {
-            bounce();
+        // Start the animation loop
+        animate();
+
+        // Optional: Keep it centered if the window is resized before clicking
+        window.onresize = () => {
+            if (!isActive) {
+                img.style.left = '50%';
+                img.style.top = '50%';
+                img.style.transform = 'translate(-50%, -50%)';
+            }
         };
     </script>
 </body>
 </html>
-
