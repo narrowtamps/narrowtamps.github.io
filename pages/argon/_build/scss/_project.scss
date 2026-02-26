@@ -200,6 +200,27 @@ h1 {
       @include neon-glow-text(var(--neon-green-color));
     }
   }
+
+ 
+  &[class^="circle"] {
+    @include neon-glow-box(var(--neon-purple-color));
+    [data-js-flicker] { @include neon-glow-text(var(--neon-purple-color)); }
+  }
+  
+  &[class^="diamond"] {
+    @include neon-glow-box(var(--neon-cyan-color));
+    [data-js-flicker] { @include neon-glow-text(var(--neon-cyan-color)); }
+  }
+  
+  &[class^="hexagon"] {
+    @include neon-glow-box(var(--neon-green-color));
+    [data-js-flicker] { @include neon-glow-text(var(--neon-green-color)); }
+  }
+  
+  &[class^="star"] {
+    @include neon-glow-box(var(--neon-orange-color));
+    [data-js-flicker] { @include neon-glow-text(var(--neon-orange-color)); }
+  }
 }
 
 // keyframe animation to abruptly toggle
@@ -333,26 +354,4 @@ h1 {
   &::before { left: 50px; }
   &::after { right: 50px; }
 }
-[class$="-sign"] {
-  // ... existing styles ...
-  
-  &[class^="circle"] {
-    @include neon-glow-box(var(--neon-purple-color));
-    [data-js-flicker] { @include neon-glow-text(var(--neon-purple-color)); }
-  }
-  
-  &[class^="diamond"] {
-    @include neon-glow-box(var(--neon-cyan-color));
-    [data-js-flicker] { @include neon-glow-text(var(--neon-cyan-color)); }
-  }
-  
-  &[class^="hexagon"] {
-    @include neon-glow-box(var(--neon-green-color));
-    [data-js-flicker] { @include neon-glow-text(var(--neon-green-color)); }
-  }
-  
-  &[class^="star"] {
-    @include neon-glow-box(var(--neon-orange-color));
-    [data-js-flicker] { @include neon-glow-text(var(--neon-orange-color)); }
-  }
-}
+
