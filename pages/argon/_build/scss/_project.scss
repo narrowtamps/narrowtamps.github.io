@@ -12,6 +12,7 @@
   --neon-orange-color: orange;
   --neon-orange2-color: orange;
   --neon-fuchsia-color: #FF00FF ;
+ --neon-magenta-color: magenta;
   --white: white;
 }
 
@@ -129,6 +130,7 @@ body {
 .colors li button.orange { background: var(--neon-orange-color); @include neon-glow-box(var(--neon-orange-color)); }
 .colors li button.fuchsia { background: var(--neon-fuchsia-color); @include neon-glow-box(var(--neon-fuchsia-color)); }
 .colors li button.white { background: var(--white); @include neon-glow-box(var(--white)); }
+.colors li button.magenta { background: var(--neon-magenta-color); @include neon-glow-box(var(--neon-magenta-color)); }
 
 
 /* Signs */
@@ -139,6 +141,8 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
+
+.magenta-sign { @include neon-glow-box(var(--neon-magenta-color)); }
 
 .purple-sign { @include neon-glow-box(var(--neon-purple-color)); }
 .green-sign  { @include neon-glow-box(var(--neon-green-color));  }
