@@ -10,6 +10,8 @@
   --neon-green-color: lime;
   --neon-cyan-color: cyan;
   --neon-orange-color: orange;
+   --neon-orange2-color: orange;
+ --neon-fuchsia-color: fuchsia 
   --white: white;
 }
 
@@ -125,6 +127,9 @@ body {
 .colors li button.green  { background: var(--neon-green-color);  @include neon-glow-box(var(--neon-green-color));  }
 .colors li button.cyan   { background: var(--neon-cyan-color);   @include neon-glow-box(var(--neon-cyan-color));   }
 .colors li button.orange { background: var(--neon-orange-color); @include neon-glow-box(var(--neon-orange-color)); }
+.colors li button.orange { background: var(--neon-fuchsia-color); @include neon-glow-box(var(--neon-fuchsia-color)); }
+.colors li button.white { background: var(--white); @include neon-glow-box(var(--white)); }
+
 
 /* Signs */
 [class$="-sign"] {
@@ -139,5 +144,7 @@ body {
 .green-sign  { @include neon-glow-box(var(--neon-green-color));  }
 .cyan-sign   { @include neon-glow-box(var(--neon-cyan-color));   }
 .orange-sign { @include neon-glow-box(var(--neon-orange-color)); }
+.fuchsia-sign { @include neon-glow-box(var(--neon-fuchsia-color)); }
+.black-sign { @include neon-glow-box(var(--neon-orange2-color)); }
 
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
