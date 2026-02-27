@@ -72,6 +72,16 @@ body {
   white-space: nowrap; /* Keeps everything in one long line */
   animation: scroll-left 25s linear infinite; /* Adjust '25s' for speed */
 }
+/* Buttons */
+.colors li button.fuchsia { 
+  background: var(--neon-fuchsia-color); 
+  @include neon-glow-box(#{var(--neon-fuchsia-color)}); // Added #{}
+}
+
+/* Signs */
+.fuchsia-sign { 
+  @include neon-glow-box(#{var(--neon-fuchsia-color)}); // Added #{}
+}
 
 .credits li {
   display: inline-flex;
