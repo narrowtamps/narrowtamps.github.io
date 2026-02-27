@@ -95,6 +95,54 @@ h1 {
 .colors {
   text-align: center;
   margin-top: 48px;
+/* -------------------------------- *
+
+ |  Credit styles - FIXED           |
+ * -------------------------------- */
+
+.credits {
+  opacity: 0;
+  animation: fade-in 1s 2s forwards;
+  margin-top: 40px; /* Space from the content above */
+  padding-bottom: 50px;
+}
+
+.credits ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers the links */
+  gap: 15px; /* Adds space between the links */
+}
+
+.credits .fancy-link {
+  @include size-12;
+  font-family: 'Press Start 2P', cursive;
+  color: #10ca87;
+  text-decoration: none;
+  transition: all 0.2s 0.05s ease;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.4); /* Makes text readable */
+  border-radius: 4px;
+  display: inline-block;
+
+  &:focus,
+  &:hover {
+    color: #fff;
+    box-shadow: 0 0 10px #10ca87;
+  }
+
+  .svg-inline--fa { @include size-24; }
+ }
+
+/* Centering the music button wrapper */
+.music-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
  }
   p { margin-bottom: 16px; }
