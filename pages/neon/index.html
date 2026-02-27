@@ -29,89 +29,78 @@
   </head>
   <body>
 
-    <!-- main -->
-    <main>
-      <section>
-        
-                  <div><button class="black" width="50%" aria-label="Music?" onclick="toggleAction()">🎶</button></div>
-        <div class="container">
-          <div class="grid space-32">
-            <div class="cell">
+<body>
+  <main>
+    <section>
+      <!-- Centered Music Button -->
+      <div style="text-align: center; margin-top: 20px;">
+        <button class="black" aria-label="Music?" onclick="toggleAction()" style="cursor: pointer; display: inline-block;">🎶</button>
+      </div>
 
-              
+      <div class="container">
+        <div class="grid space-32">
+          <div class="cell">
 
-              <div class="green-sign" data-color="green" hidden>
-                <h1 data-js-flicker="3">Candy in Neon</h1>
-              </div>
-
-              <div class="cyan-sign"  data-color="cyan" hidden>
-                <h1 data-js-flicker="4">Asteroid Duet</h1>
-                </div>
-              <div class="purple-sign" data-color="purple" hidden>
-                <h1 data-js-flicker="3">Calamity!</h1>
-                
-              </div>
-<div class="orange-sign" data-color="orange2" hidden>
-                <h1 data-js-flicker="6">Ghosts in the Moons</h1>
-                
-</div>
-              <div class="orange-sign" data-color="black" >
-                <i><h4 data-js-flicker="4">The Tamps play</h4></i>
-                <br>
-                <div class="cyan-sign" data-color="black">
-  <h1 data-js-flicker="2">NEON ODYSSEY</h1>
-  </div>
-</div>
-              <div class="colors">
-                <p>Upcoming one shots:</p>
-                <ul>
-                  <li><button class="green" data-color="green" aria-label="Candy"></button></li>
-                  <li><button class="cyan" data-color="cyan" aria-label="Duet"></button></li>
-                    <li><button class="purple" data-color="purple" aria-label="Calamity!"></button></li>
-                  <li><button class="orange" data-color="orange2" aria-label="Moon"></button></li>
-                </ul>
-              </div>
-
-
-              <audio id="myAudio" src="wendy.mp3"></audio>
-
-    <script>
-        
-        const audio = document.getElementById("myAudio");
-        
-        
-        let isActive = false;
-
-        function toggleAction() {
-            isActive = !isActive;
-            
-            
-            if (isActive) {
-                audio.play();
-            } else {
-                audio.pause();
-                audio.currentTime = 0;
-            }
-        }
-    </script>
-              <!-- levelup credits -->
-              <div class="credits">
-                <ul>
-                  <li><a class="fancy-link" href="https://cielriley.bandcamp.com/track/wendyfulldemo">MUSIC</a></li><br>
-               <li><a class="fancy-link" href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST?ref=ix5n1">NEON ODYSSEY KICKSTARTER</a></li><br>
-               <li><a class="fancy-link" href="https://avantris.com/">LEGENDS OF AVANTRIS</a>* </li><br>
-                  <li><a class="fancy-link" href="https://github.com/markteekman/neon-signs"><i class="fab fa-github"></i> SOURCE CODE FOR NEON ON GITHUB - MARK TEEKMAN</a></li>
-             
-                </ul>
-              <p>*<i>we aren't affiliated with them, no need for Noah</i></p>
-              </div>
-
+            <!-- Signs -->
+            <div class="green-sign" data-color="green" hidden>
+              <h1 data-js-flicker="3">Candy in Neon</h1>
             </div>
+            <div class="cyan-sign" data-color="cyan" hidden>
+              <h1 data-js-flicker="4">Asteroid Duet</h1>
+            </div>
+            <div class="purple-sign" data-color="purple" hidden>
+              <h1 data-js-flicker="3">Calamity!</h1>
+            </div>
+            <div class="orange-sign" data-color="orange2" hidden>
+              <h1 data-js-flicker="6">Ghosts in the Moons</h1>
+            </div>
+
+            <div class="orange-sign" data-color="black">
+              <i><h4 data-js-flicker="4">The Tamps play</h4></i>
+              <br>
+              <div class="cyan-sign" data-color="black">
+                <h1 data-js-flicker="2">NEON ODYSSEY</h1>
+              </div>
+            </div>
+
+            <div class="colors">
+              <p>Upcoming one shots:</p>
+              <ul>
+                <li><button class="green" data-color="green" aria-label="Candy"></button></li>
+                <li><button class="cyan" data-color="cyan" aria-label="Duet"></button></li>
+                <li><button class="purple" data-color="purple" aria-label="Calamity!"></button></li>
+                <li><button class="orange" data-color="orange2" aria-label="Moon"></button></li>
+              </ul>
+            </div>
+
+            <audio id="myAudio" src="wendy.mp3"></audio>
+
+            <script>
+              const audio = document.getElementById("myAudio");
+              let isActive = false;
+              function toggleAction() {
+                isActive = !isActive;
+                if (isActive) { audio.play(); } 
+                else { audio.pause(); audio.currentTime = 0; }
+              }
+            </script>
+
+            <!-- Cleaned Credits -->
+            <div class="credits">
+              <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+                <li><a class="fancy-link" href="https://cielriley.bandcamp.com/track/wendyfulldemo">MUSIC</a></li>
+                <li><a class="fancy-link" href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST?ref=ix5n1">NEON ODYSSEY KICKSTARTER</a></li>
+                <li><a class="fancy-link" href="https://avantris.com/">LEGENDS OF AVANTRIS</a>* </li>
+                <li><a class="fancy-link" href="https://github.com/markteekman/neon-signs"><i class="fab fa-github"></i> SOURCE CODE - MARK TEEKMAN</a></li>
+              </ul>
+              <p style="margin-top: 15px;">*<i>we aren't affiliated with them, no need for Noah</i></p>
+            </div>
+
           </div>
         </div>
-      </section>
-    </main>
-    <!-- /main -->
+      </div>
+    </section>
+  </main>
+</body>
 
-  </body>
 </html>
