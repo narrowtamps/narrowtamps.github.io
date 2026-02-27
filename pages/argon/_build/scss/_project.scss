@@ -72,9 +72,29 @@ body {
   text-decoration: none;
   transition: all 0.2s ease;
   padding: 10px;
-  display: inline-block;
-  /* Removed absolute positioning so they don't overlap */
+  
+  /* THE FIX: These lines "reset" the overlapping behavior */
+  position: static !important;  /* Forces it out of 'absolute' mode */
+  display: block !important;    /* Makes them stack like blocks */
+  margin: 10px auto !important; /* Centers them and adds space */
+  width: fit-content;
 }
+
+.credits .fancy-link {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  color: #10ca87;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding: 10px;
+  
+  /* THE FIX: These lines "reset" the overlapping behavior */
+  position: static !important;  /* Forces it out of 'absolute' mode */
+  display: block !important;    /* Makes them stack like blocks */
+  margin: 10px auto !important; /* Centers them and adds space */
+  width: fit-content;
+}
+
 
 .credits .fancy-link:hover {
   color: white;
