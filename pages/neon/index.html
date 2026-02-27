@@ -41,7 +41,7 @@
     <section>
       <!-- Centered Music Button -->
       <div class="music-container">
-          <button class="black" data-color="black" aria-label="Music?" onclick="toggleAction()">🎶</button>
+          <button class="black" data-color="orange2" aria-label="Music?" onclick="toggleAction()">🎶</button>
        </div>
 
       <div class="container">
@@ -55,7 +55,7 @@
             <div class="cyan-sign" data-color="cyan" hidden>
               <h1 data-js-flicker="4">Asteroid Duet</h1>
             </div>
-              <div class="fuchsia-sign" data-color="fuchsia" >
+              <div class="magenta-sign" data-color="magenta" >
               <h1 data-js-flicker="3">COMING TOO SOON</h1>
             </div>
             <div class="purple-sign" data-color="purple" hidden>
@@ -78,14 +78,15 @@
                 <li><button class="green" data-color="green" aria-label="Candy"></button></li>
                 <li><button class="cyan" data-color="cyan" aria-label="Duet"></button></li>
                 <li><button class="purple" data-color="purple" aria-label="Calamity!"></button></li>
-                <li><button class="orange" data-color="orange" aria-label="Moon"></button></li>
-                  <li><button class="fuchsia" data-color="fuchsia" aria-label="Moon"></button></li>
+                <li><button class="orange" data-color="orange" aria-label="Moon"></button></li> 
+                <li><button class="magenta" data-color="magenta" aria-label="Mootn"></button></li>
               </ul>
             </div>
 
             <audio id="myAudio" src="wendy.mp3" loop></audio>
 
             <script>
+    
               const audio = document.getElementById("myAudio");
               let isActive = false;
               function toggleAction() {
