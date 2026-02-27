@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="nl" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,28 +12,37 @@
     <!-- css -->
     <link rel="stylesheet" href="../argon/css/make-it-pretty.css">
 
+    <!-- FORCE FIXES (Overrides argon/css) -->
+    <style>
+      .music-container { display: flex; justify-content: center; margin: 20px 0; width: 100%; }
+      .credits { opacity: 0; animation: fade-in 1s 2s forwards; margin-top: 60px; text-align: center; }
+      .credits ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 15px; align-items: center; }
+      
+      /* THIS STOPS THE OVERLAPPING */
+      .credits .fancy-link { 
+        position: static !important; 
+        display: inline-block !important; 
+        margin: 5px 0 !important;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 12px;
+      }
+      @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+
     <!-- javascript -->
     <script defer src="../argon/js/make-it-work.js"></script>
     <script defer src="../argon/js/fontawesome.js"></script>
 
-    <!-- open graph -->
-    <meta property="og:title" content="Neon Odyssey Playtesting">
-    <meta property="og:description" content="The Tamps are playtesing Neon Odyssey by Legends of Avantris! (we're not affiliated with them, we just think it's cool)">
-    <meta property="og:type" content="website">
-    
-
-    <!-- title -->
     <title>Neon Odyssey Playtests</title>
-  </head>
-  <body>
+</head>
 
 <body>
   <main>
     <section>
       <!-- Centered Music Button -->
       <div class="music-container">
-    <button class="black" aria-label="Music?" onclick="toggleAction()">🎶</button>
-</div>
+          <button class="black" aria-label="Music?" onclick="toggleAction()">🎶</button>
+      </div>
 
       <div class="container">
         <div class="grid space-32">
@@ -57,7 +64,6 @@
 
             <div class="orange-sign" data-color="black">
               <i><h4 data-js-flicker="4">The Tamps play</h4></i>
-              <br>
               <div class="cyan-sign" data-color="black">
                 <h1 data-js-flicker="2">NEON ODYSSEY</h1>
               </div>
@@ -85,18 +91,16 @@
               }
             </script>
 
-            <!-- Cleaned Credits -->
+            <!-- Credits List -->
             <div class="credits">
-    <ul>
-        <li><a class="fancy-link" href="https://cielriley.bandcamp.com">MUSIC</a></li>
-        <li><a class="fancy-link" href="https://www.launchoracle.com">NEON ODYSSEY KICKSTARTER</a></li>
-        <li><a class="fancy-link" href="https://avantris.com">LEGENDS OF AVANTRIS</a>*</li>
-        <li><a class="fancy-link" href="https://github.com">SOURCE CODE - MARK TEEKMAN</a></li>
-    </ul>
-    <p style="text-align: center; font-size: 14px; margin-top: 20px;">
-        *<i>we aren't affiliated with them, no need for Noah</i>
-    </p>
-</div>
+                <ul>
+                    <li><a class="fancy-link" href="https://cielriley.bandcamp.com">MUSIC</a></li>
+                    <li><a class="fancy-link" href="https://www.launchoracle.com">NEON ODYSSEY KICKSTARTER</a></li>
+                    <li><a class="fancy-link" href="https://avantris.com">LEGENDS OF AVANTRIS</a>*</li>
+                    <li><a class="fancy-link" href="https://github.com">SOURCE CODE - MARK TEEKMAN</a></li>
+                </ul>
+                <p style="margin-top: 20px;">*<i>we aren't affiliated with them, no need for Noah</i></p>
+            </div>
 
           </div>
         </div>
@@ -104,5 +108,4 @@
     </section>
   </main>
 </body>
-
 </html>
