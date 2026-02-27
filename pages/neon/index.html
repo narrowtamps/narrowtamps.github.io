@@ -49,19 +49,19 @@
           <div class="cell">
 
             <!-- Signs -->
-            <div class="green-sign" data-color="green" hidden>
+            <div class="green-sign" data-color="green" onclick="oddAction()" hidden>
               <h1 data-js-flicker="3">ODDYSEA</h1>
             </div>
-            <div class="cyan-sign" data-color="cyan" hidden>
+            <div class="cyan-sign" data-color="cyan" onclick="duetAction()" hidden>
               <h1 data-js-flicker="4">Asteroid Duet</h1>
             </div>
               <div class="cyan-sign" data-color="magenta" >
               <h1 data-js-flicker="3">COMING TOO SOON</h1>
             </div>
-            <div class="purple-sign" data-color="purple" hidden>
+            <div class="purple-sign" data-color="purple" onclick="calAction()" hidden>
               <h1 data-js-flicker="3">Calamity!</h1>
             </div>
-            <div class="orange-sign" data-color="orange" hidden>
+            <div class="orange-sign" data-color="orange" onclick="moonAction()" hidden>
               <h1 data-js-flicker="6">Moon Moon</h1>
             </div>
 
@@ -95,6 +95,18 @@
                 if (isActive) { audio.play(); } 
                 else { audio.pause(); audio.currentTime = 0; }
               }
+                
+
+                function oddAction() {
+
+                }
+                function duetAction() {
+                }
+                function moonAction() {
+                }
+                function calAction() {
+                }
+                
             </script>
 
             <!-- Credits List -->
