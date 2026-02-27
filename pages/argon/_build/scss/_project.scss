@@ -47,38 +47,50 @@ body {
   @include neon-glow-box(var(--white));
 }
 
-/* Credit styles - FIXED OVERLAP */
+/* --- Pinned Scrolling Credits --- */
 .credits {
-  opacity: 0;
-  animation: fade-in 1s 2s forwards;
-  margin-top: 60px;
-  padding-bottom: 40px;
-  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark bar background */
+  border-top: 2px solid #10ca87;
+  padding: 10px 0;
+  overflow: hidden; /* Hides the text when it goes off-screen */
+  z-index: 999;
+  opacity: 1; /* Ensure it stays visible */
 }
 
 .credits ul {
+  display: flex;
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px; /* This creates the space between links */
+  margin: 0;
+  white-space: nowrap; /* Keeps everything in one long line */
+  animation: scroll-left 25s linear infinite; /* Adjust '25s' for speed */
 }
 
+.credits li {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 40px; /* Space between the credit items */
+}
+
+/* The Scrolling Animation */
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Style for the links inside the ticker */
 .credits .fancy-link {
   font-family: 'Press Start 2P', cursive;
-  font-size: 12px;
+  font-size: 10px;
   color: #10ca87;
   text-decoration: none;
-  transition: all 0.2s ease;
-  padding: 10px;
-  
-  /* THE FIX: These lines "reset" the overlapping behavior */
-  position: static !important;  /* Forces it out of 'absolute' mode */
-  display: block !important;    /* Makes them stack like blocks */
-  margin: 10px auto !important; /* Centers them and adds space */
-  width: fit-content;
+  text-transform: uppercase;
 }
+
 
 
 
