@@ -49,7 +49,7 @@
                 <h1 data-js-flicker="3">Calamity!</h1>
                 
               </div>
-<div class="orange-sign" data-color="orange" hidden>
+<div class="orange-sign" data-color="orange2" hidden>
                 <b><h2 data-js-flicker="4">Ghosts in the Moons</h2></b>
                 
 </div>
@@ -63,18 +63,36 @@
               <div class="colors">
                 <p>Upcoming one shots:</p>
                 <ul>
-                  <li><button  aria-label="Music?"></button>Music?</li>
-             
-                
-             
-              
+                  <li><button  aria-label="Music?"></button>🎶</li>
                   <li><button class="green" data-color="green" aria-label="Candy"></button></li>
                   <li><button class="cyan" data-color="cyan" aria-label="Duet"></button></li>
                     <li><button class="purple" data-color="purple" aria-label="Calamity!"></button></li>
-                  <li><button class="orange" data-color="orange" aria-label="Moon"></button></li>
+                  <li><button class="orange" data-color="orange2" aria-label="Moon"></button></li>
                 </ul>
               </div>
 
+
+              <audio id="myAudio" src="wendy.mp3"></audio>
+
+    <script>
+        
+        const audio = document.getElementById("myAudio");
+        
+        
+        let isActive = false;
+
+        function toggleAction() {
+            isActive = !isActive;
+            
+            
+            if (isActive) {
+                audio.play();
+            } else {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        }
+    </script>
               <!-- levelup credits -->
               <div class="credits">
                 <a class="fancy-link" href="https://markteekman.nl/levelup/"><i class="fas fa-arrow-circle-right"></i> MEER LEVELS</a>
