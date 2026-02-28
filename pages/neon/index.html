@@ -27,14 +27,7 @@
         font-family: 'Press Start 2P', cursive;
         font-size: 12px;
       }
-        .grid-container {
-  display: grid;
-  /* Creates 3 columns, each with equal width (1fr) */
-  grid-template-columns: 1fr 1fr 1fr; 
-  /* or grid-template-columns: repeat(3, 1fr); */
-  /* Adds space between grid items */
-  gap: 10px; 
-}
+
  .fancy-link {
   font-family: 'Press Start 2P', cursive;
   font-size: 10px;
@@ -57,12 +50,6 @@
   color: #10ca87;
   text-decoration: none;
   text-transform: uppercase;
-}
-.grid-item {
-  /* Add styling for individual items */
-  padding: 1em;
-  border: 1px solid #ccc;
-  text-align: center;
 }
 .press-start-2p-regular {
   font-family: "Press Start 2P", system-ui;
@@ -98,15 +85,7 @@
  --neon-magenta-color: magenta;
   --white: white;
 }
-        
-@mixin neon-glow-text($color: currentColor) {
-  color: #fff;
-  text-shadow: 0 0 0.033em #fff, 0 0 0.08em #fff, 0 0 0.1em $color, 0 0 0.2em $color, 0 0 0.3em $color, 0 0 1em $color, 0 0 1.5em $color;
-}
 
-@mixin neon-glow-box($color: currentColor) {
-  box-shadow: 0 0 0.033em #fff, 0 0 0.08em #fff, 0 0 0.1em $color, 0 0 0.2em $color, 0 0 0.3em $color, 0 0 1em $color, 0 0 1.5em $color, inset 0 0 0.1em $color, inset 0 0 0.2em $color, inset 0 0 0.3em $color, inset 0 0 1em $color, inset 0 0 1.5em $color;
-}
 
         .credits ul {
   display: flex;
@@ -135,7 +114,47 @@
         
       @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
    
-    
+   /* Ensure the body takes up the full screen height to allow vertical centering */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The main wrapper that centers everything */
+.container {
+  display: grid;
+  place-items: center; /* Centers items horizontally AND vertically */
+  min-height: 80vh;    /* Ensures there is vertical space to center within */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive Grid for the links/items */
+.grid-container {
+  display: grid;
+  /* Desktop: 3 columns | Mobile: 1 column automatically */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px; /* Prevents it from getting too wide on huge monitors */
+  justify-content: center;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid var(--white);
+  text-align: center;
+  /* Add neon glow to items */
+  box-shadow: 0 0 5px #fff, 0 0 10px var(--neon-cyan-color);
+}
+ 
     </style>
 
     <!-- javascript -->
