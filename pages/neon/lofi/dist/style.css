@@ -22,6 +22,18 @@
   margin-bottom: -36px;
 }
 
+.lofi-text {
+ 
+  font-size: 2em;
+  font-weight: bold;
+  font-family: Arial;
+  color: transparent;
+  position: relative;
+  display: block;
+  letter-spacing: -15px;
+  margin-bottom: -36px;
+}
+
 .letter {
   -webkit-text-stroke: 10px #AEFD6C;
   margin-top: -8px;
