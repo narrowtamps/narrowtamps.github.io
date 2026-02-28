@@ -10,7 +10,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Honk&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
 <link rel="stylesheet" href="rain/dist/style.css">
+<style>
+  .container {
+    position: relative; /* Establishes a positioning context for its children */
+    width: 100%;        /* Set a specific width/height as needed */
+    height: 300px;
+}
 
+.background-div {
+    position: absolute; /* Positions the element relative to its positioned parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Add background styles here (e.g., background-color, background-image) */
+    background-color: #f0f0f0;
+    z-index: 1; /* A lower z-index means it will be behind elements with a higher z-index */
+}
+
+.overlay-div {
+    position: absolute; /* Allows for precise positioning over the background div */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Add desired overlay styles here */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    color: white;
+    z-index: 2; /* Ensures this div appears in front of the background div */
+    /* Add styling for content alignment (e.g., flexbox for centering) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
   </head>
     
   <body>
