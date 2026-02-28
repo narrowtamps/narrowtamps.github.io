@@ -1,7 +1,7 @@
 .home {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(170deg, #000000 26%, #100634 44%, #54037e 49%, #a734c7 50%, #7b0093 50%, #8a1f7d 61%, #000000 72%, #000000 79%, #000000 87%, #000000 89%, #000000 89%, #000000 100%);
+  background: linear-gradient(170deg, #000000 26%, #100634 44%, #54037e 49%, #FF4433 50%, #A30E00 50%, #bf0000 61%, #000000 72%, #000000 79%, #000000 87%, #000000 89%, #000000 89%, #000000 100%);
   font-weight: 36px;
   display: flex;
   justify-content: center;
@@ -74,10 +74,10 @@ h1 {
 }
 @keyframes glow {
   0% {
-    filter: drop-shadow(0 0 6px #FF4433) drop-shadow(0 0 6px #FF4433);
+    filter: drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 6px #CF33D9);
   }
   50% {
-    filter: drop-shadow(0 0 1px #FF4433) drop-shadow(0 0 1px #FF4433);
+    filter: drop-shadow(0 0 1px #CF33D9) drop-shadow(0 0 1px #CF33D9);
   }
   100% {
     filter: drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 6px #CF33D9);
