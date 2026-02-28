@@ -8,7 +8,7 @@
   --main-color2: #0c182d;
   --neon-purple-color: violet;
   --neon-green-color: lime;
-  --neon-cyan-color: cyan;
+  --neon-cyan-color: red;
   --neon-orange-color: fuchsia;
   --neon-orange2-color: orange;
   --neon-fuchsia-color: #FF00FF ;
@@ -97,6 +97,14 @@ body {
 
 /* Style for the links inside the ticker */
 .credits .fancy-link {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  color: #10ca87;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ .fancy-link {
   font-family: 'Press Start 2P', cursive;
   font-size: 10px;
   color: #10ca87;
