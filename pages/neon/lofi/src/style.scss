@@ -1,0 +1,69 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(170deg, #000000 26%, #100634 44%, #54037e 49%, #a734c7 50%, #7b0093 50%, #8a1f7d 61%, #000000 72%, #000000 79%, #000000 87%, #000000 89%, #000000 89%, #000000 100%);
+  font-weight: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lofi {
+    padding-bottom: 250px;
+    font-size: 4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    // font-family: "Open Sans";
+    font-family: Arial;
+    color: transparent;
+    position: relative;
+    display: block;
+    letter-spacing: -15px;
+    -webkit-transform: rotate(-10deg) skew(-20deg);
+    -ms-transform: rotate(-10deg) skew(-20deg);
+    transform: rotate(-10deg) skew(-20deg);
+    margin-bottom: -36px;
+}
+
+.letter {
+  -webkit-text-stroke: 10px #00ffee;
+    margin-top: -8px;
+    display: inline-block;
+    padding: 0 1px;
+    -webkit-animation: glow 2.5s linear infinite;
+    animation: glow 2.5s linear infinite;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 -10px #c4a300; }
+  40% { box-shadow: 0 0 20px #c4a300; }
+  60% { box-shadow: 0 0 20px #c4a300; }
+  100% { box-shadow: 0 0 -10px #c4a300; }
+}
+
+@keyframes glow {
+  0% {
+      -webkit-filter: drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 6px #CF33D9);
+      filter: drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 6px #CF33D9);
+  }
+  50% {
+      -webkit-filter: drop-shadow(0 0 1px #CF33D9) drop-shadow(0 0 1px #CF33D9);
+      filter: drop-shadow(0 0 1px #CF33D9) drop-shadow(0 0 1px #CF33D9);
+  }
+  100% {
+      -webkit-filter: drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 6px #CF33D9);
+      filter: drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 6px #CF33D9);
+  }
+}
