@@ -26,6 +26,22 @@
         font-family: 'Press Start 2P', cursive;
         font-size: 12px;
       }
+        .grid-container {
+  display: grid;
+  /* Creates 3 columns, each with equal width (1fr) */
+  grid-template-columns: 1fr 1fr 1fr; 
+  /* or grid-template-columns: repeat(3, 1fr); */
+  /* Adds space between grid items */
+  gap: 10px; 
+}
+
+.grid-item {
+  /* Add styling for individual items */
+  padding: 1em;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
       @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
     </style>
 
@@ -111,8 +127,8 @@
             </script>
               
 <div class="grid-container">
-  <div class="grid-item"><a class="fancy-link" href="https://cielriley.bandcamp.com/track/wendyfulldemo">MUSIC</a></div>
-      <div class="grid-item"><a class="fancy-link" href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST">NEON ODYSSEY KICKSTARTER</a></div>
+  <div class="grid-item"><a class="fancy" href="https://cielriley.bandcamp.com/track/wendyfulldemo">MUSIC</a></div>
+      <div class="grid-item"><a class="fancy" href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST">NEON ODYSSEY KICKSTARTER</a></div>
       <div class="grid-item"><a class="fancy-link" href="https://avantris.com">LEGENDS OF AVANTRIS</a>*</div>
       <div class="grid-item"><a class="fancy-link" href="https://github.com/markteekman/neon-signs?tab=readme-ov-file">SOURCE CODE - MARK TEEKMAN</a></div>
       <div class="grid-item"><a class="fancy-link" href="/">HOME</a></div>
