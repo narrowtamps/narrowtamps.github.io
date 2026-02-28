@@ -74,10 +74,10 @@ h1 {
 }
 @keyframes glow {
   0% {
-    filter: drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 6px #CF33D9);
+    filter: drop-shadow(0 0 6px #FF4433) drop-shadow(0 0 6px #FF4433);
   }
   50% {
-    filter: drop-shadow(0 0 1px #CF33D9) drop-shadow(0 0 1px #CF33D9);
+    filter: drop-shadow(0 0 1px #FF4433) drop-shadow(0 0 1px #FF4433);
   }
   100% {
     filter: drop-shadow(0 0 6px #CF33D9) drop-shadow(0 0 6px #CF33D9);
