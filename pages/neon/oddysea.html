@@ -28,6 +28,7 @@
 }
 
 .overlay-div {
+  vertical-align: middle;
     position: absolute; /* Allows for precise positioning over the background div */
     top: 0;
     left: 0;
@@ -35,7 +36,13 @@
     height: 100%;
     /* Add desired overlay styles here */
     background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black overlay */
-      
+    background-image: linear-gradient(
+                to bottom,
+                rgba(64, 64, 64, 1) 0%,   /* Solid at the very top */
+                rgba(64, 64, 64, 0) 10%,  /* Fades to transparent 10% down */
+                rgba(64, 64, 64, 0) 90%,  /* Stays transparent until 90% down */
+                rgba(64, 64, 64, 1) 100%  /* Fades back to solid at the very bottom */
+            );
     color: white;
     z-index: 2; /* Ensures this div appears in front of the background div */
     /* Add styling for content alignment (e.g., flexbox for centering) */
