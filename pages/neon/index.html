@@ -35,7 +35,21 @@
   /* Adds space between grid items */
   gap: 10px; 
 }
+ .fancy-link {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  color: #10ca87;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
+.fancy {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+  color: #10ca87;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 .grid-item {
   /* Add styling for individual items */
   padding: 1em;
@@ -48,7 +62,41 @@
   font-style: normal;
 }
 
+:root {
+  --main-color1: #050b16;
+  --main-color2: #0c182d;
+  --neon-purple-color: violet;
+  --neon-green-color: lime;
+  --neon-cyan-color: red;
+  --neon-orange-color: fuchsia;
+  --neon-orange2-color: orange;
+  --neon-fuchsia-color: #FF00FF ;
+ --neon-magenta-color: magenta;
+  --white: white;
+}
+
+        .credits ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap; /* Keeps everything in one long line */
+  animation: scroll-left 25s linear infinite; /* Adjust '25s' for speed */
+}
+        .colors li button.fuchsia { 
+  background: var(--neon-fuchsia-color); 
+  @include neon-glow-box(#{var(--neon-fuchsia-color)}); // Added #{}
+}
+
+/* Signs */
+.fuchsia-sign { 
+  @include neon-glow-box(#{var(--neon-fuchsia-color)}); // Added #{}
+}
+
+        
       @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+   
+    
     </style>
 
     <!-- javascript -->
