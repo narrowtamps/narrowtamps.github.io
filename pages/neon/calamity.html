@@ -1,1 +1,95 @@
 
+<head>
+    <style>
+/* General body styling to remove margins */
+body {
+    margin: 0;
+    background-color: #000; /* Black background behind the screen */
+}
+
+/* The main CRT container */
+.crt {
+    /* Green color scheme */
+    color: #00ff00; /* Bright green text */
+    background-color: #0a0a0a; /* Very dark background */
+    font-family: "Courier New", monospace; /* Classic monospace font */
+    font-size: 16px;
+    padding: 20px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Glowing text effect */
+.crt .terminal-content {
+    text-shadow: 0 0 5px #00ff00, 0 0 2px #00ff00, 0 0 1px #00ff00; /* Subtle glow */
+}
+
+/* Scan lines effect using ::before pseudo-element */
+.crt::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+    background-size: 100% 2px; /* Controls the height of the scan lines */
+    z-index: 2;
+    pointer-events: none; /* Allows interaction with content underneath */
+}
+
+/* Flicker effect using ::after pseudo-element and animation */
+.crt::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(18, 16, 16, 0.1);
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    animation: flicker 0.15s infinite; /* Rapid, infinite flicker animation */
+}
+
+/* Keyframes for the random flicker animation */
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    5% { opacity: 0.8; }
+    10% { opacity: 1; }
+    15% { opacity: 0.95; }
+    20% { opacity: 1; }
+    25% { opacity: 0.9; }
+    30% { opacity: 1; }
+    35% { opacity: 0.97; }
+    40% { opacity: 1; }
+    45% { opacity: 0.9; }
+    50% { opacity: 1; }
+    55% { opacity: 0.85; }
+    60% { opacity: 1; }
+    65% { opacity: 0.92; }
+    70% { opacity: 1; }
+    75% { opacity: 0.98; }
+    80% { opacity: 1; }
+    85% { opacity: 0.87; }
+    90% { opacity: 1; }
+    95% { opacity: 0.93; }
+}
+</style>
+    
+</head>
+<body>
+    <div class="crt">
+        <div class="terminal-content">
+            <!-- Your content goes here (e.g., text, images) -->
+            <p>Calamity!</p>
+            <p>a one-shot run by treefrog</p>
+          <p>Even when space is your day job, it's still dangerous...</p>
+        </div>
+    </div>
+</body>
