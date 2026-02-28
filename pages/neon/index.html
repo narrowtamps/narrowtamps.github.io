@@ -46,6 +46,14 @@
 .fancy {
   font-family: 'Press Start 2P', cursive;
   font-size: 10px;
+  
+  text-decoration: none;
+  text-transform: uppercase;
+}
+        /* Style for the links inside the ticker */
+.credits .fancy-link {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
   color: #10ca87;
   text-decoration: none;
   text-transform: uppercase;
@@ -90,6 +98,15 @@
  --neon-magenta-color: magenta;
   --white: white;
 }
+        
+@mixin neon-glow-text($color: currentColor) {
+  color: #fff;
+  text-shadow: 0 0 0.033em #fff, 0 0 0.08em #fff, 0 0 0.1em $color, 0 0 0.2em $color, 0 0 0.3em $color, 0 0 1em $color, 0 0 1.5em $color;
+}
+
+@mixin neon-glow-box($color: currentColor) {
+  box-shadow: 0 0 0.033em #fff, 0 0 0.08em #fff, 0 0 0.1em $color, 0 0 0.2em $color, 0 0 0.3em $color, 0 0 1em $color, 0 0 1.5em $color, inset 0 0 0.1em $color, inset 0 0 0.2em $color, inset 0 0 0.3em $color, inset 0 0 1em $color, inset 0 0 1.5em $color;
+}
 
         .credits ul {
   display: flex;
@@ -99,6 +116,12 @@
   white-space: nowrap; /* Keeps everything in one long line */
   animation: scroll-left 25s linear infinite; /* Adjust '25s' for speed */
 }
+/* The Scrolling Animation */
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+        
         .colors li button.fuchsia { 
   background: var(--neon-fuchsia-color); 
   @include neon-glow-box(#{var(--neon-fuchsia-color)}); // Added #{}
@@ -198,14 +221,14 @@
               <span class="fancy" style="color: white;" i>*we aren't affiliated with them, no need for Noah</i>
          -->
               <!-- Credits List -->
-            <div class="credits" ul>
+            <div class="credits">< ul>
                 
                     <li><a class="fancy-link" href="https://cielriley.bandcamp.com/track/wendyfulldemo">MUSIC</a></li>
                     <li><a class="fancy-link" href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST">NEON ODYSSEY KICKSTARTER</a>  <a class="fancy-link" href="https://avantris.com">LEGENDS OF AVANTRIS</a>*</li>
                     <li><a class="fancy-link" href="https://github.com/markteekman/neon-signs?tab=readme-ov-file">SOURCE CODE - MARK TEEKMAN</a></li>
                     <li><a class="fancy-link" href="/">HOME</a></li>                        
                 
-                <li><span class="fancy" style="color: white;" i>*we aren't affiliated with them, no need for Noah</i></li>
+            </ul>     <li><span class="fancy" style="color: white;" i>*we aren't affiliated with them, no need for Noah</i></li>
             </div>
 <div id="footer-placeholder"></div>
 
