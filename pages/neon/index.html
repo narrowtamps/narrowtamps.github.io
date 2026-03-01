@@ -100,7 +100,11 @@
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }
 }
-        
+  @keyframes scroll-left {
+  0% { transform: translateX(100vw); } /* Use viewport width */
+  100% { transform: translateX(-100%); }
+}
+      
         .colors li button.fuchsia { 
   background: var(--neon-fuchsia-color); 
   @include neon-glow-box(#{var(--neon-fuchsia-color)}); // Added #{}
@@ -121,6 +125,20 @@ body, html {
   height: 100%;
   display: flex;
   flex-direction: column;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents the horizontal scrollbar */
+  width: 100%;
+}
+
+.credits {
+  width: 100%;
+  overflow: hidden; /* Clips the ticker so it doesn't push the page width */
+  opacity: 0;
+  animation: fade-in 1s 2s forwards;
+  margin-top: 60px;
 }
 
 /* The main wrapper that centers everything */
