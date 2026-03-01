@@ -94,19 +94,50 @@
   padding: 0;
   margin: 0;
   white-space: nowrap; /* Keeps everything in one long line */
-  animation: scroll-left 25s linear infinite; /* Adjust '25s' for speed */
+  
 }
-
+        .s1 {
+            animation: scroll-left 25s linear infinite; /* Adjust '25s' for speed */
+        }
+.s2 {
+            animation: scroll-left2 25s linear infinite; /* Adjust '25s' for speed */
+        }
+.s3{
+            animation: scroll-left3 25s linear infinite; /* Adjust '25s' for speed */
+        }
+   .s4 {
+            animation: scroll-left4 25s linear infinite; /* Adjust '25s' for speed */
+        }     
+        
+        .s5 {
+            animation: scroll-left5 25s linear infinite; /* Adjust '25s' for speed */
+        }
+        .s6 {
+            animation: scroll-left6 25s linear infinite; /* Adjust '25s' for speed */
+        }
+        
   @keyframes scroll-left {
-  0% { transform: translateX(100vw); } /* Use viewport width */
+  0% { transform: translateX(50vw); } /* Use viewport width */
   100% { transform: translateX(-100%); }
 }
           @keyframes scroll-left2 {
-  0% { transform: translateX(110vw); } /* Use viewport width */
+  0% { transform: translateX(80vw); } /* Use viewport width */
   100% { transform: translateX(-100%); }
 }
           @keyframes scroll-left3 {
-  10% { transform: translateX(100vw); } /* Use viewport width */
+  0% { transform: translateX(110vw); } /* Use viewport width */
+  100% { transform: translateX(-100%); }
+}
+                  @keyframes scroll-left4 {
+  0% { transform: translateX(100vw); } /* Use viewport width */
+  100% { transform: translateX(-100%); }
+}
+                  @keyframes scroll-left5 {
+  0% { transform: translateX(130vw); } /* Use viewport width */
+  100% { transform: translateX(-100%); }
+}
+                  @keyframes scroll-left6 {
+  0% { transform: translateX(160vw); } /* Use viewport width */
   100% { transform: translateX(-100%); }
 }
       
@@ -151,11 +182,11 @@ body {
   
   place-items: center; /* Centers items horizontally AND vertically */
   min-height: 80vh;    /* Ensures there is vertical space to center within */
-  
+  padding:20px;
   width: 100%;
   box-sizing: border-box;
-    display: flex
-    justify-content: center
+    display: flex;
+    justify-content: center;
 }
 
 /* Responsive Grid for the links/items */
