@@ -10,24 +10,24 @@
     <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
 <link rel="stylesheet" href="lofi/dist/style.css">
 <style>
-  .lofi-text {
- 
-  font-size: 1em;
-  font-weight: bold;
-  font-family: Arial;
-  color: transparent;
-  position: relative;
-  display: block;
-  letter-spacing: -15px;
-  margin-bottom: -36px;
-}
   .grid-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* First row 200px tall, second row automatically sized by content */
-  grid-template-rows: 200px auto; 
-  gap: 20px;
+  /* Use 'auto' so rows expand to fit your content */
+  grid-template-rows: auto auto; 
+  gap: 40px; /* Space between title and text */
+  width: 80%; /* Don't let it hit the screen edges */
 }
+
+.lofi-text {
+  font-size: 1.2em;
+  font-family: Arial, sans-serif;
+  color: white; /* Changed from transparent to visible */
+  line-height: 1.6;
+  /* REMOVED: letter-spacing: -15px (This was causing the overlap) */
+  /* REMOVED: margin-bottom: -36px (This was pulling rows together) */
+}
+
 </style>
   </head>
     
