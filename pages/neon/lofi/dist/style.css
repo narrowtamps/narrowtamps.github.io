@@ -8,9 +8,11 @@
   align-items: center;
 }
 
+
 .lofi {
+  font-size: clamp(4em, 20vw, 180px);
  font-weight: 36px;
-  font-size: 4em;
+  
   text-transform: uppercase;
   font-weight: bold;
   font-family: Arial;
