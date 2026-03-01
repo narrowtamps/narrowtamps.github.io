@@ -2,6 +2,7 @@
 <html lang="nl" dir="ltr">
 <head>
     <meta charset="utf-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -139,12 +140,14 @@ body {
 
 /* The main wrapper that centers everything */
 .container {
-  display: grid;
+  
   place-items: center; /* Centers items horizontally AND vertically */
   min-height: 80vh;    /* Ensures there is vertical space to center within */
-  padding: 20px;
+  
   width: 100%;
   box-sizing: border-box;
+    display: flex
+    justify-content: center
 }
 
 /* Responsive Grid for the links/items */
@@ -256,11 +259,12 @@ body {
               <!-- Credits List -->
             <div class="credits"><ul>
                 
-                    <a class="fancy-link" href="https://cielriley.bandcamp.com/track/wendyfulldemo">MUSIC</a>      
-                    <a class="fancy-link" href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST">NEON ODYSSEY KICKSTARTER</a>      <span class="fancy" style="color: white;" i>*we aren't affiliated with them, no need for Noah</i>
-                        <a class="fancy-link" href="https://avantris.com">LEGENDS OF AVANTRIS</a>*
-                    <a class="fancy-link" href="https://github.com/markteekman/neon-signs?tab=readme-ov-file">SOURCE CODE - MARK TEEKMAN</a>      
-                    <a class="fancy-link" href="/">HOME</a>                        
+                  <a class="fancy-link" href="/">HOME</a>      <a class="fancy-link" href="https://cielriley.bandcamp.com/track/wendyfulldemo">MUSIC</a>    <a class="fancy-link" href="https://github.com/markteekman/neon-signs?tab=readme-ov-file">NEON SIGN CODE</a>  
+                                      <a class="fancy-link" href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST">NEON ODYSSEY KICKSTARTER</a>       <a class="fancy-link" href="https://avantris.com">LEGENDS OF AVANTRIS</a>*
+                <span class="fancy" style="color: white;" i>*we aren't affiliated with them, no need for Noah</i>
+                       
+                          
+                                         
                 
             </ul>     
             </div>
