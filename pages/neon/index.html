@@ -179,17 +179,18 @@ body {
 
 /* The main wrapper that centers everything */
 .container {
-  
-  place-items: center; /* Centers items horizontally AND vertically */
-  min-height: 80vh;    /* Ensures there is vertical space to center within */
-  padding:20px;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 20px; /* This creates the inner 'border' gap */
   width: 100%;
-    margin-left:20px;
-    margin-right:20px;
-  box-sizing: border-box;
-    display: flex;
-    justify-content: center;
+  box-sizing: border-box; /* This is crucial: it keeps padding inside the 100% width */
+  
+  /* REMOVE THESE: */
+  /* margin-left: 20px; */
+  /* margin-right: 20px; */
 }
+
 
 /* Responsive Grid for the links/items */
 .grid-container {
