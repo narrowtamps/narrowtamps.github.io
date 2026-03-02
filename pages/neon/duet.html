@@ -12,26 +12,29 @@
 <style>
   .grid-container {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  /* Use 'auto' so rows expand to fit your content */
-  grid-template-rows: auto auto; 
-  gap: 40px; /* Space between title and text */
-  width: 80%; /* Don't let it hit the screen edges */
+  /* MOBILE DEFAULT: 1 column stack */
+  grid-template-columns: 1fr; 
+  gap: 20px; 
+  width: 90%;
+  margin: 0 auto; /* Center the container */
 }
-  @media (min-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    }
+
+@media (min-width: 768px) {
+  .grid-container {
+    /* DESKTOP: 2 columns side-by-side */
+    grid-template-columns: 2fr 1fr; 
+    gap: 40px;
+    width: 80%;
+  }
 }
 
 .lofi-text {
   font-size: 1.2em;
   font-family: Arial, sans-serif;
-  color: white; /* Changed from transparent to visible */
+  color: white;
   line-height: 1.6;
-  /* REMOVED: letter-spacing: -15px (This was causing the overlap) */
-  /* REMOVED: margin-bottom: -36px (This was pulling rows together) */
 }
+
 
 </style>
   </head>
