@@ -22,7 +22,7 @@ body {
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
-     animation: flicker 0.15s infinite;
+     animation: flicker2 0.15s infinite;
 }
 
 /* Glowing text effect */
@@ -83,6 +83,28 @@ body {
     85% { opacity: 0.87; }
     90% { opacity: 1; }
     95% { opacity: 0.93; }
+}
+        @keyframes flicker2 {
+    0%, 100% { opacity: 1; }
+    5% { opacity: 0.99; }
+    10% { opacity: 1; }
+    15% { opacity: 0.98; }
+    20% { opacity: 99; }
+    25% { opacity: 0.1; }
+    30% { opacity: 1; }
+    35% { opacity: 0.97; }
+    40% { opacity: 1; }
+    45% { opacity: 0.99; }
+    50% { opacity: 1; }
+    55% { opacity: 0.98; }
+    60% { opacity: 1; }
+    65% { opacity: 0.99; }
+    70% { opacity: 1; }
+    75% { opacity: 0.98; }
+    80% { opacity: 1; }
+    85% { opacity: 0.97; }
+    90% { opacity: 1; }
+    95% { opacity: 0.99; }
 }
         .screen {
   position: relative;
