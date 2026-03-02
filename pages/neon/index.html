@@ -88,7 +88,7 @@
   margin: 0;
   gap: 100px; /* Big gap between items */
   width: max-content; /* Vital: fits the long line of text */
-  animation: ticker-scroll 40s linear infinite; /* Slower speed */
+  animation: ticker-scroll 20s linear infinite; /* Slower speed */
 }
 
 /* 3. Pause on Hover */
@@ -98,7 +98,7 @@
 
 /* 4. The Animation: Starts at the edge of the screen */
 @keyframes ticker-scroll {
-  0% { transform: translateX(10px); }   /* Start at the right edge of the screen */
+  0% { transform: translateX(100%); }   /* Start at the right edge of the screen */
   100% { transform: translateX(-100%); } /* End once the tail of the text leaves the left */
 }
 
