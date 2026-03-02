@@ -18,6 +18,11 @@
   gap: 40px; /* Space between title and text */
   width: 80%; /* Don't let it hit the screen edges */
 }
+  @media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    }
+}
 
 .lofi-text {
   font-size: 1.2em;
