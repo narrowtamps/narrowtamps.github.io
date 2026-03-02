@@ -34,6 +34,25 @@
   color: white;
   line-height: 1.6;
 }
+  .lofi h1 {
+  /* 1. Prevent wrapping to a new line */
+  white-space: nowrap; 
+  
+  /* 2. Fluid font size: 
+     Min: 1.5rem (small mobile)
+     Ideal: 8vw (8% of screen width)
+     Max: 4rem (large desktop) */
+  font-size: clamp(1.5rem, 8vw, 4rem); 
+  
+  /* Optional: align it if needed */
+  margin: 0;
+}
+
+/* Ensure the individual letters don't force blocks */
+.letter {
+  display: inline-block;
+}
+
 
 
 </style>
