@@ -11,7 +11,7 @@
 
 .lofi {
   font-size: clamp(20px, 4em, 6em);
- font-weight: 36px;
+ 
   
   text-transform: uppercase;
   font-weight: bold;
