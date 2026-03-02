@@ -10,7 +10,7 @@
 
 
 .lofi {
-  font-size: clamp(4em, 20vw, 180px);
+  font-size: clamp(1em, 4em, 6em);
  font-weight: 36px;
   
   text-transform: uppercase;
