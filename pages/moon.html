@@ -7,6 +7,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌕</text></svg>">
   
   <style>
+    .music-container { display: flex; justify-content: center; margin: 20px 0; width: 100%; }
     /* 1. Reset and Lock Background */
     html, body {
       background: rgba(211, 211, 211, 1); /* Light Gray RGBA */
@@ -82,10 +83,28 @@
 
   <!-- Main Content -->
   <div class="content-container">
+     <div class="music-container">
+          <button  data-color="orange2" aria-label="Music?" onclick="toggleAction()">🎶</button>
+       </div>
     <h1>Consumed by the Blood Moon</h1>
     <p>DMed by Kenny, players: blue, bread, echoeypie, harley, kim, treefrog</p>
   </div>
+<audio id="myAudio" src="carlow.mp3" loop></audio>
 
+            <script>
+    
+              const audio = document.getElementById("myAudio");
+              let isActive = false;
+              function toggleAction() {
+                isActive = !isActive;
+                if (isActive) { audio.play(); } 
+                else { audio.pause(); audio.currentTime = 0; }
+              }
+                
+
+                
+                
+            </script>
   <!-- Shared Footer -->
   <div id="footer-placeholder"></div>
 
