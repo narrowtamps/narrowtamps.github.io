@@ -66,68 +66,42 @@
 }
 
 
+/* 1. The Container: Clips the text and spans the full screen */
+.credits {
+  width: 100%;
+  overflow: hidden; 
+  white-space: nowrap;
+  opacity: 0;
+  animation: fade-in 1s 2s forwards;
+  margin-top: 60px;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  padding: 15px 0;
+}
 
-      /* The actual scrolling line */
+/* 2. The List: Use Row direction and Flex */
 .credits ul {
   display: flex;
-  flex-direction: row; /* Puts items side-by-side */
-  gap: 100px;           /* Large gap between links */
+  flex-direction: row;
   list-style: none;
   padding: 0;
   margin: 0;
-  white-space: nowrap;
-  width: max-content;
-  animation: ticker-move 30s linear infinite; /* One single animation */
+  gap: 100px; /* Big gap between items */
+  width: max-content; /* Vital: fits the long line of text */
+  animation: ticker-scroll 40s linear infinite; /* Slower speed */
 }
 
-@keyframes ticker-move {
-  0% { transform: translateX(100vw); }
+/* 3. Pause on Hover */
+.credits:hover ul {
+  animation-play-state: paused;
+}
+
+/* 4. The Animation: Starts at the edge of the screen */
+@keyframes ticker-scroll {
+  0% { transform: translateX(100vw); } 
   100% { transform: translateX(-100%); }
 }
-        .s1 {
-            animation: scroll-left 25s linear infinite; /* Adjust '25s' for speed */
-        }
-.s2 {
-            animation: scroll-left2 25s linear infinite; /* Adjust '25s' for speed */
-        }
-.s3{
-            animation: scroll-left3 25s linear infinite; /* Adjust '25s' for speed */
-        }
-   .s4 {
-            animation: scroll-left4 25s linear infinite; /* Adjust '25s' for speed */
-        }     
-        
-        .s5 {
-            animation: scroll-left5 25s linear infinite; /* Adjust '25s' for speed */
-        }
-        .s6 {
-            animation: scroll-left6 25s linear infinite; /* Adjust '25s' for speed */
-        }
-        
-  @keyframes scroll-left {
-  0% { transform: translateX(50vw); } /* Use viewport width */
-  100% { transform: translateX(-150%); }
-}
-          @keyframes scroll-left2 {
-  0% { transform: translateX(80vw); } /* Use viewport width */
-  100% { transform: translateX(-130%); }
-}
-          @keyframes scroll-left3 {
-  0% { transform: translateX(110vw); } /* Use viewport width */
-  100% { transform: translateX(-100%); }
-}
-                  @keyframes scroll-left4 {
-  0% { transform: translateX(100vw); } /* Use viewport width */
-  100% { transform: translateX(-100%); }
-}
-                  @keyframes scroll-left5 {
-  0% { transform: translateX(130vw); } /* Use viewport width */
-  100% { transform: translateX(-100%); }
-}
-                  @keyframes scroll-left6 {
-  0% { transform: translateX(160vw); } /* Use viewport width */
-  100% { transform: translateX(-100%); }
-}
+
       
         .colors li button.fuchsia { 
   background: var(--neon-fuchsia-color); 
@@ -149,21 +123,13 @@ body, html {
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-body {
-  margin: 0;
-  padding: 0;
+
+ 
   overflow-x: hidden; /* Prevents the horizontal scrollbar */
   width: 100%;
 }
 
-.credits {
-  width: 100%;
-  overflow: hidden; /* Clips the ticker so it doesn't push the page width */
-  opacity: 0;
-  animation: fade-in 1s 2s forwards;
-  margin-top: 60px;
-}
+
 
 
 
