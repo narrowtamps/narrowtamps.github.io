@@ -68,6 +68,29 @@
   font-weight: <weight>;
   font-style: normal;
 }
+  @media (min-width: 1024px) {
+  .container {
+    flex-direction: row; /* Side-by-side */
+  }
+
+  .background-div {
+    flex: 1; /* Takes remaining 66% */
+    height: 100vh; /* Full height on desktop */
+    order: 2; /* Move background to the right */
+  }
+
+  .overlay-div {
+    width: 33.33%; /* Fixed 33% sidebar */
+    height: 100vh;
+    order: 1; /* Text on the left */
+    background: #111; /* Darken sidebar for contrast */
+  }
+
+  .text-box {
+    text-align: left;
+    font-size: 28px;
+  }
+}
 </style>
   </head>
     
