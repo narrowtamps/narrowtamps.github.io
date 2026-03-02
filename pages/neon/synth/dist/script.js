@@ -31,7 +31,7 @@ let drawLine = (x1, y1, x2, y2) => {
 let drawSun = (x, y, r) => {
 	c.fillStyle = c.createLinearGradient(x, y - r, x, y + r)
   c.fillStyle.addColorStop(0.1, "#99d600")
-  c.fillStyle.addColorStop(0.8, "#722391")
+  c.fillStyle.addColorStop(0.8, "#0e453e")
   
   c.beginPath()
   c.arc(x, y, r, 0, Math.PI * 2)
