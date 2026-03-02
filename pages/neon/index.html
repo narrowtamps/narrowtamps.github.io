@@ -67,15 +67,22 @@
 
 
 
-        .credits ul {
+      /* The actual scrolling line */
+.credits ul {
   display: flex;
-    flex-direction: row;
-            gap:50;
+  flex-direction: row; /* Puts items side-by-side */
+  gap: 100px;           /* Large gap between links */
   list-style: none;
   padding: 0;
   margin: 0;
-  white-space: nowrap; /* Keeps everything in one long line */
-  
+  white-space: nowrap;
+  width: max-content;
+  animation: ticker-move 30s linear infinite; /* One single animation */
+}
+
+@keyframes ticker-move {
+  0% { transform: translateX(100vw); }
+  100% { transform: translateX(-100%); }
 }
         .s1 {
             animation: scroll-left 25s linear infinite; /* Adjust '25s' for speed */
@@ -277,7 +284,7 @@ body {
                       <a class="fancy-link" href="https://github.com/markteekman/neon-signs?tab=readme-ov-file">NEON SIGN CODE</a>&#9;&#9;
                       <a class="fancy-link" href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST">NEON ODYSSEY KICKSTARTER</a>&#9;&#9;
                       <a class="fancy-link" href="https://avantris.com">LEGENDS OF AVANTRIS</a>*&#9;&#9;
-                <i style="color: white;">*we aren't affiliated with them, no need for Noah</i>
+                <i class="fancy-text" style="color: white;">*we aren't affiliated with them, no need for Noah</i>
                 
                 </span>
                        
