@@ -98,8 +98,8 @@
 
 /* 4. The Animation: Starts at the edge of the screen */
 @keyframes ticker-scroll {
-  0% { transform: translateX(0); } /* Start inside the box */
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(100%); }   /* Start at the right edge of the screen */
+  100% { transform: translateX(-100%); } /* End once the tail of the text leaves the left */
 }
 
       
