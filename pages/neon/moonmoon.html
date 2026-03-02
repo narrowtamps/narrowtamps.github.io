@@ -15,7 +15,6 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden; /* Keeps the crop clean */
  
 }
 
@@ -68,10 +67,11 @@ body, html {
   transform: translateY(-40%); 
 }
 
-/* DESKTOP SETTINGS */
+
 @media (min-width: 768px) {
   .container {
     height: 100vh; /* Full height on desktop */
+    justify-content:flex;
   }
   
   .text-box {
