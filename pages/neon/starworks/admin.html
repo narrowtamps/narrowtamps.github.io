@@ -1,14 +1,65 @@
-import { getDatabase, ref, set, push } from "https://www.gstatic.com";
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin - Update Site</title>
+</head>
+<body>
+    <h2>Admin Control Panel</h2>
+    
+    <input type="password" id="admin_pass" placeholder="Enter Admin Password"><br><br>
+    
+    <input type="text" id="session_name" placeholder="Session Name (e.g. Session 1)"><br><br>
+    
+    <textarea id="message" placeholder="Type message here..." rows="5"></textarea><br><br>
+    
+    <button id="send_btn">Push Update to All Users</button>
 
-async function sendUpdate() {
-    const name = document.getElementById('session_name').value;
-    const msg = document.getElementById('message').value;
+    <!-- FIREBASE SDKS -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com";
+        import { getDatabase, ref, set, push } from "https://www.gstatic.com";
 
-    // Save as the 'Current' view everyone sees
-    await set(ref(db, 'current'), { name: name, message: msg });
+        // REPLACE THIS with your actual Firebase config from the console
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_PROJECT.firebaseapp.com",
+            databaseURL: "https://YOUR_PROJECT.firebaseio.com",
+            projectId: "YOUR_PROJECT",
+            storageBucket: "YOUR_PROJECT.appspot.com",
+            messagingSenderId: "YOUR_ID",
+            appId: "YOUR_APP_ID"
+        };
 
-    // Add to 'History' collection so it can be flipped through later
-    await push(ref(db, 'history'), { name: name, message: msg });
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
 
-    alert("Pushed to all users!");
-}
+        // Simple local password check (Change "1234" to your choice)
+        const MASTER_PASSWORD = "1234";
+
+        document.getElementById('send_btn').addEventListener('click', async () => {
+            const pass = document.getElementById('admin_pass').value;
+            const name = document.getElementById('session_name').value;
+            const msg = document.getElementById('message').value;
+
+            if (pass !== MASTER_PASSWORD) {
+                alert("Incorrect Password!");
+                return;
+            }
+
+            try {
+                // Update the "Live" view
+                await set(ref(db, 'current'), { name: name, message: msg });
+
+                // Add to the "History" list
+                await push(ref(db, 'history'), { name: name, message: msg });
+
+                alert("Success! Everyone's screen just updated.");
+            } catch (error) {
+                console.error(error);
+                alert("Error updating: " + error.message);
+            }
+        });
+    </script>
+</body>
+</html>
