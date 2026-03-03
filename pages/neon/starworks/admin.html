@@ -1,0 +1,14 @@
+import { getDatabase, ref, set, push } from "https://www.gstatic.com";
+
+async function sendUpdate() {
+    const name = document.getElementById('session_name').value;
+    const msg = document.getElementById('message').value;
+
+    // Save as the 'Current' view everyone sees
+    await set(ref(db, 'current'), { name: name, message: msg });
+
+    // Add to 'History' collection so it can be flipped through later
+    await push(ref(db, 'history'), { name: name, message: msg });
+
+    alert("Pushed to all users!");
+}
