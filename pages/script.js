@@ -46,7 +46,6 @@ document.getElementById('footer-placeholder').innerHTML = `
         <a href="https://www.narrowtamps.com/index.html">Home</a>
         <a href="https://www.narrowtamps.com/pages/campaigns.html">Campaigns</a>
         <a href="https://www.narrowtamps.com/pages/socials.html">Socials</a>
-            
             <a href="https://www.narrowtamps.com/about.html">About</a>
             <a href="https://www.narrowtamps.com/fish.html">Fish</a>
            
