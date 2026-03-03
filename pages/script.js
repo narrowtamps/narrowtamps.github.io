@@ -42,10 +42,10 @@ document.getElementById('footer-placeholder').innerHTML = `
     <p></p>
     &copy; 2026 The Narrow Tamps. All rights reserved.
     <div class="footer-links">
-        <a href="www.narrowtamps.com/pages/campaigns.html">Campaigns</a>
-            <a href="www.narrowtamps.com/pages/socials.html">Socials</a>
-            <a href="www.narrowtamps.com/index.html">Home</a>
-            <a href="www.narrowtamps.com/fish.html">Fish</a>
+        <a href="https://www.narrowtamps.com/pages/campaigns.html">Campaigns</a>
+            <a href="https://www.narrowtamps.com/pages/socials.html">Socials</a>
+            <a href="https://www.narrowtamps.com/index.html">Home</a>
+            <a href="https://www.narrowtamps.com/fish.html">Fish</a>
            
     </div>
 </footer>`;
