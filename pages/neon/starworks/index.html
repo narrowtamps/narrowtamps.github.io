@@ -1,0 +1,38 @@
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com";
+  import { getDatabase, ref, onValue, get } from "https://www.gstatic.com";
+
+  // PASTE YOUR FIREBASE CONFIG HERE
+  const firebaseConfig = { ... }; 
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+
+  // 1. Listen for LIVE updates on the "current" node
+  onValue(ref(db, 'current'), (snapshot) => {
+    const data = snapshot.val();
+    if (data) {
+      document.getElementById('display').innerText = data.message;
+      document.getElementById('session-title').innerText = data.name;
+    }
+  });
+
+  // 2. Function to "Flip Through" history
+  window.loadHistory = async () => {
+    const snapshot = await get(ref(db, 'history'));
+    const history = snapshot.val();
+    const list = document.getElementById('history-list');
+    list.innerHTML = Object.values(history).map(item => 
+      `<button onclick="viewOld('${item.name}', '${item.message}')">${item.name}</button>`
+    ).join(' ');
+  };
+
+  window.viewOld = (name, msg) => {
+    document.getElementById('display').innerText = msg;
+    document.getElementById('session-title').innerText = name + " (Archive)";
+  };
+</script>
+
+<h1 id="session-title">Waiting...</h1>
+<div id="display" style="border: 2px solid blue; padding: 20px;"></div>
+<button onclick="loadHistory()">View Session History</button>
+<div id="history-list"></div>
