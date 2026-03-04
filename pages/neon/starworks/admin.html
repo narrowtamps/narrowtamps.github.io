@@ -12,46 +12,10 @@
     
     <textarea id="message" placeholder="Type message here..." rows="5"></textarea><br><br>
     <!-- Ensure your button looks exactly like this -->
-<button id="send_btn">Push Update</button>
+<button onclick="myFunction()">Click Me</button>
 
-
-
-
-        <script type="module" crossorigin="anonymous">
-  import { initializeApp } from "https://www.gstatic.com";
-  import { getDatabase, ref, set, push } from "https://www.gstatic.com";
-
- const firebaseConfig = {
-  apiKey: "AIzaSyB86jNHj0pT_GmxZ-3mPOXOJiRr-QLEqSA",
-  authDomain: "test-608eb.firebaseapp.com",
-  projectId: "test-608eb",
-  storageBucket: "test-608eb.firebasestorage.app",
-  messagingSenderId: "649362329355",
-  appId: "1:649362329355:web:cbac23cadf9e25e7f35c0e"
-};;
-
-  const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app);
-
-  // Directly attach the click event to the button by its ID
-  const btn = document.getElementById('send_btn');
-  
-  btn.addEventListener('click', async () => {
-    console.log("Button recognized the click!"); // This proves the connection works
-    
-    const name = document.getElementById('session_name').value;
-    const msg = document.getElementById('message').value;
-
-    try {
-      await set(ref(db, 'current'), { name, message: msg });
-      await push(ref(db, 'history'), { name, message: msg });
-      alert("Sent Successfully!");
-    } catch (e) {
-      console.error("Firebase Error:", e);
-      alert("Error: " + e.message);
-    }
-  });
-</script>
+    <!-- Link your external JavaScript file -->
+    <script src="check.js"></script>
 
 
 </body>
