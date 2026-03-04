@@ -12,7 +12,8 @@
     
     <textarea id="message" placeholder="Type message here..." rows="5"></textarea><br><br>
     <!-- Ensure your button looks exactly like this -->
-<button onclick="pushUpdate()">Push Update</button>
+<button id="send_btn">Push Update</button>
+
 
 
 
@@ -20,37 +21,33 @@
   import { initializeApp } from "https://www.gstatic.com";
   import { getDatabase, ref, set, push } from "https://www.gstatic.com";
 
-  const firebaseConfig = {
-  apiKey: "AIzaSyB86jNHj0pT_GmxZ-3mPOXOJiRr-QLEqSA",
-  authDomain: "test-608eb.firebaseapp.com",
-  projectId: "test-608eb",
-  storageBucket: "test-608eb.firebasestorage.app",
-  messagingSenderId: "649362329355",
-  appId: "1:649362329355:web:cbac23cadf9e25e7f35c0e"
-};
+  const firebaseConfig = { 
+    /* PASTE YOUR KEYS HERE */ 
+  };
 
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
 
-  // CRITICAL: Attach to 'window' so the button can find it
-  window.pushUpdate = async () => {
-    const passInput = document.getElementById('admin_pass').value;
+  // Directly attach the click event to the button by its ID
+  const btn = document.getElementById('send_btn');
+  
+  btn.addEventListener('click', async () => {
+    console.log("Button recognized the click!"); // This proves the connection works
+    
     const name = document.getElementById('session_name').value;
     const msg = document.getElementById('message').value;
 
-    // Even if testing without a password, use a console log to verify it's firing
-    console.log("Attempting to push:", name);
-
     try {
-      await set(ref(db, 'current'), { name: name, message: msg });
-      await push(ref(db, 'history'), { name: name, message: msg });
-      alert("Success!");
+      await set(ref(db, 'current'), { name, message: msg });
+      await push(ref(db, 'history'), { name, message: msg });
+      alert("Sent Successfully!");
     } catch (e) {
       console.error("Firebase Error:", e);
-      alert("Database error: " + e.message);
+      alert("Error: " + e.message);
     }
-  };
+  });
 </script>
+
 
 </body>
 </html>
