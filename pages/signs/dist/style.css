@@ -240,7 +240,7 @@ html,
     color: #A9FFDC;
     text-shadow: 
       .1vw 0vw .25vw #A9FFDC, .2vw 0vw .25vw #A9FFDC, .4vw 0vw .25vw #A9FFDC, 
-      .1vw 0vw 1vw #4DF0B0, .2vw 0vw 2vw #4DF0B0, .4vw 0vw 5vw #4DF0B0;
+      .1vw 0vw 1vw ##7cf7c5, .2vw 0vw 2vw ##7cf7c5, .4vw 0vw 5vw #4DF0B0;
   }
   50% {
     transform: translateZ(0);
