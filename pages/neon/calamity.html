@@ -22,6 +22,7 @@ body {
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
+     animation: flicker2 0.15s infinite;
 }
 
 /* Glowing text effect */
@@ -83,6 +84,224 @@ body {
     90% { opacity: 1; }
     95% { opacity: 0.93; }
 }
+        @keyframes flicker2 {
+    0%, 100% { opacity: 1; }
+    5% { opacity: 0.99; }
+    10% { opacity: 1; }
+    15% { opacity: 0.98; }
+    20% { opacity: 99; }
+    25% { opacity: 0.1; }
+    30% { opacity: 1; }
+    35% { opacity: 0.97; }
+    40% { opacity: 1; }
+    45% { opacity: 0.99; }
+    50% { opacity: 1; }
+    55% { opacity: 0.98; }
+    60% { opacity: 1; }
+    65% { opacity: 0.99; }
+    70% { opacity: 1; }
+    75% { opacity: 0.98; }
+    80% { opacity: 1; }
+    85% { opacity: 0.97; }
+    90% { opacity: 1; }
+    95% { opacity: 0.99; }
+}
+        .screen {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 96vw;
+  height: 96vh;
+  padding: 1em;
+  overflow: hidden;
+  color: #14fdce;
+  background: #031e11;
+  border-radius: 1em;
+  box-shadow: inset 0 0 1em 0 #010b06;
+}
+        .screen::before, .screen::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+.screen::before {
+  background: linear-gradient(to bottom, rgba(30, 30, 30, 0.2), rgba(30, 30, 30, 0.2) 50%, rgba(30, 30, 30, 0.4) 50%, rgba(30, 30, 30, 0.4));
+  background-size: 100% 2px;
+}
+.screen::after {
+  opacity: 0;
+  background: rgba(18, 16, 16, 0.1);
+  -webkit-animation: flicker 0.2s infinite;
+          animation: flicker 0.2s infinite;
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0.7947204493;
+  }
+  4% {
+    opacity: 0.1402644721;
+  }
+  8% {
+    opacity: 0.8809995694;
+  }
+  12% {
+    opacity: 0.1671290289;
+  }
+  16% {
+    opacity: 0.748150403;
+  }
+  20% {
+    opacity: 0.2917454093;
+  }
+  24% {
+    opacity: 0.4199354195;
+  }
+  28% {
+    opacity: 0.5952851443;
+  }
+  32% {
+    opacity: 0.2291534884;
+  }
+  36% {
+    opacity: 0.0049693154;
+  }
+  40% {
+    opacity: 0.0061058078;
+  }
+  44% {
+    opacity: 0.1806973436;
+  }
+  48% {
+    opacity: 0.4337705676;
+  }
+  52% {
+    opacity: 0.3027968466;
+  }
+  56% {
+    opacity: 0.3044761938;
+  }
+  60% {
+    opacity: 0.3059687978;
+  }
+  64% {
+    opacity: 0.7632217113;
+  }
+  68% {
+    opacity: 0.1591876326;
+  }
+  72% {
+    opacity: 0.4178008443;
+  }
+  76% {
+    opacity: 0.3593121887;
+  }
+  80% {
+    opacity: 0.4964881307;
+  }
+  84% {
+    opacity: 0.7601704479;
+  }
+  88% {
+    opacity: 0.2113348896;
+  }
+  92% {
+    opacity: 0.0803294033;
+  }
+  96% {
+    opacity: 0.5209205932;
+  }
+  100% {
+    opacity: 0.8058758227;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.7947204493;
+  }
+  4% {
+    opacity: 0.1402644721;
+  }
+  8% {
+    opacity: 0.8809995694;
+  }
+  12% {
+    opacity: 0.1671290289;
+  }
+  16% {
+    opacity: 0.748150403;
+  }
+  20% {
+    opacity: 0.2917454093;
+  }
+  24% {
+    opacity: 0.4199354195;
+  }
+  28% {
+    opacity: 0.5952851443;
+  }
+  32% {
+    opacity: 0.2291534884;
+  }
+  36% {
+    opacity: 0.0049693154;
+  }
+  40% {
+    opacity: 0.0061058078;
+  }
+  44% {
+    opacity: 0.1806973436;
+  }
+  48% {
+    opacity: 0.4337705676;
+  }
+  52% {
+    opacity: 0.3027968466;
+  }
+  56% {
+    opacity: 0.3044761938;
+  }
+  60% {
+    opacity: 0.3059687978;
+  }
+  64% {
+    opacity: 0.7632217113;
+  }
+  68% {
+    opacity: 0.1591876326;
+  }
+  72% {
+    opacity: 0.4178008443;
+  }
+  76% {
+    opacity: 0.3593121887;
+  }
+  80% {
+    opacity: 0.4964881307;
+  }
+  84% {
+    opacity: 0.7601704479;
+  }
+  88% {
+    opacity: 0.2113348896;
+  }
+  92% {
+    opacity: 0.0803294033;
+  }
+  96% {
+    opacity: 0.5209205932;
+  }
+  100% {
+    opacity: 0.8058758227;
+  }
+}
 </style>
     
 </head>
@@ -90,16 +309,23 @@ body {
     <div class="crt">
         <div class="terminal-content">
             <!-- Your content goes here (e.g., text, images) -->
-            <p>Calamity!</p>
+            
+
+            
+            
+                  <p>Calamity!</p>
             <p>a one-shot run by treefrog</p>
           <p>Even when space is your day job, it's still dangerous...</p><br>
             <p><i>more details coming soon...</i></p>
+             
+
+    <script  src="terminal/dist/script.js"></script>
+            
         </div>
     </div>
-
+</div>
     <div id="footer-placeholder"></div>
-
 <!-- Link your JavaScript file -->
 <script src="../script.js"></script>
-          </div>
+          
 </body>

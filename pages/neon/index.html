@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="nl" dir="ltr">
 <head>
+    <title>The Tamps play Neon Odyssey</title>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="neon2.png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -64,43 +67,45 @@
   margin: 20px 0;
 }
 
-.music-container button.black {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid white;
-  background: black;
-  cursor: pointer;
-  @include neon-glow-box(var(--white));
-}
-:root {
-  --main-color1: #050b16;
-  --main-color2: #0c182d;
-  --neon-purple-color: violet;
-  --neon-green-color: lime;
-  --neon-cyan-color: cyan;
-  --neon-orange-color: orange;
-  --neon-orange2-color: orange;
-  --neon-fuchsia-color: #FF00FF ;
- --neon-magenta-color: magenta;
-  --white: white;
+
+/* 1. The Container: Clips the text and spans the full screen */
+.credits {
+  width: 100%;
+  overflow: hidden; 
+  white-space: nowrap;
+  opacity: 0;
+  
+  margin-top: 60px;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+  padding: 15px 0;
 }
 
-
-        .credits ul {
+/* 2. The List: Use Row direction and Flex */
+.credits ul {
   display: flex;
+  flex-direction: row;
   list-style: none;
   padding: 0;
   margin: 0;
-  white-space: nowrap; /* Keeps everything in one long line */
-  animation: scroll-left 25s linear infinite; /* Adjust '25s' for speed */
+  gap: 100px; /* Big gap between items */
+  width: max-content; /* Vital: fits the long line of text */
+  animation: ticker-scroll 40s linear infinite; /* Slower speed */
+     animation-delay: -10s;
 }
-/* The Scrolling Animation */
-@keyframes scroll-left {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+
+/* 3. Pause on Hover */
+.credits:hover ul {
+  animation-play-state: paused;
 }
-        
+
+/* 4. The Animation: Starts at the edge of the screen */
+@keyframes ticker-scroll {
+  0% { transform: translateX(100%); }   /* Start at the right edge of the screen */
+  100% { transform: translateX(-100%); } /* End once the tail of the text leaves the left */
+}
+
+      
         .colors li button.fuchsia { 
   background: var(--neon-fuchsia-color); 
   @include neon-glow-box(#{var(--neon-fuchsia-color)}); // Added #{}
@@ -121,24 +126,35 @@ body, html {
   height: 100%;
   display: flex;
   flex-direction: column;
+
+ 
+  overflow-x: hidden; /* Prevents the horizontal scrollbar */
+  width: 100vw;
 }
 
-/* The main wrapper that centers everything */
+
 .container {
-  display: grid;
-  place-items: center; /* Centers items horizontally AND vertically */
-  min-height: 80vh;    /* Ensures there is vertical space to center within */
-  padding: 20px;
   width: 100%;
+  max-width: 100vw; /* Prevents it from ever being wider than the phone screen */
+  padding: 0 15px;  /* Adds a safety gap so signs don't touch the screen edge */
   box-sizing: border-box;
 }
 
+.grid, .cell {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+
+
 /* Responsive Grid for the links/items */
 .grid-container {
+
   display: grid;
   /* Desktop: 3 columns | Mobile: 1 column automatically */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  gap: 20px;
+  
   width: 100%;
   max-width: 1000px; /* Prevents it from getting too wide on huge monitors */
   justify-content: center;
@@ -148,7 +164,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  
   border: 1px solid var(--white);
   text-align: center;
   /* Add neon glow to items */
@@ -242,11 +258,13 @@ body, html {
               <!-- Credits List -->
             <div class="credits"><ul>
                 
-                    <a class="fancy-link" href="https://cielriley.bandcamp.com/track/wendyfulldemo">MUSIC</a>      
-                    <a class="fancy-link" href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST">NEON ODYSSEY KICKSTARTER</a>      <span class="fancy" style="color: white;" i>*we aren't affiliated with them, no need for Noah</i>
-                        <a class="fancy-link" href="https://avantris.com">LEGENDS OF AVANTRIS</a>*
-                    <a class="fancy-link" href="https://github.com/markteekman/neon-signs?tab=readme-ov-file">SOURCE CODE - MARK TEEKMAN</a>      
-                    <a class="fancy-link" href="/">HOME</a>                        
+                  
+                     <li> <a class="fancy-link" href="/">HOME</a>&#9;&#9;
+                      <li><a class="fancy-link" href="https://cielriley.bandcamp.com/track/wendyfulldemo">MUSIC</a>&#9;&#9;
+                      <li><a class="fancy-link" href="https://github.com/markteekman/neon-signs?tab=readme-ov-file">NEON SIGN CODE</a>&#9;&#9;
+                      <li><a class="fancy-link" href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST">NEON ODYSSEY KICKSTARTER</a>&#9;&#9;
+                      <li><a class="fancy-link" href="https://avantris.com">LEGENDS OF AVANTRIS</a>*&#9;&#9;
+                <li><i class="fancy" style="color: white;">*we aren't affiliated with them, no need for Noah</i>
                 
             </ul>     
             </div>

@@ -3,33 +3,107 @@
 <html lang="en">
 
   <head>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>The Tamps play Astroid Duet</title>
     <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
 <link rel="stylesheet" href="lofi/dist/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<style>
+  .grid-container {
+  display: grid;
+  /* MOBILE DEFAULT: 1 column stack */
+  grid-template-columns: 1fr; 
+  gap: 20px; 
+  width: 90%;
+  margin: 0 auto; /* Center the container */
+}
 
+.orbitron-<uniquifier> {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+@media (min-width: 768px) {
+  .grid-container {
+    /* DESKTOP: 2 columns side-by-side */
+    grid-template-columns: 2fr 1fr; 
+    gap: 40px;
+    width: 80%;
+  }
+}
+
+.lofi-text {
+  font-size: 1.2em;
+  font-family: Orbitron, sans-serif;
+  color: white;
+  line-height: 1.6;
+}
+  .lofi h1 {
+  /* 1. Prevent wrapping to a new line */
+  white-space: nowrap; 
+  
+  /* 2. Fluid font size: 
+     Min: 1.5rem (small mobile)
+     Ideal: 8vw (8% of screen width)
+     Max: 4rem (large desktop) */
+  font-size: clamp(1.5em, 8vw, 4em); 
+  
+  /* Optional: align it if needed */
+  margin: 0;
+}
+
+/* Ensure the individual letters don't force blocks */
+.letter {
+  display: inline-block;
+}
+
+
+
+</style>
   </head>
     
   <body>
-  <div class="home">
-  <h1>
-  <div class="lofi">
+  <div class="home"> <!-- Remove display:flex from here -->
+    <div>
+  <div class="grid-container">
+    <!-- Row 1, Col 1: Your Title -->
+    <div class="lofi">
+      <h1>
     <div class="letter">A</div>
     <div class="letter">s</div>
     <div class="letter">t</div>
     <div class="letter">r</div>
     <div class="letter">o</div>
     <div class="letter">i</div>
-    <div class="letter">d</div>
+    <div class="letter">d</div><br>
     <div class="letter">D</div>
     <div class="letter">u</div>
     <div class="letter">e</div>
     <div class="letter">t</div>
     <div class="letter">!</div>
-  </div>
-  </h1>
-</div>
+ </h1>
+    </div>
+
     
+
+    <!-- Row 2, Col 1: Your Description (This was overlapping) -->
+    <div class="lofi-text" style="color:white">
+      <br>
+      A mini-campaign by Dungeon Mistress Echoeypie! We're playtesting <a href="https://avantris.com/">Legends of Avantris</a>'s new Kickstarter, <a href="https://www.launchoracle.com/avantris-entertainment/neon-odyssey/BLAST?ref=ix5n1">Neon Odyssey</a>, as bounty hunters seeking out the notorious criminal Glup Bondo.
+    
+  </div>
+    
+   
+  </div>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script src="/pages/script.js"></script>
+    </div>
   </body>
   
 </html>

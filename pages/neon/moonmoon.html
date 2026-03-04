@@ -1,1 +1,121 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Moon Moon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="synth/dist/style.css">
+<style>
+  /* Fix basic page setup */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+ 
+}
+  .stroked-text {
+    -webkit-text-stroke-width: 1px; /* Outline width */
+    -webkit-text-stroke-color: black; /* Outline color */
+    
+}
+
+
+.container {
+  position: relative;
+  width: 100vw; 
+  height: 40vh; /* MOBILE CROP: Only shows middle slice of background */
+  display: flex;
+}
+
+.background-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Force your synth script/canvas to fill the cropped area */
+.background-div canvas {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+.overlay-div {
+  position: relative;
+  width: 100%;
+  height: 100%; /* Important for centering math */
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+    padding-top: 15vh; 
+  align-items: center;
+}
+
+.text-box {
+  width: 90%; 
+  max-width: 90%; 
+  text-align: center;
+  color:#c41489;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 900;
+  font-size: 22px;
+  text-shadow: 0 0 15px rgba(127, 0, 255,0.8);
+  padding:10px;
+  /* THE SHIFT: Move text up by 33% of the container height */
+  transform: translateY(-40%); 
+  background-color: rgba(153, 214, 0,0);
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    height: 100vh; /* Full height on desktop */
+    
+  }
+  
+  .text-box {
+    max-width: 33.33%; /* Back to your 1/3 width */
+    font-size: 26px;
+    /* Keeps the 33% upward shift on desktop too */
+    transform: translateY(-33%); 
+    justify-content: flex-start; 
+    /* padding-top: 40vh; */
+  }
+}
+
+</style>
+  </head>
+    
+  <body>
+  <div class="container">
+    <div class="overlay-div">
+      <div class="text-box" style="color:#c41489;">
+        <h1 class="stroked-text">Moon Moon</h1>
+      <p class="stroked-text">Dungeon Mistress Harley</p>
+        <p class="stroked-text">From the horrors of Druskenvald to the horrors of space, will the Blood Moon crew survive their toughest challenge yet: a childrens' casino & restaurant?
+</p>
+        </p>
+      </div>
+    </div>
+
+    <div class="background-div">
+      <script  src="synth/dist/script.js"></script>
+      
+    </div>
+    
+  </div>
+    <div id="footer-placeholder"></div>
+    <script src="../script.js"></script>
+
+  </body>
+  
+</html>
