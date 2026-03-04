@@ -1,0 +1,52 @@
+$transparency: 0.8
+$blur: 3px
+$fsize: 10em
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
+body
+  font-family: 'Russo One', monospace
+  background-image: url(https://warzone.atlassian.net/wiki/download/attachments/4390919/scanlines.png)
+
+.bg-filter
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+
+  background: rgba(0, 0, 0, 0.8)
+  
+.eighties
+  min-height: 1em
+
+  &:before,
+  &:after
+    content: attr(data-text)
+    display: block
+    position: absolute
+    top: 50%
+    left: 0
+    right: 0
+    height: 0.5em
+  
+    font-size: $fsize
+    text-align: center
+    text-shadow: 5px 0 $blur rgba(251, 0, 231, $transparency), 0 5px $blur rgba(0, 233, 235, $transparency), -5px 0 $blur rgba(0, 242, 14, $transparency), 0 -5px $blur rgba(244, 45, 0, $transparency), 5px 0 $blur rgba(59, 0, 226, $transparency)
+    
+    color: rgba(255, 255, 255, 0.9)
+  
+    overflow: hidden
+    transform: translateY(-100%)
+ 
+  &:before
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+  
+  &:after
+    margin-top: 0.5em
+    padding-right: 6px
+    height: 0.5em
+    line-height: 0
