@@ -1,7 +1,8 @@
 
 
 // 1. Import the specific initializeApp function from the CDN
-import { initializeApp } from "https://www.gstatic.com";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/firebase-app.js";
+
 
 // 2. Paste your unique configuration here (copied from the console)
 const firebaseConfig = {
