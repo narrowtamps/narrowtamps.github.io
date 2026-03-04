@@ -5,14 +5,17 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/12.10.0/fireba
 
 
 // 2. Paste your unique configuration here (copied from the console)
-const firebaseConfig = {
-  apiKey: "AIzaSyB86jNHj0pT_GmxZ-3mPOXOJiRr-QLEqSA",
-  authDomain: "test-608eb.firebaseapp.com",
-  projectId: "test-608eb",
-  storageBucket: "test-608eb.firebasestorage.app",
-  messagingSenderId: "649362329355",
-  appId: "1:649362329355:web:cbac23cadf9e25e7f35c0e"
-};
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyC5Xbq3md9TsNkAviKPv1Rw5W0zu0sd1ns",
+    authDomain: "starfight-37ba5.firebaseapp.com",
+    databaseURL: "https://starfight-37ba5-default-rtdb.firebaseio.com",
+    projectId: "starfight-37ba5",
+    storageBucket: "starfight-37ba5.firebasestorage.app",
+    messagingSenderId: "317349343613",
+    appId: "1:317349343613:web:bf8556967437162db49c14",
+    measurementId: "G-NSGC4YKT65"
+  };
 
 // 3. Initialize Firebase by passing the config object
 const app = initializeApp(firebaseConfig);
