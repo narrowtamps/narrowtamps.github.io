@@ -17,7 +17,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 console.log("Firebase connected!", app);
-window.function myFunction() {
+window.myFunction() = function() {
     // Your JavaScript code goes here
     alert("The script from the external file is running!");
     console.log("Function executed successfully.");
