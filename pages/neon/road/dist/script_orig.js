@@ -27,8 +27,8 @@ const { sin, cos, PI } = Math
 
 const drawSun = (x, y, r) => {
 	c.fillStyle = c.createLinearGradient(x, y - r, x, y + r)
-  c.fillStyle.addColorStop(0.1, "#99d600")
-  c.fillStyle.addColorStop(0.8, "#0e453e")
+  c.fillStyle.addColorStop(0.1, "#fdce74")
+  c.fillStyle.addColorStop(0.8, "#d60066")
   
   c.beginPath()
   c.arc(x, y, r, 0, Math.PI * 2)
@@ -247,21 +247,21 @@ const loop = function (timeStamp = performance.now()) {
   // Getting only red colors from canvas
   redFilter.drawImage(canvas, 2, 0)
   redFilter.globalCompositeOperation = 'multiply'
-  redFilter.fillStyle = "#780208"
+  redFilter.fillStyle = "#f00"
   redFilter.fillRect(0, 0, canvas.width, canvas.height)
   redFilter.globalCompositeOperation = 'source-over'
   
   // Getting only green colors from canvas
   greenFilter.drawImage(canvas, 2, 0)
   greenFilter.globalCompositeOperation = 'multiply'
-  greenFilter.fillStyle = "#718231"
+  greenFilter.fillStyle = "#0f0"
   greenFilter.fillRect(0, 0, canvas.width, canvas.height)
   greenFilter.globalCompositeOperation = 'source-over'
   
   // Getting only blue colors from canvas
   blueFilter.drawImage(canvas, 2, 0)
   blueFilter.globalCompositeOperation = 'multiply'
-  blueFilter.fillStyle = "#315f82"
+  blueFilter.fillStyle = "#00f"
   blueFilter.fillRect(0, 0, canvas.width, canvas.height)
   blueFilter.globalCompositeOperation = 'source-over'
   

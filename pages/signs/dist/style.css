@@ -18,7 +18,7 @@ html,
   body {
     background-color: black;
     display: table;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     overflow: hidden;
     padding: 0;
@@ -223,6 +223,33 @@ html,
     -.1vw 0vw 3vw #42114E, -.2vw 0vw 3vw #42114E, -.4vw 0vw 3vw #42114E;
     }
   }
+
+/* Apply this class to your "two" element */
+.two-off {
+  /* .13s duration and .05s delay makes it desync from the heart (.1s) */
+  animation: two-flicker .13s ease infinite;
+  animation-delay: 0.05s;
+  
+  -webkit-animation: two-flicker .13s ease infinite;
+  -webkit-animation-delay: 0.05s;
+}
+
+@keyframes two-flicker {
+  0%, 100% {
+    transform: translateZ(0);
+    color: #A9FFDC;
+    text-shadow: 
+      .1vw 0vw .25vw #A9FFDC, .2vw 0vw .25vw #A9FFDC, .4vw 0vw .25vw #A9FFDC, 
+      .1vw 0vw 1vw ##7cf7c5, .2vw 0vw 2vw ##7cf7c5, .4vw 0vw 5vw #4DF0B0;
+  }
+  50% {
+    transform: translateZ(0);
+    color: #4A7061; 
+    text-shadow: 
+      .1vw 0vw .1vw #184D23, 
+      .1vw 0vw .5vw #184D23;
+  }
+}
 
 
   .jackpots {

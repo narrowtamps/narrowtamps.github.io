@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="neon2.png">
+    
+    <title>Road to Neon</title>
+    <link rel="stylesheet" href="road/dist/style.css">
+<style> 
+.container {
+    position: relative; /* Establishes positioning context for children */
+    width: 100%;        /* Set desired dimensions */
+    height: 300px;
+    /* Other background styles, like background-image if set in CSS */
+}
+
+.overlay-text {
+    position: absolute; /* Positions the text relative to the container */
+    top: 50%;           /* Centers the text vertically */
+    left: 50%;          /* Centers the text horizontally */
+    transform: translate(-50%, -50%); /* Precise centering trick */
+    color: white;       /* Ensure text is readable */
+    font-size: 20px;
+    text-align: center;
+    z-index: 10;        /* Ensures the text is on top (optional if structure is correct) */
+}
+
+</style>
+  </head>
+    
+  <body>
+  <div class="overlay-text"><h1>Road to Neon</h1></div>
+    <script  src="road/dist/script.js"></script>
+<div id="footer-placeholder"></div>
+    <script src="/pages/script.js"></script>
+  </body>
+  
+</html>
