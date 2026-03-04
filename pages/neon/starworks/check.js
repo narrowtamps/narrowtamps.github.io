@@ -1,8 +1,4 @@
-function myFunction() {
-    // Your JavaScript code goes here
-    alert("The script from the external file is running!");
-    console.log("Function executed successfully.");
-}
+
 
 // 1. Import the specific initializeApp function from the CDN
 import { initializeApp } from "https://www.gstatic.com";
@@ -21,3 +17,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 console.log("Firebase connected!", app);
+window.function myFunction() {
+    // Your JavaScript code goes here
+    alert("The script from the external file is running!");
+    console.log("Function executed successfully.");
+}
