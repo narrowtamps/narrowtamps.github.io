@@ -44,18 +44,12 @@
   line-height: 1.6;
 }
   .lofi h1 {
-  /* 1. Prevent wrapping to a new line */
+ 
   white-space: nowrap; 
-  
-  /* 2. Fluid font size: 
-     Min: 1.5rem (small mobile)
-     Ideal: 8vw (8% of screen width)
-     Max: 4rem (large desktop) */
   font-size: clamp(1.5em, 8vw, 4em); 
   
-  /* Optional: align it if needed */
   margin: 0;
-    font-weight:16;
+  font-weight:16;
 }
 
 /* Ensure the individual letters don't force blocks */
@@ -128,7 +122,14 @@ a:hover {
 a:active {
   color: violet; /* Color when clicked */
 }
-
+.letter {
+  -webkit-text-stroke: 5px #AEFD6C;
+  margin-top: -8px;
+  display: inline-block;
+  padding: 0 1px;
+  -webkit-animation: glow 2.5s linear infinite;
+  animation: glow 2.5s linear infinite;
+}
 
 </style>
   </head>
