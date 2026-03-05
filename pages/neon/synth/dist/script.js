@@ -75,7 +75,7 @@ let loop = () => {
   c.save()
   c.translate(canvas.width / 2, canvas.height / 2)
   
- // drawSun(0, -64, 158)
+  drawSun(0, -64, 158)
   
   c.strokeStyle = "#00e9ff"
   	// Vertical Lines
@@ -117,7 +117,7 @@ let loop = () => {
       
       drawLine(px1, py1, px2, py2)
     }
-	 drawSun(0, -64, 158)
+//drawSun2(0, -64, 158)
   c.restore()
 
   // Post-processing
