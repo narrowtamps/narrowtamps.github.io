@@ -1,0 +1,30 @@
+<head>
+
+  <style>
+    body {
+    background-color: #1a1a1a; /* Dark background is crucial */
+}
+
+.neon-line {
+    width: 200px;
+    height: 5px; /* The "line" itself */
+    background-color: #fff; /* Base color for the light */
+    border-radius: 5px; /* Soften the edges */
+    /* Multiple shadows for the neon glow: comma-separated */
+    box-shadow: 
+        0 0 5px #fff,      /* Inner white glow */
+        0 0 10px #fff,     /* Second white glow */
+        0 0 20px #0fa,     /* Outer colored glow (cyan/green) */
+        0 0 40px #0fa,
+        0 0 80px #0fa;
+    
+    /* Optional: Add a subtle 3D tilt */
+    transform: rotateX(15deg) rotateY(-15deg);
+    margin: 50px;
+}
+
+  </style>
+</head>
+<body>
+  
+</body>
