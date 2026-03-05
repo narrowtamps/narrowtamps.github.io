@@ -65,7 +65,7 @@ let loop = () => {
   c.save()
   c.translate(canvas.width / 2, canvas.height / 2)
   
-  drawSun(0, -64, 128)
+  drawSun(0, -64, 158)
   
   c.strokeStyle = "#00e9ff"
   	// Vertical Lines
