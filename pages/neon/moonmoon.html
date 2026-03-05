@@ -132,47 +132,36 @@ body, html {
 }
 
 .neonText {
-  animation: pulsate 2s infinite alternate;
-  color: #fff;
-  font-family:"Tilt Neon";
+  font-family: "Tilt Neon", sans-serif;
+  text-align: center;
+  /* Make sure this bracket exists! */
+} 
+
+/* Target the links specifically to force the glow */
+.neonText a, .neonText p {
   color: lime !important;
   text-decoration: none;
-   will-change: text-shadow;
+  animation: pulsate 2s infinite alternate; /* Apply animation directly here */
+  will-change: text-shadow;
 }
-  /* Target the links specifically */
-.neonText a {
-  color: lime !important;
-  animation: inherit;   /* Inherits the pulsate from .neonText */
-  text-shadow: inherit; /* Inherits the glow from .neonText */
-  text-decoration: none;
-}
-
-
 
 @keyframes pulsate {
-  100% {
-    /* Larger blur radius */
+  0% {
     text-shadow:
       0 0 4px #fff,
-      
-      0 0 19px #fff,
-      0 0 20px #0fa,
-      
-      0 0 30px #0fa,
-     
+      0 0 10px #0fa,
+      0 0 20px #0fa;
   }
-  0% {
-    /* Smaller blur radius */
+  100% {
     text-shadow:
-      0 0 2px #fff,
-      0 0 14px #fff,
-      
-      0 0 24px #0fa,
-      
-      0 0 35px #0fa,
-     
+      0 0 4px #fff,
+      0 0 20px #0fa,
+      0 0 40px #0fa,
+      0 0 60px #0fa;
   }
 }
+
+  
 .site-header {
     position: fixed; /* Keeps it at the top even when scrolling */
     top: 0;
