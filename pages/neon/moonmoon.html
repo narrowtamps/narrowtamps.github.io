@@ -166,21 +166,25 @@ body, html {
   }
 }
 .site-header {
-    display: absolute;
-    justify-content: space-between; /* Pushes the logo to one end and nav to the other */
-    align-items: left; /* Vertically centers items */
-    
-    
-   
-    
-   
+    position: fixed; /* Keeps it at the top even when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;   /* Higher than background-div */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; /* Or rgba(0,0,0,0.5) for a dark tint */
 }
 
 .logo {
-    max-width: 150px; /* Control the size of your logo image */
+    max-width: 150px;
     height: auto;
-    display: block;
+    position: relative;
+    z-index: 1001; /* Ensure logo itself is on top */
 }
+
 
 .site-nav ul {
     list-style: none; /* Removes bullet points from the list */
