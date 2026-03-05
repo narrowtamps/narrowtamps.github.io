@@ -37,6 +37,16 @@ let drawSun = (x, y, r) => {
   c.arc(x, y, r, 0, Math.PI * 2)
   c.fill()
 }
+let drawSun2 = (x, y, r) => {
+  c.fillStyle = c.createLinearGradient(x, y - r, x, y + r)
+  // 0.8 is 80% opaque. Lower this number for more transparency.
+  c.fillStyle.addColorStop(0.1, "rgba(153, 214, 0, 0.8)") 
+  c.fillStyle.addColorStop(0.8, "rgba(14, 69, 62, 0.8)")
+  
+  c.beginPath()
+  c.arc(x, y, r, 0, Math.PI * 2)
+  c.fill()
+}
 
 // Render loop
 let loop = () => {
@@ -65,7 +75,7 @@ let loop = () => {
   c.save()
   c.translate(canvas.width / 2, canvas.height / 2)
   
-  drawSun(0, -64, 158)
+ // drawSun(0, -64, 158)
   
   c.strokeStyle = "#00e9ff"
   	// Vertical Lines
@@ -107,16 +117,7 @@ let loop = () => {
       
       drawLine(px1, py1, px2, py2)
     }
-	let drawSun = (x, y, r) => {
-  c.fillStyle = c.createLinearGradient(x, y - r, x, y + r)
-  // 0.8 is 80% opaque. Lower this number for more transparency.
-  c.fillStyle.addColorStop(0.1, "rgba(153, 214, 0, 0.8)") 
-  c.fillStyle.addColorStop(0.8, "rgba(14, 69, 62, 0.8)")
-  
-  c.beginPath()
-  c.arc(x, y, r, 0, Math.PI * 2)
-  c.fill()
-}
+	 drawSun(0, -64, 158)
   c.restore()
 
   // Post-processing
