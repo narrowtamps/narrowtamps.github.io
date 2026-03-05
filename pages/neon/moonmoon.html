@@ -8,6 +8,9 @@
     <title>Moon Moon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="synth/dist/style.css">
 <style>
@@ -16,15 +19,24 @@ body, html {
   margin: 0;
   padding: 0;
   height: 100%;
- 
+ overflow: hidden;
 }
   .stroked-text {
-    -webkit-text-stroke-width: 1px; /* Outline width */
-    -webkit-text-stroke-color: black; /* Outline color */
-    
+    <!-- -webkit-text-stroke-width: .5px; /* Outline width */
+    -webkit-text-stroke-color: white; /* Outline color */
+    -->
 }
 
 
+.tilt-neon-<uniquifier> {
+  font-family: "Tilt Neon", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
 .container {
   position: relative;
   width: 100vw; 
@@ -49,18 +61,25 @@ body, html {
 }
 
 .overlay-div {
-  position: relative;
-  width: 100%;
-  height: 100%; /* Important for centering math */
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; 
-    padding-top: 15vh; 
-  align-items: center;
+    position: absolute; /* Changed from relative to overlay correctly */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Must be higher than background-div's z-index */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers text vertically */
+    align-items: center;    /* Centers text horizontally */
+    pointer-events: none;   /* Allows clicks to pass through to the background if needed */
 }
 
 .text-box {
+    pointer-events: auto;   /* Makes text selectable/clickable again */
+    /* Remove the negative transform if you want it perfectly centered */
+    transform: none; 
+    max-width: 80%;
+
   width: 90%; 
   max-width: 90%; 
   text-align: center;
@@ -68,11 +87,12 @@ body, html {
   font-family: 'Outfit', sans-serif;
   font-weight: 900;
   font-size: 22px;
-  text-shadow: 0 0 15px rgba(127, 0, 255,0.8);
-  padding:10px;
+  text-shadow: 0 0 20px rgba(196, 20, 137,0.8);
+  padding:20px;
   /* THE SHIFT: Move text up by 33% of the container height */
   transform: translateY(-40%); 
   background-color: rgba(153, 214, 0,0);
+  padding-top:10vh;
 }
 
 
@@ -80,22 +100,138 @@ body, html {
   .container {
     height: 100vh; /* Full height on desktop */
     
-  }
   
+}
   .text-box {
     max-width: 33.33%; /* Back to your 1/3 width */
     font-size: 26px;
     /* Keeps the 33% upward shift on desktop too */
     transform: translateY(-33%); 
     justify-content: flex-start; 
-    /* padding-top: 40vh; */
+     padding-top: 100px; 
   }
 }
+  
+.glow-text {
+  color: white; /* Color of the main text */
+  text-shadow:
+    0 0 4px #ff0000, /* horizontal-offset | vertical-offset | blur-radius | color */
+    0 0 10px #ff0000,
+    0 0 15px #ff0000;
+}
 
+.outline-text {
+  color: white;
+  /* By using 0 blur and 0 offset, you create a solid background/outline */
+  text-shadow:
+    1px 1px 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000;
+}
+
+.neonText {
+  animation: pulsate 2s infinite alternate;
+  color: #fff;
+  font-family:"Tilt Neon";
+  color: lime !important;
+  text-decoration: none;
+   will-change: text-shadow;
+}
+  /* Target the links specifically */
+.neonText a {
+  color: lime !important;
+  animation: inherit;   /* Inherits the pulsate from .neonText */
+  text-shadow: inherit; /* Inherits the glow from .neonText */
+  text-decoration: none;
+}
+
+
+
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
+      0 0 4px #fff,
+      
+      0 0 19px #fff,
+      0 0 20px #0fa,
+      
+      0 0 30px #0fa,
+     
+  }
+  0% {
+    /* Smaller blur radius */
+    text-shadow:
+      0 0 2px #fff,
+      0 0 14px #fff,
+      
+      0 0 24px #0fa,
+      
+      0 0 35px #0fa,
+     
+  }
+}
+.site-header {
+    position: fixed; /* Keeps it at the top even when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;   /* Higher than background-div */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; /* Or rgba(0,0,0,0.5) for a dark tint */
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    position: relative;
+    z-index: 1001; /* Ensure logo itself is on top */
+}
+
+
+.site-nav ul {
+    list-style: none; /* Removes bullet points from the list */
+    display: flex;
+}
+
+.site-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Ensure the link itself is block-level for better clickable area */
+.home-link {
+    display: block; 
+}
 </style>
   </head>
     
   <body>
+
+    <header class="site-header">
+        <div class="logo-container">
+            <!-- Wrap the logo in an anchor tag linking to the home page (/) -->
+            <a href="/" class="home-link" aria-label="Go to homepage">
+                <img src="neon2.png" alt="Company Logo" class="logo">
+            </a>
+        </div>
+        <nav class="site-nav">
+            <!-- Navigation links can go here -->
+            <ul>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
   <div class="container">
     <div class="overlay-div">
       <div class="text-box" style="color:#c41489;">
@@ -113,9 +249,13 @@ body, html {
     </div>
     
   </div>
-    <div id="footer-placeholder"></div>
+    </main>
+    <footer>
+    <div class="neonText" style="font-family:'Tilt Neon'; color:lime;"> 
+    <div id="footer-placeholder" style="position:absolute; bottom:8px;"></div>
     <script src="../script.js"></script>
-
+    </div>
+      </footer>
   </body>
   
 </html>

@@ -44,7 +44,7 @@ document.head.appendChild(style);
 
 document.getElementById('footer-placeholder').innerHTML = `
 <footer class="site-footer">
-    <p>&copy; 2026 The Narrow Tamps. All rights reserved.</p>
+    
     <div class="footer-links">
         <a href="https://www.narrowtamps.com/index.html">Home</a>
         <a href="https://www.narrowtamps.com/pages/campaigns.html">Campaigns</a>
@@ -52,5 +52,7 @@ document.getElementById('footer-placeholder').innerHTML = `
             <a href="https://www.narrowtamps.com/about.html">About</a>
             <a href="https://www.narrowtamps.com/fish.html">Fish</a>
     </div>
+    <p>&copy; 2026 The Narrow Tamps. All rights reserved.</p>
+    
 </footer>`;
 
