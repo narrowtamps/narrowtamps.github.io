@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calamity!</title>
     <style>
 /* General body styling to remove margins */
 body {
@@ -302,10 +303,84 @@ body {
     opacity: 0.8058758227;
   }
 }
+
+.neonText {
+  font-family: "Tilt Neon", sans-serif;
+  text-align: center;
+  /* Make sure this bracket exists! */
+} 
+
+/* Target the links specifically to force the glow */
+.neonText a, .neonText p {
+  color: lime !important;
+  
+     text-shadow:
+      0 0 4px #fff,
+      0 0 20px #0fa,
+      0 0 40px #0fa,
+      0 0 60px #0fa;
+  will-change: text-shadow;
+}
+  .site-header {
+    position: fixed; /* Keeps it at the top even when scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;   /* Higher than background-div */
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent; /* Or rgba(0,0,0,0.5) for a dark tint */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    position: relative;
+    z-index: 1001; /* Ensure logo itself is on top */
+  padding:20px;
+}
+
+  .home-link {
+    display: block; 
+}
+
+  .neon-glow-image {
+  /* The drop-shadow follows the shape of the image content itself */
+  filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 20px #ff00ff) drop-shadow(0 0 30px rgba(255, 0, 255, 0.5));
+  /* Optional: Add a smooth transition for hover effects */
+  transition: filter 0.3s ease-in-out;
+}
+
+.neon-glow-image:hover {
+  filter: drop-shadow(0 0 15px #ff00ff) drop-shadow(0 0 30px #ff00ff) drop-shadow(0 0 45px rgba(255, 0, 255, 0.7));
+}
+a:link {
+  color: silver; /* Unvisited link color */
+}
+
+a:visited {
+  color: gray; /* Visited link color */
+}
+
+a:hover {
+  color: lime; /* Color on mouseover */
+}
+
+a:active {
+  color: violet; /* Color when clicked */
+}
 </style>
     
 </head>
 <body>
+    <header>
+        
+    </header>
+    <main>
+        
+
     <div class="crt">
         <div class="terminal-content">
             <!-- Your content goes here (e.g., text, images) -->
@@ -324,8 +399,11 @@ body {
         </div>
     </div>
 </div>
-    <div id="footer-placeholder"></div>
-<!-- Link your JavaScript file -->
-<script src="../script.js"></script>
-          
+    <footer style="position: absolute; bottom:0; width: 100%; z-index: 9999;">
+    <div class="neonText"> 
+        <div id="footer-placeholder"></div>
+        <script src="/pages/script.js"></script>
+    </div>
+</footer>
+    </main>          
 </body>
