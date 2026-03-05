@@ -40,8 +40,8 @@ let drawSun = (x, y, r) => {
 let drawSun2 = (x, y, r) => {
   c.fillStyle = c.createLinearGradient(x, y - r, x, y + r)
   // 0.8 is 80% opaque. Lower this number for more transparency.
-  c.fillStyle.addColorStop(0.1, "rgba(153, 214, 0, 0.8)") 
-  c.fillStyle.addColorStop(0.8, "rgba(14, 69, 62, 0.8)")
+  c.fillStyle.addColorStop(0.1, "rgba(153, 214, 0, 0.9)") 
+  c.fillStyle.addColorStop(0.8, "rgba(14, 69, 62, 0.9)")
   
   c.beginPath()
   c.arc(x, y, r, 0, Math.PI * 2)
