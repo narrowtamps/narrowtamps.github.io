@@ -155,11 +155,62 @@ body, html {
      
   }
 }
+.site-header {
+    display: flex;
+    justify-content: space-between; /* Pushes the logo to one end and nav to the other */
+    align-items: center; /* Vertically centers items */
+    padding: 10px 20px; /* Adds some space around the header content */
+    background-color: #f4f4f4; /* Example background color */
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+}
 
+.logo {
+    max-width: 150px; /* Control the size of your logo image */
+    height: auto;
+    display: block;
+}
+
+.site-nav ul {
+    list-style: none; /* Removes bullet points from the list */
+    display: flex;
+}
+
+.site-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Ensure the link itself is block-level for better clickable area */
+.home-link {
+    display: block; 
+}
 </style>
   </head>
     
   <body>
+
+    <header class="site-header">
+        <div class="logo-container">
+            <!-- Wrap the logo in an anchor tag linking to the home page (/) -->
+            <a href="/" class="home-link" aria-label="Go to homepage">
+                <img src="images/logo.png" alt="Company Logo" class="logo">
+            </a>
+        </div>
+        <nav class="site-nav">
+            <!-- Navigation links can go here -->
+            <ul>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
   <div class="container">
     <div class="overlay-div">
       <div class="text-box" style="color:#c41489;">
@@ -177,10 +228,13 @@ body, html {
     </div>
     
   </div>
+    </main>
+    <footer>
     <div class="neonText" style="font-family:'Tilt Neon'; color:lime"> 
     <div id="footer-placeholder" style="position:absolute; bottom:8px;"></div>
     <script src="../script.js"></script>
     </div>
+      </footer>
   </body>
   
 </html>
