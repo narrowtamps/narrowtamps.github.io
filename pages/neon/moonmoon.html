@@ -112,17 +112,15 @@ body, html {
 }
 
 .neonText {
-  animation: flicker_footer 1.5s infinite alternate;
+  animation: pulsate 2.5s infinite alternate;
   color: #fff;
 }
 
 
-/* Flickering animation */
-@keyframes flicker_footer {
-    
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-
-      text-shadow:
+@keyframes pulsate {
+  100% {
+    /* Larger blur radius */
+    text-shadow:
       0 0 4px #fff,
       0 0 11px #fff,
       0 0 19px #fff,
@@ -131,12 +129,19 @@ body, html {
       0 0 90px #0fa,
       0 0 100px #0fa,
       0 0 150px #0fa;
-  
   }
-  
-  20%, 24%, 55% {        
-      text-shadow: none;
-  }    
+  0% {
+    /* Smaller blur radius */
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #0fa,
+      0 0 45px #0fa,
+      0 0 55px #0fa,
+      0 0 70px #0fa,
+      0 0 80px #0fa;
+  }
 }
 
 </style>
