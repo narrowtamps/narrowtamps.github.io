@@ -112,6 +112,9 @@ body, html {
     justify-content: flex-start; 
      
   }
+  .logo {
+    max-width: 150px;
+  }
 }
   
 .glow-text {
@@ -181,7 +184,7 @@ body, html {
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
     position: relative;
     z-index: 1001; /* Ensure logo itself is on top */
@@ -203,6 +206,18 @@ body, html {
 .home-link {
     display: block; 
 }
+
+  .neon-glow-image {
+  /* The drop-shadow follows the shape of the image content itself */
+  filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 20px #ff00ff) drop-shadow(0 0 30px rgba(255, 0, 255, 0.5));
+  /* Optional: Add a smooth transition for hover effects */
+  transition: filter 0.3s ease-in-out;
+}
+
+.neon-glow-image:hover {
+  filter: drop-shadow(0 0 15px #ff00ff) drop-shadow(0 0 30px #ff00ff) drop-shadow(0 0 45px rgba(255, 0, 255, 0.7));
+}
+
 </style>
   </head>
     
@@ -212,7 +227,7 @@ body, html {
         <div class="logo-container">
             <!-- Wrap the logo in an anchor tag linking to the home page (/) -->
             <a href="/" class="home-link" aria-label="Go to homepage">
-                <img src="neon2.png" alt="Company Logo" class="logo">
+                <img src="neon2.png" alt="Company Logo" class="logo neon-glow-image">
             </a>
         </div>
         
