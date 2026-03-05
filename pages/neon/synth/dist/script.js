@@ -117,7 +117,14 @@ let loop = () => {
       
       drawLine(px1, py1, px2, py2)
     }
-//drawSun2(0, -64, 158)
+
+  c.fillStyle = "#16091f"
+  c.fillRect(0, 0, canvas.width, canvas.height)
+  c.save()
+  c.translate(canvas.width / 2, canvas.height / 2)
+  drawSun2(0, -64, 158)
+
+	
   c.restore()
 
   // Post-processing
