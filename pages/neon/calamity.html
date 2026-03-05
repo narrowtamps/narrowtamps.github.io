@@ -315,7 +315,7 @@ body {
    color: #00ff00 !important; /* Bright green text */
     background-color: #0a0a0a; /* Very dark background */
     font-family: "Courier New", monospace; /* Classic monospace font */
-  
+  animation: pulsate 2s infinite;
      text-shadow:
       0 0 4px #fff,
       0 0 20px #0fa,
@@ -323,6 +323,24 @@ body {
       0 0 60px #0fa;
   will-change: text-shadow;
 }
+
+        @keyframes pulsate {
+  0% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px #0fa,
+      0 0 20px #0fa;
+  }
+  100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 20px #0fa,
+      0 0 40px #0fa,
+      0 0 60px #0fa;
+  }
+}
+
+        
   .site-header {
     position: fixed; /* Keeps it at the top even when scrolling */
     top: 0;
