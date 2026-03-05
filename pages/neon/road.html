@@ -18,15 +18,27 @@
 }
 
 .overlay-text {
-    position: absolute; /* Positions the text relative to the container */
-    top: 50%;           /* Centers the text vertically */
-    left: 50%;          /* Centers the text horizontally */
-    transform: translate(-50%, -50%); /* Precise centering trick */
-    color: white;       /* Ensure text is readable */
-    font-size: 20px;
-    text-align: center;
-    z-index: 10;        /* Ensures the text is on top (optional if structure is correct) */
+    position: fixed; /* Use fixed to stay centered regardless of background */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertical center */
+    align-items: center;     /* Horizontal center */
+    z-index: 10;
+    pointer-events: none;    /* Stops the invisible box from blocking clicks */
 }
+
+/* Ensure the title itself has space and doesn't collapse */
+.eighties {
+    position: relative;
+    margin: 0;
+    line-height: 1.2;
+    pointer-events: auto;    /* Makes the title clickable/selectable again */
+}
+
 
 </style>
   </head>
