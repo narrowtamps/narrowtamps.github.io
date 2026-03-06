@@ -1,6 +1,9 @@
 // 1. Create a style element to hold your global CSS
 const style = document.createElement('style');
 style.textContent = `
+    @import url(\'https://fonts.googleapis.com\');
+    @import url(\'https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sixtyfour+Convergence&family=Tilt+Neon&display=swap');
+
     body {
         display: flex;
         flex-direction: column;
@@ -8,6 +11,7 @@ style.textContent = `
         min-height: 100dvh; 
         margin: 0;
     }
+
 
     #footer-placeholder {
         margin-top: auto; /* This pushes footer to bottom */
@@ -22,8 +26,9 @@ style.textContent = `
     .site-footer p {
         margin: 0;
         font-size: 0.9rem;
-        color: cyan; /* Bright green text */
+        color: cyan; 
         font-family: "Courier New", monospace; /* Classic monospace font */
+        font-family: "Sixtyfour Convergence", sans-serif;
         position: absolute; 
         bottom:0; 
         width: 100%; 
@@ -125,7 +130,7 @@ style.textContent = `
         text-decoration: none;
         padding: 5px 10px;
         font-size: .9rem;
-        color: #00ff00; /* Bright green text */
+        color: cyan; /* Bright green text */
         font-family: "Courier New", monospace; /* Classic monospace font */
     
    
