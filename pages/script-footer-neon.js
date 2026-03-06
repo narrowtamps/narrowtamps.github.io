@@ -11,7 +11,7 @@ style.textContent = `
         min-height: 100vh;
         min-height: 100dvh; 
         margin: 0;
-        font-size:20px;
+        font-size:16px;
     }
 @font-palette-values --vapor {
   font-family: "Sixtyfour Convergence";
@@ -55,7 +55,7 @@ style.textContent = `
     
         margin: 0;
         /*font-size: 0.9rem;*/
-        font-size: clamp(16px, .7rem, 22px);
+        font-size: clamp(14px, .7rem, 18px);
         color: cyan; 
         font-family: "Sixtyfour Convergence", "Courier New", sans-serif;
          font-palette: --vapor;
@@ -167,7 +167,7 @@ style.textContent = `
         display: inline-block !important;
         text-decoration: none;
         padding: 0px 10px 0px 5px;
-        font-size: clamp(16px, .7rem, 22px);
+        font-size: clamp(14px, .7rem, 18px);
         
         color: cyan; 
         font-family: "Sixtyfour Convergence", "Courier New",sans-serif;
