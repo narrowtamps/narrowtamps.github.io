@@ -42,7 +42,7 @@ body, html {
 }
 .container {
   position: relative;
-  width: 100vw; 
+  
   height: 40vh; /* MOBILE CROP: Only shows middle slice of background */
   display: flex;
 }
@@ -61,6 +61,8 @@ body, html {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover;
+  top:0;
+  left:0;
 }
 
 .overlay-div {
@@ -79,12 +81,12 @@ body, html {
 
 .text-box {
     pointer-events: auto;   /* Makes text selectable/clickable again */
-    /* Remove the negative transform if you want it perfectly centered */
+    /* Remove the negative transform if you want it perfectly centered 
     transform: none; 
    
 
   width: 90%; 
-  max-width: 90%; 
+  max-width: 90%; */
   text-align: center;
   color:#c41489;
   font-family: 'Outfit', sans-serif;
@@ -128,6 +130,7 @@ body, html {
   }
   .site-header {
     left:0;
+    top:0;
     
   }
 }
@@ -211,6 +214,7 @@ body, html {
 }
 
 .logo2 {
+  right:100%;
     max-width: 80px;
     height: auto;
     position: relative;
@@ -245,10 +249,10 @@ body, html {
   filter: drop-shadow(0 0 15px #ff00ff) drop-shadow(0 0 30px #ff00ff) drop-shadow(0 0 45px rgba(255, 0, 255, 0.7));
 }
 
-  .sign-three {
+  /*.sign-three {
     font-size:2.75vw; 
     
-  }
+  }*/
 
 </style>
   </head>
@@ -263,7 +267,7 @@ body, html {
         </div>
       <div class="logo2 neon-glow-image">
          <a href="/pages/neon" class="home-link" aria-label="Go to Neon">
-  <div class="sign-three" style="font-size:2.75vw; ">
+  <div class="sign-three" style="font-size:3vw; ">
     <div class="restaurant" style="font-size:2.75vw; margin-left:0vw; ">The Tamps</div>
     <div class="bar" style="font-size:2.75vw; margin-left:4vw;margin-top:1vw;">play</div>
     <div class="jackpots2" style="font-size:2.75vw; margin-left:0vw;">Neon Odyssey</div>
@@ -284,6 +288,7 @@ body, html {
         <p class="stroked-text">From the horrors of Druskenvald to the horrors of space, will the Blood Moon crew survive their toughest challenge yet: a childrens' casino & restaurant?
 </p>
         </p>
+        
       </div>
     </div>
 
