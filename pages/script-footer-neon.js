@@ -46,7 +46,7 @@ style.textContent = `
 
     .big-footer {
         text-align: center;
-        padding: 20px 0; /* Use a smaller, uniform padding */
+        padding: 10px 0; /* Use a smaller, uniform padding */
         bottom:0;
     }
     .site-footer{
@@ -55,7 +55,7 @@ style.textContent = `
     
         margin: 0;
         /*font-size: 0.9rem;*/
-        font-size: .7rem;
+        font-size: clamp(10px, .7rem, 26px);
         color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
          font-palette: --vapor;
@@ -167,7 +167,7 @@ style.textContent = `
         display: inline-block !important;
         text-decoration: none;
         padding: 0px 10px 0px 5px;
-        font-size: .7rem;
+        font-size: clamp(10px, .7rem, 26px);
         
         color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
@@ -182,7 +182,7 @@ style.textContent = `
 }
 @media (max-width: 768px) {
  .footer-links a {
- font-size: .7rem;
+ font-size: clamp(10px, .7rem, 26px);
  padding: 0 0 0 5px;
  }
 }
