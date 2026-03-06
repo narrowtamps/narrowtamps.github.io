@@ -4,8 +4,16 @@ style.textContent = `
     @import url(\'https://fonts.googleapis.com\');
     @import url(\'https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sixtyfour+Convergence&family=Tilt+Neon&display=swap');
 
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        min-height: 100dvh; 
+        margin: 0;
+    }
 @font-palette-values --vapor {
-  font-family: "Sixtyfour Convergence", sans-serif;
+  font-family: "Sixtyfour Convergence";
   override-colors:
     0 #27F5D3,
     1 #BE27F5,
@@ -15,14 +23,6 @@ style.textContent = `
 .vapor {
   font-palette: --vapor;
 }
-
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        min-height: 100dvh; 
-        margin: 0;
-    }
 
     
 .sixtyfour-convergence-vapor {
@@ -52,6 +52,7 @@ style.textContent = `
         margin: 0;
         font-size: 0.9rem;
         color: cyan; 
+        font-family: "Sixtyfour Convergence", sans-serif;
          font-palette: --vapor;
         font-variation-settings:
             "BLED" 75,
@@ -160,7 +161,7 @@ style.textContent = `
         padding: 5px 10px;
         font-size: .9rem;
         color: cyan; /* Bright green text */
-        font-family: "Courier New", monospace; /* Classic monospace font */
+        font-family: "Sixtyfour Convergence", sans-serif;
         font-palette: --vapor;
       font-variation-settings:
         "BLED" 75,
