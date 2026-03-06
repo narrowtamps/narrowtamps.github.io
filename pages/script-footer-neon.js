@@ -180,7 +180,7 @@ style.textContent = `
 }
 @media (max-width: 768px) {
  .footer-links a {
- font-size: 2rem;
+ font-size: 1rem;
  }
 }
 
