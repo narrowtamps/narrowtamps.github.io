@@ -207,13 +207,17 @@ document.getElementById('footer-placeholder').innerHTML = `
 
 function updateFooter(size, color, family) {
     const footer = document.getElementById('footer-placeholder');
-
+    const links = footer.querySelectorAll('a');
+    
     if (size) { 
-        footer.style.fontSize = size;
+        var sizeFoot = size;
+        
     } else {
         // Corrected: Removed the 'font-size:' prefix
-        footer.style.fontSize = 'clamp(14px, .7rem, 18px)';
+        var sizeFoot = 'clamp(14px, .7rem, 18px)';
     }
+    footer.style.fontSize = sizeFoot;
+    links.forEach(a => a.style.setProperty('font-size', sizeFoot, 'important'));
 
     if (color) {
         footer.style.color = color;
@@ -225,6 +229,7 @@ function updateFooter(size, color, family) {
        footer.style.fontFamily = family;
     } else {
        footer.style.fontFamily = 'Sixtyfour Convergence';
+        links.forEach(a => a.style.setProperty('font-family', 'Sixtyfour Convergence', 'important'));
        footer.style.fontPalette = '--vapor';
        footer.style.fontVariationSettings = '"BLED" 75, "SCAN" 50, "XELA" 75, "YELA" 75';
     }
