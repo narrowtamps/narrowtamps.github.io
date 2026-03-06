@@ -43,10 +43,14 @@ style.textContent = `
         width: 100%;
     }
 
-    .site-footer {
+    .big-footer {
         text-align: center;
         padding: 20px 0; /* Use a smaller, uniform padding */
         bottom:0;
+    }
+    .site-footer {
+        text-align: center;
+        
     }
 
     .site-footer p {
@@ -186,7 +190,9 @@ style.textContent = `
 document.head.appendChild(style);
 
 document.getElementById('footer-placeholder').innerHTML = `
-<footer class="site-footer">
+
+<footer class="big-footer">
+<div class="site-footer">
     
     <div class="footer-links">
         <a href="https://www.narrowtamps.com/index.html">Home</a>
@@ -195,7 +201,7 @@ document.getElementById('footer-placeholder').innerHTML = `
             <a href="https://www.narrowtamps.com/about.html">About</a>
             <a href="https://www.narrowtamps.com/fish.html">Fish</a>
     </div>
-    &copy; 2026 The Narrow Tamps. All rights reserved.
-    
+    <p>&copy; 2026 The Narrow Tamps. All rights reserved.</p>
+    </div>
 </footer>`;
 
