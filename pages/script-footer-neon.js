@@ -28,6 +28,9 @@ style.textContent = `
     .footer-links {
         display: flex;
         justify-content: center;
+         color: #00ff00; /* Bright green text */
+    
+    font-family: "Courier New", monospace; /* Classic monospace font */
          
     }
 
@@ -37,11 +40,8 @@ style.textContent = `
         padding: 5px 10px;
         font-size: .9rem;
         color: darkred; /* Keeping your theme consistent */
-    }
-
-    /* The main CRT container */
-.crt a {
-    /* Green color scheme */
+  
+   
     color: #00ff00; /* Bright green text */
     
     font-family: "Courier New", monospace; /* Classic monospace font */
@@ -49,11 +49,6 @@ style.textContent = `
    
 }
 
-/* Glowing text effect */
-.crt .terminal-content {
-    text-shadow: 0 0 5px #00ff00, 0 0 2px #00ff00, 0 0 1px #00ff00; /* Subtle glow */
-}
-    
 
 `;
 
@@ -62,7 +57,7 @@ document.head.appendChild(style);
 document.getElementById('footer-placeholder').innerHTML = `
 <footer class="site-footer">
     
-    <div class="footer-links crt">
+    <div class="footer-links">
         <a href="https://www.narrowtamps.com/index.html">Home</a>
         <a href="https://www.narrowtamps.com/pages/campaigns.html">Campaigns</a>
         <a href="https://www.narrowtamps.com/pages/socials.html">Socials</a>
