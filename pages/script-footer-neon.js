@@ -160,7 +160,7 @@ style.textContent = `
     .footer-links a {
         display: inline-block !important;
         text-decoration: none;
-        padding: 0px 5px 0px 5px;
+        padding: 0px 10px 0px 5px;
         font-size: 1rem;
         
         color: cyan; 
