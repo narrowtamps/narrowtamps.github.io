@@ -46,12 +46,13 @@ style.textContent = `
     .site-footer {
         text-align: center;
         padding: 20px 0; /* Use a smaller, uniform padding */
+        bottom:0;
     }
 
     .site-footer p {
         margin: 0;
         /*font-size: 0.9rem;*/
-        font-size: 1vw;
+        font-size: .7rem;
         color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
          font-palette: --vapor;
@@ -159,9 +160,9 @@ style.textContent = `
     .footer-links a {
         display: inline-block !important;
         text-decoration: none;
-        /*padding: 5px 10px;
-        font-size: .9rem;*/
-        font-size: 1vw;
+        padding: 5px 10px;
+        font-size: .7rem;
+        
         color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
         font-palette: --vapor;
