@@ -1,0 +1,18 @@
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("https://raw.githubusercontent.com/kuuurt13/static-hosting/main/vaporware.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+
+body > #app {
+  margin: 0 auto;
+}
+
+body > canvas {
+  opacity: 0.75;
+}

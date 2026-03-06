@@ -1,0 +1,26 @@
+%div#scene
+  %div.sun-group
+    %div.sun
+      %div.sun-line-group
+        - (1..8).each do |i|
+          %div.line
+  %div.floor
+    %div.grid
+    %div.buildings
+      - (1..64).each do |i|
+        %div.building
+          %div.roof
+          - (1..2).each do |i|
+            %div.side
+    %div.mountains
+      - (1..32).each do |i|
+        %div.mountain
+          - (1..3).each do |i|
+            %div.side
+  %div.ships
+    - (1..16).each do |i|
+      %div.ship
+        %div.roof
+        %div.bottom
+        - (1..4).each do |i|
+          %div.side

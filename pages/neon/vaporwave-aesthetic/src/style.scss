@@ -1,0 +1,612 @@
+// hash 1234567
+
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+
+  @return $x1;
+}
+
+// https://css-tricks.com/snippets/sass/power-function/#positive-or-negative-exponents
+@function pow($number, $exponent) {
+  @if (round($exponent) != $exponent) {
+    @return exp($exponent * ln($number));
+  }
+
+  $value: 1;
+
+  @if $exponent > 0 {
+    @for $i from 1 through $exponent {
+      $value: $value * $number;
+    }
+  } @else if $exponent < 0 {
+    @for $i from 1 through -$exponent {
+      $value: $value / $number;
+    }
+  }
+
+  @return $value;
+}
+
+@function factorial($value) {
+  $result: 1;
+
+  @if $value == 0 {
+    @return $result;
+  }
+
+  @for $index from 1 through $value {
+    $result: $result * $index;
+  }
+
+  @return $result;
+}
+
+@function summation($iteratee, $input, $initial: 0, $limit: 100) {
+  $sum: 0;
+
+  @for $index from $initial to $limit {
+    $sum: $sum + call($iteratee, $input, $index);
+  }
+
+  @return $sum;
+}
+
+@function exp-maclaurin($x, $n) {
+  @return (pow($x, $n) / factorial($n));
+}
+
+@function exp($value) {
+  @return summation("exp-maclaurin", $value, 0, 100);
+}
+
+@function ln-maclaurin($x, $n) {
+  @return (pow(-1, $n + 1) / $n) * (pow($x - 1, $n));
+}
+
+@function ln($value) {
+  $ten-exp: 1;
+  $ln-ten: 2.30258509;
+
+  @while ($value > pow(10, $ten-exp)) {
+    $ten-exp: $ten-exp + 1;
+  }
+
+  @return summation(ln-maclaurin, $value / pow(10, $ten-exp), 1, 100) + $ten-exp *
+    $ln-ten;
+}
+
+// Random functions
+@function rand($lower, $upper, $exponent: 1) {
+  $r: pow(random(), $exponent);
+
+  @return ($r * ($upper - $lower)) + $lower;
+}
+
+@function low_rand($lower, $upper) {
+  @return rand($lower, $upper, 2.5);
+}
+
+@function high_rand($lower, $upper) {
+  @return rand($lower, $upper, 0.4);
+}
+
+@mixin waitAnimate($options: ()) {
+  $options: map-merge(
+    (
+      animationName: waitAnimate,
+      duration: 1,
+      delay: 0,
+      waitTime: 0,
+      timingFunction: linear,
+      iterationCount: infinite
+    ),
+    $options
+  );
+
+  $name: map-get($options, animationName);
+  $kf: map-get($options, keyframes);
+  $kfLength: length($kf);
+  $duration: map-get($options, duration);
+  $delay: map-get($options, delay);
+  $waitTime: map-get($options, waitTime);
+  $timingFunction: map-get($options, timingFunction);
+  $iterationCount: map-get($options, iterationCount);
+  $counter: 1; // index of 'each'
+
+  @keyframes #{$name} {
+    @each $frame, $prop in $kf {
+      #{$frame * $duration / ($duration + $waitTime)}% {
+        @each $k, $v in $prop {
+          #{$k}: #{$v};
+        }
+      }
+      // if last in loop and waitTime is not 0, add the last frame as 100% (this is what creates the pause)
+      @if $counter == $kfLength and $waitTime > 0 {
+        100% {
+          @each $k, $v in $prop {
+            #{$k}: #{$v};
+          }
+        }
+      }
+      $counter: $counter + 1;
+    }
+  }
+
+  animation: #{$name} #{$duration + $waitTime}s #{$timingFunction} #{$iterationCount};
+  animation-delay: #{$delay}s;
+}
+
+$background-color: hsla(321, 60%, 60%);
+$alt-background-color: hsl(290, 90%, 45%);
+$grid-color: hsl(56, 75%, 90%);
+$grid-background-color: darken($grid-color, percentage(30 / 100));
+$building-color: hsl(17, 50%, 70%);
+$mountain-color: hsl(207, 35%, 75%);
+$ship-color: hsl(0, 0%, 60%);
+$ship-trail-color: hsla(0, 0%, 80%, 70%);
+$sun-color: hsl(21, 100%, 70%);
+$light-sun-color: hsl(58, 31%, 80%);
+$num-buildings: 64;
+$num-mountains: 32;
+$num-ships: 16;
+$duration: 30;
+
+body {
+  overflow: hidden;
+  height: 1024px;
+  perspective: 384px;
+  perspective-origin: 50% 384px;
+  margin: 0px;
+  background: radial-gradient(
+      circle at 50% 30%,
+      $background-color,
+      $background-color 20%,
+      $alt-background-color
+    ),
+    linear-gradient(
+      to top,
+      darken($alt-background-color, percentage(5 / 100)) 45%,
+      transparent 50%
+    );
+  background-blend-mode: hue;
+}
+
+#scene,
+.floor,
+.buildings,
+.building,
+.mountains,
+.mountain,
+.sun-group,
+.sun-line-group,
+.ships,
+.ship {
+  transform-style: preserve-3d;
+}
+
+#scene {
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+$width: 8192;
+$depth: $width / 4;
+
+.floor {
+  $base-floor-transform: translateX(0px) translateY(768px) translateZ(-768px)
+    rotateX(90deg);
+  transform: $base-floor-transform;
+
+  .grid {
+    position: absolute;
+    // width: 96px;
+    // height: 32px;
+    // background-size: 1px 1px;
+    // background-image: linear-gradient(
+    //     to right,
+    //     $grid-color 0.125px,
+    //     transparent 0.125px
+    //   ),
+    //   linear-gradient(to bottom, $grid-color 0.125px, transparent 0.125px);
+    // transform: scaleX(64) scaleY(32) translateY(12px);
+    width: 384px;
+    height: 128px;
+    background-size: 8px 8px;
+    background-image: linear-gradient(
+        to right,
+        $grid-color 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, $grid-color 1px, transparent 1px);
+    transform: scaleX(16) scaleY(8) translateY(48px);
+  }
+
+  @include waitAnimate(
+    (
+      animationName: unique-id(),
+      keyframes: (
+        0: (
+          transform: $base-floor-transform translateX(#{$depth}px)
+        ),
+        100: (
+          transform: $base-floor-transform
+        )
+      ),
+      duration: $duration,
+      delay: 0,
+      waitTime: 0,
+      timingFunction: linear
+    )
+  );
+
+  .buildings {
+    @for $i from 1 through $num-buildings {
+      .building:nth-child(#{$i}) {
+        $height-factor: $i / sqrt($i / 2) * (random() * 0.5 + 0.25);
+        $size: 64;
+        $scale-factor: $size;
+        $height-scale-factor: $height-factor * $scale-factor;
+
+        $scaled-size: $size / $scale-factor;
+        $building-size: #{$scaled-size}px;
+        $building-height: 1px;
+
+        $building-xpos: $size * sqrt($i / 2) * $i / 16 + (1.5 * $size);
+        $building-ypos: 1.5 * $size * 2 * random() * sqrt($i / 4);
+
+        $building-color-n: darken(
+          $building-color,
+          percentage($building-ypos / 2500)
+        );
+
+        position: absolute;
+        width: $building-size;
+        height: $building-size;
+        transform: translateX(#{$building-xpos}px)
+          translateY(#{$building-ypos}px)
+          scale($scale-factor)
+          scaleZ($height-scale-factor)
+          scaleY(0.5)
+          rotateZ(-90deg);
+
+        .roof {
+          position: absolute;
+          width: $building-size;
+          height: $building-size;
+          background: $building-color-n;
+          transform: translateZ($building-height)
+            translateY(#{-$scaled-size / 2}px);
+        }
+
+        .side {
+          position: absolute;
+          width: $building-size;
+          height: $building-height;
+
+          @for $j from 1 through 2 {
+            &:nth-child(#{$j + 1}) {
+              $rotation: #{90 * ($j - 1)}deg;
+              $pushX: 0px;
+              $pushY: 0px;
+
+              @if $j % 2 == 1 {
+                @if $j > 2 {
+                  $pushY: #{$scaled-size / 2}px;
+                } @else {
+                  $pushY: #{-$scaled-size / 2}px;
+                }
+              } @else {
+                @if $j > 2 {
+                  $pushX: #{$scaled-size / 2}px;
+                } @else {
+                  $pushX: #{-$scaled-size / 2}px;
+                }
+              }
+
+              @if $j == 1 {
+                background: conic-gradient(
+                  from 0deg at 0% 70%,
+                  darken($building-color-n, percentage(10 / 100)) 0deg 95deg,
+                  $building-color-n 95deg
+                );
+              } @else {
+                background: darken(
+                  $building-color-n,
+                  percentage(10 * $j / 100)
+                );
+              }
+              transform-origin: top;
+              transform: translateY($pushY)
+                translateX($pushX)
+                rotateX(90deg)
+                rotateY($rotation);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .mountains {
+    @for $i from 1 through $num-mountains {
+      .mountain:nth-child(#{$i}) {
+        $height-factor: round(sqrt($i) * sqrt(2 * $i) * (random() + 1));
+        $size: 8;
+        $scale-factor: $size / 2;
+        $scaled-size: $size / $scale-factor;
+        $mountain-size: #{$scaled-size}px;
+        $edge-size: $size * $height-factor;
+
+        $mountain-xpos: 32 * -$size * sqrt($i) * $i / 24;
+        $mountain-ypos: 16 * $size * $i * random() / sqrt($i);
+        $mountain-color-n: darken(
+          $mountain-color,
+          percentage($mountain-ypos / 2500)
+        );
+
+        position: absolute;
+        width: $mountain-size;
+        height: $mountain-size;
+        transform: translateX(#{$mountain-xpos}px)
+          translateY(#{$mountain-ypos}px)
+          translateZ(
+            #{sqrt(
+                $edge-size * $edge-size - ($edge-size / 2) * ($edge-size / 2)
+              )}px
+          )
+          scale($scale-factor)
+          rotateZ(-100deg);
+
+        .side {
+          position: absolute;
+          width: 2px;
+          height: 2px;
+          transform-origin: 50% 0%;
+          background-blend-mode: color;
+
+          @for $j from 1 through 3 {
+            &:nth-child(#{$j}) {
+              $rotation: #{90 * ($j - 1)}deg;
+
+              $side-scale-factor: $scale-factor * $height-factor;
+              $base-background-image: conic-gradient(
+                from 90deg at 50% 00%,
+                transparent 63.25deg,
+                darken($mountain-color-n, percentage(10 * $j / 100)) 63.25deg,
+                darken($mountain-color-n, percentage(10 * $j / 100)) 116.5deg,
+                transparent 116.5deg
+              );
+
+              @if $j == 1 {
+                background-image: $base-background-image,
+                  conic-gradient(
+                    from 90deg at 50% 00%,
+                    transparent 63.25deg,
+                    lighten($mountain-color-n, percentage(10 / 100))
+                      0deg
+                      63.23deg,
+                    $mountain-color-n 0deg 80deg,
+                    transparent 116.5deg
+                  );
+              } @else {
+                background-image: $base-background-image;
+              }
+
+              transform: rotateZ($rotation)
+                scale3d($height-factor, $height-factor, $side-scale-factor)
+                rotateX(-60deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ships {
+  transform: translateY(1024px) translateZ(-1024px) rotateX(90deg);
+
+  @for $i from 1 through $num-ships {
+    .ship:nth-child(#{$i}) {
+      $size: 16;
+      $height-factor: 1 / 2;
+      $scale-factor: $size;
+      $min-random-size-factor: 1;
+      $max-random-size-factor: 4;
+      $random-size-factor: rand(
+        $min-random-size-factor,
+        $max-random-size-factor,
+        6
+      );
+      $normal-random-size-factor: (
+          $random-size-factor - $min-random-size-factor
+        ) /
+        ($max-random-size-factor - $min-random-size-factor);
+
+      $scaled-size: $size / $scale-factor;
+      $ship-size: #{$scaled-size}px;
+      $ship-height: #{$size * $random-size-factor}px;
+
+      $base-ship-transform: translateY(#{512 * rand(0, 1) + 512}px)
+        translateZ(
+          #{128 *
+            pow($normal-random-size-factor, -0.5) *
+            rand(0.8, 1.2) +
+            256}px
+        )
+        scale($scale-factor * $random-size-factor)
+        scaleY(0.25)
+        scaleZ($height-factor * $scale-factor * $random-size-factor);
+
+      position: absolute;
+      transform: $base-ship-transform;
+
+      $ship-pos-offset: rand(-(2048 + 1024), 0) *
+        1 -
+        $normal-random-size-factor;
+      $ship-start-pos: #{$ship-pos-offset}px;
+      $ship-end-pos: #{$ship-pos-offset +
+        (1024 + 512) +
+        ((2048 + 1024) * (1 - $normal-random-size-factor))}px;
+
+      @include waitAnimate(
+        (
+          animationName: unique-id(),
+          keyframes: (
+            0: (
+              transform: translateX($ship-start-pos) $base-ship-transform
+            ),
+            100: (
+              transform: translateX($ship-end-pos) $base-ship-transform
+            )
+          ),
+          duration: $duration,
+          delay: 0,
+          waitTime: 0,
+          timingFunction: linear
+        )
+      );
+
+      .roof,
+      .bottom {
+        position: absolute;
+        width: $ship-size;
+        height: $ship-size;
+        box-shadow: -3px
+          0px
+          1px
+          1px
+          lighten($ship-trail-color, percentage(10 / 100));
+      }
+
+      .bottom {
+        background: darken($ship-color, percentage(40 / 100));
+        transform: translateY(#{-$scaled-size / 2}px);
+      }
+
+      .roof {
+        background: $ship-color;
+        transform: translateZ($ship-size) translateY(#{-$scaled-size / 2}px);
+      }
+
+      .side {
+        position: absolute;
+        width: $ship-size;
+        height: $ship-size;
+
+        @for $j from 1 through 4 {
+          &:nth-child(#{$j + 2}) {
+            $rotation: #{90 * ($j - 1)}deg;
+            $pushX: 0px;
+            $pushY: 0px;
+
+            @if $j == 1 {
+              display: none;
+            }
+
+            @if $j % 2 == 1 {
+              @if $j > 2 {
+                $pushY: #{$scaled-size / 2}px;
+              } @else {
+                $pushY: #{-$scaled-size / 2}px;
+              }
+            } @else {
+              @if $j > 2 {
+                $pushX: #{$scaled-size / 2}px;
+              } @else {
+                $pushX: #{-$scaled-size / 2}px;
+              }
+            }
+
+            background: darken($ship-color, percentage(10 * $j / 100));
+            transform-origin: top;
+            transform: translateY($pushY)
+              translateX($pushX)
+              rotateX(90deg)
+              rotateY($rotation);
+          }
+        }
+      }
+    }
+  }
+}
+
+.sun-group {
+  $scale-factor: 4;
+  $sun-group-size: $depth / $scale-factor;
+  $step-width: 128;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transform: translateY(#{-$scale-factor * $sun-group-size / 2.5}px)
+    scale($scale-factor) translateZ(#{-$depth + 512}px);
+
+  .sun {
+    $sun-size: #{$sun-group-size}px;
+
+    position: absolute;
+    height: $sun-size;
+    width: $sun-size;
+    border-radius: 100%;
+    background: linear-gradient(
+      $light-sun-color,
+      $sun-color 50%,
+      transparent 80%
+    );
+    clip-path: circle(#{$sun-group-size / 2}px at center);
+  }
+
+  .sun-line-group {
+    position: absolute;
+    height: #{($sun-group-size / 2) - ($sun-group-size / 5)}px;
+    width: #{$sun-group-size}px;
+    top: #{$sun-group-size / 2}px;
+    overflow: hidden;
+  }
+
+  .line {
+    position: absolute;
+    width: #{$sun-group-size}px;
+    background-color: $background-color;
+
+    $num-sun-lines: 8;
+    $sun-line-size: 12;
+
+    @for $i from 1 through $num-sun-lines {
+      &:nth-child(#{$i}) {
+        $height: $sun-line-size * $i / $scale-factor;
+        $ypos: ($i - 2) * $step-width / $scale-factor;
+        $base-sun-line-transform: translateY(#{$ypos}px);
+
+        transform-origin: top;
+        transform: $base-sun-line-transform;
+        height: #{$height}px;
+
+        @include waitAnimate(
+          (
+            animationName: unique-id(),
+            keyframes: (
+              100: (
+                transform: $base-sun-line-transform
+                  translateY(#{$step-width / $scale-factor}px)
+                  scaleY(($i + 1) / $i)
+              )
+            ),
+            duration: 2,
+            delay: 0,
+            waitTime: 0,
+            timingFunction: linear
+          )
+        );
+      }
+    }
+  }
+}
