@@ -1,18 +1,16 @@
 // 1. Create a style element to hold your global CSS
 const style = document.createElement('style');
+
+
+
+
+
+
 style.textContent = `
     @import url(\'https://fonts.googleapis.com\');
-    @import url(\'https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sixtyfour+Convergence&family=Tilt+Neon&display=swap');
+    @import url(\'https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Sixtyfour+Convergence&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Neon&display=swap');
 
-
-    body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        min-height: 100dvh; 
-        margin: 0;
-        font-size:16px;
-    }
+    
 @font-palette-values --vapor {
   font-family: "Sixtyfour Convergence";
   override-colors:
@@ -55,15 +53,7 @@ style.textContent = `
     
         margin: 0;
         /*font-size: 0.9rem;*/
-        font-size: clamp(14px, .7rem, 18px);
-        color: cyan; 
-        font-family: "Sixtyfour Convergence", "Courier New", sans-serif;
-         font-palette: --vapor;
-        font-variation-settings:
-            "BLED" 75,
-            "SCAN" 50,
-            "XELA" 75,
-            "YELA" 75;
+        
         position: absolute; 
         bottom:0; 
         width: 100%; 
@@ -162,23 +152,30 @@ style.textContent = `
          
          
     }
+.foot-format-size{
+        font-size: clamp(14px, .7rem, 18px);
+        
+}
+.foot-format-color{
 
+        color: cyan; 
+        
+}
+.foot-format-font{
+
+        font-family: "Sixtyfour Convergence", "Courier New", sans-serif;
+         font-palette: --vapor;
+        font-variation-settings:
+            "BLED" 75,
+            "SCAN" 50,
+            "XELA" 75,
+            "YELA" 75;
+}
     .footer-links a {
         display: inline-block !important;
         text-decoration: none;
         padding: 0px 10px 0px 5px;
-        font-size: clamp(14px, .7rem, 18px);
         
-        color: cyan; 
-        font-family: "Sixtyfour Convergence", "Courier New",sans-serif;
-        font-palette: --vapor;
-      font-variation-settings:
-        "BLED" 75,
-        "SCAN" 50,
-        "XELA" 75,
-        "YELA" 75;
-    
-   
 }
 @media (max-width: 768px) {
  .footer-links a {
@@ -208,3 +205,24 @@ document.getElementById('footer-placeholder').innerHTML = `
    
 </footer>`;
 
+function updateFooter(size, color, family) {
+    if(size) { 
+        document.getElementById('footer-placeholder').syle.fontSize = size;}
+    else{
+        document.getElementById('footer-placeholder').syle.fontSize = 'font-size:clamp(14px, .7rem, 18px);'
+    }
+    if(color) {
+        document.getElementById('footer-placeholder').syle.color = color;}
+    else {
+        document.getElementById('footer-placeholder').syle.color = 'cyan';
+    }
+   if(family) {
+       document.getElementById('footer-placeholder').syle.fontFamily = family;}
+    else {
+       document.getElementById('footer-placeholder').syle.fontFamily = 'Sixtyfour Convergence';
+        document.getElementById('footer-placeholder').syle.fontPalette= '--vapor';
+        document.getElementById('footer-placeholder').syle.fontVariationSettings= '"BLED" 75, "SCAN" 50, "XELA" 75, "YELA" 75';
+};
+   }
+    
+}
