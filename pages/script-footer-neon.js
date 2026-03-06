@@ -4,6 +4,20 @@ style.textContent = `
     @import url(\'https://fonts.googleapis.com\');
     @import url(\'https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sixtyfour+Convergence&family=Tilt+Neon&display=swap');
 
+@font-palette-values --vapor {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  override-colors:
+    0 #27F5D3,
+    1 #BE27F5;
+    2 #F5A927;
+    3 #79F527;
+    4 #F527B7;
+    5 #2773F5;
+}
+.vapor {
+  font-palette: --vapor;
+}
+
     body {
         display: flex;
         flex-direction: column;
@@ -12,6 +26,19 @@ style.textContent = `
         margin: 0;
     }
 
+    
+.sixtyfour-convergence-vapor {
+  font-family: "Sixtyfour Convergence", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-palette: --vapor;
+  font-variation-settings:
+    "BLED" 75,
+    "SCAN" 50,
+    "XELA" 75,
+    "YELA" 75;
+}
 
     #footer-placeholder {
         margin-top: auto; /* This pushes footer to bottom */
@@ -27,8 +54,12 @@ style.textContent = `
         margin: 0;
         font-size: 0.9rem;
         color: cyan; 
-        font-family: "Courier New", monospace; /* Classic monospace font */
-        font-family: "Sixtyfour Convergence", sans-serif;
+         font-palette: --vapor;
+        font-variation-settings:
+            "BLED" 75,
+            "SCAN" 50,
+            "XELA" 75,
+            "YELA" 75;
         position: absolute; 
         bottom:0; 
         width: 100%; 
@@ -132,6 +163,12 @@ style.textContent = `
         font-size: .9rem;
         color: cyan; /* Bright green text */
         font-family: "Courier New", monospace; /* Classic monospace font */
+        font-palette: --vapor;
+      font-variation-settings:
+        "BLED" 75,
+        "SCAN" 50,
+        "XELA" 75,
+        "YELA" 75;
     
    
 }
