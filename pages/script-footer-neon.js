@@ -55,7 +55,7 @@ style.textContent = `
     
         margin: 0;
         /*font-size: 0.9rem;*/
-        font-size: clamp(10px, .7rem, 22px);
+        font-size: clamp(16px, .7rem, 22px);
         color: cyan; 
         font-family: "Sixtyfour Convergence", "Courier New", sans-serif;
          font-palette: --vapor;
@@ -167,7 +167,7 @@ style.textContent = `
         display: inline-block !important;
         text-decoration: none;
         padding: 0px 10px 0px 5px;
-        font-size: clamp(10px, .7rem, 22px);
+        font-size: clamp(16px, .7rem, 22px);
         
         color: cyan; 
         font-family: "Sixtyfour Convergence", "Courier New",sans-serif;
@@ -182,7 +182,7 @@ style.textContent = `
 }
 @media (max-width: 768px) {
  .footer-links a {
- font-size: clamp(16px, .7rem, 22px);
+ font-size: clamp(16px, 1.5rem, 22px);
  padding: 0 0 0 5px;
  }
 }
