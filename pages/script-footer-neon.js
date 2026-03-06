@@ -54,7 +54,7 @@ style.textContent = `
         
     }
 
-    .site-footer p {
+    .site-footer p , a{
         margin: 0;
         /*font-size: 0.9rem;*/
         font-size: .7rem;
