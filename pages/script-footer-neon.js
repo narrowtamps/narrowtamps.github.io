@@ -11,6 +11,7 @@ style.textContent = `
         min-height: 100vh;
         min-height: 100dvh; 
         margin: 0;
+        font-size:20px;
     }
 @font-palette-values --vapor {
   font-family: "Sixtyfour Convergence";
