@@ -57,7 +57,7 @@ style.textContent = `
         /*font-size: 0.9rem;*/
         font-size: clamp(10px, .7rem, 26px);
         color: cyan; 
-        font-family: "Sixtyfour Convergence", sans-serif;
+        font-family: "Sixtyfour Convergence", "Courier New", sans-serif;
          font-palette: --vapor;
         font-variation-settings:
             "BLED" 75,
@@ -170,7 +170,7 @@ style.textContent = `
         font-size: clamp(10px, .7rem, 26px);
         
         color: cyan; 
-        font-family: "Sixtyfour Convergence", sans-serif;
+        font-family: "Sixtyfour Convergence", "Courier New",sans-serif;
         font-palette: --vapor;
       font-variation-settings:
         "BLED" 75,
