@@ -49,8 +49,8 @@ style.textContent = `
         padding: 20px 0; /* Use a smaller, uniform padding */
         bottom:0;
     }
-    .site-footer, .site-footer p, .site-footer a {
-        text-align: center;
+    .site-footer{
+        
         
     
         margin: 0;
@@ -70,7 +70,7 @@ style.textContent = `
         z-index: 9999; 
         animation: flicker2 .15s infinite;
     }
-    .site-footer a {
+    .site-footer a, .site-footer a {
     padding: 0 10px 0 5px;
     }
     /* Glowing text effect */
