@@ -28,7 +28,7 @@ style.textContent = `
 .sixtyfour-convergence-vapor {
   font-family: "Sixtyfour Convergence", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   font-palette: --vapor;
   font-variation-settings:
