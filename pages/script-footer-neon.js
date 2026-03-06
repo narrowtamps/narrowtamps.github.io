@@ -160,8 +160,8 @@ style.textContent = `
     .footer-links a {
         display: inline-block !important;
         text-decoration: none;
-        padding: 5px 10px;
-        font-size: .7rem;
+        padding: 0px 5px 0px 5px;
+        font-size: 2rem;
         
         color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
