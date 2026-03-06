@@ -70,6 +70,9 @@ style.textContent = `
         z-index: 9999; 
         animation: flicker2 .15s infinite;
     }
+    .site-footer a {
+    padding: 0 10px 0 5px;
+    }
     /* Glowing text effect */
 .crt .terminal-content {
     text-shadow: 0 0 5px #00ff00, 0 0 2px #00ff00, 0 0 1px #00ff00; /* Subtle glow */
