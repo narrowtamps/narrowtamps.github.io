@@ -9,10 +9,7 @@ style.textContent = `
   override-colors:
     0 #27F5D3,
     1 #BE27F5,
-    2 #F5A927,
-    3 #79F527,
-    4 #F527B7,
-    5 #2773F5;
+    2 #F5A927;
    
 }
 .vapor {
