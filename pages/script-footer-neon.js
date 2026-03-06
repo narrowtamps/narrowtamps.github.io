@@ -161,7 +161,7 @@ style.textContent = `
         display: inline-block !important;
         text-decoration: none;
         padding: 0px 5px 0px 5px;
-        font-size: 2rem;
+        font-size: 1rem;
         
         color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
@@ -173,6 +173,11 @@ style.textContent = `
         "YELA" 75;
     
    
+}
+@media (max-width: 768px) {
+ .footer-links a {
+ font-size: 2rem;
+ }
 }
 
 
