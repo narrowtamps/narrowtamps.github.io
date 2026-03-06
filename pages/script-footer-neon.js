@@ -182,6 +182,7 @@ style.textContent = `
 @media (max-width: 768px) {
  .footer-links a {
  font-size: .7rem;
+ padding: 0 0 0 5px;
  }
 }
 
