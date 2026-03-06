@@ -194,8 +194,8 @@ document.head.appendChild(style);
 
 document.getElementById('footer-placeholder').innerHTML = `
 
-<footer class="big-footer">
-<div class="site-footer">
+<footer class="site-footer big-footer">
+
     
     <div class="footer-links">
         <a href="https://www.narrowtamps.com/index.html">Home</a>
@@ -205,6 +205,6 @@ document.getElementById('footer-placeholder').innerHTML = `
             <a href="https://www.narrowtamps.com/fish.html">Fish</a>
     </div>
     <p>&copy; 2026 The Narrow Tamps. All rights reserved.</p>
-    </div>
+   
 </footer>`;
 
