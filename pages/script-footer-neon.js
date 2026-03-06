@@ -22,13 +22,12 @@ style.textContent = `
     .site-footer p {
         margin: 0;
         font-size: 0.9rem;
-        color: #00ff00; /* Bright green text */
+        color: cyan; /* Bright green text */
         font-family: "Courier New", monospace; /* Classic monospace font */
         position: absolute; 
         bottom:0; 
         width: 100%; 
         z-index: 9999; 
-        color:#00FF00; 
         animation: flicker2 .15s infinite;
     }
     /* Glowing text effect */
