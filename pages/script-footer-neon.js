@@ -207,21 +207,21 @@ document.getElementById('footer-placeholder').innerHTML = `
 
 function updateFooter(size, color, family) {
     if(size) { 
-        document.getElementById('footer-placeholder').syle.fontSize = size;}
+        document.getElementById('footer-placeholder').style.fontSize = size;}
     else{
-        document.getElementById('footer-placeholder').syle.fontSize = 'font-size:clamp(14px, .7rem, 18px);'
+        document.getElementById('footer-placeholder').style.fontSize = 'clamp(14px, .7rem, 18px);'
     }
     if(color) {
-        document.getElementById('footer-placeholder').syle.color = color;}
+        document.getElementById('footer-placeholder').style.color = color;}
     else {
-        document.getElementById('footer-placeholder').syle.color = 'cyan';
+        document.getElementById('footer-placeholder').style.color = 'cyan';
     }
    if(family) {
-       document.getElementById('footer-placeholder').syle.fontFamily = family;}
+       document.getElementById('footer-placeholder').style.fontFamily = family;}
     else {
-       document.getElementById('footer-placeholder').syle.fontFamily = 'Sixtyfour Convergence';
-        document.getElementById('footer-placeholder').syle.fontPalette= '--vapor';
-        document.getElementById('footer-placeholder').syle.fontVariationSettings= '"BLED" 75, "SCAN" 50, "XELA" 75, "YELA" 75';
+       document.getElementById('footer-placeholder').style.fontFamily = 'Sixtyfour Convergence';
+        document.getElementById('footer-placeholder').style.fontPalette= '--vapor';
+        document.getElementById('footer-placeholder').style.fontVariationSettings= '"BLED" 75, "SCAN" 50, "XELA" 75, "YELA" 75';
 }
    }
     
