@@ -51,7 +51,7 @@ style.textContent = `
     .site-footer p {
         margin: 0;
         /*font-size: 0.9rem;*/
-        
+        font-size: 1vw;
         color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
          font-palette: --vapor;
@@ -159,9 +159,10 @@ style.textContent = `
     .footer-links a {
         display: inline-block !important;
         text-decoration: none;
-        padding: 5px 10px;
-        font-size: .9rem;
-        color: cyan; /* Bright green text */
+        /*padding: 5px 10px;
+        font-size: .9rem;*/
+        font-size: 1vw;
+        color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
         font-palette: --vapor;
       font-variation-settings:
