@@ -222,7 +222,7 @@ function updateFooter(size, color, family) {
        document.getElementById('footer-placeholder').syle.fontFamily = 'Sixtyfour Convergence';
         document.getElementById('footer-placeholder').syle.fontPalette= '--vapor';
         document.getElementById('footer-placeholder').syle.fontVariationSettings= '"BLED" 75, "SCAN" 50, "XELA" 75, "YELA" 75';
-};
+}
    }
     
-}
+
