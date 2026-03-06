@@ -167,7 +167,7 @@ style.textContent = `
         display: inline-block !important;
         text-decoration: none;
         padding: 0px 10px 0px 5px;
-        font-size: clamp(20px, .7rem, 26px);
+        font-size: clamp(10px, .7rem, 26px);
         
         color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
@@ -182,7 +182,7 @@ style.textContent = `
 }
 @media (max-width: 768px) {
  .footer-links a {
- font-size: clamp(10px, .7rem, 26px);
+ font-size: clamp(20px, .7rem, 26px);
  padding: 0 0 0 5px;
  }
 }
