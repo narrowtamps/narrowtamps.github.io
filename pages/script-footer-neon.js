@@ -49,12 +49,10 @@ style.textContent = `
         padding: 20px 0; /* Use a smaller, uniform padding */
         bottom:0;
     }
-    .site-footer {
+    .site-footer, .site-footer p, .site-footer a {
         text-align: center;
         
-    }
-
-    .site-footer p , a{
+    
         margin: 0;
         /*font-size: 0.9rem;*/
         font-size: .7rem;
