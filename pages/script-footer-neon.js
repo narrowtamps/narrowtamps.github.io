@@ -46,10 +46,7 @@ style.textContent = `
     
     font-family: "Courier New", monospace; /* Classic monospace font */
     
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-     animation: flicker2 .15s infinite;
+   
 }
 
 /* Glowing text effect */
@@ -133,7 +130,7 @@ style.textContent = `
     90% { opacity: 1; }
     95% { opacity: 0.99; }
 }
-    
+
 `;
 
 document.head.appendChild(style);
@@ -141,7 +138,7 @@ document.head.appendChild(style);
 document.getElementById('footer-placeholder').innerHTML = `
 <footer class="site-footer">
     
-    <div class="footer-links crt terminal-content">
+    <div class="footer-links crt">
         <a href="https://www.narrowtamps.com/index.html">Home</a>
         <a href="https://www.narrowtamps.com/pages/campaigns.html">Campaigns</a>
         <a href="https://www.narrowtamps.com/pages/socials.html">Socials</a>
