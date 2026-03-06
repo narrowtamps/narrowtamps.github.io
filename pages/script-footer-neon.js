@@ -40,7 +40,7 @@ style.textContent = `
     }
 
     /* The main CRT container */
-.crt {
+.crt a {
     /* Green color scheme */
     color: #00ff00; /* Bright green text */
     
@@ -54,82 +54,6 @@ style.textContent = `
     text-shadow: 0 0 5px #00ff00, 0 0 2px #00ff00, 0 0 1px #00ff00; /* Subtle glow */
 }
     
-/* Scan lines effect using ::before pseudo-element */
-.crt::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: linear-gradient(to bottom, rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
-    background-size: 100% 2px; /* Controls the height of the scan lines */
-    z-index: 2;
-    pointer-events: none; /* Allows interaction with content underneath */
-}
-
-/* Flicker effect using ::after pseudo-element and animation */
-.crt::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(18, 16, 16, 0.1);
-    opacity: 0;
-    z-index: 2;
-    pointer-events: none;
-    animation: flicker 0.15s infinite; /* Rapid, infinite flicker animation */
-}
-
-/* Keyframes for the random flicker animation */
-@keyframes flicker {
-    0%, 100% { opacity: 1; }
-    5% { opacity: 0.8; }
-    10% { opacity: 1; }
-    15% { opacity: 0.95; }
-    20% { opacity: 1; }
-    25% { opacity: 0.9; }
-    30% { opacity: 1; }
-    35% { opacity: 0.97; }
-    40% { opacity: 1; }
-    45% { opacity: 0.9; }
-    50% { opacity: 1; }
-    55% { opacity: 0.85; }
-    60% { opacity: 1; }
-    65% { opacity: 0.92; }
-    70% { opacity: 1; }
-    75% { opacity: 0.98; }
-    80% { opacity: 1; }
-    85% { opacity: 0.87; }
-    90% { opacity: 1; }
-    95% { opacity: 0.93; }
-}
-        @keyframes flicker2 {
-    0%, 100% { opacity: 1; }
-    5% { opacity: 0.99; }
-    10% { opacity: 1; }
-    15% { opacity: 0.98; }
-    20% { opacity: 99; }
-    25% { opacity: 1; }
-    30% { opacity: 1; }
-    35% { opacity: 0.97; }
-    40% { opacity: 0.98; }
-    45% { opacity: 0.95; }
-    50% { opacity: 0.98; }
-    55% { opacity: 0.97; }
-    60% { opacity: .8; }
-    65% { opacity: 0.99; }
-    70% { opacity: 1; }
-    75% { opacity: 1; }
-    80% { opacity: .97; }
-    85% { opacity: 1; }
-    90% { opacity: 1; }
-    95% { opacity: 0.99; }
-}
 
 `;
 
