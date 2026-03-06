@@ -50,7 +50,8 @@ style.textContent = `
 
     .site-footer p {
         margin: 0;
-        font-size: 0.9rem;
+        /*font-size: 0.9rem;*/
+        
         color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
          font-palette: --vapor;
