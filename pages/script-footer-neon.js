@@ -167,7 +167,7 @@ style.textContent = `
         display: inline-block !important;
         text-decoration: none;
         padding: 0px 10px 0px 5px;
-        font-size: clamp(10px, .7rem, 26px);
+        font-size: clamp(20px, .7rem, 26px);
         
         color: cyan; 
         font-family: "Sixtyfour Convergence", sans-serif;
@@ -202,7 +202,7 @@ document.getElementById('footer-placeholder').innerHTML = `
         <a href="https://www.narrowtamps.com/pages/campaigns.html">Campaigns</a>
         <a href="https://www.narrowtamps.com/pages/socials.html">Socials</a>
             <a href="https://www.narrowtamps.com/about.html">About</a>
-            /*<a href="https://www.narrowtamps.com/fish.html">Fish</a>*/
+            <!--<a href="https://www.narrowtamps.com/fish.html">Fish</a>-->
     </div>
     <p>&copy; 2026 The Narrow Tamps. All rights reserved.</p>
    
