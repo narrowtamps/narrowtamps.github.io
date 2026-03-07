@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Space Jazz Babes of Cloud City or a nearby equivalent</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css'>
+<link rel="stylesheet" href="audio-visualizer/dist/style.css">
+<style>
+  body{
+    overflow:hidden;
+    display: inline-block;
+    background-color:black;
+    overscroll-behavior: auto;
+  }
+  .neon-container {
+  position: relative;
+  /* Apply neon glow to container */
+  filter: drop-shadow(0 0 5px #ff0055) drop-shadow(0 0 15px #ff0055) drop-shadow(0 0 10px #ffffff);
+    
+    height:100vh;
+}
+  .neon-container2 {
+  position: relative;
+  /* Apply neon glow to container */
+  filter: drop-shadow(0 0 5px #ff0055) drop-shadow(0 0 15px #ff0055) drop-shadow(0 0 10px #ffffff);
+    margin-left:20px;
+    height:100vh;
+}
+
+.image-1, .image-2 {
+  position: absolute;
+  filter: invert(100%) hue-rotate(280deg);
+  top: 0;
+  left: 0;
+  max-width:100%;
+  height:auto;
+  
+  animation: alternateImages 1s infinite;
+}
+
+.image-2 {
+  animation-delay: .5s; /* Delays second image to alternate */
+}
+
+@keyframes alternateImages {
+  0%, 45% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+  .glow-pink {
+  color: #fff; /* Text color, typically a bright color */
+  text-shadow:
+    0 0 20px #fff,  
+    0 0 15px #fff, 
+    0 0 10px pink, 
+    0 0 5px pink; 
+}
+   .glow-blue {
+  color: #fff; /* Text color, typically a bright color */
+  text-shadow:
+    0 0 20px #fff,  
+    0 0 15px #fff, 
+    0 0 10px blue, 
+    0 0 5px blue; 
+}
+@media  (max-width: 767px) {
+ .image-1, .image-2  {
+   
+    rotate:270deg;
+   
+     width: 100vh; /* Use vh because the image is sideways */
+    height: auto;
+    max-width: none;
+    
+    /* Position adjustments */
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%; /* This centers the rotated image perfectly */
+  }
+}
+</style>
+  </head>
+    
+  <body>
+  <div class="neon-container">
+  <img src="leg1_nobg.png" class="image-1" alt="First Image">
+  <img src="leg2_nobg.png" class="image-2" alt="Second Image">
+</div>
+    <div class="neon-container2">
+  <img src="leg1_nobg.png" class="image-1" alt="First Image">
+  <img src="leg2_nobg.png" class="image-2" alt="Second Image">
+</div>
+
+  </body>
+  <footer>
+    <div id="footer-placeholder" class="glow" style="font-weight:normal;"></div>
+        <script src="/pages/script-footer-neon.js"></script>
+            <script>
+                updateFooter('18px', '#FE019A', 'Neonderthaw',undefined,undefined);    
+            </script>
+  </footer>
+</html>
