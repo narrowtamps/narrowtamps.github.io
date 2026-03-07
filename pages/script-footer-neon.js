@@ -61,7 +61,7 @@ style.textContent = `
         animation: flicker2 .15s infinite;
     }
     .site-footer a, .site-footer a {
-    padding: 0 10px 0 5px;
+    padding: 0 5vw 0 5px;
     }
     /* Glowing text effect */
 .crt .terminal-content {
@@ -238,18 +238,24 @@ function updateFooter(size, color, family, link, name) {
     links.forEach(a => a.style.setProperty('font-size', sizeFoot, 'important'));
 
     if (color) {
-        footer.style.color = color;
+        var colFoot = color;
+       
     } else {
-        footer.style.color = 'cyan';
+        var colFoot = 'Cyan';
     }
+   footer.style.color = colFoot;
+   links.forEach(a => a.style.setProperty('color', colFoot, 'important'));
 
     if (family) {
        footer.style.fontFamily = family;
+       links.forEach(a => a.style.setProperty('font-family', family, 'important'));
     } else {
        footer.style.fontFamily = 'Sixtyfour Convergence';
-        links.forEach(a => a.style.setProperty('font-family', 'Sixtyfour Convergence', 'important'));
+       links.forEach(a => a.style.setProperty('font-family', 'Sixtyfour Convergence', 'important'));
        footer.style.fontPalette = '--vapor';
+       links.forEach(a => a.style.setProperty('font-palette', '--vapor', 'important'));
        footer.style.fontVariationSettings = '"BLED" 75, "SCAN" 50, "XELA" 75, "YELA" 75';
+       links.forEach(a => a.style.setProperty('font-variation-settings', '"BLED" 75, "SCAN" 50, "XELA" 75, "YELA" 75', 'important'));
     }
 }
 
