@@ -225,7 +225,7 @@ function updateFooter(size, color, family, link, name) {
 
       document.getElementById('footer-placeholder').innerHTML = footOne +linkRef+nameRef+ footTwo;
     const footer = document.getElementById('footer-placeholder');
-    const links = footer.querySelectorAll('a');
+    const links = footer.querySelectorAll('a, p');
     
     if (size) { 
         var sizeFoot = size;
