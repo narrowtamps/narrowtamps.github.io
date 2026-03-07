@@ -56,7 +56,7 @@ style.textContent = `
         animation: flicker2 .15s infinite;
     }
     .site-footer a, .site-footer p {
-    padding: 0 5vw 0 5px;
+    padding: 0 5px 0 5px;
     }
     /* Glowing text effect */
 .crt .terminal-content {
@@ -169,13 +169,13 @@ style.textContent = `
     .footer-links a {
         display: inline-block !important;
         text-decoration: none;
-        padding: 0px 10px 0px 5px;
+        padding: 0px 10px 0px 10px;
         
 }
 @media (max-width: 768px) {
  .footer-links a {
  font-size: clamp(16px, 1.5rem, 22px);
- padding: 0 0 0 5px;
+ padding: 0 5px 0 5px;
  }
 }
 
