@@ -1,0 +1,76 @@
+@import "compass";
+
+body{
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background:black;
+}
+
+.mommy{
+  width: 500px;
+  height: 500px;
+  position: relative;
+  perspective: 800px;
+}
+.daddy{
+  width: 500px;
+  height: 500px;
+  transform-style: preserve-3d;
+  animation : rotate 25s infinite linear;
+}
+span{
+  display: inline-block;
+  position: absolute;
+  top:50%;
+  left:50%;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  width: 0;
+  height: 0;
+  &:before{
+    content:"";
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: calc(50% - 2px);
+    background: currentColor;
+    color: inherit;
+    border-radius: 50%;
+    animation: invertRotate 25s infinite linear, scale 2s infinite linear;
+    box-shadow: 0 0 10px currentColor;
+  }
+}
+
+$amount : 300;
+@for $i from 1 through $amount {
+  
+  $theta : ($i / $amount)*120;
+  $phi : ($i / $amount) * pi();
+  $x : 250 * sin($phi) * cos($theta);
+  $y : 250 * sin($phi) * sin($theta);
+  $z : 250 * cos($phi);
+  .mommy span:nth-child(#{$i}){
+    transform: translate3d($x+px, $y+px, $z+px);
+    color: hsl(($i/$amount)*360,100%,50%);
+    &:before{
+      animation-delay: 0s, -($i/$amount)*2+s;
+    }
+  }  
+}
+
+@keyframes rotate{
+  to{transform:rotateY(360deg);}
+}
+@keyframes invertRotate{
+  to{transform:rotateY(-360deg);}
+}
+@keyframes scale{
+  0%, 45%,55%{ box-shadow: 0 0 10px 0px  currentColor;}
+  50%{ box-shadow: 0 0 10px 5px currentColor;}
+}

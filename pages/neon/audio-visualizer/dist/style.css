@@ -1,0 +1,117 @@
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #555;
+  transition: color 0.4s;
+}
+a:hover {
+  color: #000;
+}
+
+.navbar {
+  height: 60px;
+}
+
+.navbar-brand img {
+  max-height: 30px;
+}
+
+.btn-icon {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.progress-input {
+  height: 8px;
+  min-width: 50px;
+  border-radius: 0;
+  cursor: pointer;
+}
+.progress-input .progress-current {
+  background-color: #555;
+}
+
+.cover {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+.cover img {
+  width: 100%;
+  height: 100%;
+}
+.cover button {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s;
+}
+.cover:hover button {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.tracks .media-body {
+  font-size: 0.8rem;
+}
+.tracks .media-body h5 {
+  font-size: 1rem;
+}
+
+.loading {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+#start .btn-icon {
+  position: fixed;
+  z-index: 1050;
+  margin-top: 50vh;
+  margin-left: 50vw;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 60px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #555;
+  transition: all 0.4s;
+}
+#start .btn-icon:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  /* cursor: none; */
+}
+
+.modal-container {
+  position: fixed;
+  z-index: 1040;
+  animation-duration: 0.5s;
+}
+.modal-container.fadeIn { animation-name: fadeIn; }
+.modal-container.fadeOut { animation-name: fadeOut; }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

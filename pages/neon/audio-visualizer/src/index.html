@@ -1,0 +1,97 @@
+<div id="app">
+
+  <nav class="navbar fixed-top navbar-light bg-light dense">
+
+    <div class="form-inline">
+      <a class="btn-icon mr-3" href="https://soundcloud.com/" target="_blank">
+        <i class="fab fa-soundcloud fa-lg"></i>
+      </a>
+
+      <button @click="onTogglePlay" type="button" class="btn-icon mr-2">
+        <i v-if="playing" class="fas fa-pause"></i>
+        <i v-else class="fas fa-play"></i>
+      </button>
+      <progress-input v-model="currentTimeInput" :total="duration" style="width:150px;"></progress-input>
+
+      <button @click="onToggleVolume" type="button" class="btn-icon ml-4 mr-2">
+        <i v-if="volume>0" class="fas fa-volume-up"></i>
+        <i v-else class="fas fa-volume-mute"></i>
+      </button>
+      <progress-input v-model="volume" :total="100"></progress-input>
+    </div>
+
+    <div v-if="track.title" class="d-none d-lg-block">
+      <a :href="track.permalink_url" :title="track.title" class="navbar-brand" target="_blank">
+        <img v-if="track.artwork_url" :src="track.artwork_url">
+      </a>
+      <a :href="track.user.permalink_url" :title="track.user.username" @click.prevent="onSearchUserTracks(track.user)">{{ truncate(track.user.username, 4) }}</a>
+      - <a :href="track.permalink_url" :title="track.title" target="_blank">{{ truncate(track.title, 4) }}</a>
+    </div>
+
+    <form class="form-inline d-none d-sm-block">
+      <input v-model="q" @keyup.enter="onSearch" class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
+      <button @click.prevent="onSearch" class="btn btn-outline-secondary btn-sm ml-2" type="submit"><i class="fas fa-search"></i></button>
+    </form>
+
+  </nav>
+
+  <transition mode="out-in" enter-active-class="fadeIn" leave-active-class="fadeOut">
+  <div v-if="showSearchModal" class="modal-container">
+    <div @click.self="showSearchModal=false" class="modal show" style="display: block;" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <form class="form-inline">
+              <input v-model="q" @keyup.enter="onSearch" class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search">
+              <button @click.prevent="onSearch" class="btn btn-outline-secondary btn-sm ml-2" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <button @click="showSearchModal=false" type="button" class="close" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <div v-if="searching" class="loading fa-3x"><i class="fas fa-circle-notch fa-spin"></i></div>
+            <div v-else class="tracks">
+              <p v-if="tracks.length==0">No results match your search criteria.</p>
+              <ul v-else class="list-unstyled">
+                <li v-for="(t, i) in tracks" class="media mb-2">
+                  <div class="cover mr-2">
+                    <img :src="t.artwork_url" @click="onToggleTrack(t)">
+                    <button @click="onToggleTrack(t)" type="button" class="btn-icon">
+                      <i v-if="isPlaying(t.id)" class="fas fa-pause"></i>
+                      <i v-else class="fas fa-play"></i>
+                    </button>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="my-0">
+                      <a :href="t.user.permalink_url" :title="t.user.username" @click.prevent="onSearchUserTracks(t.user)">{{ t.user.username }}</a>
+                      - <a :href="t.permalink_url" :title="t.title" @click.prevent="onToggleTrack(t)">{{ t.title }}</a>
+                    </h5>
+                    <div>{{ truncate(t.description, 15) }}</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-if="showSearchModal" class="modal-backdrop show"></div>
+  </div>
+  </transition>
+
+  <div v-if="showStart" id="start">
+    <button @click="onStart" type="button" class="btn-icon"><i class="fas fa-play"></i></button>
+    <div class="modal-backdrop show"></div>
+  </div>
+
+  <canvas id="canvas"></canvas>
+</div>
+
+<script type="text/x-template" id="progress-input-template">
+  <div class="progress progress-input" @click="onClick">
+    <div class="progress-bar progress-current" :style="{ width: `${progressPct}%` }"></div>
+  </div>
+</script>
