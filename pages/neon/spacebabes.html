@@ -12,14 +12,16 @@
   .neon-container {
   position: relative;
   /* Apply neon glow to container */
-  filter: drop-shadow(0 0 15px #ff0055) drop-shadow(0 0 30px #ff0055);
+  filter: drop-shadow(0 0 5px #ff0055) drop-shadow(0 0 10px #ff0055);
+    background-color: #003366;
 }
 
 .image-1, .image-2 {
   position: absolute;
-  filter: invert(100%);
+  filter: invert(100%) hue-rotate(280deg);
   top: 0;
   left: 0;
+  background-color: #003366;
   animation: alternateImages 1s infinite;
 }
 
