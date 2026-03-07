@@ -189,7 +189,8 @@ style.textContent = `
 
 document.head.appendChild(style);
 
-document.getElementById('footer-placeholder').innerHTML = `
+
+var foot2 = `
 
 <footer class="site-footer big-footer">
 
@@ -200,12 +201,29 @@ document.getElementById('footer-placeholder').innerHTML = `
         <a href="https://www.narrowtamps.com/pages/socials.html">Socials</a>
             <a href="https://www.narrowtamps.com/about.html">About</a>
             <!--<a href="https://www.narrowtamps.com/fish.html">Fish</a>-->
-    </div>
+            `   
+var footTwo = 
+`    </div>
     <p>&copy; 2026 The Narrow Tamps. All rights reserved.</p>
    
 </footer>`;
+document.getElementById('footer-placeholder').innerHTML = footOne + footTwo;
 
-function updateFooter(size, color, family) {
+function updateFooter(size, color, family, link, name) {
+   if(link) {
+      var linkRef = '<a href="' + link + '">';
+   }
+   else {
+      var linkRef = '';
+   }
+   if(name) {
+         var nameRef = name + '</a>;'
+      }
+      else{
+         var nameRef = '';
+      }
+
+      document.getElementById('footer-placeholder').innerHTML = footOne +linkRef+nameRef+ footTwo;
     const footer = document.getElementById('footer-placeholder');
     const links = footer.querySelectorAll('a');
     
