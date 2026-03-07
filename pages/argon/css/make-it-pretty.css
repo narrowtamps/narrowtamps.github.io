@@ -1314,7 +1314,12 @@ h6 {
     --neon-purple-color: violet;
     --neon-green-color: #0f0;
     --neon-cyan-color: #0ff;
-    --neon-orange-color: orange
+    --neon-orange-color: orange;
+    --neon-magenta-color: magenta;
+    --neon-red-color: #FF355E;
+    --neon-aqua-color: #00FFC3;
+    --neon-lemon-color: #E6FF66;
+    
 }
 
 body {
@@ -1453,6 +1458,39 @@ h1 {
     box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-orange-color),0 0 .2em var(--neon-orange-color),0 0 .3em var(--neon-orange-color),0 0 1em var(--neon-orange-color),0 0 1.5em var(--neon-orange-color),inset 0 0 .1em var(--neon-orange-color),inset 0 0 .2em var(--neon-orange-color),inset 0 0 .3em var(--neon-orange-color),inset 0 0 1em var(--neon-orange-color),inset 0 0 1.5em var(--neon-orange-color)
 }
 
+.colors ul li button.magenta {
+    background-color: magenta;
+    background-color: var(--neon-magenta-color);
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em magenta,0 0 .2em magenta,0 0 .3em magenta,0 0 1em magenta,0 0 1.5em magenta,inset 0 0 .1em magenta,inset 0 0 .2em magenta,inset 0 0 .3em magenta,inset 0 0 1em magenta,inset 0 0 1.5em magenta;
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-magenta-color),0 0 .2em var(--neon-magenta-color),0 0 .3em var(--neon-magenta-color),0 0 1em var(--neon-magenta-color),0 0 1.5em var(--neon-magenta-color),inset 0 0 .1em var(--neon-magenta-color),inset 0 0 .2em var(--neon-magenta-color),inset 0 0 .3em var(--neon-magenta-color),inset 0 0 1em var(--neon-magenta-color),inset 0 0 1.5em var(--neon-magenta-color)
+}
+
+
+.colors ul li button.aqua {
+    background-color: #00FFC3;
+    background-color: var(--neon-aqua-color);
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em #00FFC3,0 0 .2em #00FFC3,0 0 .3em #00FFC3,0 0 1em #00FFC3,0 0 1.5em #00FFC3,inset 0 0 .1em #00FFC3,inset 0 0 .2em #00FFC3,inset 0 0 .3em #00FFC3,inset 0 0 1em #00FFC3,inset 0 0 1.5em #00FFC3;
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-aqua-color),0 0 .2em var(--neon-aqua-color),0 0 .3em var(--neon-aqua-color),0 0 1em var(--neon-aqua-color),0 0 1.5em var(--neon-aqua-color),inset 0 0 .1em var(--neon-aqua-color),inset 0 0 .2em var(--neon-aqua-color),inset 0 0 .3em var(--neon-aqua-color),inset 0 0 1em var(--neon-aqua-color),inset 0 0 1.5em var(--neon-aqua-color)
+}
+
+
+.colors ul li button.red {
+    background-color: #FF355E;
+    background-color: var(--neon-red-color);
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em #FF355E,0 0 .2em #FF355E,0 0 .3em #FF355E,0 0 1em #FF355E,0 0 1.5em #FF355E,inset 0 0 .1em #FF355E,inset 0 0 .2em #FF355E,inset 0 0 .3em #FF355E,inset 0 0 1em #FF355E,inset 0 0 1.5em #FF355E;
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-red-color),0 0 .2em var(--neon-red-color),0 0 .3em var(--neon-red-color),0 0 1em var(--neon-red-color),0 0 1.5em var(--neon-red-color),inset 0 0 .1em var(--neon-red-color),inset 0 0 .2em var(--neon-red-color),inset 0 0 .3em var(--neon-red-color),inset 0 0 1em var(--neon-red-color),inset 0 0 1.5em var(--neon-red-color)
+}
+
+
+.colors ul li button.lemon {
+    background-color: #E6FF66;
+    background-color: var(--neon-lemon-color);
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em #E6FF66,0 0 .2em #E6FF66,0 0 .3em #E6FF66,0 0 1em #E6FF66,0 0 1.5em #E6FF66,inset 0 0 .1em #E6FF66,inset 0 0 .2em #E6FF66,inset 0 0 .3em #E6FF66,inset 0 0 1em #E6FF66,inset 0 0 1.5em #E6FF66;
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-lemon-color),0 0 .2em var(--neon-lemon-color),0 0 .3em var(--neon-lemon-color),0 0 1em var(--neon-lemon-color),0 0 1.5em var(--neon-lemon-color),inset 0 0 .1em var(--neon-lemon-color),inset 0 0 .2em var(--neon-lemon-color),inset 0 0 .3em var(--neon-lemon-color),inset 0 0 1em var(--neon-lemon-color),inset 0 0 1.5em var(--neon-lemon-color)
+}
+
+
+
 [class$=-sign] {
     border: 6px solid #fff;
     padding: 32px;
@@ -1503,6 +1541,58 @@ h1 {
     text-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em #0f0,0 0 .2em #0f0,0 0 .3em #0f0,0 0 1em #0f0,0 0 1.5em #0f0;
     text-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-green-color),0 0 .2em var(--neon-green-color),0 0 .3em var(--neon-green-color),0 0 1em var(--neon-green-color),0 0 1.5em var(--neon-green-color)
 }
+
+[class$=-sign][class^=magenta] {
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em magenta,0 0 .2em magenta,0 0 .3em magenta,0 0 1em magenta,0 0 1.5em magenta,inset 0 0 .1em magenta,inset 0 0 .2em magenta,inset 0 0 .3em magenta,inset 0 0 1em magenta,inset 0 0 1.5em magenta;
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-magenta-color),0 0 .2em var(--neon-magenta-color),0 0 .3em var(--neon-magenta-color),0 0 1em var(--neon-magenta-color),0 0 1.5em var(--neon-magenta-color),inset 0 0 .1em var(--neon-magenta-color),inset 0 0 .2em var(--neon-magenta-color),inset 0 0 .3em var(--neon-magenta-color),inset 0 0 1em var(--neon-magenta-color),inset 0 0 1.5em var(--neon-magenta-color)
+}
+
+
+[class$=-sign][class^=magenta] [data-js-flicker] {
+    color: #fff;
+    text-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em #00FFC3,0 0 .2em #00FFC3,0 0 .3em #00FFC3,0 0 1em #00FFC3,0 0 1.5em #00FFC3;
+    text-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-aqua-color),0 0 .2em var(--neon-aqua-color),0 0 .3em var(--neon-aqua-color),0 0 1em var(--neon-aqua-color),0 0 1.5em var(--neon-aqua-color)
+}
+
+
+[class$=-sign][class^=red] {
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em #FF355E,0 0 .2em #FF355E,0 0 .3em #FF355E,0 0 1em #FF355E,0 0 1.5em #FF355E,inset 0 0 .1em #FF355E,inset 0 0 .2em #FF355E,inset 0 0 .3em #FF355E,inset 0 0 1em #FF355E,inset 0 0 1.5em #FF355E;
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-red-color),0 0 .2em var(--neon-red-color),0 0 .3em var(--neon-red-color),0 0 1em var(--neon-red-color),0 0 1.5em var(--neon-red-color),inset 0 0 .1em var(--neon-red-color),inset 0 0 .2em var(--neon-red-color),inset 0 0 .3em var(--neon-red-color),inset 0 0 1em var(--neon-red-color),inset 0 0 1.5em var(--neon-red-color)
+}
+
+
+[class$=-sign][class^=red] [data-js-flicker] {
+    color: #fff;
+    text-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em magenta,0 0 .2em magenta,0 0 .3em magenta,0 0 1em magenta,0 0 1.5em magenta;
+    text-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-magenta-color),0 0 .2em var(--neon-magenta-color),0 0 .3em var(--neon-magenta-color),0 0 1em var(--neon-magenta-color),0 0 1.5em var(--neon-magenta-color)
+}
+
+
+[class$=-sign][class^=aqua] {
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em #00FFC3,0 0 .2em #00FFC3,0 0 .3em #00FFC3,0 0 1em #00FFC3,0 0 1.5em #00FFC3,inset 0 0 .1em #00FFC3,inset 0 0 .2em #00FFC3,inset 0 0 .3em #00FFC3,inset 0 0 1em #00FFC3,inset 0 0 1.5em #00FFC3;
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-aqua-color),0 0 .2em var(--neon-aqua-color),0 0 .3em var(--neon-aqua-color),0 0 1em var(--neon-aqua-color),0 0 1.5em var(--neon-aqua-color),inset 0 0 .1em var(--neon-aqua-color),inset 0 0 .2em var(--neon-aqua-color),inset 0 0 .3em var(--neon-aqua-color),inset 0 0 1em var(--neon-aqua-color),inset 0 0 1.5em var(--neon-aqua-color)
+}
+
+
+[class$=-sign][class^=aqua] [data-js-flicker] {
+    color: #fff;
+    text-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em #E6FF66,0 0 .2em #E6FF66,0 0 .3em #E6FF66,0 0 1em #E6FF66,0 0 1.5em #E6FF66;
+    text-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-lemon-color),0 0 .2em var(--neon-lemon-color),0 0 .3em var(--neon-lemon-color),0 0 1em var(--neon-lemon-color),0 0 1.5em var(--neon-lemon-color)
+}
+
+
+[class$=-sign][class^=lemon] {
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em #E6FF66,0 0 .2em #E6FF66,0 0 .3em #E6FF66,0 0 1em #E6FF66,0 0 1.5em #E6FF66,inset 0 0 .1em #E6FF66,inset 0 0 .2em #E6FF66,inset 0 0 .3em #E6FF66,inset 0 0 1em #E6FF66,inset 0 0 1.5em #E6FF66;
+    box-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-lemon-color),0 0 .2em var(--neon-lemon-color),0 0 .3em var(--neon-lemon-color),0 0 1em var(--neon-lemon-color),0 0 1.5em var(--neon-lemon-color),inset 0 0 .1em var(--neon-lemon-color),inset 0 0 .2em var(--neon-lemon-color),inset 0 0 .3em var(--neon-lemon-color),inset 0 0 1em var(--neon-lemon-color),inset 0 0 1.5em var(--neon-lemon-color)
+}
+
+
+[class$=-sign][class^=lemon] [data-js-flicker] {
+    color: #fff;
+    text-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em #FF355E,0 0 .2em #FF355E,0 0 .3em #FF355E,0 0 1em #FF355E,0 0 1.5em #FF355E;
+    text-shadow: 0 0 .033em #fff,0 0 .08em #fff,0 0 .1em var(--neon-red-color),0 0 .2em var(--neon-red-color),0 0 .3em var(--neon-red-color),0 0 1em var(--neon-red-color),0 0 1.5em var(--neon-red-color)
+}
+
 
 @-webkit-keyframes flicker {
     0%,19.999%,22%,62.999%,64%,64.999%,72%,to {
