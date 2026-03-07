@@ -1,14 +1,9 @@
 // 1. Create a style element to hold your global CSS
 const style = document.createElement('style');
 
-
-
-
-
-
 style.textContent = `
    
-    @import url(\'https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Sixtyfour+Convergence&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Neon&display=swap');
+    @import url(\'https://fonts.googleapis.com/css2?family=Audiowide&family=Neonderthaw&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Sixtyfour+Convergence&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tilt+Neon&display=swap');
 
     
 @font-palette-values --vapor {
