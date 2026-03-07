@@ -44,13 +44,13 @@ style.textContent = `
 
     .big-footer {
         text-align: center;
-        padding: 10px 0; /* Use a smaller, uniform padding */
+        padding: 0px 0; /* Use a smaller, uniform padding */
         bottom:0;
     }
     .site-footer{
         
         
-    
+       text-align: center;
         margin: 0;
         /*font-size: 0.9rem;*/
         
