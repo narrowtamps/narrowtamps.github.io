@@ -232,9 +232,9 @@ function updateFooter(size, color, family, link, name) {
         
     } else {
         // Corrected: Removed the 'font-size:' prefix
-        var sizeFoot = 'clamp(10px, .7rem, 18px)';
+        var sizeFoot = 'clamp(10px, .7rem, 14px)';
     }
-    footer.style.fontSize = sizeFoot;
+    footer.style.setProperty('font-size', sizeFoot, 'important');
     links.forEach(a => a.style.setProperty('font-size', sizeFoot, 'important'));
 
     if (color) {
@@ -243,11 +243,11 @@ function updateFooter(size, color, family, link, name) {
     } else {
         var colFoot = 'Cyan';
     }
-   footer.style.color = colFoot;
+   footer.style.setProperty('color', colFoot, 'important');
    links.forEach(a => a.style.setProperty('color', colFoot, 'important'));
 
     if (family) {
-       footer.style.fontFamily = family;
+       footer.style.setProperty('font-family', family, 'important');
        links.forEach(a => a.style.setProperty('font-family', family, 'important'));
     } else {
        footer.style.fontFamily = 'Sixtyfour Convergence';
