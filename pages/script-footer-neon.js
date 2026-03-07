@@ -60,7 +60,7 @@ style.textContent = `
         z-index: 9999; 
         animation: flicker2 .15s infinite;
     }
-    .site-footer a, .site-footer a {
+    .site-footer a, .site-footer p {
     padding: 0 5vw 0 5px;
     }
     /* Glowing text effect */
@@ -192,7 +192,7 @@ document.head.appendChild(style);
 
 var footOne = `
 
-<footer class="site-footer big-footer">
+<footer class="site-footer">
 
     
     <div class="footer-links">
@@ -232,7 +232,7 @@ function updateFooter(size, color, family, link, name) {
         
     } else {
         // Corrected: Removed the 'font-size:' prefix
-        var sizeFoot = 'clamp(14px, .7rem, 18px)';
+        var sizeFoot = 'clamp(10px, .7rem, 18px)';
     }
     footer.style.fontSize = sizeFoot;
     links.forEach(a => a.style.setProperty('font-size', sizeFoot, 'important'));
