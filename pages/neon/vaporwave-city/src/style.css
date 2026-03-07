@@ -38,7 +38,7 @@ body {
   background-image: linear-gradient(to right, hsl(56, 75%, 90%) 1px, transparent 1px), linear-gradient(to bottom, hsl(56, 75%, 90%) 1px, transparent 1px);
   transform: scaleX(16) scaleY(8) translateY(48px);
 }
-@keyframes u2nmib5 {
+@keyframes u2nmine {
   0% {
     transform: translateX(0px) translateY(768px) translateZ(-768px) rotateX(90deg) translateX(2048px);
   }
@@ -47,20 +47,20 @@ body {
   }
 }
 .floor {
-  animation: u2nmib5 30s linear infinite;
+  animation: u2nmine 30s linear infinite;
   animation-delay: 0s;
 }
 .floor .buildings .building:nth-child(1) {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(98.8284271247px) translateY(86.9701023188px) scale(64) scaleZ(43.3342082917) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(98.8284271247px) translateY(69.4501102027px) scale(64) scaleZ(28.1339017296) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(1) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 66.5211959072%);
+  background: hsl(17, 50%, 67.2219955919%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(1) .side {
@@ -69,12 +69,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(1) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 56.5211959072%) 0deg 95deg, hsl(17, 50%, 66.5211959072%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 57.2219955919%) 0deg 95deg, hsl(17, 50%, 67.2219955919%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(1) .side:nth-child(3) {
-  background: hsl(17, 50%, 46.5211959072%);
+  background: hsl(17, 50%, 47.2219955919%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -82,13 +82,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(104px) translateY(114.050517275px) scale(64) scaleZ(75.2941882988) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(104px) translateY(6.3495520695px) scale(64) scaleZ(43.5622206744) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(2) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 65.437979309%);
+  background: hsl(17, 50%, 69.7460179172%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(2) .side {
@@ -97,12 +97,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(2) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 55.437979309%) 0deg 95deg, hsl(17, 50%, 65.437979309%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 59.7460179172%) 0deg 95deg, hsl(17, 50%, 69.7460179172%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(2) .side:nth-child(3) {
-  background: hsl(17, 50%, 45.437979309%);
+  background: hsl(17, 50%, 49.7460179172%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -110,13 +110,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(110.6969384567px) translateY(60.8716237449px) scale(64) scaleZ(115.4417994818) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(110.6969384567px) translateY(36.9320718673px) scale(64) scaleZ(114.6148965883) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(3) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 67.5651350502%);
+  background: hsl(17, 50%, 68.5227171253%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(3) .side {
@@ -125,12 +125,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(3) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 57.5651350502%) 0deg 95deg, hsl(17, 50%, 67.5651350502%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.5227171253%) 0deg 95deg, hsl(17, 50%, 68.5227171253%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(3) .side:nth-child(3) {
-  background: hsl(17, 50%, 47.5651350502%);
+  background: hsl(17, 50%, 48.5227171253%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -138,13 +138,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(118.627416998px) translateY(60.4285810203px) scale(64) scaleZ(92.249400817) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(118.627416998px) translateY(155.3021553483px) scale(64) scaleZ(73.1727291252) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(4) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 67.5828567592%);
+  background: hsl(17, 50%, 63.7879137861%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(4) .side {
@@ -153,12 +153,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(4) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 57.5828567592%) 0deg 95deg, hsl(17, 50%, 67.5828567592%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 53.7879137861%) 0deg 95deg, hsl(17, 50%, 63.7879137861%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(4) .side:nth-child(3) {
-  background: hsl(17, 50%, 47.5828567592%);
+  background: hsl(17, 50%, 43.7879137861%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -166,13 +166,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(127.6227766017px) translateY(167.2124482858px) scale(64) scaleZ(75.0199545687) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(127.6227766017px) translateY(22.3382387791px) scale(64) scaleZ(145.0971245178) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(5) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 63.3115020686%);
+  background: hsl(17, 50%, 69.1064704488%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(5) .side {
@@ -181,12 +181,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(5) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 53.3115020686%) 0deg 95deg, hsl(17, 50%, 63.3115020686%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 59.1064704488%) 0deg 95deg, hsl(17, 50%, 69.1064704488%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(5) .side:nth-child(3) {
-  background: hsl(17, 50%, 43.3115020686%);
+  background: hsl(17, 50%, 49.1064704488%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -194,13 +194,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(137.5692193817px) translateY(67.542163083px) scale(64) scaleZ(80.2041925315) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(137.5692193817px) translateY(162.5844712999px) scale(64) scaleZ(125.040323693) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(6) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 67.2983134767%);
+  background: hsl(17, 50%, 63.496621148%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(6) .side {
@@ -209,12 +209,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(6) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 57.2983134767%) 0deg 95deg, hsl(17, 50%, 67.2983134767%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 53.496621148%) 0deg 95deg, hsl(17, 50%, 63.496621148%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(6) .side:nth-child(3) {
-  background: hsl(17, 50%, 47.2983134767%);
+  background: hsl(17, 50%, 43.496621148%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -222,13 +222,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(148.3832034148px) translateY(245.07384463px) scale(64) scaleZ(124.8252689112) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(148.3832034148px) translateY(124.9130061139px) scale(64) scaleZ(98.3637419942) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(7) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 60.1970462148%);
+  background: hsl(17, 50%, 65.0034797554%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(7) .side {
@@ -237,12 +237,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(7) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 50.1970462148%) 0deg 95deg, hsl(17, 50%, 60.1970462148%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 55.0034797554%) 0deg 95deg, hsl(17, 50%, 65.0034797554%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(7) .side:nth-child(3) {
-  background: hsl(17, 50%, 40.1970462148%);
+  background: hsl(17, 50%, 45.0034797554%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -250,13 +250,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(160px) translateY(169.1440510933px) scale(64) scaleZ(126.240898918) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(160px) translateY(151.9538544154px) scale(64) scaleZ(120.4236878936) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(8) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 63.2342379563%);
+  background: hsl(17, 50%, 63.9218458234%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(8) .side {
@@ -265,12 +265,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(8) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 53.2342379563%) 0deg 95deg, hsl(17, 50%, 63.2342379563%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 53.9218458234%) 0deg 95deg, hsl(17, 50%, 63.9218458234%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(8) .side:nth-child(3) {
-  background: hsl(17, 50%, 43.2342379563%);
+  background: hsl(17, 50%, 43.9218458234%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -278,13 +278,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(172.3675323681px) translateY(36.2181568658px) scale(64) scaleZ(105.5482795237) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(172.3675323681px) translateY(132.9362293566px) scale(64) scaleZ(190.8448840978) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(9) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 68.5512737254%);
+  background: hsl(17, 50%, 64.6825508257%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(9) .side {
@@ -293,12 +293,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(9) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.5512737254%) 0deg 95deg, hsl(17, 50%, 68.5512737254%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 54.6825508257%) 0deg 95deg, hsl(17, 50%, 64.6825508257%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(9) .side:nth-child(3) {
-  background: hsl(17, 50%, 48.5512737254%);
+  background: hsl(17, 50%, 44.6825508257%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -306,13 +306,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(185.4427191px) translateY(77.6314227949px) scale(64) scaleZ(145.1384407681) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(185.4427191px) translateY(49.0776309827px) scale(64) scaleZ(151.9925494378) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(10) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 66.8947430882%);
+  background: hsl(17, 50%, 68.0368947607%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(10) .side {
@@ -321,12 +321,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(10) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 56.8947430882%) 0deg 95deg, hsl(17, 50%, 66.8947430882%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.0368947607%) 0deg 95deg, hsl(17, 50%, 68.0368947607%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(10) .side:nth-child(3) {
-  background: hsl(17, 50%, 46.8947430882%);
+  background: hsl(17, 50%, 48.0368947607%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -334,13 +334,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(199.1891467161px) translateY(69.6460932598px) scale(64) scaleZ(203.5606630398) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(199.1891467161px) translateY(193.727331943px) scale(64) scaleZ(174.108860894) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(11) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 67.2141562696%);
+  background: hsl(17, 50%, 62.2509067223%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(11) .side {
@@ -349,12 +349,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(11) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 57.2141562696%) 0deg 95deg, hsl(17, 50%, 67.2141562696%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 52.2509067223%) 0deg 95deg, hsl(17, 50%, 62.2509067223%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(11) .side:nth-child(3) {
-  background: hsl(17, 50%, 47.2141562696%);
+  background: hsl(17, 50%, 42.2509067223%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -362,13 +362,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(213.5755076536px) translateY(305.7908884292px) scale(64) scaleZ(83.4052142425) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(213.5755076536px) translateY(154.2212286651px) scale(64) scaleZ(181.6056754832) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(12) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 57.7683644628%);
+  background: hsl(17, 50%, 63.8311508534%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(12) .side {
@@ -377,12 +377,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(12) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 47.7683644628%) 0deg 95deg, hsl(17, 50%, 57.7683644628%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 53.8311508534%) 0deg 95deg, hsl(17, 50%, 63.8311508534%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(12) .side:nth-child(3) {
-  background: hsl(17, 50%, 37.7683644628%);
+  background: hsl(17, 50%, 43.8311508534%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -390,13 +390,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(228.5745073534px) translateY(213.2461880615px) scale(64) scaleZ(181.5622647408) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(228.5745073534px) translateY(95.8118740257px) scale(64) scaleZ(243.8519349036) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(13) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 61.4701524775%);
+  background: hsl(17, 50%, 66.167525039%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(13) .side {
@@ -405,12 +405,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(13) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 51.4701524775%) 0deg 95deg, hsl(17, 50%, 61.4701524775%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 56.167525039%) 0deg 95deg, hsl(17, 50%, 66.167525039%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(13) .side:nth-child(3) {
-  background: hsl(17, 50%, 41.4701524775%);
+  background: hsl(17, 50%, 46.167525039%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -418,13 +418,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(244.1620734196px) translateY(71.4672277429px) scale(64) scaleZ(113.51798476) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(244.1620734196px) translateY(200.8520162395px) scale(64) scaleZ(136.9121395767) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(14) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 67.1413108903%);
+  background: hsl(17, 50%, 61.9659193504%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(14) .side {
@@ -433,12 +433,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(14) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 57.1413108903%) 0deg 95deg, hsl(17, 50%, 67.1413108903%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 51.9659193504%) 0deg 95deg, hsl(17, 50%, 61.9659193504%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(14) .side:nth-child(3) {
-  background: hsl(17, 50%, 47.1413108903%);
+  background: hsl(17, 50%, 41.9659193504%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -446,13 +446,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(260.3167672515px) translateY(206.7904975687px) scale(64) scaleZ(138.449564085) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(260.3167672515px) translateY(259.9448631253px) scale(64) scaleZ(203.4410925348) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(15) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 61.7283800973%);
+  background: hsl(17, 50%, 59.602205475%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(15) .side {
@@ -461,12 +461,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(15) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 51.7283800973%) 0deg 95deg, hsl(17, 50%, 61.7283800973%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 49.602205475%) 0deg 95deg, hsl(17, 50%, 59.602205475%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(15) .side:nth-child(3) {
-  background: hsl(17, 50%, 41.7283800973%);
+  background: hsl(17, 50%, 39.602205475%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -474,13 +474,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(277.0193359838px) translateY(85.1640034017px) scale(64) scaleZ(99.8648501167) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(277.0193359838px) translateY(110.3641458288px) scale(64) scaleZ(122.5603172447) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(16) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 66.5934398639%);
+  background: hsl(17, 50%, 65.5854341668%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(16) .side {
@@ -489,12 +489,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(16) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 56.5934398639%) 0deg 95deg, hsl(17, 50%, 66.5934398639%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 55.5854341668%) 0deg 95deg, hsl(17, 50%, 65.5854341668%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(16) .side:nth-child(3) {
-  background: hsl(17, 50%, 46.5934398639%);
+  background: hsl(17, 50%, 45.5854341668%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -502,13 +502,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(294.2523644247px) translateY(244.1968558548px) scale(64) scaleZ(237.9134754701) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(294.2523644247px) translateY(281.6233927874px) scale(64) scaleZ(126.1017736138) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(17) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 60.2321257658%);
+  background: hsl(17, 50%, 58.7350642885%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(17) .side {
@@ -517,12 +517,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(17) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 50.2321257658%) 0deg 95deg, hsl(17, 50%, 60.2321257658%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 48.7350642885%) 0deg 95deg, hsl(17, 50%, 58.7350642885%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(17) .side:nth-child(3) {
-  background: hsl(17, 50%, 40.2321257658%);
+  background: hsl(17, 50%, 38.7350642885%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -530,13 +530,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(312px) translateY(160.9377139093px) scale(64) scaleZ(149.5872141413) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(312px) translateY(155.330774303px) scale(64) scaleZ(197.9457649161) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(18) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 63.5624914436%);
+  background: hsl(17, 50%, 63.7867690279%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(18) .side {
@@ -545,12 +545,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(18) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 53.5624914436%) 0deg 95deg, hsl(17, 50%, 63.5624914436%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 53.7867690279%) 0deg 95deg, hsl(17, 50%, 63.7867690279%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(18) .side:nth-child(3) {
-  background: hsl(17, 50%, 43.5624914436%);
+  background: hsl(17, 50%, 43.7867690279%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -558,13 +558,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(330.2477321128px) translateY(209.8650328611px) scale(64) scaleZ(272.9251599428) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(330.2477321128px) translateY(43.5673072473px) scale(64) scaleZ(101.3639151942) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(19) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 61.6053986856%);
+  background: hsl(17, 50%, 68.2573077101%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(19) .side {
@@ -573,12 +573,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(19) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 51.6053986856%) 0deg 95deg, hsl(17, 50%, 61.6053986856%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.2573077101%) 0deg 95deg, hsl(17, 50%, 68.2573077101%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(19) .side:nth-child(3) {
-  background: hsl(17, 50%, 41.6053986856%);
+  background: hsl(17, 50%, 48.2573077101%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -586,13 +586,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(348.9822128135px) translateY(297.8079119167px) scale(64) scaleZ(221.6716487326) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(348.9822128135px) translateY(380.8557126401px) scale(64) scaleZ(159.6435808414) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(20) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 58.0876835233%);
+  background: hsl(17, 50%, 54.7657714944%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(20) .side {
@@ -601,12 +601,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(20) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 48.0876835233%) 0deg 95deg, hsl(17, 50%, 58.0876835233%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 44.7657714944%) 0deg 95deg, hsl(17, 50%, 54.7657714944%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(20) .side:nth-child(3) {
-  background: hsl(17, 50%, 38.0876835233%);
+  background: hsl(17, 50%, 34.7657714944%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -614,13 +614,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(368.1911093331px) translateY(89.3102536271px) scale(64) scaleZ(230.3655021951) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(368.1911093331px) translateY(413.339580948px) scale(64) scaleZ(269.4449175554) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(21) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 66.4275898549%);
+  background: hsl(17, 50%, 53.4664167621%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(21) .side {
@@ -629,12 +629,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(21) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 56.4275898549%) 0deg 95deg, hsl(17, 50%, 66.4275898549%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 43.4664167621%) 0deg 95deg, hsl(17, 50%, 53.4664167621%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(21) .side:nth-child(3) {
-  background: hsl(17, 50%, 46.4275898549%);
+  background: hsl(17, 50%, 33.4664167621%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -642,13 +642,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(387.8629815513px) translateY(133.9581422659px) scale(64) scaleZ(192.1292640762) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(387.8629815513px) translateY(263.6647282953px) scale(64) scaleZ(257.8388726904) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(22) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 64.6416743094%);
+  background: hsl(17, 50%, 59.4534108682%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(22) .side {
@@ -657,12 +657,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(22) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 54.6416743094%) 0deg 95deg, hsl(17, 50%, 64.6416743094%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 49.4534108682%) 0deg 95deg, hsl(17, 50%, 59.4534108682%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(22) .side:nth-child(3) {
-  background: hsl(17, 50%, 44.6416743094%);
+  background: hsl(17, 50%, 39.4534108682%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -670,13 +670,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(407.9871792238px) translateY(281.378026792px) scale(64) scaleZ(145.5511633703) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(407.9871792238px) translateY(179.1181268007px) scale(64) scaleZ(237.7635365982) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(23) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 58.7448789283%);
+  background: hsl(17, 50%, 62.835274928%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(23) .side {
@@ -685,12 +685,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(23) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 48.7448789283%) 0deg 95deg, hsl(17, 50%, 58.7448789283%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 52.835274928%) 0deg 95deg, hsl(17, 50%, 62.835274928%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(23) .side:nth-child(3) {
-  background: hsl(17, 50%, 38.7448789283%);
+  background: hsl(17, 50%, 42.835274928%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -698,13 +698,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(428.5537550532px) translateY(227.0363666061px) scale(64) scaleZ(188.5658379971) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(428.5537550532px) translateY(32.3982613039px) scale(64) scaleZ(131.4509597221) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(24) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 60.9185453358%);
+  background: hsl(17, 50%, 68.7040695478%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(24) .side {
@@ -713,12 +713,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(24) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 50.9185453358%) 0deg 95deg, hsl(17, 50%, 60.9185453358%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.7040695478%) 0deg 95deg, hsl(17, 50%, 68.7040695478%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(24) .side:nth-child(3) {
-  background: hsl(17, 50%, 40.9185453358%);
+  background: hsl(17, 50%, 48.7040695478%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -726,13 +726,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(449.5533905933px) translateY(402.8911211271px) scale(64) scaleZ(283.7127159878) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(449.5533905933px) translateY(270.1515814687px) scale(64) scaleZ(295.7053433984) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(25) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 53.8843551549%);
+  background: hsl(17, 50%, 59.1939367413%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(25) .side {
@@ -741,12 +741,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(25) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 43.8843551549%) 0deg 95deg, hsl(17, 50%, 53.8843551549%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 49.1939367413%) 0deg 95deg, hsl(17, 50%, 59.1939367413%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(25) .side:nth-child(3) {
-  background: hsl(17, 50%, 33.8843551549%);
+  background: hsl(17, 50%, 39.1939367413%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -754,13 +754,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(470.9773326483px) translateY(150.1066805403px) scale(64) scaleZ(256.6531401137) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(470.9773326483px) translateY(307.9308673694px) scale(64) scaleZ(269.1867296961) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(26) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 63.9957327784%);
+  background: hsl(17, 50%, 57.6827653052%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(26) .side {
@@ -769,12 +769,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(26) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 53.9957327784%) 0deg 95deg, hsl(17, 50%, 63.9957327784%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 47.6827653052%) 0deg 95deg, hsl(17, 50%, 57.6827653052%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(26) .side:nth-child(3) {
-  background: hsl(17, 50%, 43.9957327784%);
+  background: hsl(17, 50%, 37.6827653052%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -782,13 +782,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(492.8173383309px) translateY(223.1603571421px) scale(64) scaleZ(180.8427435944) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(492.8173383309px) translateY(429.8777461107px) scale(64) scaleZ(195.7280347467) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(27) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 61.0735857143%);
+  background: hsl(17, 50%, 52.8048901556%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(27) .side {
@@ -797,12 +797,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(27) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 51.0735857143%) 0deg 95deg, hsl(17, 50%, 61.0735857143%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 42.8048901556%) 0deg 95deg, hsl(17, 50%, 52.8048901556%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(27) .side:nth-child(3) {
-  background: hsl(17, 50%, 41.0735857143%);
+  background: hsl(17, 50%, 32.8048901556%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -810,13 +810,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(515.0656273187px) translateY(284.8331765117px) scale(64) scaleZ(281.6218976001) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(515.0656273187px) translateY(207.0900004498px) scale(64) scaleZ(357.8843207718) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(28) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 58.6066729395%);
+  background: hsl(17, 50%, 61.716399982%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(28) .side {
@@ -825,12 +825,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(28) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 48.6066729395%) 0deg 95deg, hsl(17, 50%, 58.6066729395%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 51.716399982%) 0deg 95deg, hsl(17, 50%, 61.716399982%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(28) .side:nth-child(3) {
-  background: hsl(17, 50%, 38.6066729395%);
+  background: hsl(17, 50%, 41.716399982%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -838,13 +838,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(537.7148401401px) translateY(44.339682994px) scale(64) scaleZ(351.4767691757) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(537.7148401401px) translateY(60.1270598584px) scale(64) scaleZ(122.2086674633) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(29) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 68.2264126802%);
+  background: hsl(17, 50%, 67.5949176057%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(29) .side {
@@ -853,12 +853,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(29) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.2264126802%) 0deg 95deg, hsl(17, 50%, 68.2264126802%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 57.5949176057%) 0deg 95deg, hsl(17, 50%, 67.5949176057%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(29) .side:nth-child(3) {
-  background: hsl(17, 50%, 48.2264126802%);
+  background: hsl(17, 50%, 47.5949176057%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -866,13 +866,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(560.7580015449px) translateY(128.069250083px) scale(64) scaleZ(131.5583765746) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(560.7580015449px) translateY(274.2746049695px) scale(64) scaleZ(208.598704121) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(30) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 64.8772299967%);
+  background: hsl(17, 50%, 59.0290158012%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(30) .side {
@@ -881,12 +881,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(30) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 54.8772299967%) 0deg 95deg, hsl(17, 50%, 64.8772299967%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 49.0290158012%) 0deg 95deg, hsl(17, 50%, 59.0290158012%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(30) .side:nth-child(3) {
-  background: hsl(17, 50%, 44.8772299967%);
+  background: hsl(17, 50%, 39.0290158012%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -894,13 +894,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(584.1884881887px) translateY(308.1252364397px) scale(64) scaleZ(330.5402663697) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(584.1884881887px) translateY(113.00380319px) scale(64) scaleZ(368.0632165276) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(31) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 57.6749905424%);
+  background: hsl(17, 50%, 65.4798478724%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(31) .side {
@@ -909,12 +909,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(31) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 47.6749905424%) 0deg 95deg, hsl(17, 50%, 57.6749905424%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 55.4798478724%) 0deg 95deg, hsl(17, 50%, 65.4798478724%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(31) .side:nth-child(3) {
-  background: hsl(17, 50%, 37.6749905424%);
+  background: hsl(17, 50%, 45.4798478724%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -922,13 +922,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(608px) translateY(315.2890322423px) scale(64) scaleZ(133.4168621966) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(608px) translateY(199.3985538019px) scale(64) scaleZ(362.259513034) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(32) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 57.3884387103%);
+  background: hsl(17, 50%, 62.0240578479%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(32) .side {
@@ -937,12 +937,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(32) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 47.3884387103%) 0deg 95deg, hsl(17, 50%, 57.3884387103%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 52.0240578479%) 0deg 95deg, hsl(17, 50%, 62.0240578479%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(32) .side:nth-child(3) {
-  background: hsl(17, 50%, 37.3884387103%);
+  background: hsl(17, 50%, 42.0240578479%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -950,13 +950,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(632.186534706px) translateY(281.4110333393px) scale(64) scaleZ(371.4867547572) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(632.186534706px) translateY(8.9047484578px) scale(64) scaleZ(378.2689111462) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(33) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 58.7435586664%);
+  background: hsl(17, 50%, 69.6438100617%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(33) .side {
@@ -965,12 +965,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(33) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 48.7435586664%) 0deg 95deg, hsl(17, 50%, 58.7435586664%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 59.6438100617%) 0deg 95deg, hsl(17, 50%, 69.6438100617%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(33) .side:nth-child(3) {
-  background: hsl(17, 50%, 38.7435586664%);
+  background: hsl(17, 50%, 49.6438100617%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -978,13 +978,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(656.742365084px) translateY(45.168896535px) scale(64) scaleZ(153.1834464868) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(656.742365084px) translateY(132.6626932301px) scale(64) scaleZ(373.4736484414) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(34) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 68.1932441386%);
+  background: hsl(17, 50%, 64.6934922708%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(34) .side {
@@ -993,12 +993,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(34) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.1932441386%) 0deg 95deg, hsl(17, 50%, 68.1932441386%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 54.6934922708%) 0deg 95deg, hsl(17, 50%, 64.6934922708%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(34) .side:nth-child(3) {
-  background: hsl(17, 50%, 48.1932441386%);
+  background: hsl(17, 50%, 44.6934922708%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1006,13 +1006,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(681.6620185739px) translateY(186.9676238662px) scale(64) scaleZ(383.4713848802) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(681.6620185739px) translateY(231.6163396588px) scale(64) scaleZ(380.3741674849) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(35) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 62.5212950454%);
+  background: hsl(17, 50%, 60.7353464136%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(35) .side {
@@ -1021,12 +1021,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(35) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 52.5212950454%) 0deg 95deg, hsl(17, 50%, 62.5212950454%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 50.7353464136%) 0deg 95deg, hsl(17, 50%, 60.7353464136%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(35) .side:nth-child(3) {
-  background: hsl(17, 50%, 42.5212950454%);
+  background: hsl(17, 50%, 40.7353464136%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1034,13 +1034,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(706.9402589452px) translateY(187.9202996016px) scale(64) scaleZ(284.5607312107) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(706.9402589452px) translateY(515.2860402394px) scale(64) scaleZ(234.7489307146) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(36) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 62.4831880159%);
+  background: hsl(17, 50%, 49.3885583904%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(36) .side {
@@ -1049,12 +1049,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(36) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 52.4831880159%) 0deg 95deg, hsl(17, 50%, 62.4831880159%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 39.3885583904%) 0deg 95deg, hsl(17, 50%, 49.3885583904%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(36) .side:nth-child(3) {
-  background: hsl(17, 50%, 42.4831880159%);
+  background: hsl(17, 50%, 29.3885583904%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1062,13 +1062,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(732.5720697612px) translateY(426.7738593978px) scale(64) scaleZ(324.1069822661) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(732.5720697612px) translateY(550.5015239797px) scale(64) scaleZ(253.4702959042) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(37) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 52.9290456241%);
+  background: hsl(17, 50%, 47.9799390408%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(37) .side {
@@ -1077,12 +1077,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(37) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 42.9290456241%) 0deg 95deg, hsl(17, 50%, 52.9290456241%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 37.9799390408%) 0deg 95deg, hsl(17, 50%, 47.9799390408%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(37) .side:nth-child(3) {
-  background: hsl(17, 50%, 32.9290456241%);
+  background: hsl(17, 50%, 27.9799390408%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1090,13 +1090,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(758.5526394182px) translateY(330.8315489523px) scale(64) scaleZ(354.730679837) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(758.5526394182px) translateY(561.1456744681px) scale(64) scaleZ(375.3779629505) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(38) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 56.7667380419%);
+  background: hsl(17, 50%, 47.5541730213%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(38) .side {
@@ -1105,12 +1105,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(38) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 46.7667380419%) 0deg 95deg, hsl(17, 50%, 56.7667380419%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 37.5541730213%) 0deg 95deg, hsl(17, 50%, 47.5541730213%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(38) .side:nth-child(3) {
-  background: hsl(17, 50%, 36.7667380419%);
+  background: hsl(17, 50%, 27.5541730213%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1118,13 +1118,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(784.8773475736px) translateY(416.9026333985px) scale(64) scaleZ(165.3569012691) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(784.8773475736px) translateY(488.4972630403px) scale(64) scaleZ(302.7973120219) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(39) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 53.3238946641%);
+  background: hsl(17, 50%, 50.4601094784%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(39) .side {
@@ -1133,12 +1133,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(39) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 43.3238946641%) 0deg 95deg, hsl(17, 50%, 53.3238946641%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 40.4601094784%) 0deg 95deg, hsl(17, 50%, 50.4601094784%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(39) .side:nth-child(3) {
-  background: hsl(17, 50%, 33.3238946641%);
+  background: hsl(17, 50%, 30.4601094784%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1146,13 +1146,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(811.5417527999px) translateY(287.9704027207px) scale(64) scaleZ(298.3715412131) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(811.5417527999px) translateY(187.7559909545px) scale(64) scaleZ(258.9362015898) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(40) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 58.4811838912%);
+  background: hsl(17, 50%, 62.4897603618%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(40) .side {
@@ -1161,12 +1161,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(40) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 48.4811838912%) 0deg 95deg, hsl(17, 50%, 58.4811838912%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 52.4897603618%) 0deg 95deg, hsl(17, 50%, 62.4897603618%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(40) .side:nth-child(3) {
-  background: hsl(17, 50%, 38.4811838912%);
+  background: hsl(17, 50%, 42.4897603618%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1174,13 +1174,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(838.5415813273px) translateY(600.4582355688px) scale(64) scaleZ(272.3160025048) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(838.5415813273px) translateY(45.584542858px) scale(64) scaleZ(310.0387990122) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(41) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 45.9816705772%);
+  background: hsl(17, 50%, 68.1766182857%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(41) .side {
@@ -1189,12 +1189,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(41) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 35.9816705772%) 0deg 95deg, hsl(17, 50%, 45.9816705772%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.1766182857%) 0deg 95deg, hsl(17, 50%, 68.1766182857%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(41) .side:nth-child(3) {
-  background: hsl(17, 50%, 25.9816705772%);
+  background: hsl(17, 50%, 48.1766182857%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1202,13 +1202,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(865.8727167526px) translateY(506.7975964689px) scale(64) scaleZ(268.9352309226) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(865.8727167526px) translateY(377.0674863158px) scale(64) scaleZ(148.4278784019) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(42) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 49.7280961412%);
+  background: hsl(17, 50%, 54.9173005474%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(42) .side {
@@ -1217,12 +1217,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(42) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 39.7280961412%) 0deg 95deg, hsl(17, 50%, 49.7280961412%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 44.9173005474%) 0deg 95deg, hsl(17, 50%, 54.9173005474%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(42) .side:nth-child(3) {
-  background: hsl(17, 50%, 29.7280961412%);
+  background: hsl(17, 50%, 34.9173005474%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1230,13 +1230,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(893.5311906126px) translateY(85.5343597918px) scale(64) scaleZ(426.2964022507) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(893.5311906126px) translateY(150.983764928px) scale(64) scaleZ(392.0343757093) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(43) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 66.5786256083%);
+  background: hsl(17, 50%, 63.9606494029%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(43) .side {
@@ -1245,12 +1245,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(43) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 56.5786256083%) 0deg 95deg, hsl(17, 50%, 66.5786256083%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 53.9606494029%) 0deg 95deg, hsl(17, 50%, 63.9606494029%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(43) .side:nth-child(3) {
-  background: hsl(17, 50%, 46.5786256083%);
+  background: hsl(17, 50%, 43.9606494029%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1258,13 +1258,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(921.5131737289px) translateY(288.4060441584px) scale(64) scaleZ(409.9170546552) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(921.5131737289px) translateY(107.0125943103px) scale(64) scaleZ(386.8252091035) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(44) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 58.4637582337%);
+  background: hsl(17, 50%, 65.7194962276%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(44) .side {
@@ -1273,12 +1273,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(44) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 48.4637582337%) 0deg 95deg, hsl(17, 50%, 58.4637582337%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 55.7194962276%) 0deg 95deg, hsl(17, 50%, 65.7194962276%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(44) .side:nth-child(3) {
-  background: hsl(17, 50%, 38.4637582337%);
+  background: hsl(17, 50%, 45.7194962276%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1286,13 +1286,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(949.8149682455px) translateY(134.9658708735px) scale(64) scaleZ(404.7572216965) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(949.8149682455px) translateY(565.0078205445px) scale(64) scaleZ(317.8988922118) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(45) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 64.6013651651%);
+  background: hsl(17, 50%, 47.3996871782%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(45) .side {
@@ -1301,12 +1301,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(45) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 54.6013651651%) 0deg 95deg, hsl(17, 50%, 64.6013651651%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 37.3996871782%) 0deg 95deg, hsl(17, 50%, 47.3996871782%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(45) .side:nth-child(3) {
-  background: hsl(17, 50%, 44.6013651651%);
+  background: hsl(17, 50%, 27.3996871782%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1314,13 +1314,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(978.4330002895px) translateY(278.957395079px) scale(64) scaleZ(203.5684909765) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(978.4330002895px) translateY(609.2115937302px) scale(64) scaleZ(302.5845611806) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(46) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 58.8417041968%);
+  background: hsl(17, 50%, 45.6315362508%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(46) .side {
@@ -1329,12 +1329,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(46) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 48.8417041968%) 0deg 95deg, hsl(17, 50%, 58.8417041968%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 35.6315362508%) 0deg 95deg, hsl(17, 50%, 45.6315362508%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(46) .side:nth-child(3) {
-  background: hsl(17, 50%, 38.8417041968%);
+  background: hsl(17, 50%, 25.6315362508%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1342,13 +1342,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1007.3638131943px) translateY(506.4483873891px) scale(64) scaleZ(192.3314505812) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1007.3638131943px) translateY(418.0684783124px) scale(64) scaleZ(185.6610176185) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(47) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 49.7420645044%);
+  background: hsl(17, 50%, 53.2772608675%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(47) .side {
@@ -1357,12 +1357,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(47) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 39.7420645044%) 0deg 95deg, hsl(17, 50%, 49.7420645044%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 43.2772608675%) 0deg 95deg, hsl(17, 50%, 53.2772608675%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(47) .side:nth-child(3) {
-  background: hsl(17, 50%, 29.7420645044%);
+  background: hsl(17, 50%, 33.2772608675%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1370,13 +1370,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1036.6040612287px) translateY(474.0238213142px) scale(64) scaleZ(276.8265017058) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1036.6040612287px) translateY(35.5944754565px) scale(64) scaleZ(255.7368935249) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(48) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 51.0390471474%);
+  background: hsl(17, 50%, 68.5762209817%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(48) .side {
@@ -1385,12 +1385,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(48) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 41.0390471474%) 0deg 95deg, hsl(17, 50%, 51.0390471474%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.5762209817%) 0deg 95deg, hsl(17, 50%, 68.5762209817%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(48) .side:nth-child(3) {
-  background: hsl(17, 50%, 31.0390471474%);
+  background: hsl(17, 50%, 48.5762209817%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1398,13 +1398,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1066.1505037879px) translateY(208.6400119445px) scale(64) scaleZ(262.6790821236) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1066.1505037879px) translateY(560.0238206497px) scale(64) scaleZ(301.1232692609) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(49) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 61.6543995222%);
+  background: hsl(17, 50%, 47.599047174%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(49) .side {
@@ -1413,12 +1413,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(49) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 51.6543995222%) 0deg 95deg, hsl(17, 50%, 61.6543995222%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 37.599047174%) 0deg 95deg, hsl(17, 50%, 47.599047174%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(49) .side:nth-child(3) {
-  background: hsl(17, 50%, 41.6543995222%);
+  background: hsl(17, 50%, 27.599047174%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1426,13 +1426,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1096px) translateY(555.1608801297px) scale(64) scaleZ(421.47483095) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1096px) translateY(87.7127656185px) scale(64) scaleZ(280.5372825426) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(50) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 47.7935647948%);
+  background: hsl(17, 50%, 66.4914893753%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(50) .side {
@@ -1441,12 +1441,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(50) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 37.7935647948%) 0deg 95deg, hsl(17, 50%, 47.7935647948%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 56.4914893753%) 0deg 95deg, hsl(17, 50%, 66.4914893753%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(50) .side:nth-child(3) {
-  background: hsl(17, 50%, 27.7935647948%);
+  background: hsl(17, 50%, 46.4914893753%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1454,13 +1454,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1126.1495037129px) translateY(431.2782648569px) scale(64) scaleZ(314.2992540775) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1126.1495037129px) translateY(65.6599485962px) scale(64) scaleZ(368.5419753014) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(51) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 52.7488694057%);
+  background: hsl(17, 50%, 67.3736020562%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(51) .side {
@@ -1469,12 +1469,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(51) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 42.7488694057%) 0deg 95deg, hsl(17, 50%, 52.7488694057%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 57.3736020562%) 0deg 95deg, hsl(17, 50%, 67.3736020562%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(51) .side:nth-child(3) {
-  background: hsl(17, 50%, 32.7488694057%);
+  background: hsl(17, 50%, 47.3736020562%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1482,13 +1482,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1156.5960588273px) translateY(193.0436148012px) scale(64) scaleZ(447.4109933788) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1156.5960588273px) translateY(361.0157712477px) scale(64) scaleZ(471.1670422662) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(52) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 62.278255408%);
+  background: hsl(17, 50%, 55.5593691501%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(52) .side {
@@ -1497,12 +1497,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(52) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 52.278255408%) 0deg 95deg, hsl(17, 50%, 62.278255408%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 45.5593691501%) 0deg 95deg, hsl(17, 50%, 55.5593691501%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(52) .side:nth-child(3) {
-  background: hsl(17, 50%, 42.278255408%);
+  background: hsl(17, 50%, 35.5593691501%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1510,13 +1510,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1187.3367949446px) translateY(356.2259637841px) scale(64) scaleZ(204.6990754676) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1187.3367949446px) translateY(616.8908486989px) scale(64) scaleZ(252.1637765333) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(53) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 55.7509614486%);
+  background: hsl(17, 50%, 45.324366052%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(53) .side {
@@ -1525,12 +1525,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(53) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 45.7509614486%) 0deg 95deg, hsl(17, 50%, 55.7509614486%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 35.324366052%) 0deg 95deg, hsl(17, 50%, 45.324366052%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(53) .side:nth-child(3) {
-  background: hsl(17, 50%, 35.7509614486%);
+  background: hsl(17, 50%, 25.324366052%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1538,13 +1538,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1218.3689233046px) translateY(125.8957398716px) scale(64) scaleZ(445.8946509383) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1218.3689233046px) translateY(364.504577891px) scale(64) scaleZ(192.5383303909) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(54) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 64.9641704051%);
+  background: hsl(17, 50%, 55.4198168844%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(54) .side {
@@ -1553,12 +1553,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(54) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 54.9641704051%) 0deg 95deg, hsl(17, 50%, 64.9641704051%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 45.4198168844%) 0deg 95deg, hsl(17, 50%, 55.4198168844%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(54) .side:nth-child(3) {
-  background: hsl(17, 50%, 44.9641704051%);
+  background: hsl(17, 50%, 35.4198168844%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1566,13 +1566,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1249.6897329872px) translateY(266.175813765px) scale(64) scaleZ(168.3644754257) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1249.6897329872px) translateY(8.6434646746px) scale(64) scaleZ(476.4777574363) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(55) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 59.3529674494%);
+  background: hsl(17, 50%, 69.654261413%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(55) .side {
@@ -1581,12 +1581,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(55) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 49.3529674494%) 0deg 95deg, hsl(17, 50%, 59.3529674494%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 59.654261413%) 0deg 95deg, hsl(17, 50%, 69.654261413%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(55) .side:nth-child(3) {
-  background: hsl(17, 50%, 39.3529674494%);
+  background: hsl(17, 50%, 49.654261413%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1594,13 +1594,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1281.2965873569px) translateY(105.4583927454px) scale(64) scaleZ(293.7170320488) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1281.2965873569px) translateY(295.3085452133px) scale(64) scaleZ(399.2938714528) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(56) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 65.7816642902%);
+  background: hsl(17, 50%, 58.1876581915%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(56) .side {
@@ -1609,12 +1609,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(56) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 55.7816642902%) 0deg 95deg, hsl(17, 50%, 65.7816642902%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 48.1876581915%) 0deg 95deg, hsl(17, 50%, 58.1876581915%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(56) .side:nth-child(3) {
-  background: hsl(17, 50%, 45.7816642902%);
+  background: hsl(17, 50%, 38.1876581915%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1622,13 +1622,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1313.1869207316px) translateY(581.103509942px) scale(64) scaleZ(304.5728742516) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1313.1869207316px) translateY(368.1013531226px) scale(64) scaleZ(389.2032545664) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(57) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 46.7558596023%);
+  background: hsl(17, 50%, 55.2759458751%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(57) .side {
@@ -1637,12 +1637,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(57) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 36.7558596023%) 0deg 95deg, hsl(17, 50%, 46.7558596023%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 45.2759458751%) 0deg 95deg, hsl(17, 50%, 55.2759458751%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(57) .side:nth-child(3) {
-  background: hsl(17, 50%, 26.7558596023%);
+  background: hsl(17, 50%, 35.2759458751%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1650,13 +1650,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1345.3582352552px) translateY(193.333550962px) scale(64) scaleZ(506.0567258394) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1345.3582352552px) translateY(247.7392606167px) scale(64) scaleZ(244.0714429319) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(58) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 62.2666579615%);
+  background: hsl(17, 50%, 60.0904295753%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(58) .side {
@@ -1665,12 +1665,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(58) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 52.2666579615%) 0deg 95deg, hsl(17, 50%, 62.2666579615%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 50.0904295753%) 0deg 95deg, hsl(17, 50%, 60.0904295753%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(58) .side:nth-child(3) {
-  background: hsl(17, 50%, 42.2666579615%);
+  background: hsl(17, 50%, 40.0904295753%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1678,13 +1678,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1377.8080979616px) translateY(340.0626798932px) scale(64) scaleZ(202.0359523169) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1377.8080979616px) translateY(534.049383585px) scale(64) scaleZ(202.3315811346) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(59) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 56.3974928043%);
+  background: hsl(17, 50%, 48.6380246566%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(59) .side {
@@ -1693,12 +1693,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(59) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 46.3974928043%) 0deg 95deg, hsl(17, 50%, 56.3974928043%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 38.6380246566%) 0deg 95deg, hsl(17, 50%, 48.6380246566%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(59) .side:nth-child(3) {
-  background: hsl(17, 50%, 36.3974928043%);
+  background: hsl(17, 50%, 28.6380246566%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1706,13 +1706,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1410.5341380124px) translateY(7.4587447766px) scale(64) scaleZ(303.9821761436) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1410.5341380124px) translateY(27.4593751941px) scale(64) scaleZ(189.6954023858) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(60) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 69.7016502089%);
+  background: hsl(17, 50%, 68.9016249922%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(60) .side {
@@ -1721,12 +1721,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(60) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 59.7016502089%) 0deg 95deg, hsl(17, 50%, 69.7016502089%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.9016249922%) 0deg 95deg, hsl(17, 50%, 68.9016249922%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(60) .side:nth-child(3) {
-  background: hsl(17, 50%, 49.7016502089%);
+  background: hsl(17, 50%, 48.9016249922%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1734,13 +1734,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1443.5340440968px) translateY(236.8441234616px) scale(64) scaleZ(461.6077579183) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1443.5340440968px) translateY(48.1297532372px) scale(64) scaleZ(430.7161532243) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(61) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 60.5262350615%);
+  background: hsl(17, 50%, 68.0748098705%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(61) .side {
@@ -1749,12 +1749,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(61) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 50.5262350615%) 0deg 95deg, hsl(17, 50%, 60.5262350615%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 58.0748098705%) 0deg 95deg, hsl(17, 50%, 68.0748098705%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(61) .side:nth-child(3) {
-  background: hsl(17, 50%, 40.5262350615%);
+  background: hsl(17, 50%, 48.0748098705%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1762,13 +1762,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1476.8055619818px) translateY(581.0857159678px) scale(64) scaleZ(278.0862082866) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1476.8055619818px) translateY(680.0631838201px) scale(64) scaleZ(226.9087594078) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(62) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 46.7565713613%);
+  background: hsl(17, 50%, 42.7974726472%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(62) .side {
@@ -1777,12 +1777,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(62) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 36.7565713613%) 0deg 95deg, hsl(17, 50%, 46.7565713613%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 32.7974726472%) 0deg 95deg, hsl(17, 50%, 42.7974726472%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(62) .side:nth-child(3) {
-  background: hsl(17, 50%, 26.7565713613%);
+  background: hsl(17, 50%, 22.7974726472%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1790,13 +1790,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1510.3464922005px) translateY(562.2754302291px) scale(64) scaleZ(507.8128246954) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1510.3464922005px) translateY(673.8144787894px) scale(64) scaleZ(427.0986329424) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(63) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 47.5089827908%);
+  background: hsl(17, 50%, 43.0474208484%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(63) .side {
@@ -1805,12 +1805,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(63) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 37.5089827908%) 0deg 95deg, hsl(17, 50%, 47.5089827908%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 33.0474208484%) 0deg 95deg, hsl(17, 50%, 43.0474208484%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(63) .side:nth-child(3) {
-  background: hsl(17, 50%, 27.5089827908%);
+  background: hsl(17, 50%, 23.0474208484%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1818,13 +1818,13 @@ body {
   position: absolute;
   width: 1px;
   height: 1px;
-  transform: translateX(1544.15468787px) translateY(713.5728949283px) scale(64) scaleZ(440.777578151) scaleY(0.5) rotateZ(-90deg);
+  transform: translateX(1544.15468787px) translateY(702.6739347498px) scale(64) scaleZ(470.291758347) scaleY(0.5) rotateZ(-90deg);
 }
 .floor .buildings .building:nth-child(64) .roof {
   position: absolute;
   width: 1px;
   height: 1px;
-  background: hsl(17, 50%, 41.4570842029%);
+  background: hsl(17, 50%, 41.89304261%);
   transform: translateZ(1px) translateY(-0.5px);
 }
 .floor .buildings .building:nth-child(64) .side {
@@ -1833,12 +1833,12 @@ body {
   height: 1px;
 }
 .floor .buildings .building:nth-child(64) .side:nth-child(2) {
-  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 31.4570842029%) 0deg 95deg, hsl(17, 50%, 41.4570842029%) 95deg);
+  background: conic-gradient(from 0deg at 0% 70%, hsl(17, 50%, 31.89304261%) 0deg 95deg, hsl(17, 50%, 41.89304261%) 95deg);
   transform-origin: top;
   transform: translateY(-0.5px) translateX(0px) rotateX(90deg) rotateY(0deg);
 }
 .floor .buildings .building:nth-child(64) .side:nth-child(3) {
-  background: hsl(17, 50%, 21.4570842029%);
+  background: hsl(17, 50%, 21.89304261%);
   transform-origin: top;
   transform: translateY(0px) translateX(-0.5px) rotateX(90deg) rotateY(90deg);
 }
@@ -1846,7 +1846,7 @@ body {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-10.6666666667px) translateY(93.7795471831px) translateZ(13.8564064606px) scale(4) rotateZ(-100deg);
+  transform: translateX(-10.6666666667px) translateY(39.5676394386px) translateZ(13.8564064606px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(1) .side {
   position: absolute;
@@ -1856,22 +1856,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(1) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 61.2488181127%) 63.25deg, hsl(207, 35%, 61.2488181127%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 81.2488181127%) 0deg 63.23deg, hsl(207, 35%, 71.2488181127%) 0deg 80deg, transparent 116.5deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 63.4172944225%) 63.25deg, hsl(207, 35%, 63.4172944225%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 83.4172944225%) 0deg 63.23deg, hsl(207, 35%, 73.4172944225%) 0deg 80deg, transparent 116.5deg);
   transform: rotateZ(0deg) scale3d(2, 2, 8) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(1) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 51.2488181127%) 63.25deg, hsl(207, 35%, 51.2488181127%) 116.5deg, transparent 116.5deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 53.4172944225%) 63.25deg, hsl(207, 35%, 53.4172944225%) 116.5deg, transparent 116.5deg);
   transform: rotateZ(90deg) scale3d(2, 2, 8) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(1) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 41.2488181127%) 63.25deg, hsl(207, 35%, 41.2488181127%) 116.5deg, transparent 116.5deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 43.4172944225%) 63.25deg, hsl(207, 35%, 43.4172944225%) 116.5deg, transparent 116.5deg);
   transform: rotateZ(180deg) scale3d(2, 2, 8) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(2) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-30.1698893306px) translateY(175.3221914955px) translateZ(27.7128129211px) scale(4) rotateZ(-100deg);
+  transform: translateX(-30.1698893306px) translateY(27.6982870866px) translateZ(27.7128129211px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(2) .side {
   position: absolute;
@@ -1881,22 +1881,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(2) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 57.9871123402%) 63.25deg, hsl(207, 35%, 57.9871123402%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 77.9871123402%) 0deg 63.23deg, hsl(207, 35%, 67.9871123402%) 0deg 80deg, transparent 116.5deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 63.8920685165%) 63.25deg, hsl(207, 35%, 63.8920685165%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 83.8920685165%) 0deg 63.23deg, hsl(207, 35%, 73.8920685165%) 0deg 80deg, transparent 116.5deg);
   transform: rotateZ(0deg) scale3d(4, 4, 16) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(2) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 47.9871123402%) 63.25deg, hsl(207, 35%, 47.9871123402%) 116.5deg, transparent 116.5deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 53.8920685165%) 63.25deg, hsl(207, 35%, 53.8920685165%) 116.5deg, transparent 116.5deg);
   transform: rotateZ(90deg) scale3d(4, 4, 16) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(2) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 37.9871123402%) 63.25deg, hsl(207, 35%, 37.9871123402%) 116.5deg, transparent 116.5deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 43.8920685165%) 63.25deg, hsl(207, 35%, 43.8920685165%) 116.5deg, transparent 116.5deg);
   transform: rotateZ(180deg) scale3d(4, 4, 16) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(3) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-55.4256258422px) translateY(76.8020427961px) translateZ(41.5692193817px) scale(4) rotateZ(-100deg);
+  transform: translateX(-55.4256258422px) translateY(191.053499113px) translateZ(55.4256258422px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(3) .side {
   position: absolute;
@@ -1906,22 +1906,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(3) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 61.9279182882%) 63.25deg, hsl(207, 35%, 61.9279182882%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 81.9279182882%) 0deg 63.23deg, hsl(207, 35%, 71.9279182882%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(6, 6, 24) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 57.3578600355%) 63.25deg, hsl(207, 35%, 57.3578600355%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 77.3578600355%) 0deg 63.23deg, hsl(207, 35%, 67.3578600355%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(8, 8, 32) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(3) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 51.9279182882%) 63.25deg, hsl(207, 35%, 51.9279182882%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(6, 6, 24) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 47.3578600355%) 63.25deg, hsl(207, 35%, 47.3578600355%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(8, 8, 32) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(3) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 41.9279182882%) 63.25deg, hsl(207, 35%, 41.9279182882%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(6, 6, 24) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 37.3578600355%) 63.25deg, hsl(207, 35%, 37.3578600355%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(8, 8, 32) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(4) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-85.3333333333px) translateY(133.3372634318px) translateZ(55.4256258422px) scale(4) rotateZ(-100deg);
+  transform: translateX(-85.3333333333px) translateY(217.5934162666px) translateZ(62.3538290725px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(4) .side {
   position: absolute;
@@ -1931,22 +1931,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(4) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 59.6665094627%) 63.25deg, hsl(207, 35%, 59.6665094627%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 79.6665094627%) 0deg 63.23deg, hsl(207, 35%, 69.6665094627%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(8, 8, 32) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 56.2962633493%) 63.25deg, hsl(207, 35%, 56.2962633493%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 76.2962633493%) 0deg 63.23deg, hsl(207, 35%, 66.2962633493%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(9, 9, 36) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(4) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 49.6665094627%) 63.25deg, hsl(207, 35%, 49.6665094627%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(8, 8, 32) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 46.2962633493%) 63.25deg, hsl(207, 35%, 46.2962633493%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(9, 9, 36) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(4) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 39.6665094627%) 63.25deg, hsl(207, 35%, 39.6665094627%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(8, 8, 32) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 36.2962633493%) 63.25deg, hsl(207, 35%, 36.2962633493%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(9, 9, 36) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(5) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-119.2569588px) translateY(187.0499611598px) translateZ(90.0666420176px) scale(4) rotateZ(-100deg);
+  transform: translateX(-119.2569588px) translateY(169.1352732757px) translateZ(76.2102355334px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(5) .side {
   position: absolute;
@@ -1956,22 +1956,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(5) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 57.5180015536%) 63.25deg, hsl(207, 35%, 57.5180015536%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 77.5180015536%) 0deg 63.23deg, hsl(207, 35%, 67.5180015536%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(13, 13, 52) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 58.234589069%) 63.25deg, hsl(207, 35%, 58.234589069%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 78.234589069%) 0deg 63.23deg, hsl(207, 35%, 68.234589069%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(11, 11, 44) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(5) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 47.5180015536%) 63.25deg, hsl(207, 35%, 47.5180015536%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(13, 13, 52) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 48.234589069%) 63.25deg, hsl(207, 35%, 48.234589069%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(11, 11, 44) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(5) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 37.5180015536%) 63.25deg, hsl(207, 35%, 37.5180015536%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(13, 13, 52) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 38.234589069%) 63.25deg, hsl(207, 35%, 38.234589069%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(11, 11, 44) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(6) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-156.7673435381px) translateY(20.5179422997px) translateZ(103.9230490281px) scale(4) rotateZ(-100deg);
+  transform: translateX(-156.7673435381px) translateY(26.4191455471px) translateZ(76.2102355334px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(6) .side {
   position: absolute;
@@ -1981,22 +1981,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(6) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 64.179282308%) 63.25deg, hsl(207, 35%, 64.179282308%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 84.179282308%) 0deg 63.23deg, hsl(207, 35%, 74.179282308%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(15, 15, 60) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 63.9432341781%) 63.25deg, hsl(207, 35%, 63.9432341781%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 83.9432341781%) 0deg 63.23deg, hsl(207, 35%, 73.9432341781%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(11, 11, 44) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(6) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 54.179282308%) 63.25deg, hsl(207, 35%, 54.179282308%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(15, 15, 60) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 53.9432341781%) 63.25deg, hsl(207, 35%, 53.9432341781%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(11, 11, 44) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(6) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 44.179282308%) 63.25deg, hsl(207, 35%, 44.179282308%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(15, 15, 60) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 43.9432341781%) 63.25deg, hsl(207, 35%, 43.9432341781%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(11, 11, 44) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(7) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-197.5494312262px) translateY(329.9421177012px) translateZ(83.1384387666px) scale(4) rotateZ(-100deg);
+  transform: translateX(-197.5494312262px) translateY(116.2904977862px) translateZ(103.9230490281px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(7) .side {
   position: absolute;
@@ -2006,22 +2006,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(7) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 51.802315292%) 63.25deg, hsl(207, 35%, 51.802315292%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 71.802315292%) 0deg 63.23deg, hsl(207, 35%, 61.802315292%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(12, 12, 48) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 60.3483800886%) 63.25deg, hsl(207, 35%, 60.3483800886%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 80.3483800886%) 0deg 63.23deg, hsl(207, 35%, 70.3483800886%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(15, 15, 60) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(7) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 41.802315292%) 63.25deg, hsl(207, 35%, 41.802315292%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(12, 12, 48) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 50.3483800886%) 63.25deg, hsl(207, 35%, 50.3483800886%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(15, 15, 60) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(7) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 31.802315292%) 63.25deg, hsl(207, 35%, 31.802315292%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(12, 12, 48) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 40.3483800886%) 63.25deg, hsl(207, 35%, 40.3483800886%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(15, 15, 60) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(8) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-241.359114645px) translateY(127.5686728298px) translateZ(117.7794615249px) scale(4) rotateZ(-100deg);
+  transform: translateX(-241.359114645px) translateY(104.2229999973px) translateZ(152.4209162974px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(8) .side {
   position: absolute;
@@ -2031,22 +2031,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(8) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 59.8972530868%) 63.25deg, hsl(207, 35%, 59.8972530868%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 79.8972530868%) 0deg 63.23deg, hsl(207, 35%, 69.8972530868%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(17, 17, 68) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 60.8310800001%) 63.25deg, hsl(207, 35%, 60.8310800001%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 80.8310800001%) 0deg 63.23deg, hsl(207, 35%, 70.8310800001%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(22, 22, 88) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(8) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 49.8972530868%) 63.25deg, hsl(207, 35%, 49.8972530868%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(17, 17, 68) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 50.8310800001%) 63.25deg, hsl(207, 35%, 50.8310800001%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(22, 22, 88) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(8) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 39.8972530868%) 63.25deg, hsl(207, 35%, 39.8972530868%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(17, 17, 68) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 40.8310800001%) 63.25deg, hsl(207, 35%, 40.8310800001%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(22, 22, 88) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(9) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-288px) translateY(147.1063723351px) translateZ(96.9948453549px) scale(4) rotateZ(-100deg);
+  transform: translateX(-288px) translateY(123.0918983223px) translateZ(131.6359074529px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(9) .side {
   position: absolute;
@@ -2056,22 +2056,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(9) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 59.1157451066%) 63.25deg, hsl(207, 35%, 59.1157451066%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 79.1157451066%) 0deg 63.23deg, hsl(207, 35%, 69.1157451066%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(14, 14, 56) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 60.0763240671%) 63.25deg, hsl(207, 35%, 60.0763240671%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 80.0763240671%) 0deg 63.23deg, hsl(207, 35%, 70.0763240671%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(19, 19, 76) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(9) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 49.1157451066%) 63.25deg, hsl(207, 35%, 49.1157451066%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(14, 14, 56) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 50.0763240671%) 63.25deg, hsl(207, 35%, 50.0763240671%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(19, 19, 76) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(9) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 39.1157451066%) 63.25deg, hsl(207, 35%, 39.1157451066%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(14, 14, 56) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 40.0763240671%) 63.25deg, hsl(207, 35%, 40.0763240671%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(19, 19, 76) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(10) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-337.3096170846px) translateY(317.7668274516px) translateZ(166.2783657857px) scale(4) rotateZ(-100deg);
+  transform: translateX(-337.3096170846px) translateY(192.3626499909px) translateZ(159.3495091591px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(10) .side {
   position: absolute;
@@ -2081,22 +2081,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(10) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 52.2893269019%) 63.25deg, hsl(207, 35%, 52.2893269019%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 72.2893269019%) 0deg 63.23deg, hsl(207, 35%, 62.2893269019%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(24, 24, 96) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 57.3054940004%) 63.25deg, hsl(207, 35%, 57.3054940004%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 77.3054940004%) 0deg 63.23deg, hsl(207, 35%, 67.3054940004%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(23, 23, 92) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(10) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 42.2893269019%) 63.25deg, hsl(207, 35%, 42.2893269019%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(24, 24, 96) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 47.3054940004%) 63.25deg, hsl(207, 35%, 47.3054940004%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(23, 23, 92) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(10) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 32.2893269019%) 63.25deg, hsl(207, 35%, 32.2893269019%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(24, 24, 96) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 37.3054940004%) 63.25deg, hsl(207, 35%, 37.3054940004%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(23, 23, 92) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(11) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-389.1506420684px) translateY(313.4588987509px) translateZ(187.0680668661px) scale(4) rotateZ(-100deg);
+  transform: translateX(-389.1506420684px) translateY(61.7486100976px) translateZ(180.1374424068px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(11) .side {
   position: absolute;
@@ -2106,22 +2106,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(11) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 52.46164405%) 63.25deg, hsl(207, 35%, 52.46164405%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 72.46164405%) 0deg 63.23deg, hsl(207, 35%, 62.46164405%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(27, 27, 108) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 62.5300555961%) 63.25deg, hsl(207, 35%, 62.5300555961%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 82.5300555961%) 0deg 63.23deg, hsl(207, 35%, 72.5300555961%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(26, 26, 104) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(11) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 42.46164405%) 63.25deg, hsl(207, 35%, 42.46164405%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(27, 27, 108) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 52.5300555961%) 63.25deg, hsl(207, 35%, 52.5300555961%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(26, 26, 104) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(11) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 32.46164405%) 63.25deg, hsl(207, 35%, 32.46164405%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(27, 27, 108) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 42.5300555961%) 63.25deg, hsl(207, 35%, 42.5300555961%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(26, 26, 104) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(12) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-443.4050067376px) translateY(250.8622087831px) translateZ(228.6895809334px) scale(4) rotateZ(-100deg);
+  transform: translateX(-443.4050067376px) translateY(328.8130730587px) translateZ(214.8053285087px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(12) .side {
   position: absolute;
@@ -2131,22 +2131,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(12) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 54.9655116487%) 63.25deg, hsl(207, 35%, 54.9655116487%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 74.9655116487%) 0deg 63.23deg, hsl(207, 35%, 64.9655116487%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(33, 33, 132) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 51.8474770777%) 63.25deg, hsl(207, 35%, 51.8474770777%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 71.8474770777%) 0deg 63.23deg, hsl(207, 35%, 61.8474770777%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(31, 31, 124) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(12) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 44.9655116487%) 63.25deg, hsl(207, 35%, 44.9655116487%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(33, 33, 132) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 41.8474770777%) 63.25deg, hsl(207, 35%, 41.8474770777%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(31, 31, 124) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(12) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 34.9655116487%) 63.25deg, hsl(207, 35%, 34.9655116487%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(33, 33, 132) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 31.8474770777%) 63.25deg, hsl(207, 35%, 31.8474770777%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(31, 31, 124) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(13) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-499.9697768643px) translateY(274.700255002px) translateZ(180.1374424068px) scale(4) rotateZ(-100deg);
+  transform: translateX(-499.9697768643px) translateY(398.9117336695px) translateZ(235.6378557445px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(13) .side {
   position: absolute;
@@ -2156,22 +2156,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(13) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 54.0119897999%) 63.25deg, hsl(207, 35%, 54.0119897999%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 74.0119897999%) 0deg 63.23deg, hsl(207, 35%, 64.0119897999%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(26, 26, 104) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 49.0435306532%) 63.25deg, hsl(207, 35%, 49.0435306532%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 69.0435306532%) 0deg 63.23deg, hsl(207, 35%, 59.0435306532%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(34, 34, 136) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(13) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 44.0119897999%) 63.25deg, hsl(207, 35%, 44.0119897999%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(26, 26, 104) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 39.0435306532%) 63.25deg, hsl(207, 35%, 39.0435306532%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(34, 34, 136) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(13) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 34.0119897999%) 63.25deg, hsl(207, 35%, 34.0119897999%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(26, 26, 104) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 29.0435306532%) 63.25deg, hsl(207, 35%, 29.0435306532%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(34, 34, 136) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(14) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-558.7541697582px) translateY(354.6072920449px) translateZ(159.3495091591px) scale(4) rotateZ(-100deg);
+  transform: translateX(-558.7541697582px) translateY(362.2608383012px) translateZ(270.4760825907px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(14) .side {
   position: absolute;
@@ -2181,22 +2181,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(14) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 50.8157083182%) 63.25deg, hsl(207, 35%, 50.8157083182%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 70.8157083182%) 0deg 63.23deg, hsl(207, 35%, 60.8157083182%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(23, 23, 92) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 50.509566468%) 63.25deg, hsl(207, 35%, 50.509566468%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 70.509566468%) 0deg 63.23deg, hsl(207, 35%, 60.509566468%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(39, 39, 156) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(14) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 40.8157083182%) 63.25deg, hsl(207, 35%, 40.8157083182%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(23, 23, 92) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 40.509566468%) 63.25deg, hsl(207, 35%, 40.509566468%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(39, 39, 156) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(14) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 30.8157083182%) 63.25deg, hsl(207, 35%, 30.8157083182%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(23, 23, 92) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 30.509566468%) 63.25deg, hsl(207, 35%, 30.509566468%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(39, 39, 156) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(15) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-619.6773353932px) translateY(427.5383976703px) translateZ(291.4957803271px) scale(4) rotateZ(-100deg);
+  transform: translateX(-619.6773353932px) translateY(319.7264320376px) translateZ(193.9997787635px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(15) .side {
   position: absolute;
@@ -2206,22 +2206,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(15) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 47.8984640932%) 63.25deg, hsl(207, 35%, 47.8984640932%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 67.8984640932%) 0deg 63.23deg, hsl(207, 35%, 57.8984640932%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(42, 42, 168) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 52.2109427185%) 63.25deg, hsl(207, 35%, 52.2109427185%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 72.2109427185%) 0deg 63.23deg, hsl(207, 35%, 62.2109427185%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(28, 28, 112) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(15) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 37.8984640932%) 63.25deg, hsl(207, 35%, 37.8984640932%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(42, 42, 168) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 42.2109427185%) 63.25deg, hsl(207, 35%, 42.2109427185%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(28, 28, 112) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(15) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 27.8984640932%) 63.25deg, hsl(207, 35%, 27.8984640932%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(42, 42, 168) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 32.2109427185%) 63.25deg, hsl(207, 35%, 32.2109427185%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(28, 28, 112) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(16) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-682.6666666667px) translateY(479.4596909708px) translateZ(187.0680668661px) scale(4) rotateZ(-100deg);
+  transform: translateX(-682.6666666667px) translateY(439.7712956151px) translateZ(263.4921207488px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(16) .side {
   position: absolute;
@@ -2231,22 +2231,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(16) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 45.8216123612%) 63.25deg, hsl(207, 35%, 45.8216123612%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 65.8216123612%) 0deg 63.23deg, hsl(207, 35%, 55.8216123612%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(27, 27, 108) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 47.4091481754%) 63.25deg, hsl(207, 35%, 47.4091481754%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 67.4091481754%) 0deg 63.23deg, hsl(207, 35%, 57.4091481754%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(38, 38, 152) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(16) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 35.8216123612%) 63.25deg, hsl(207, 35%, 35.8216123612%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(27, 27, 108) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 37.4091481754%) 63.25deg, hsl(207, 35%, 37.4091481754%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(38, 38, 152) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(16) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 25.8216123612%) 63.25deg, hsl(207, 35%, 25.8216123612%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(27, 27, 108) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 27.4091481754%) 63.25deg, hsl(207, 35%, 27.4091481754%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(38, 38, 152) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(17) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-747.6564867787px) translateY(472.1069155598px) translateZ(312.645336333px) scale(4) rotateZ(-100deg);
+  transform: translateX(-747.6564867787px) translateY(422.2384400774px) translateZ(270.4760825907px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(17) .side {
   position: absolute;
@@ -2256,22 +2256,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(17) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 46.1157233776%) 63.25deg, hsl(207, 35%, 46.1157233776%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 66.1157233776%) 0deg 63.23deg, hsl(207, 35%, 56.1157233776%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(45, 45, 180) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 48.1104623969%) 63.25deg, hsl(207, 35%, 48.1104623969%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 68.1104623969%) 0deg 63.23deg, hsl(207, 35%, 58.1104623969%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(39, 39, 156) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(17) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 36.1157233776%) 63.25deg, hsl(207, 35%, 36.1157233776%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(45, 45, 180) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 38.1104623969%) 63.25deg, hsl(207, 35%, 38.1104623969%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(39, 39, 156) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(17) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 26.1157233776%) 63.25deg, hsl(207, 35%, 26.1157233776%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(45, 45, 180) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 28.1104623969%) 63.25deg, hsl(207, 35%, 28.1104623969%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(39, 39, 156) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(18) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-814.5870119269px) translateY(228.0655383046px) translateZ(180.1374424068px) scale(4) rotateZ(-100deg);
+  transform: translateX(-814.5870119269px) translateY(333.4503539252px) translateZ(249.5508263246px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(18) .side {
   position: absolute;
@@ -2281,22 +2281,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(18) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 55.8773784678%) 63.25deg, hsl(207, 35%, 55.8773784678%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 75.8773784678%) 0deg 63.23deg, hsl(207, 35%, 65.8773784678%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(26, 26, 104) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 51.661985843%) 63.25deg, hsl(207, 35%, 51.661985843%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 71.661985843%) 0deg 63.23deg, hsl(207, 35%, 61.661985843%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(36, 36, 144) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(18) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 45.8773784678%) 63.25deg, hsl(207, 35%, 45.8773784678%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(26, 26, 104) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 41.661985843%) 63.25deg, hsl(207, 35%, 41.661985843%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(36, 36, 144) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(18) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 35.8773784678%) 63.25deg, hsl(207, 35%, 35.8773784678%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(26, 26, 104) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 31.661985843%) 63.25deg, hsl(207, 35%, 31.661985843%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(36, 36, 144) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(19) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-883.4035192242px) translateY(40.0856198703px) translateZ(221.7456527995px) scale(4) rotateZ(-100deg);
+  transform: translateX(-883.4035192242px) translateY(544.9525966152px) translateZ(221.7456527995px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(19) .side {
   position: absolute;
@@ -2306,22 +2306,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(19) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 63.3965752052%) 63.25deg, hsl(207, 35%, 63.3965752052%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 83.3965752052%) 0deg 63.23deg, hsl(207, 35%, 73.3965752052%) 0deg 80deg, transparent 116.5deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 43.2018961354%) 63.25deg, hsl(207, 35%, 43.2018961354%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 63.2018961354%) 0deg 63.23deg, hsl(207, 35%, 53.2018961354%) 0deg 80deg, transparent 116.5deg);
   transform: rotateZ(0deg) scale3d(32, 32, 128) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(19) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 53.3965752052%) 63.25deg, hsl(207, 35%, 53.3965752052%) 116.5deg, transparent 116.5deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 33.2018961354%) 63.25deg, hsl(207, 35%, 33.2018961354%) 116.5deg, transparent 116.5deg);
   transform: rotateZ(90deg) scale3d(32, 32, 128) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(19) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 43.3965752052%) 63.25deg, hsl(207, 35%, 43.3965752052%) 116.5deg, transparent 116.5deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 23.2018961354%) 63.25deg, hsl(207, 35%, 23.2018961354%) 116.5deg, transparent 116.5deg);
   transform: rotateZ(180deg) scale3d(32, 32, 128) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(20) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-954.0556703999px) translateY(321.489011395px) translateZ(263.4921207488px) scale(4) rotateZ(-100deg);
+  transform: translateX(-954.0556703999px) translateY(317.024836615px) translateZ(355.4926474071px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(20) .side {
   position: absolute;
@@ -2331,22 +2331,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(20) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 52.1404395442%) 63.25deg, hsl(207, 35%, 52.1404395442%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 72.1404395442%) 0deg 63.23deg, hsl(207, 35%, 62.1404395442%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(38, 38, 152) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 52.3190065354%) 63.25deg, hsl(207, 35%, 52.3190065354%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 72.3190065354%) 0deg 63.23deg, hsl(207, 35%, 62.3190065354%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(51, 51, 204) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(20) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 42.1404395442%) 63.25deg, hsl(207, 35%, 42.1404395442%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(38, 38, 152) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 42.3190065354%) 63.25deg, hsl(207, 35%, 42.3190065354%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(51, 51, 204) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(20) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 32.1404395442%) 63.25deg, hsl(207, 35%, 32.1404395442%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(38, 38, 152) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 32.3190065354%) 63.25deg, hsl(207, 35%, 32.3190065354%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(51, 51, 204) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(21) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1026.4969556701px) translateY(121.3754914417px) translateZ(263.4921207488px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1026.4969556701px) translateY(432.0802631426px) translateZ(228.6895809334px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(21) .side {
   position: absolute;
@@ -2356,22 +2356,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(21) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 60.1449803423%) 63.25deg, hsl(207, 35%, 60.1449803423%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 80.1449803423%) 0deg 63.23deg, hsl(207, 35%, 70.1449803423%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(38, 38, 152) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 47.7167894743%) 63.25deg, hsl(207, 35%, 47.7167894743%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 67.7167894743%) 0deg 63.23deg, hsl(207, 35%, 57.7167894743%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(33, 33, 132) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(21) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 50.1449803423%) 63.25deg, hsl(207, 35%, 50.1449803423%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(38, 38, 152) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 37.7167894743%) 63.25deg, hsl(207, 35%, 37.7167894743%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(33, 33, 132) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(21) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 40.1449803423%) 63.25deg, hsl(207, 35%, 40.1449803423%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(38, 38, 152) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 27.7167894743%) 63.25deg, hsl(207, 35%, 27.7167894743%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(33, 33, 132) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(22) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1100.6842316386px) translateY(102.1104871887px) translateZ(429.3166440921px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1100.6842316386px) translateY(6.3033404915px) translateZ(326.8363748253px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(22) .side {
   position: absolute;
@@ -2381,22 +2381,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(22) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 60.9155805125%) 63.25deg, hsl(207, 35%, 60.9155805125%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 80.9155805125%) 0deg 63.23deg, hsl(207, 35%, 70.9155805125%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(61, 61, 244) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 64.7478663803%) 63.25deg, hsl(207, 35%, 64.7478663803%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 84.7478663803%) 0deg 63.23deg, hsl(207, 35%, 74.7478663803%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(47, 47, 188) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(22) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 50.9155805125%) 63.25deg, hsl(207, 35%, 50.9155805125%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(61, 61, 244) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 54.7478663803%) 63.25deg, hsl(207, 35%, 54.7478663803%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(47, 47, 188) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(22) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 40.9155805125%) 63.25deg, hsl(207, 35%, 40.9155805125%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(61, 61, 244) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 44.7478663803%) 63.25deg, hsl(207, 35%, 44.7478663803%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(47, 47, 188) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(23) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1176.5773337194px) translateY(579.5020990865px) translateZ(399.3507815174px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1176.5773337194px) translateY(302.1418535084px) translateZ(362.7229771246px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(23) .side {
   position: absolute;
@@ -2406,22 +2406,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(23) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 41.8199160365%) 63.25deg, hsl(207, 35%, 41.8199160365%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 61.8199160365%) 0deg 63.23deg, hsl(207, 35%, 51.8199160365%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(57, 57, 228) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 52.9143258597%) 63.25deg, hsl(207, 35%, 52.9143258597%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 72.9143258597%) 0deg 63.23deg, hsl(207, 35%, 62.9143258597%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(52, 52, 208) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(23) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 31.8199160365%) 63.25deg, hsl(207, 35%, 31.8199160365%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(57, 57, 228) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 42.9143258597%) 63.25deg, hsl(207, 35%, 42.9143258597%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(52, 52, 208) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(23) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 21.8199160365%) 63.25deg, hsl(207, 35%, 21.8199160365%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(57, 57, 228) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 32.9143258597%) 63.25deg, hsl(207, 35%, 32.9143258597%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(52, 52, 208) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(24) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1254.138748305px) translateY(358.0270071189px) translateZ(406.7824200443px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1254.138748305px) translateY(74.1733549213px) translateZ(362.7229771246px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(24) .side {
   position: absolute;
@@ -2431,22 +2431,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(24) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 50.6789197152%) 63.25deg, hsl(207, 35%, 50.6789197152%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 70.6789197152%) 0deg 63.23deg, hsl(207, 35%, 60.6789197152%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(58, 58, 232) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 62.0330658031%) 63.25deg, hsl(207, 35%, 62.0330658031%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 82.0330658031%) 0deg 63.23deg, hsl(207, 35%, 72.0330658031%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(52, 52, 208) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(24) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 40.6789197152%) 63.25deg, hsl(207, 35%, 40.6789197152%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(58, 58, 232) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 52.0330658031%) 63.25deg, hsl(207, 35%, 52.0330658031%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(52, 52, 208) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(24) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 30.6789197152%) 63.25deg, hsl(207, 35%, 30.6789197152%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(58, 58, 232) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 42.0330658031%) 63.25deg, hsl(207, 35%, 42.0330658031%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(52, 52, 208) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(25) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1333.3333333333px) translateY(213.9325869031px) translateZ(377.2741810287px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1333.3333333333px) translateY(405.3347700487px) translateZ(256.5174125036px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(25) .side {
   position: absolute;
@@ -2456,22 +2456,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(25) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 56.4426965239%) 63.25deg, hsl(207, 35%, 56.4426965239%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 76.4426965239%) 0deg 63.23deg, hsl(207, 35%, 66.4426965239%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(54, 54, 216) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 48.7866091981%) 63.25deg, hsl(207, 35%, 48.7866091981%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 68.7866091981%) 0deg 63.23deg, hsl(207, 35%, 58.7866091981%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(37, 37, 148) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(25) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 46.4426965239%) 63.25deg, hsl(207, 35%, 46.4426965239%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(54, 54, 216) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 38.7866091981%) 63.25deg, hsl(207, 35%, 38.7866091981%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(37, 37, 148) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(25) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 36.4426965239%) 63.25deg, hsl(207, 35%, 36.4426965239%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(54, 54, 216) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 28.7866091981%) 63.25deg, hsl(207, 35%, 28.7866091981%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(37, 37, 148) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(26) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1414.1280784364px) translateY(575.986021176px) translateZ(507.4463691075px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1414.1280784364px) translateY(141.8100065163px) translateZ(491.4108091028px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(26) .side {
   position: absolute;
@@ -2481,22 +2481,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(26) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 41.960559153%) 63.25deg, hsl(207, 35%, 41.960559153%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 61.960559153%) 0deg 63.23deg, hsl(207, 35%, 51.960559153%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(71, 71, 284) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 59.3275997393%) 63.25deg, hsl(207, 35%, 59.3275997393%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 79.3275997393%) 0deg 63.23deg, hsl(207, 35%, 69.3275997393%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(69, 69, 276) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(26) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 31.960559153%) 63.25deg, hsl(207, 35%, 31.960559153%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(71, 71, 284) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 49.3275997393%) 63.25deg, hsl(207, 35%, 49.3275997393%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(69, 69, 276) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(26) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 21.960559153%) 63.25deg, hsl(207, 35%, 21.960559153%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(71, 71, 284) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 39.3275997393%) 63.25deg, hsl(207, 35%, 39.3275997393%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(69, 69, 276) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(27) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1496.4918977395px) translateY(225.4987532936px) translateZ(319.7307217973px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1496.4918977395px) translateY(519.8128858178px) translateZ(291.4957803271px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(27) .side {
   position: absolute;
@@ -2506,22 +2506,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(27) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 55.9800498683%) 63.25deg, hsl(207, 35%, 55.9800498683%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 75.9800498683%) 0deg 63.23deg, hsl(207, 35%, 65.9800498683%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(46, 46, 184) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 44.2074845673%) 63.25deg, hsl(207, 35%, 44.2074845673%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 64.2074845673%) 0deg 63.23deg, hsl(207, 35%, 54.2074845673%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(42, 42, 168) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(27) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 45.9800498683%) 63.25deg, hsl(207, 35%, 45.9800498683%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(46, 46, 184) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 34.2074845673%) 63.25deg, hsl(207, 35%, 34.2074845673%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(42, 42, 168) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(27) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 35.9800498683%) 63.25deg, hsl(207, 35%, 35.9800498683%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(46, 46, 184) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 24.2074845673%) 63.25deg, hsl(207, 35%, 24.2074845673%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(42, 42, 168) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(28) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1580.3954498092px) translateY(584.7121783946px) translateZ(459.9742722832px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1580.3954498092px) translateY(111.1416181305px) translateZ(326.8363748253px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(28) .side {
   position: absolute;
@@ -2531,22 +2531,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(28) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 41.6115128642%) 63.25deg, hsl(207, 35%, 41.6115128642%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 61.6115128642%) 0deg 63.23deg, hsl(207, 35%, 51.6115128642%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(65, 65, 260) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 60.5543352748%) 63.25deg, hsl(207, 35%, 60.5543352748%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 80.5543352748%) 0deg 63.23deg, hsl(207, 35%, 70.5543352748%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(47, 47, 188) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(28) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 31.6115128642%) 63.25deg, hsl(207, 35%, 31.6115128642%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(65, 65, 260) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 50.5543352748%) 63.25deg, hsl(207, 35%, 50.5543352748%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(47, 47, 188) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(28) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 21.6115128642%) 63.25deg, hsl(207, 35%, 21.6115128642%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(65, 65, 260) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 40.5543352748%) 63.25deg, hsl(207, 35%, 40.5543352748%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(47, 47, 188) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(29) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1665.8109803403px) translateY(204.0145068827px) translateZ(582.500477032px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1665.8109803403px) translateY(360.331408202px) translateZ(384.598190664px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(29) .side {
   position: absolute;
@@ -2556,22 +2556,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(29) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 56.8394197247%) 63.25deg, hsl(207, 35%, 56.8394197247%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 76.8394197247%) 0deg 63.23deg, hsl(207, 35%, 66.8394197247%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(80, 80, 320) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 50.5867436719%) 63.25deg, hsl(207, 35%, 50.5867436719%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 70.5867436719%) 0deg 63.23deg, hsl(207, 35%, 60.5867436719%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(55, 55, 220) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(29) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 46.8394197247%) 63.25deg, hsl(207, 35%, 46.8394197247%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(80, 80, 320) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 40.5867436719%) 63.25deg, hsl(207, 35%, 40.5867436719%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(55, 55, 220) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(29) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 36.8394197247%) 63.25deg, hsl(207, 35%, 36.8394197247%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(80, 80, 320) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 30.5867436719%) 63.25deg, hsl(207, 35%, 30.5867436719%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(55, 55, 220) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(30) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1752.7121840165px) translateY(408.6843218343px) translateZ(556.9315810568px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1752.7121840165px) translateY(327.6962376111px) translateZ(452.2401232197px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(30) .side {
   position: absolute;
@@ -2581,22 +2581,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(30) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 48.6526271266%) 63.25deg, hsl(207, 35%, 48.6526271266%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 68.6526271266%) 0deg 63.23deg, hsl(207, 35%, 58.6526271266%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(77, 77, 308) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 51.8921504956%) 63.25deg, hsl(207, 35%, 51.8921504956%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 71.8921504956%) 0deg 63.23deg, hsl(207, 35%, 61.8921504956%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(64, 64, 256) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(30) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 38.6526271266%) 63.25deg, hsl(207, 35%, 38.6526271266%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(77, 77, 308) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 41.8921504956%) 63.25deg, hsl(207, 35%, 41.8921504956%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(64, 64, 256) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(30) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 28.6526271266%) 63.25deg, hsl(207, 35%, 28.6526271266%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(77, 77, 308) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 31.8921504956%) 63.25deg, hsl(207, 35%, 31.8921504956%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(64, 64, 256) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(31) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1841.0740826425px) translateY(317.6756606207px) translateZ(429.3166440921px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1841.0740826425px) translateY(461.5432243728px) translateZ(499.4011546617px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(31) .side {
   position: absolute;
@@ -2606,22 +2606,22 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(31) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 52.2929735752%) 63.25deg, hsl(207, 35%, 52.2929735752%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 72.2929735752%) 0deg 63.23deg, hsl(207, 35%, 62.2929735752%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(61, 61, 244) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 46.5382710251%) 63.25deg, hsl(207, 35%, 46.5382710251%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 66.5382710251%) 0deg 63.23deg, hsl(207, 35%, 56.5382710251%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(70, 70, 280) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(31) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 42.2929735752%) 63.25deg, hsl(207, 35%, 42.2929735752%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(61, 61, 244) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 36.5382710251%) 63.25deg, hsl(207, 35%, 36.5382710251%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(70, 70, 280) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(31) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 32.2929735752%) 63.25deg, hsl(207, 35%, 32.2929735752%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(61, 61, 244) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 26.5382710251%) 63.25deg, hsl(207, 35%, 26.5382710251%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(70, 70, 280) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(32) {
   position: absolute;
   width: 2px;
   height: 2px;
-  transform: translateX(-1930.8729171601px) translateY(211.6560838655px) translateZ(540.198242642px) scale(4) rotateZ(-100deg);
+  transform: translateX(-1930.8729171601px) translateY(451.8129992881px) translateZ(341.1146518613px) scale(4) rotateZ(-100deg);
 }
 .floor .mountains .mountain:nth-child(32) .side {
   position: absolute;
@@ -2631,16 +2631,16 @@ body {
   background-blend-mode: color;
 }
 .floor .mountains .mountain:nth-child(32) .side:nth-child(1) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 56.5337566454%) 63.25deg, hsl(207, 35%, 56.5337566454%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 76.5337566454%) 0deg 63.23deg, hsl(207, 35%, 66.5337566454%) 0deg 80deg, transparent 116.5deg);
-  transform: rotateZ(0deg) scale3d(75, 75, 300) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 46.9274800285%) 63.25deg, hsl(207, 35%, 46.9274800285%) 116.5deg, transparent 116.5deg), conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 66.9274800285%) 0deg 63.23deg, hsl(207, 35%, 56.9274800285%) 0deg 80deg, transparent 116.5deg);
+  transform: rotateZ(0deg) scale3d(49, 49, 196) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(32) .side:nth-child(2) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 46.5337566454%) 63.25deg, hsl(207, 35%, 46.5337566454%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(90deg) scale3d(75, 75, 300) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 36.9274800285%) 63.25deg, hsl(207, 35%, 36.9274800285%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(90deg) scale3d(49, 49, 196) rotateX(-60deg);
 }
 .floor .mountains .mountain:nth-child(32) .side:nth-child(3) {
-  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 36.5337566454%) 63.25deg, hsl(207, 35%, 36.5337566454%) 116.5deg, transparent 116.5deg);
-  transform: rotateZ(180deg) scale3d(75, 75, 300) rotateX(-60deg);
+  background-image: conic-gradient(from 90deg at 50% 0%, transparent 63.25deg, hsl(207, 35%, 26.9274800285%) 63.25deg, hsl(207, 35%, 26.9274800285%) 116.5deg, transparent 116.5deg);
+  transform: rotateZ(180deg) scale3d(49, 49, 196) rotateX(-60deg);
 }
 
 .ships {
@@ -2648,18 +2648,18 @@ body {
 }
 .ships .ship:nth-child(1) {
   position: absolute;
-  transform: translateY(710.4187561897px) translateZ(820.4321823481px) scale(16.0449786027) scaleY(0.25) scaleZ(8.0224893013);
+  transform: translateY(990.8975394692px) translateZ(442.9938041155px) scale(32.3124772195) scaleY(0.25) scaleZ(16.1562386097);
 }
-@keyframes u2nmib8 {
+@keyframes u2nminn {
   0% {
-    transform: translateX(-684.7730572664px) translateY(710.4187561897px) translateZ(820.4321823481px) scale(16.0449786027) scaleY(0.25) scaleZ(8.0224893013);
+    transform: translateX(-147.8908993636px) translateY(990.8975394692px) translateZ(442.9938041155px) scale(32.3124772195) scaleY(0.25) scaleZ(16.1562386097);
   }
   100% {
-    transform: translateX(3920.3483121619px) translateY(710.4187561897px) translateZ(820.4321823481px) scale(16.0449786027) scaleY(0.25) scaleZ(8.0224893013);
+    transform: translateX(3416.1105585897px) translateY(990.8975394692px) translateZ(442.9938041155px) scale(32.3124772195) scaleY(0.25) scaleZ(16.1562386097);
   }
 }
 .ships .ship:nth-child(1) {
-  animation: u2nmib8 30s linear infinite;
+  animation: u2nminn 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(1) .roof,
@@ -2705,18 +2705,18 @@ body {
 }
 .ships .ship:nth-child(2) {
   position: absolute;
-  transform: translateY(554.5647896527px) translateZ(702.1439560486px) scale(16.003443906) scaleY(0.25) scaleZ(8.001721953);
+  transform: translateY(686.15777408px) translateZ(807.0487356087px) scale(16.3333087167) scaleY(0.25) scaleZ(8.1666543583);
 }
-@keyframes u2nmibv {
+@keyframes u2nmioj {
   0% {
-    transform: translateX(-479.4163782633px) translateY(554.5647896527px) translateZ(702.1439560486px) scale(16.003443906) scaleY(0.25) scaleZ(8.001721953);
+    transform: translateX(-2942.3203082325px) translateY(686.15777408px) translateZ(807.0487356087px) scale(16.3333087167) scaleY(0.25) scaleZ(8.1666543583);
   }
   100% {
-    transform: translateX(4128.3632117555px) translateY(554.5647896527px) translateZ(702.1439560486px) scale(16.003443906) scaleY(0.25) scaleZ(8.001721953);
+    transform: translateX(1644.3479339001px) translateY(686.15777408px) translateZ(807.0487356087px) scale(16.3333087167) scaleY(0.25) scaleZ(8.1666543583);
   }
 }
 .ships .ship:nth-child(2) {
-  animation: u2nmibv 30s linear infinite;
+  animation: u2nmioj 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(2) .roof,
@@ -2762,18 +2762,18 @@ body {
 }
 .ships .ship:nth-child(3) {
   position: absolute;
-  transform: translateY(748.7995686935px) translateZ(380.8969746316px) scale(59.9548197175) scaleY(0.25) scaleZ(29.9774098587);
+  transform: translateY(869.7355187898px) translateZ(415.0166927384px) scale(55.2236312449) scaleY(0.25) scaleZ(27.6118156224);
 }
-@keyframes u2nmicm {
+@keyframes u2nmipi {
   0% {
-    transform: translateX(-1461.5086279905px) translateY(748.7995686935px) translateZ(380.8969746316px) scale(59.9548197175) scaleY(0.25) scaleZ(29.9774098587);
+    transform: translateX(-696.3140847017px) translateY(869.7355187898px) translateZ(415.0166927384px) scale(55.2236312449) scaleY(0.25) scaleZ(27.6118156224);
   }
   100% {
-    transform: translateX(333.3829100903px) translateY(748.7995686935px) translateZ(380.8969746316px) scale(59.9548197175) scaleY(0.25) scaleZ(29.9774098587);
+    transform: translateX(1401.3735156262px) translateY(869.7355187898px) translateZ(415.0166927384px) scale(55.2236312449) scaleY(0.25) scaleZ(27.6118156224);
   }
 }
 .ships .ship:nth-child(3) {
-  animation: u2nmicm 30s linear infinite;
+  animation: u2nmipi 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(3) .roof,
@@ -2819,18 +2819,18 @@ body {
 }
 .ships .ship:nth-child(4) {
   position: absolute;
-  transform: translateY(803.4356159334px) translateZ(842.0425069412px) scale(16.0002091451) scaleY(0.25) scaleZ(8.0001045725);
+  transform: translateY(852.5221016888px) translateZ(891.8748935591px) scale(16.0000000521) scaleY(0.25) scaleZ(8.000000026);
 }
-@keyframes u2nmidc {
+@keyframes u2nmipz {
   0% {
-    transform: translateX(-2903.4956751231px) translateY(803.4356159334px) translateZ(842.0425069412px) scale(16.0002091451) scaleY(0.25) scaleZ(8.0001045725);
+    transform: translateX(-122.1398896976px) translateY(852.5221016888px) translateZ(891.8748935591px) scale(16.0000000521) scaleY(0.25) scaleZ(8.000000026);
   }
   100% {
-    transform: translateX(1704.4909395917px) translateY(803.4356159334px) translateZ(842.0425069412px) scale(16.0002091451) scaleY(0.25) scaleZ(8.0001045725);
+    transform: translateX(4485.8601069709px) translateY(852.5221016888px) translateZ(891.8748935591px) scale(16.0000000521) scaleY(0.25) scaleZ(8.000000026);
   }
 }
 .ships .ship:nth-child(4) {
-  animation: u2nmidc 30s linear infinite;
+  animation: u2nmipz 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(4) .roof,
@@ -2876,18 +2876,18 @@ body {
 }
 .ships .ship:nth-child(5) {
   position: absolute;
-  transform: translateY(666.9193789151px) translateZ(780.501675383px) scale(16.0000025625) scaleY(0.25) scaleZ(8.0000012813);
+  transform: translateY(749.7708642081px) translateZ(788.5068860588px) scale(16.9483842536) scaleY(0.25) scaleZ(8.4741921268);
 }
-@keyframes u2nmidl {
+@keyframes u2nmiqq {
   0% {
-    transform: translateX(-2685.9562609342px) translateY(666.9193789151px) translateZ(780.501675383px) scale(16.0000025625) scaleY(0.25) scaleZ(8.0000012813);
+    transform: translateX(-2528.5481042188px) translateY(749.7708642081px) translateZ(788.5068860588px) scale(16.9483842536) scaleY(0.25) scaleZ(8.4741921268);
   }
   100% {
-    transform: translateX(1922.0435750634px) translateY(666.9193789151px) translateZ(780.501675383px) scale(16.0000025625) scaleY(0.25) scaleZ(8.0000012813);
+    transform: translateX(2018.7553035512px) translateY(749.7708642081px) translateZ(788.5068860588px) scale(16.9483842536) scaleY(0.25) scaleZ(8.4741921268);
   }
 }
 .ships .ship:nth-child(5) {
-  animation: u2nmidl 30s linear infinite;
+  animation: u2nmiqq 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(5) .roof,
@@ -2933,18 +2933,18 @@ body {
 }
 .ships .ship:nth-child(6) {
   position: absolute;
-  transform: translateY(756.3089610072px) translateZ(434.6429654334px) scale(36.6943120178) scaleY(0.25) scaleZ(18.3471560089);
+  transform: translateY(673.8415038122px) translateZ(745.9273503596px) scale(16.0660594457) scaleY(0.25) scaleZ(8.0330297229);
 }
-@keyframes u2nmiel {
+@keyframes u2nmir5 {
   0% {
-    transform: translateX(-984.6671130695px) translateY(756.3089610072px) translateZ(434.6429654334px) scale(36.6943120178) scaleY(0.25) scaleZ(18.3471560089);
+    transform: translateX(-1464.6921920016px) translateY(673.8415038122px) translateZ(745.9273503596px) scale(16.0660594457) scaleY(0.25) scaleZ(8.0330297229);
   }
   100% {
-    transform: translateX(2298.8969177882px) translateY(756.3089610072px) translateZ(434.6429654334px) scale(36.6943120178) scaleY(0.25) scaleZ(18.3471560089);
+    transform: translateX(3139.0800034735px) translateY(673.8415038122px) translateZ(745.9273503596px) scale(16.0660594457) scaleY(0.25) scaleZ(8.0330297229);
   }
 }
 .ships .ship:nth-child(6) {
-  animation: u2nmiel 30s linear infinite;
+  animation: u2nmir5 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(6) .roof,
@@ -2990,18 +2990,18 @@ body {
 }
 .ships .ship:nth-child(7) {
   position: absolute;
-  transform: translateY(826.3637577589px) translateZ(558.4414155521px) scale(22.0268551077) scaleY(0.25) scaleZ(11.0134275539);
+  transform: translateY(919.0063404059px) translateZ(686.2073263076px) scale(18.252578009) scaleY(0.25) scaleZ(9.1262890045);
 }
-@keyframes u2nmiem {
+@keyframes u2nmis3 {
   0% {
-    transform: translateX(-188.1583314253px) translateY(826.3637577589px) translateZ(558.4414155521px) scale(22.0268551077) scaleY(0.25) scaleZ(11.0134275539);
+    transform: translateX(-2391.0844566196px) translateY(919.0063404059px) translateZ(686.2073263076px) scale(18.252578009) scaleY(0.25) scaleZ(9.1262890045);
   }
   100% {
-    transform: translateX(4034.1229416802px) translateY(826.3637577589px) translateZ(558.4414155521px) scale(22.0268551077) scaleY(0.25) scaleZ(11.0134275539);
+    transform: translateX(2072.7505508071px) translateY(919.0063404059px) translateZ(686.2073263076px) scale(18.252578009) scaleY(0.25) scaleZ(9.1262890045);
   }
 }
 .ships .ship:nth-child(7) {
-  animation: u2nmiem 30s linear infinite;
+  animation: u2nmis3 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(7) .roof,
@@ -3047,18 +3047,18 @@ body {
 }
 .ships .ship:nth-child(8) {
   position: absolute;
-  transform: translateY(593.144071935px) translateZ(493.2035257136px) scale(27.8943631321) scaleY(0.25) scaleZ(13.9471815661);
+  transform: translateY(604.7512410586px) translateZ(841.9360006901px) scale(16.0004812693) scaleY(0.25) scaleZ(8.0002406346);
 }
-@keyframes u2nmif3 {
+@keyframes u2nmisn {
   0% {
-    transform: translateX(-570.0025555408px) translateY(593.144071935px) translateZ(493.2035257136px) scale(27.8943631321) scaleY(0.25) scaleZ(13.9471815661);
+    transform: translateX(-886.4047269369px) translateY(604.7512410586px) translateZ(841.9360006901px) scale(16.0004812693) scaleY(0.25) scaleZ(8.0002406346);
   }
   100% {
-    transform: translateX(3276.7582040037px) translateY(593.144071935px) translateZ(493.2035257136px) scale(27.8943631321) scaleY(0.25) scaleZ(13.9471815661);
+    transform: translateX(3721.5644718304px) translateY(604.7512410586px) translateZ(841.9360006901px) scale(16.0004812693) scaleY(0.25) scaleZ(8.0002406346);
   }
 }
 .ships .ship:nth-child(8) {
-  animation: u2nmif3 30s linear infinite;
+  animation: u2nmisn 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(8) .roof,
@@ -3104,18 +3104,18 @@ body {
 }
 .ships .ship:nth-child(9) {
   position: absolute;
-  transform: translateY(694.313192693px) translateZ(761.9766241945px) scale(16.0034564328) scaleY(0.25) scaleZ(8.0017282164);
+  transform: translateY(731.9915292014px) translateZ(799.0305660375px) scale(16.043876425) scaleY(0.25) scaleZ(8.0219382125);
 }
-@keyframes u2nmiff {
+@keyframes u2nmit8 {
   0% {
-    transform: translateX(-540.0338306801px) translateY(694.313192693px) translateZ(761.9766241945px) scale(16.0034564328) scaleY(0.25) scaleZ(8.0017282164);
+    transform: translateX(-2965.6364539395px) translateY(731.9915292014px) translateZ(799.0305660375px) scale(16.043876425) scaleY(0.25) scaleZ(8.0219382125);
   }
   100% {
-    transform: translateX(4067.7449576191px) translateY(694.313192693px) translateZ(761.9766241945px) scale(16.0034564328) scaleY(0.25) scaleZ(8.0017282164);
+    transform: translateX(1639.5554548574px) translateY(731.9915292014px) translateZ(799.0305660375px) scale(16.043876425) scaleY(0.25) scaleZ(8.0219382125);
   }
 }
 .ships .ship:nth-child(9) {
-  animation: u2nmiff 30s linear infinite;
+  animation: u2nmit8 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(9) .roof,
@@ -3161,18 +3161,18 @@ body {
 }
 .ships .ship:nth-child(10) {
   position: absolute;
-  transform: translateY(674.0431073941px) translateZ(572.3121225437px) scale(26.3969654542) scaleY(0.25) scaleZ(13.1984827271);
+  transform: translateY(1006.1212179448px) translateZ(783.108271197px) scale(16.5509007221) scaleY(0.25) scaleZ(8.2754503611);
 }
-@keyframes u2nmifr {
+@keyframes u2nmitq {
   0% {
-    transform: translateX(-1300.6238878066px) translateY(674.0431073941px) translateZ(572.3121225437px) scale(26.3969654542) scaleY(0.25) scaleZ(13.1984827271);
+    transform: translateX(-1629.2633921957px) translateY(1006.1212179448px) translateZ(783.108271197px) scale(16.5509007221) scaleY(0.25) scaleZ(8.2754503611);
   }
   100% {
-    transform: translateX(2641.9703231245px) translateY(674.0431073941px) translateZ(572.3121225437px) scale(26.3969654542) scaleY(0.25) scaleZ(13.1984827271);
+    transform: translateX(2943.4789615884px) translateY(1006.1212179448px) translateZ(783.108271197px) scale(16.5509007221) scaleY(0.25) scaleZ(8.2754503611);
   }
 }
 .ships .ship:nth-child(10) {
-  animation: u2nmifr 30s linear infinite;
+  animation: u2nmitq 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(10) .roof,
@@ -3218,18 +3218,18 @@ body {
 }
 .ships .ship:nth-child(11) {
   position: absolute;
-  transform: translateY(819.3310332021px) translateZ(394.6205112001px) scale(56.5181932202) scaleY(0.25) scaleZ(28.2590966101);
+  transform: translateY(919.4777157888px) translateZ(792.3124008523px) scale(16) scaleY(0.25) scaleZ(8);
 }
-@keyframes u2nmign {
+@keyframes u2nmiun {
   0% {
-    transform: translateX(-2376.6845076997px) translateY(819.3310332021px) translateZ(394.6205112001px) scale(56.5181932202) scaleY(0.25) scaleZ(28.2590966101);
+    transform: translateX(-1451.028007016px) translateY(919.4777157888px) translateZ(792.3124008523px) scale(16) scaleY(0.25) scaleZ(8);
   }
   100% {
-    transform: translateX(-361.8488737912px) translateY(819.3310332021px) translateZ(394.6205112001px) scale(56.5181932202) scaleY(0.25) scaleZ(28.2590966101);
+    transform: translateX(3156.971992984px) translateY(919.4777157888px) translateZ(792.3124008523px) scale(16) scaleY(0.25) scaleZ(8);
   }
 }
 .ships .ship:nth-child(11) {
-  animation: u2nmign 30s linear infinite;
+  animation: u2nmiun 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(11) .roof,
@@ -3275,18 +3275,18 @@ body {
 }
 .ships .ship:nth-child(12) {
   position: absolute;
-  transform: translateY(611.1730383579px) translateZ(754.7599180046px) scale(18.7618930936) scaleY(0.25) scaleZ(9.3809465468);
+  transform: translateY(1017.4506243481px) translateZ(729.7827425165px) scale(16.0000000003) scaleY(0.25) scaleZ(8.0000000001);
 }
-@keyframes u2nmigx {
+@keyframes u2nmiv5 {
   0% {
-    transform: translateX(-1650.4406877787px) translateY(611.1730383579px) translateZ(754.7599180046px) scale(18.7618930936) scaleY(0.25) scaleZ(9.3809465468);
+    transform: translateX(-1808.8763476447px) translateY(1017.4506243481px) translateZ(729.7827425165px) scale(16.0000000003) scaleY(0.25) scaleZ(8.0000000001);
   }
   100% {
-    transform: translateX(2780.7981542323px) translateY(611.1730383579px) translateZ(754.7599180046px) scale(18.7618930936) scaleY(0.25) scaleZ(9.3809465468);
+    transform: translateX(2799.1236523385px) translateY(1017.4506243481px) translateZ(729.7827425165px) scale(16.0000000003) scaleY(0.25) scaleZ(8.0000000001);
   }
 }
 .ships .ship:nth-child(12) {
-  animation: u2nmigx 30s linear infinite;
+  animation: u2nmiv5 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(12) .roof,
@@ -3332,18 +3332,18 @@ body {
 }
 .ships .ship:nth-child(13) {
   position: absolute;
-  transform: translateY(623.505046589px) translateZ(394.0432609932px) scale(61.196973636) scaleY(0.25) scaleZ(30.598486818);
+  transform: translateY(763.1866361641px) translateZ(395.3493857636px) scale(49.4047666021) scaleY(0.25) scaleZ(24.702383301);
 }
-@keyframes u2nmihd {
+@keyframes u2nmiw4 {
   0% {
-    transform: translateX(-804.6236860221px) translateY(623.505046589px) translateZ(394.0432609932px) scale(61.196973636) scaleY(0.25) scaleZ(30.598486818);
+    transform: translateX(-2409.2264279061px) translateY(763.1866361641px) translateZ(395.3493857636px) scale(49.4047666021) scaleY(0.25) scaleZ(24.702383301);
   }
   100% {
-    transform: translateX(910.7700012762px) translateY(623.505046589px) translateZ(394.0432609932px) scale(61.196973636) scaleY(0.25) scaleZ(30.598486818);
+    transform: translateX(60.8685095618px) translateY(763.1866361641px) translateZ(395.3493857636px) scale(49.4047666021) scaleY(0.25) scaleZ(24.702383301);
   }
 }
 .ships .ship:nth-child(13) {
-  animation: u2nmihd 30s linear infinite;
+  animation: u2nmiw4 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(13) .roof,
@@ -3389,18 +3389,18 @@ body {
 }
 .ships .ship:nth-child(14) {
   position: absolute;
-  transform: translateY(963.6808715375px) translateZ(811.9791307004px) scale(16.0000033022) scaleY(0.25) scaleZ(8.0000016511);
+  transform: translateY(939.4212434431px) translateZ(400.8014644175px) scale(62.7463868559) scaleY(0.25) scaleZ(31.3731934279);
 }
-@keyframes u2nmihk {
+@keyframes u2nmiw6 {
   0% {
-    transform: translateX(-1225.2590613px) translateY(963.6808715375px) translateZ(811.9791307004px) scale(16.0000033022) scaleY(0.25) scaleZ(8.0000016511);
+    transform: translateX(-1254.0541323336px) translateY(939.4212434431px) translateZ(400.8014644175px) scale(62.7463868559) scaleY(0.25) scaleZ(31.3731934279);
   }
   100% {
-    transform: translateX(3382.7407273614px) translateY(963.6808715375px) translateZ(811.9791307004px) scale(16.0000033022) scaleY(0.25) scaleZ(8.0000016511);
+    transform: translateX(362.1771088892px) translateY(939.4212434431px) translateZ(400.8014644175px) scale(62.7463868559) scaleY(0.25) scaleZ(31.3731934279);
   }
 }
 .ships .ship:nth-child(14) {
-  animation: u2nmihk 30s linear infinite;
+  animation: u2nmiw6 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(14) .roof,
@@ -3446,18 +3446,18 @@ body {
 }
 .ships .ship:nth-child(15) {
   position: absolute;
-  transform: translateY(767.7316724119px) translateZ(725.3617563207px) scale(16.0000922888) scaleY(0.25) scaleZ(8.0000461444);
+  transform: translateY(767.7036258176px) translateZ(790.6900165098px) scale(16.2620774619) scaleY(0.25) scaleZ(8.1310387309);
 }
-@keyframes u2nmihr {
+@keyframes u2nmiww {
   0% {
-    transform: translateX(-1296.2110290289px) translateY(767.7316724119px) translateZ(725.3617563207px) scale(16.0000922888) scaleY(0.25) scaleZ(8.0000461444);
+    transform: translateX(-2793.0571344947px) translateY(767.7036258176px) translateZ(790.6900165098px) scale(16.2620774619) scaleY(0.25) scaleZ(8.1310387309);
   }
   100% {
-    transform: translateX(3311.7830644861px) translateY(767.7316724119px) translateZ(725.3617563207px) scale(16.0000922888) scaleY(0.25) scaleZ(8.0000461444);
+    transform: translateX(1798.1699079454px) translateY(767.7036258176px) translateZ(790.6900165098px) scale(16.2620774619) scaleY(0.25) scaleZ(8.1310387309);
   }
 }
 .ships .ship:nth-child(15) {
-  animation: u2nmihr 30s linear infinite;
+  animation: u2nmiww 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(15) .roof,
@@ -3503,18 +3503,18 @@ body {
 }
 .ships .ship:nth-child(16) {
   position: absolute;
-  transform: translateY(512.1193674294px) translateZ(600.3381522385px) scale(22.1365069671) scaleY(0.25) scaleZ(11.0682534835);
+  transform: translateY(710.0011819645px) translateZ(429.9374337209px) scale(38.2405979058) scaleY(0.25) scaleZ(19.1202989529);
 }
-@keyframes u2nmihv {
+@keyframes u2nmix8 {
   0% {
-    transform: translateX(-390.0193373432px) translateY(512.1193674294px) translateZ(600.3381522385px) scale(22.1365069671) scaleY(0.25) scaleZ(11.0682534835);
+    transform: translateX(-1427.5523125455px) translateY(710.0011819645px) translateZ(429.9374337209px) scale(38.2405979058) scaleY(0.25) scaleZ(19.1202989529);
   }
   100% {
-    transform: translateX(3825.2442167628px) translateY(512.1193674294px) translateZ(600.3381522385px) scale(22.1365069671) scaleY(0.25) scaleZ(11.0682534835);
+    transform: translateX(1757.0494214833px) translateY(710.0011819645px) translateZ(429.9374337209px) scale(38.2405979058) scaleY(0.25) scaleZ(19.1202989529);
   }
 }
 .ships .ship:nth-child(16) {
-  animation: u2nmihv 30s linear infinite;
+  animation: u2nmix8 30s linear infinite;
   animation-delay: 0s;
 }
 .ships .ship:nth-child(16) .roof,
@@ -3590,13 +3590,13 @@ body {
   transform: translateY(-32px);
   height: 3px;
 }
-@keyframes u2nmiij {
+@keyframes u2nmixh {
   100% {
     transform: translateY(-32px) translateY(32px) scaleY(2);
   }
 }
 .sun-group .line:nth-child(1) {
-  animation: u2nmiij 2s linear infinite;
+  animation: u2nmixh 2s linear infinite;
   animation-delay: 0s;
 }
 .sun-group .line:nth-child(2) {
@@ -3604,13 +3604,13 @@ body {
   transform: translateY(0px);
   height: 6px;
 }
-@keyframes u2nmijd {
+@keyframes u2nmixv {
   100% {
     transform: translateY(0px) translateY(32px) scaleY(1.5);
   }
 }
 .sun-group .line:nth-child(2) {
-  animation: u2nmijd 2s linear infinite;
+  animation: u2nmixv 2s linear infinite;
   animation-delay: 0s;
 }
 .sun-group .line:nth-child(3) {
@@ -3618,13 +3618,13 @@ body {
   transform: translateY(32px);
   height: 9px;
 }
-@keyframes u2nmijo {
+@keyframes u2nmiyo {
   100% {
     transform: translateY(32px) translateY(32px) scaleY(1.3333333333);
   }
 }
 .sun-group .line:nth-child(3) {
-  animation: u2nmijo 2s linear infinite;
+  animation: u2nmiyo 2s linear infinite;
   animation-delay: 0s;
 }
 .sun-group .line:nth-child(4) {
@@ -3632,13 +3632,13 @@ body {
   transform: translateY(64px);
   height: 12px;
 }
-@keyframes u2nmikn {
+@keyframes u2nmizh {
   100% {
     transform: translateY(64px) translateY(32px) scaleY(1.25);
   }
 }
 .sun-group .line:nth-child(4) {
-  animation: u2nmikn 2s linear infinite;
+  animation: u2nmizh 2s linear infinite;
   animation-delay: 0s;
 }
 .sun-group .line:nth-child(5) {
@@ -3646,13 +3646,13 @@ body {
   transform: translateY(96px);
   height: 15px;
 }
-@keyframes u2nmilh {
+@keyframes u2nmj0c {
   100% {
     transform: translateY(96px) translateY(32px) scaleY(1.2);
   }
 }
 .sun-group .line:nth-child(5) {
-  animation: u2nmilh 2s linear infinite;
+  animation: u2nmj0c 2s linear infinite;
   animation-delay: 0s;
 }
 .sun-group .line:nth-child(6) {
@@ -3660,13 +3660,13 @@ body {
   transform: translateY(128px);
   height: 18px;
 }
-@keyframes u2nmim3 {
+@keyframes u2nmj0t {
   100% {
     transform: translateY(128px) translateY(32px) scaleY(1.1666666667);
   }
 }
 .sun-group .line:nth-child(6) {
-  animation: u2nmim3 2s linear infinite;
+  animation: u2nmj0t 2s linear infinite;
   animation-delay: 0s;
 }
 .sun-group .line:nth-child(7) {
@@ -3674,13 +3674,13 @@ body {
   transform: translateY(160px);
   height: 21px;
 }
-@keyframes u2nmimc {
+@keyframes u2nmj0y {
   100% {
     transform: translateY(160px) translateY(32px) scaleY(1.1428571429);
   }
 }
 .sun-group .line:nth-child(7) {
-  animation: u2nmimc 2s linear infinite;
+  animation: u2nmj0y 2s linear infinite;
   animation-delay: 0s;
 }
 .sun-group .line:nth-child(8) {
@@ -3688,12 +3688,12 @@ body {
   transform: translateY(192px);
   height: 24px;
 }
-@keyframes u2nmimh {
+@keyframes u2nmj1o {
   100% {
     transform: translateY(192px) translateY(32px) scaleY(1.125);
   }
 }
 .sun-group .line:nth-child(8) {
-  animation: u2nmimh 2s linear infinite;
+  animation: u2nmj1o 2s linear infinite;
   animation-delay: 0s;
 }/*# sourceMappingURL=style.css.map */

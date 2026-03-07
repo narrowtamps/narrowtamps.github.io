@@ -56,81 +56,81 @@ body *::after {
 
 @keyframes flicker {
   0% {
-    opacity: 0.4532104496;
+    opacity: 0.1936747172;
   }
   4% {
-    opacity: 0.7912226633;
+    opacity: 0.7290779246;
   }
   8% {
-    opacity: 0.160848569;
+    opacity: 0.8197220987;
   }
   12% {
-    opacity: 0.9330252472;
+    opacity: 0.2987420741;
   }
   16% {
-    opacity: 0.4494877704;
+    opacity: 0.099573078;
   }
   20% {
-    opacity: 0.4936622249;
+    opacity: 0.8060392865;
   }
   24% {
-    opacity: 0.5511171224;
+    opacity: 0.3045260435;
   }
   28% {
-    opacity: 0.2226065153;
+    opacity: 0.1702017375;
   }
   32% {
-    opacity: 0.1596419351;
+    opacity: 0.2031622317;
   }
   36% {
-    opacity: 0.9417776918;
+    opacity: 0.5562133277;
   }
   40% {
-    opacity: 0.2941621032;
+    opacity: 0.9881191582;
   }
   44% {
-    opacity: 0.912077108;
+    opacity: 0.7756706122;
   }
   48% {
-    opacity: 0.9926459026;
+    opacity: 0.9074265743;
   }
   52% {
-    opacity: 0.7957930401;
+    opacity: 0.1098146675;
   }
   56% {
-    opacity: 0.7136672154;
+    opacity: 0.6056200784;
   }
   60% {
-    opacity: 0.7329561443;
+    opacity: 0.180128057;
   }
   64% {
-    opacity: 0.1921829265;
+    opacity: 0.8062674382;
   }
   68% {
-    opacity: 0.3884102004;
+    opacity: 0.1046751713;
   }
   72% {
-    opacity: 0.7167905444;
+    opacity: 0.0901915746;
   }
   76% {
-    opacity: 0.0732937785;
+    opacity: 0.5853577368;
   }
   80% {
-    opacity: 0.128332677;
+    opacity: 0.3612605178;
   }
   84% {
-    opacity: 0.0428650644;
+    opacity: 0.3421515963;
   }
   88% {
-    opacity: 0.4108332708;
+    opacity: 0.5036585978;
   }
   92% {
-    opacity: 0.379789473;
+    opacity: 0.1219311693;
   }
   96% {
-    opacity: 0.7352800016;
+    opacity: 0.6464721238;
   }
   100% {
-    opacity: 0.7927792184;
+    opacity: 0.4968487944;
   }
 }/*# sourceMappingURL=style.css.map */
