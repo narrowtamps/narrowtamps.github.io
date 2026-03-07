@@ -57,10 +57,14 @@
    
     rotate:270deg;
    
-     height: 100vw; 
-   width:auto;
+     width: 100vh; /* Use vh because the image is sideways */
+    height: auto;
     max-width: none;
-left: 100%
+    
+    /* Position adjustments */
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%; /* This centers the rotated image perfectly */
   }
 }
 </style>
