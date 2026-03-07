@@ -4,6 +4,8 @@
 
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Space Jazz Babes of Cloud City or a nearby equivalent</title>
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
 <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css'>
@@ -38,6 +40,15 @@
   0%, 45% { opacity: 1; }
   55%, 100% { opacity: 0; }
 }
+  .glow {
+  color: #fff; /* Text color, typically a bright color */
+  text-shadow:
+    0 0 5px #fff,  /* 1st shadow: white, small blur */
+    0 0 10px #fff, /* 2nd shadow: white, medium blur */
+    0 0 15px pink, /* 3rd shadow: blue, larger blur */
+    0 0 20px pink; /* 4th shadow: blue, even larger blur */
+}
+
 
 </style>
   </head>
@@ -49,8 +60,8 @@
 </div>
 
   </body>
-  <footer class="neon-container">
-    <div id="footer-placeholder"></div>
+  <footer>
+    <div id="footer-placeholder" class="glow"></div>
         <script src="/pages/script-footer-neon.js"></script>
             <script>
                 updateFooter('18px', '#FE019A', 'Neonderthaw',undefined,undefined);    
