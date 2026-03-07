@@ -190,7 +190,7 @@ style.textContent = `
 document.head.appendChild(style);
 
 
-var foot2 = `
+var footOne = `
 
 <footer class="site-footer big-footer">
 
