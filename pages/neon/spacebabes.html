@@ -39,7 +39,22 @@
 .image-2 {
   animation-delay: .5s; /* Delays second image to alternate */
 }
-
+.image-3, .image-4 {
+  position: absolute;
+  filter: invert(100%) hue-rotate(280deg);
+  top: 0;
+  left: 20;
+  max-width:100%;
+  height:auto;
+  
+  animation: alternateImages 1s infinite;
+}
+.image-3 {
+  animation-delay: .25s; /* Delays second image to alternate */
+}
+.image-3 {
+  animation-delay: .75s; /* Delays second image to alternate */
+}
 @keyframes alternateImages {
   0%, 45% { opacity: 1; }
   55%, 100% { opacity: 0; }
@@ -74,10 +89,9 @@
   <div class="neon-container">
   <img src="leg1_nobg.png" class="image-1" alt="First Image">
   <img src="leg2_nobg.png" class="image-2" alt="Second Image">
-</div>
-      <div class="neon-container" style="margin-left:50px;">
-    <img src="legh1.png" class="image-1" alt="First Image">
-  <img src="legh2.png" class="image-2" alt="Second Image">
+
+  <img src="legh1.png" class="image-3" alt="First Image">
+  <img src="legh2.png" class="image-4" alt="Second Image">
 </div>
 
   </body>
