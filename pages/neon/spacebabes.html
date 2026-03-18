@@ -43,8 +43,8 @@
   position: absolute;
   filter: invert(100%) hue-rotate(280deg);
   top: 0;
-  left: 20;
-  max-width:100%;
+  left: 20px;
+  max-width:80%;
   height:auto;
   
   animation: alternateImages 1s infinite;
@@ -52,7 +52,7 @@
 .image-3 {
    /* Delays second image to alternate */
 }
-.image-3 {
+.image-4 {
   animation-delay: .5s; /* Delays second image to alternate */
 }
 @keyframes alternateImages {
@@ -68,7 +68,7 @@
     0 0 5px pink; 
 }
 @media  (max-width: 767px) {
- .image-1, .image-2, .image-3, .image-4 {
+ .image-1, .image-2{
    
     rotate:270deg;
    
@@ -79,6 +79,19 @@
     /* Position adjustments */
     top: 50%;
     left: 50%;
+    translate: -50% -50%; /* This centers the rotated image perfectly */
+  }
+  .image-3, .image-4 {
+   
+    rotate:270deg;
+   
+     width: 80vh; /* Use vh because the image is sideways */
+    height: auto;
+    max-width: none;
+    
+    /* Position adjustments */
+    top: 50%;
+    left: 40%;
     translate: -50% -50%; /* This centers the rotated image perfectly */
   }
 }
