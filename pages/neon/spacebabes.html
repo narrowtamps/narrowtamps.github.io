@@ -53,7 +53,7 @@
   max-width:100%;
   height:auto;
   
-  animation: alternateImages 1s infinite;
+  animation: alternateImages1 1s infinite;
 }
 
 .image-2 {
@@ -68,17 +68,22 @@
   height:auto;
   rotate:-10deg;
   
-  animation: alternateImages 1s infinite;
+  animation: alternateImages3 1s infinite;
 }
 .image-3 {
    /* Delays second image to alternate */
 }
 .image-4 {
-  animation-delay: .75s; /* Delays second image to alternate */
+  animation-delay: .25s; /* Delays second image to alternate */
 }
-@keyframes alternateImages {
+@keyframes alternateImages1 {
   0%, 45% { opacity: 1; }
   55%, 100% { opacity: 0; }
+}
+  @keyframes alternateImages3 {
+  0%, 20% { opacity: 1; }
+  30%, 70% { opacity: 0; }
+  80%, 100% { opacity: 1; }
 }
   .glow {
   color: #fff; /* Text color, typically a bright color */
