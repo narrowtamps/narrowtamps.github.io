@@ -48,7 +48,7 @@
 .image-1, .image-2 {
   position: absolute;
   filter: invert(100%) hue-rotate(280deg);
-  top: -20px;
+  top: -10px;
   left: -50px;
   max-width:100%;
   height:auto;
@@ -62,8 +62,8 @@
 .image-3, .image-4 {
   position: absolute;
   filter: invert(100%) hue-rotate(280deg);
-  top: -20px;
-  left: 50px;
+  top: -10px;
+  left: 70px;
   max-width:80%;
   height:auto;
   
@@ -90,7 +90,7 @@
 @media  (max-width: 767px) {
  .image-1, .image-2{
    
-    rotate:270deg;
+    rotate:280deg;
    
      width: 100vh; /* Use vh because the image is sideways */
     height: auto;
@@ -99,11 +99,11 @@
     /* Position adjustments */
     top: 50%;
     left: 50%;
-    translate: -50% 0%; /* This centers the rotated image perfectly */
+    translate: -60% 0%; /* This centers the rotated image perfectly */
   }
   .image-3, .image-4 {
    
-    rotate:270deg;
+    rotate:280deg;
    
      width: 80vh; /* Use vh because the image is sideways */
     height: auto;
@@ -112,7 +112,7 @@
     /* Position adjustments */
     top: 50%;
     left: 50%;
-    translate: -60% 10%; /* This centers the rotated image perfectly */
+    translate: -60% -10%; /* This centers the rotated image perfectly */
   }
 }
 </style>
