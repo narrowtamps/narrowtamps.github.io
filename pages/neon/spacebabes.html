@@ -76,14 +76,44 @@
 .image-4 {
   animation-delay: .5s; /* Delays second image to alternate */
 }
-@keyframes alternateImages1 {
-  0%, 45% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+
+.image-5, .image-6, .image-7, .image-8{
+  position: absolute;
+  filter: invert(100%) hue-rotate(280deg);
+  top: 170px;
+  left: 150px;
+  max-width:80%;
+  height:auto;
+  rotate:-10deg;
+  
+  animation: alternateImages5 1s infinite;
 }
-  @keyframes alternateImages3 {
+.image-5 {
+   /* Delays second image to alternate */
+}
+.image-6 {
+  animation-delay: .25s; /* Delays second image to alternate */
+}  
+  .image-7 {
+  animation-delay: .5s; /* Delays second image to alternate */
+}  
+ .image-8 {
+  animation-delay: .75s; /* Delays second image to alternate */
+}   
+@keyframes alternateImages1 {
   0%, 20% { opacity: 1; }
-  30%, 70% { opacity: 0; }
-  80%, 100% { opacity: 1; }
+  30%, 100% { opacity: 0; }
+}
+@keyframes alternateImages3 {
+  0%, 20% { opacity: 0; }
+  30%, 45% { opacity: 1; }
+  65%, 100% { opacity: 0; }
+}
+  @keyframes alternateImages5 {
+  0%, 20% { opacity: 0; }
+  30%, 45% { opacity: 0; }
+   55%, 70% { opacity: 1; } 
+  80%, 100% { opacity: 0; }
 }
   .glow {
   color: #fff; /* Text color, typically a bright color */
@@ -120,6 +150,19 @@
     left: 50%;
     translate: -40% 0%; /* This centers the rotated image perfectly */
   }
+  .image-5, .image-6, .image-7, .image-8 {
+   
+    rotate:280deg;
+   
+     width: 80vh; /* Use vh because the image is sideways */
+    height: auto;
+    max-width: none;
+    
+    /* Position adjustments */
+    top: 50%;
+    left: 50%;
+    translate: 10% 0%; /* This centers the rotated image perfectly */
+  }
 }
 </style>
   </head>
@@ -133,6 +176,12 @@
       <div class="cyan">
   <img src="legh1.png" class="image-3" alt="First Image">
   <img src="legh2.png" class="image-4" alt="Second Image">
+</div>
+          <div class="yellow">
+  <img src="legt1.png" class="image-5" alt="First Image">
+  <img src="legt2.png" class="image-6" alt="Second Image">
+    <img src="legt3.png" class="image-7" alt="First Image">
+  <img src="legt4.png" class="image-8" alt="Second Image">        
 </div>
 </div>
   </body>
