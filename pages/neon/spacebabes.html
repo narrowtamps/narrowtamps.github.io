@@ -62,10 +62,11 @@
 .image-3, .image-4 {
   position: absolute;
   filter: invert(100%) hue-rotate(280deg);
-  top: 120px;
+  top: 170px;
   left: 150px;
   max-width:80%;
   height:auto;
+  rotate:-10deg;
   
   animation: alternateImages 1s infinite;
 }
@@ -73,7 +74,7 @@
    /* Delays second image to alternate */
 }
 .image-4 {
-  animation-delay: .5s; /* Delays second image to alternate */
+  animation-delay: .75s; /* Delays second image to alternate */
 }
 @keyframes alternateImages {
   0%, 45% { opacity: 1; }
