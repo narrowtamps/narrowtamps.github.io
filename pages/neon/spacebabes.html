@@ -100,6 +100,23 @@
  .image-8 {
   animation-delay: .75s; /* Delays second image to alternate */
 }   
+ .image-9, .image-10{
+  position: absolute;
+  filter: invert(100%) hue-rotate(280deg);
+  top: 170px;
+  left: 250px;
+  max-width:80%;
+  height:auto;
+  
+  
+  animation: alternateImages9 1s infinite;
+}
+.image-9{
+   /* Delays second image to alternate */
+}
+.image-10 {
+  animation-delay: .75s; /* Delays second image to alternate */
+} 
 @keyframes alternateImages1 {
   0%, 20% { opacity: 1; }
   30%, 70% { opacity: 0; }
@@ -117,9 +134,8 @@
   80%, 100% { opacity: 0; }
 }
   @keyframes alternateImages9 {
-  0%, 20% { opacity: 0; }
-  30%, 45% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+  0%, 70% { opacity: 0; }
+  80%, 100% { opacity: 1; }
 }
   .glow {
   color: #fff; /* Text color, typically a bright color */
@@ -188,6 +204,10 @@
   <img src="legt2.png" class="image-6" alt="Second Image">
     <img src="legt3.png" class="image-7" alt="First Image">
   <img src="legt4.png" class="image-8" alt="Second Image">        
+</div>
+    <div class="violet">
+  <img src="legg1.png" class="image-3" alt="First Image">
+  <img src="legg2.png" class="image-4" alt="Second Image">
 </div>
 </div>
   </body>
