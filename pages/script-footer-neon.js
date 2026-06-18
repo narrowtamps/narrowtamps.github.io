@@ -200,7 +200,7 @@ var footOne = `
             `   
 var footTwo = 
 `    </div>
-    <p>&copy; 2026 The Narrow Tamps. All rights reserved.</p>
+    <p>&copy; 2026 The Narrow Tamps™. All rights reserved.</p>
    
 </footer>`;
 document.getElementById('footer-placeholder').innerHTML = footOne + footTwo;
