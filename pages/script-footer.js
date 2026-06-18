@@ -53,7 +53,7 @@ document.getElementById('footer-placeholder').innerHTML = `
             <a href="https://www.narrowtamps.com/pages/resources.html">Resources</a>
             <a href="https://www.narrowtamps.com/fish.html">Fish</a>
     </div>
-    <p>&copy; 2026 The Narrow Tamps. All rights reserved.</p>
+    <p>&copy; 2026 The Narrow Tamps™. All rights reserved.</p>
     
 </footer>`;
 
