@@ -124,7 +124,7 @@
                 lastTimeUpdate = time;
                 
                 // It's now up to you to format the time.
-                const formattedTime = new Date(time * 1000).toISOString().substring(11, 8); 
+                const formattedTime = new Date(time * 1000).toISOString().substring(11, 19); 
                 document.getElementById("time").innerHTML = formattedTime;
               }
             }
