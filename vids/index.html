@@ -63,7 +63,7 @@
   </header>
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div style="color: white;">>Timestamp: <span id="time">00:00:00</span></div>
+    <div style="color: white;">Timestamp: <span id="time">00:00:00</span></div>
     <div style="width: 100vw;" id="player"></div>
   
 
@@ -81,8 +81,7 @@
       var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-          height: '390',
-          width: '640',
+          
           videoId: '3Mbynm0pGX0',
           playerVars: {
             'playsinline': 1
