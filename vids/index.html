@@ -31,9 +31,7 @@
     object-fit: cover;
   }
 
-  .yt-thumb-overlay:hover .yt-thumbnail {
-   
-  }
+ 
 
 .yt-play-button {
     position: absolute;
@@ -96,6 +94,41 @@
             'onReady': initialize
           }
         });
+        // This is the source "window" that will emit the events.
+        var iframeWindow = player.getIframe().contentWindow;
+      
+        // So we can compare against new updates.
+        var lastTimeUpdate = 0;
+        // Listen to events triggered by postMessage,
+        // this is how different windows in a browser
+        // (such as a popup or iFrame) can communicate.
+        // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
+        window.addEventListener("message", function(event) {
+          // Check that the event was sent from the YouTube IFrame.
+          if (event.source === iframeWindow) {
+            var data = JSON.parse(event.data);
+      
+            // The "infoDelivery" event is used by YT to transmit any
+            // kind of information change in the player,
+            // such as the current time or a playback quality change.
+            if (
+              data.event === "infoDelivery" &&
+              data.info &&
+              data.info.currentTime
+            ) {
+              // currentTime is emitted very frequently (milliseconds),
+              // but we only care about whole second changes.
+              var time = Math.floor(data.info.currentTime);
+      
+              if (time !== lastTimeUpdate) {
+                lastTimeUpdate = time;
+                
+                // It's now up to you to format the time.
+                document.getElementById("time").innerHTML = time;
+              }
+            }
+          }
+        });
       }
     
      
@@ -140,42 +173,7 @@
     }
 
       
-  // This is the source "window" that will emit the events.
-  var iframeWindow = player.getIframe().contentWindow;
 
-  // So we can compare against new updates.
-  var lastTimeUpdate = 0;
-
-  // Listen to events triggered by postMessage,
-  // this is how different windows in a browser
-  // (such as a popup or iFrame) can communicate.
-  // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
-  window.addEventListener("message", function(event) {
-    // Check that the event was sent from the YouTube IFrame.
-    if (event.source === iframeWindow) {
-      var data = JSON.parse(event.data);
-
-      // The "infoDelivery" event is used by YT to transmit any
-      // kind of information change in the player,
-      // such as the current time or a playback quality change.
-      if (
-        data.event === "infoDelivery" &&
-        data.info &&
-        data.info.currentTime
-      ) {
-        // currentTime is emitted very frequently (milliseconds),
-        // but we only care about whole second changes.
-        var time = Math.floor(data.info.currentTime);
-
-        if (time !== lastTimeUpdate) {
-          lastTimeUpdate = time;
-          
-          // It's now up to you to format the time.
-          document.getElementById("time").innerHTML = time;
-        }
-      }
-    }
-  });
 
 
     </script>
