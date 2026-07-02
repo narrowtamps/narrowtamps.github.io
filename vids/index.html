@@ -124,7 +124,8 @@
                 lastTimeUpdate = time;
                 
                 // It's now up to you to format the time.
-                document.getElementById("time").innerHTML = time;
+                
+                document.getElementById("time").innerHTML = Date(time * 1000).toISOString().substr(11, 8);
               }
             }
           }
