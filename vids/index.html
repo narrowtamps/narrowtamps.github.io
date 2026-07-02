@@ -22,12 +22,13 @@
         player = new YT.Player('player', {
           height: '390',
           width: '640',
-          videoId: 'M7lc1UVf-VE',
+          videoId: 'FIliJz_JsxtI9Osf',
           playerVars: {
             'playsinline': 1
           },
           events: {
-            'onReady': onPlayerReady,
+            
+             'onReady': initialize,
             'onStateChange': onPlayerStateChange
           }
         });
@@ -35,7 +36,7 @@
     
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
-        event.target.playVideo();
+        
       }
 
       // 5. The API calls this function when the player's state changes.
@@ -53,7 +54,7 @@
       }
 
       function initialize(){
-
+event.target.playVideo();
     // Update the controls on load
     updateTimerDisplay();
     updateProgressBar();
