@@ -35,43 +35,26 @@
 
       
       var player;
-      function onYouTubeIframeAPIReady() {
+    function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-         
-          
-          playerVars: {
-            listType: 'playlist',
-        list: 'PLJpGrYbV_YhA'
-          },
-          events: {
-            
-            'onReady': initialize
-          }
+            playerVars: {
+                listType: 'playlist',
+                list: 'PLJpGrYbV_YhA'
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
         });
-        
-        var iframeWindow = player.getIframe().contentWindow;
-      
+    }
         
         
-       
-      }
-    
-     
-      function stopVideo() {
-        player.stopVideo();
-      }
-
-    function initialize(event){
-        event.target.playVideo();
-        // Update the controls on load
-        
-        
-    event.target.setShuffle(true);
+        function onPlayerReady(event) {
+        // Enable shuffling first
+        event.target.setShuffle(true);
 
         setTimeout(function() {
             event.target.playVideoAt(0);
-        }, 300); 
-        
+        }, 300);
         
     }
     
