@@ -49,12 +49,16 @@
         
         
         function onPlayerReady(event) {
-        // Enable shuffling first
-        event.target.setShuffle(true);
+       event.target.mute(); 
 
+        // 2. Start playback so the API registers the active playlist
+        event.target.playVideo();
+
+        // 3. Wait for the player to initiate, then shuffle and jump to the new random first video
         setTimeout(function() {
+            event.target.setShuffle(true);
             event.target.playVideoAt(0);
-        }, 300);
+        }, 500);
         
     }
     
