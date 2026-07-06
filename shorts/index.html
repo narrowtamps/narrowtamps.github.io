@@ -40,9 +40,12 @@
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
          
-          videoId: '3Mbynm0pGX0',
+          
           playerVars: {
-            'playsinline': 1
+            listType: 'playlist', // Defines that we are loading a playlist
+        list: 'PLJpGrYbV_YhA&si', // Replace with your target Playlist ID
+        autoplay: 0,          // 1 = autoplay, 0 = no autoplay
+        controls: 1
           },
           events: {
             
