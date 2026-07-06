@@ -4,9 +4,10 @@
 <style>
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     height: 0;
     overflow: hidden;
+    background-color: #000;
 }
 
 .videoWrapper iframe {
@@ -15,29 +16,33 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border: 0;
 }
 </style>
 </head>
 
 <body>
+<!-- The target element where the YouTube API will inject the iframe -->
 <div class="videoWrapper" id="player"></div>
 
 <script>
-    // 1. Correctly load the API script
+    // 1. Load the YouTube IFrame API script asynchronously
     var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
+    tag.src = "https://youtube.com";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     var player;
 
-    // 2. Initialize player using ONLY a videoId
+    // 2. Initialize the player explicitly supplying BOTH a videoId and playerVars
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            videoId: 'dQw4w9WgXcQ', // Initial placeholder video
+            videoId: 'dQw4w9WgXcQ', // <--- Explicit video ID included here
             playerVars: {
-                autoplay: 0,
-                controls: 1
+                listType: 'playlist',
+                list: 'PLJpGrYbV_YhA',
+                autoplay: 1,
+                mute: 1
             },
             events: {
                 'onReady': onPlayerReady
@@ -45,28 +50,27 @@
         });
     }
         
-    // 3. Cue playlist, wait for data, then shuffle and play
+    // 3. Handle playlist buffering, randomization, and index shifting
     function onPlayerReady(event) {
-        event.target.mute(); 
-
-        // Safely load the playlist data without breaking the API instance
-        event.target.cuePlaylist({
-            listType: 'playlist',
-            list: 'PLJpGrYbV_YhA'
-        });
-
-        // Check every 100ms if the cued playlist data has populated
+        var retryCount = 0;
+        
         var checkPlaylistInterval = setInterval(function() {
             var playlistArray = event.target.getPlaylist();
+            retryCount++;
             
+            // Wait until the system reads the indices of the playlist parameter
             if (playlistArray && playlistArray.length > 0) {
-                clearInterval(checkPlaylistInterval); // Stop checking
+                clearInterval(checkPlaylistInterval);
                 
-                // Select a random video index
+                // Select a completely random index slot
                 var randomIndex = Math.floor(Math.random() * playlistArray.length);
                 
-                // Jump to and play the random video
+                // Advance the player tracking frame directly to that playlist index
                 event.target.playVideoAt(randomIndex);
+            } 
+            else if (retryCount > 50) {
+                clearInterval(checkPlaylistInterval);
+                console.log("Could not resolve playlist arrays.");
             }
         }, 100);
     }
