@@ -32,47 +32,44 @@
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+    var player;
+    var hasShuffled = false; // Flag to prevent an infinite loop of shuffling
 
-      
-      var player;
+    // 2. This function creates an <iframe> (and YouTube player) after the API code downloads.
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            playerVars: {
-                listType: 'playlist',
-                list: 'PLJpGrYbV_YhA'
-            },
             events: {
-                'onReady': onPlayerReady
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
             }
         });
     }
         
-        
-        function onPlayerReady(event) {
-       event.target.mute(); 
-
-       setTimeout(function() {
-        // 3. Fetch the fully loaded array of videos in the playlist
-        var playlistArray = event.target.getPlaylist();
-        
-        if (playlistArray && playlistArray.length > 0) {
-            // 4. Generate a mathematically random index based on your playlist's size
-            var randomIndex = Math.floor(Math.random() * playlistArray.length);
-            
-            // 5. Jump directly to that randomly selected video index
-            event.target.playVideoAt(randomIndex);
-        } else {
-            // Fallback in case the array loads slowly: just force a standard kick-off
-            event.target.playVideo();
-        }
-    }, 600); 
-        
+    // 3. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+        event.target.mute(); 
+        // Cue the playlist so the API can fetch the list of video IDs
+        event.target.cuePlaylist({
+            listType: 'playlist',
+            list: 'PLJpGrYbV_YhA'
+        });
     }
-    
-    
-    
-      
 
+    // 4. The API calls this function when the player's state changes.
+    function onPlayerStateChange(event) {
+        // YT.PlayerState.CUED means the playlist data is loaded and ready
+        if (event.data === YT.PlayerState.CUED && !hasShuffled) {
+            var playlistArray = event.target.getPlaylist();
+            
+            if (playlistArray && playlistArray.length > 0) {
+                hasShuffled = true; // Mark as shuffled so we don't loop endlessly
+                var randomIndex = Math.floor(Math.random() * playlistArray.length);
+                
+                // Play the randomly selected video index
+                event.target.playVideoAt(randomIndex);
+            }
+        }
+    }
 
 
     </script>
