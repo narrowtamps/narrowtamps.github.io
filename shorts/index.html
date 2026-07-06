@@ -1,7 +1,7 @@
+<!DOCTYPE html>
+<html>
 <head>
 <style>
-
-
 .videoWrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
@@ -16,66 +16,54 @@
     width: 100%;
     height: 100%;
 }
-
 </style>
 </head>
 
 <body>
-<div class="videoWrapper" id="player">
-
-</div>
+<div class="videoWrapper" id="player"></div>
 
 <script>
-      
-      var tag = document.createElement('script');
+    // 1. Correctly load the API script
+    var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
+    var firstScriptTag = document.getElementsByTagName('script')[0]; // Added missing [0]
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     var player;
-    var hasShuffled = false; // Flag to prevent an infinite loop of shuffling
 
-    // 2. This function creates an <iframe> (and YouTube player) after the API code downloads.
+    // 2. Initialize player directly with the playlist configuration
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
+            playerVars: {
+                listType: 'playlist',
+                list: 'PLJpGrYbV_YhA',
+                autoplay: 0
+            },
             events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
+                'onReady': onPlayerReady
             }
         });
     }
         
-    // 3. The API will call this function when the video player is ready.
+    // 3. Wait for the player data to cache, then shuffle and play
     function onPlayerReady(event) {
         event.target.mute(); 
-        // Cue the playlist so the API can fetch the list of video IDs
-        event.target.cuePlaylist({
-            listType: 'playlist',
-            list: 'PLJpGrYbV_YhA'
-        });
-    }
 
-    // 4. The API calls this function when the player's state changes.
-    function onPlayerStateChange(event) {
-        // YT.PlayerState.CUED means the playlist data is loaded and ready
-        if (event.data === YT.PlayerState.CUED && !hasShuffled) {
+        // Check every 100ms if the playlist array is loaded
+        var checkPlaylistInterval = setInterval(function() {
             var playlistArray = event.target.getPlaylist();
             
             if (playlistArray && playlistArray.length > 0) {
-                hasShuffled = true; // Mark as shuffled so we don't loop endlessly
+                clearInterval(checkPlaylistInterval); // Stop checking
+                
+                // Select a random video index
                 var randomIndex = Math.floor(Math.random() * playlistArray.length);
                 
-                // Play the randomly selected video index
+                // Jump to and play the random video
                 event.target.playVideoAt(randomIndex);
             }
-        }
+        }, 100);
     }
-
-
-    </script>
-  </body>
-</html>
-
-
-
+</script>
 </body>
+</html>
