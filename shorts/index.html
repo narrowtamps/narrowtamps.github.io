@@ -26,7 +26,7 @@
 </div>
 
 <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
+      
       var tag = document.createElement('script');
 
       
@@ -34,8 +34,7 @@
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
+      
       var player;
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
@@ -43,49 +42,20 @@
           
           playerVars: {
             listType: 'playlist',
-        list: 'PLJpGrYbV_YhA'
+        list: 'PLJpGrYbV_YhA',
+autoplay:1
           },
           events: {
             
             'onReady': initialize
           }
         });
-        // This is the source "window" that will emit the events.
+        
         var iframeWindow = player.getIframe().contentWindow;
       
-        // So we can compare against new updates.
-        var lastTimeUpdate = 0;
-        // Listen to events triggered by postMessage,
-        // this is how different windows in a browser
-        // (such as a popup or iFrame) can communicate.
-        // See: https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage
-        window.addEventListener("message", function(event) {
-          // Check that the event was sent from the YouTube IFrame.
-          if (event.source === iframeWindow) {
-            var data = JSON.parse(event.data);
-      
-            // The "infoDelivery" event is used by YT to transmit any
-            // kind of information change in the player,
-            // such as the current time or a playback quality change.
-            if (
-              data.event === "infoDelivery" &&
-              data.info &&
-              data.info.currentTime
-            ) {
-              // currentTime is emitted very frequently (milliseconds),
-              // but we only care about whole second changes.
-              var time = Math.floor(data.info.currentTime);
-      
-              if (time !== lastTimeUpdate) {
-                lastTimeUpdate = time;
-                
-                // It's now up to you to format the time.
-                const formattedTime = new Date(time * 1000).toISOString().substring(11, 19); 
-                document.getElementById("time").innerHTML = formattedTime;
-              }
-            }
-          }
-        });
+        
+        
+       
       }
     
      
@@ -98,37 +68,14 @@
         // Update the controls on load
         updateTimerDisplay();
         updateProgressBar();
-    players.setShuffle(true);
-        // Clear any old interval.
-        clearInterval(time_update_interval);
-    
-        // Start interval to update elapsed time display and
-        // the elapsed part of the progress bar every second.
-        time_update_interval = setInterval(function () {
-            updateTimerDisplay();
-            updateProgressBar();
-        }, 1000)
-    
+    player.setShuffle(true);
+        
+        
+        
     }
     
-    // This function is called by initialize()
-    function updateTimerDisplay(){
-        // Update current time text display.
-        $('#current-time').text(formatTime( player.getCurrentTime() ));
-        $('#duration').text(formatTime( player.getDuration() ));
-    }
     
-    function formatTime(time){
-        time = Math.round(time);
     
-        var minutes = Math.floor(time / 60),
-        seconds = time - minutes * 60;
-    
-        seconds = seconds < 10 ? '0' + seconds : seconds;
-    
-        return minutes + ":" + seconds;
-    }
-
       
 
 
