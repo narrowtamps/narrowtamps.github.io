@@ -26,19 +26,18 @@
     // 1. Correctly load the API script
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0]; // Added missing [0]
+    var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     var player;
 
-    // 2. Initialize player directly with the playlist configuration
+    // 2. Initialize player using ONLY a videoId
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-videoId: 'dQw4w9WgXcQ',
+            videoId: 'dQw4w9WgXcQ', // Initial placeholder video
             playerVars: {
-                listType: 'playlist',
-                list: 'PLJpGrYbV_YhA',
-                autoplay: 0
+                autoplay: 0,
+                controls: 1
             },
             events: {
                 'onReady': onPlayerReady
@@ -46,11 +45,17 @@ videoId: 'dQw4w9WgXcQ',
         });
     }
         
-    // 3. Wait for the player data to cache, then shuffle and play
+    // 3. Cue playlist, wait for data, then shuffle and play
     function onPlayerReady(event) {
         event.target.mute(); 
 
-        // Check every 100ms if the playlist array is loaded
+        // Safely load the playlist data without breaking the API instance
+        event.target.cuePlaylist({
+            listType: 'playlist',
+            list: 'PLJpGrYbV_YhA'
+        });
+
+        // Check every 100ms if the cued playlist data has populated
         var checkPlaylistInterval = setInterval(function() {
             var playlistArray = event.target.getPlaylist();
             
