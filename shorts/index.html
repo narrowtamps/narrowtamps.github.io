@@ -1,4 +1,4 @@
-<header>
+<head>
 <style>
 
 
@@ -18,7 +18,7 @@
 }
 
 </style>
-<header>
+</head>
 
 <body>
 <div class="videoWrapper" id="player">
@@ -69,7 +69,10 @@ autoplay:1
         
         
     event.target.setShuffle(true);
-        
+
+        setTimeout(function() {
+            event.target.playVideoAt(0);
+        }, 300); 
         
         
     }
