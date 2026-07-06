@@ -51,13 +51,21 @@
         function onPlayerReady(event) {
        event.target.mute(); 
 
-       event.target.setShuffle(true);
-
+       setTimeout(function() {
+        // 3. Fetch the fully loaded array of videos in the playlist
+        var playlistArray = event.target.getPlaylist();
         
-        setTimeout(function() {
+        if (playlistArray && playlistArray.length > 0) {
+            // 4. Generate a mathematically random index based on your playlist's size
+            var randomIndex = Math.floor(Math.random() * playlistArray.length);
             
-            event.target.playVideoAt(0);
-        }, 500);
+            // 5. Jump directly to that randomly selected video index
+            event.target.playVideoAt(randomIndex);
+        } else {
+            // Fallback in case the array loads slowly: just force a standard kick-off
+            event.target.playVideo();
+        }
+    }, 600); 
         
     }
     
