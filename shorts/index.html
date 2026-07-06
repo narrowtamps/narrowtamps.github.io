@@ -63,12 +63,12 @@ autoplay:1
         player.stopVideo();
       }
 
-    function initialize(){
+    function initialize(event){
         event.target.playVideo();
         // Update the controls on load
-        updateTimerDisplay();
-        updateProgressBar();
-    player.setShuffle(true);
+        
+        
+    event.target.setShuffle(true);
         
         
         
