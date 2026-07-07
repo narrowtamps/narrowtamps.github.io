@@ -88,18 +88,9 @@
     }
 
     function executeRandomShuffle(playerInstance) {
-        playerInstance.setShuffle(true);
-        var playlistArray = playerInstance.getPlaylist();
-        
-        if (playlistArray && playlistArray.length > 0) {
-            var randomIndex = Math.floor(Math.random() * playlistArray.length);
-            playerInstance.playVideoAt(randomIndex);
-        } else {
-            playerInstance.playVideoAt(0);
-        }
-    }
-
-    // 4. Interface binding for user-triggered reshuffling action
+    playerInstance.setShuffle(true);
+    playerInstance.playVideoAt(0);
+}
     function reshufflePlaylist() {
         if (player && typeof player.setShuffle === 'function') {
             executeRandomShuffle(player);
