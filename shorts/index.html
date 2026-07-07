@@ -1,31 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<title>Shuffled YouTube Playlist</title>
 <style>
-.videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-    background-color: #000;
-}
+    /* Your responsive layout styles */
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        height: 0;
+        overflow: hidden;
+        background-color: #000;
+        margin-bottom: 15px;
+    }
 
-.videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+    /* Style for the custom reshuffle button */
+    .shuffle-btn {
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin: 10px auto;
+        transition: background 0.2s;
+    }
+
+    .shuffle-btn:hover {
+        background-color: #cc0000;
+    }
 </style>
 </head>
 
 <body>
-<!-- The target element where the YouTube API will inject the iframe -->
+
+<!-- The responsive wrapper targeting your playlist player -->
 <div class="videoWrapper" id="player"></div>
 
+<!-- Reshuffle trigger button -->
+<button class="shuffle-btn" onclick="reshufflePlaylist()">Reshuffle Playlist</button>
+
 <script>
+    const TARGET_PLAYLIST_ID = 'PLJpGrYbV_YhA'; // Target Playlist ID
+
     // 1. Load the YouTube IFrame API script asynchronously
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
@@ -34,46 +63,63 @@
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     var player;
+    var hasShuffledOnLoad = false; // Prevents loop cycles during initial setup
 
-    // 2. Initialize the player explicitly supplying BOTH a videoId and playerVars
+    // 2. Initialize an empty player shell layout frame
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            
+            // Note: Keep autoplay/mute parameters here to establish global permissions
             playerVars: {
-                listType: 'playlist',
-                list: 'PLJpGrYbV_YhA',
                 autoplay: 1,
-                mute: 1
+                mute: 1,
+                controls: 1
             },
             events: {
-                'onReady': onPlayerReady
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
             }
         });
     }
         
-    // 3. Handle playlist buffering, randomization, and index shifting
+    // 3. Force the empty frame to load your target playlist data
     function onPlayerReady(event) {
-        var retryCount = 0;
+        event.target.cuePlaylist({
+            listType: 'playlist',
+            list: TARGET_PLAYLIST_ID
+        });
+    }
+
+    // 4. Monitor state changes to read the playlist once fully processed
+    function onPlayerStateChange(event) {
+        // YT.PlayerState.CUED (5) means the array index data is ready to parse
+        if (event.data === YT.PlayerState.CUED && !hasShuffledOnLoad) {
+            hasShuffledOnLoad = true; 
+            executeRandomShuffle(event.target);
+        }
+    }
+
+    // 5. Core logic to shuffle layout lists and pick random starting entries
+    function executeRandomShuffle(playerInstance) {
+        // Step A: Tell YouTube to randomize its internal track array indexes
+        playerInstance.setShuffle(true);
         
-        var checkPlaylistInterval = setInterval(function() {
-            var playlistArray = event.target.getPlaylist();
-            retryCount++;
+        // Step B: Safely retrieve the newly populated playlist array tracking data
+        var playlistArray = playerInstance.getPlaylist();
+        
+        if (playlistArray && playlistArray.length > 0) {
+            // Step C: Calculate a random index number based on the playlist length
+            var randomIndex = Math.floor(Math.random() * playlistArray.length);
             
-            // Wait until the system reads the indices of the playlist parameter
-            if (playlistArray && playlistArray.length > 0) {
-                clearInterval(checkPlaylistInterval);
-                
-                // Select a completely random index slot
-                var randomIndex = Math.floor(Math.random() * playlistArray.length);
-                
-                // Advance the player tracking frame directly to that playlist index
-                event.target.playVideoAt(randomIndex);
-            } 
-            else if (retryCount > 50) {
-                clearInterval(checkPlaylistInterval);
-                console.log("Could not resolve playlist arrays.");
-            }
-        }, 100);
+            // Step D: Jump straight to that random position and start playing
+            playerInstance.playVideoAt(randomIndex);
+        }
+    }
+
+    // 6. Action function linked directly to your button
+    function reshufflePlaylist() {
+        if (player && typeof player.setShuffle === 'function') {
+            executeRandomShuffle(player);
+        }
     }
 </script>
 </body>
