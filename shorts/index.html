@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Bare Playlist Embed Test</title>
+<title>Shuffled YouTube Playlist</title>
 <style>
     .videoWrapper {
         position: relative;
-        padding-bottom: 56.25%;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
         height: 0;
         overflow: hidden;
         background-color: #000;
@@ -20,18 +20,72 @@
         height: 100%;
         border: 0;
     }
+    .shuffle-btn {
+        background-color: #ff0000;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin: 20px auto;
+        transition: background 0.2s;
+    }
+    .shuffle-btn:hover {
+        background-color: #cc0000;
+    }
 </style>
 </head>
 <body>
 
-<div class="videoWrapper">
-    <iframe
-        src="https://www.youtube.com/embed/videoseries?list=PLJpGrYbV_YhA"
-        title="YouTube playlist test"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe>
-</div>
+<div class="videoWrapper" id="player"></div>
+<button class="shuffle-btn" onclick="reshufflePlaylist()">Reshuffle Playlist</button>
 
+<script>
+    // 1. Load the YouTube IFrame API script asynchronously
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+
+    // 2. Initialize the player with the playlist
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            playerVars: {
+                listType: 'playlist',   // Required so the API knows `list` is a playlist ID
+                list: 'PLJpGrYbV_YhA',  // Your target playlist ID
+                controls: 1
+            },
+            events: {
+                'onReady': onPlayerReady
+            }
+        });
+    }
+
+    // 3. Player is cued and ready — playback starts only when the button is clicked
+    function onPlayerReady(event) {
+        // No autoplay needed; waiting for the shuffle button.
+    }
+
+    // 4. Core shuffle logic
+    function executeRandomShuffle(playerInstance) {
+        // Re-randomize the playlist's internal playback order
+        playerInstance.setShuffle(true);
+
+        // Play from the start of the freshly shuffled order.
+        playerInstance.playVideoAt(0);
+    }
+
+    // 5. Button handler
+    function reshufflePlaylist() {
+        if (player && typeof player.setShuffle === 'function') {
+            executeRandomShuffle(player);
+        }
+    }
+</script>
 </body>
 </html>
