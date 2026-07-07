@@ -40,7 +40,9 @@
 </head>
 <body>
 
-<div class="videoWrapper" id="player"></div>
+<div class="videoWrapper">
+    <div id="player"></div>
+</div>
 <button class="shuffle-btn" onclick="reshufflePlaylist()">Reshuffle Playlist</button>
 
 <script>
@@ -61,7 +63,8 @@
                 controls: 1
             },
             events: {
-                'onReady': onPlayerReady
+                'onReady': onPlayerReady,
+                'onError': onPlayerError
             }
         });
     }
@@ -71,12 +74,14 @@
         // No autoplay needed; waiting for the shuffle button.
     }
 
+    // Surface playback errors instead of a silent black screen
+    function onPlayerError(event) {
+        console.error('YouTube player error code:', event.data);
+    }
+
     // 4. Core shuffle logic
     function executeRandomShuffle(playerInstance) {
-        // Re-randomize the playlist's internal playback order
         playerInstance.setShuffle(true);
-
-        // Play from the start of the freshly shuffled order.
         playerInstance.playVideoAt(0);
     }
 
