@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Shuffled YouTube Playlist</title>
 <style>
-    /* Your responsive layout styles */
     .videoWrapper {
         position: relative;
         padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
@@ -23,7 +22,6 @@
         border: 0;
     }
 
-    /* Style for the custom reshuffle button */
     .shuffle-btn {
         background-color: #ff0000;
         color: #fff;
@@ -43,34 +41,31 @@
     }
 </style>
 </head>
-
 <body>
 
-<!-- The responsive wrapper targeting your playlist player -->
 <div class="videoWrapper" id="player"></div>
-
-<!-- Reshuffle trigger button -->
 <button class="shuffle-btn" onclick="reshufflePlaylist()">Reshuffle Playlist</button>
 
 <script>
     // 1. Load the YouTube IFrame API script asynchronously
-    var tag = document.createElement('script');
+    const tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
-   
-   
-    var firstScriptTag = document.getElementsByTagName('script')[0];
+    const firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    var player;
+    let player;
+    const PLAYLIST_ID = 'PLJpGrYbV_YhA'; // Extracted for clean reuse
 
-    // 2. Initialize the player with the playlist inside playerVars directly
+    // 2. Initialize player WITH fixed listType configuration
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
+            height: '100%',
+            width: '100%',
             playerVars: {
-                
-                list: 'PLJpGrYbV_YhA', // Your target playlist ID
+                listType: 'playlist', // FIX: Crucial missing property
+                list: PLAYLIST_ID,
                 autoplay: 1,
-                mute: 1,         // Mandatory for Chrome autoplay policies
+                mute: 1,              // Allows autoplay on modern browsers
                 controls: 1
             },
             events: {
@@ -79,35 +74,35 @@
         });
     }
         
-    // 3. Handle playlist initialization and layout generation
+    // 3. Handle playlist initialization safely using state changes instead of timers
     function onPlayerReady(event) {
-        // A short 600ms timeout provides the API window it needs to map the index track array
-        setTimeout(function() {
-            executeRandomShuffle(event.target);
-        }, 600);
+        executeRandomShuffle(event.target);
     }
 
-    // 4. Core logic to shuffle layout lists and pick random starting entries
+    // 4. Stable execution logic for shuffling API video decks
     function executeRandomShuffle(playerInstance) {
-        // Step A: Force the player queue array into random shuffle mode
+        // Step A: Turn on shuffle state for the player queue
         playerInstance.setShuffle(true);
         
-        // Step B: Safely retrieve the freshly populated list entries
-        var playlistArray = playerInstance.getPlaylist();
+        // Step B: Fetch playlist tracking array safely
+        const playlistArray = playerInstance.getPlaylist();
         
         if (playlistArray && playlistArray.length > 0) {
-            // Step C: Calculate a random index number based on playlist length
-            var randomIndex = Math.floor(Math.random() * playlistArray.length);
-            
-            // Step D: Jump straight to that random position and start playing
+            // Step C: Choose a random index sequence position
+            const randomIndex = Math.floor(Math.random() * playlistArray.length);
+            // Step D: Direct player to begin directly at that random index
             playerInstance.playVideoAt(randomIndex);
         } else {
-            // Fallback: If network lag delayed the array, force playing the deck from the start 
-            playerInstance.playVideoAt(0);
+            // Fallback: If API state hasn't populated array, re-load list explicitly
+            playerInstance.loadPlaylist({
+                listType: 'playlist',
+                list: PLAYLIST_ID,
+                index: 0
+            });
         }
     }
 
-    // 5. Action function linked directly to your reshuffle button
+    // 5. Action function linked directly to the reshuffle button
     function reshufflePlaylist() {
         if (player && typeof player.setShuffle === 'function') {
             executeRandomShuffle(player);
