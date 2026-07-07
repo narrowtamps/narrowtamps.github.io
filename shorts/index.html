@@ -47,62 +47,59 @@
 <button class="shuffle-btn" onclick="reshufflePlaylist()">Reshuffle Playlist</button>
 
 <script>
-    // 1. Load the YouTube IFrame API script asynchronously
-    const tag = document.createElement('script');
+    // 1. Asynchronously load the global YouTube Framework 
+    var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
-    const firstScriptTag = document.getElementsByTagName('script')[0];
+    
+    var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-    let player;
-    const PLAYLIST_ID = 'PLJpGrYbV_YhA'; // Extracted for clean reuse
+    var player;
+    var initialShuffleDone = false; // Block loops during startup initialization
 
-    // 2. Initialize player WITH fixed listType configuration
+    // 2. Map structural values inside playerVars object container
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            height: '100%',
-            width: '100%',
             playerVars: {
-                listType: 'playlist', // FIX: Crucial missing property
-                list: PLAYLIST_ID,
+                listType: 'playlist',  // REQUIRED FIX: Tells the engine how to parse 'list'
+                list: 'PLJpGrYbV_YhA',  // Your exact target playlist ID
                 autoplay: 1,
-                mute: 1,              // Allows autoplay on modern browsers
+                mute: 1,                // Mandatory workaround for strict browser autoplay blocks
                 controls: 1
             },
             events: {
-                'onReady': onPlayerReady
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange
             }
         });
     }
         
-    // 3. Handle playlist initialization safely using state changes instead of timers
     function onPlayerReady(event) {
-        executeRandomShuffle(event.target);
+        event.target.playVideo();
     }
 
-    // 4. Stable execution logic for shuffling API video decks
-    function executeRandomShuffle(playerInstance) {
-        // Step A: Turn on shuffle state for the player queue
-        playerInstance.setShuffle(true);
-        
-        // Step B: Fetch playlist tracking array safely
-        const playlistArray = playerInstance.getPlaylist();
-        
-        if (playlistArray && playlistArray.length > 0) {
-            // Step C: Choose a random index sequence position
-            const randomIndex = Math.floor(Math.random() * playlistArray.length);
-            // Step D: Direct player to begin directly at that random index
-            playerInstance.playVideoAt(randomIndex);
-        } else {
-            // Fallback: If API state hasn't populated array, re-load list explicitly
-            playerInstance.loadPlaylist({
-                listType: 'playlist',
-                list: PLAYLIST_ID,
-                index: 0
-            });
+    // 3. Shuffle tracks immediately upon validated content playback
+    function onPlayerStateChange(event) {
+        // YT.PlayerState.PLAYING (1) confirms the index array is loaded from the servers
+        if (event.data === 1 && !initialShuffleDone) {
+            initialShuffleDone = true;
+            executeRandomShuffle(event.target);
         }
     }
 
-    // 5. Action function linked directly to the reshuffle button
+    function executeRandomShuffle(playerInstance) {
+        playerInstance.setShuffle(true);
+        var playlistArray = playerInstance.getPlaylist();
+        
+        if (playlistArray && playlistArray.length > 0) {
+            var randomIndex = Math.floor(Math.random() * playlistArray.length);
+            playerInstance.playVideoAt(randomIndex);
+        } else {
+            playerInstance.playVideoAt(0);
+        }
+    }
+
+    // 4. Interface binding for user-triggered reshuffling action
     function reshufflePlaylist() {
         if (player && typeof player.setShuffle === 'function') {
             executeRandomShuffle(player);
