@@ -2,17 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Shuffled YouTube Playlist</title>
+<title>Bare Playlist Embed Test</title>
 <style>
     .videoWrapper {
         position: relative;
-        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+        padding-bottom: 56.25%;
         height: 0;
         overflow: hidden;
         background-color: #000;
         margin-bottom: 15px;
     }
-
     .videoWrapper iframe {
         position: absolute;
         top: 0;
@@ -21,81 +20,18 @@
         height: 100%;
         border: 0;
     }
-
-    .shuffle-btn {
-        background-color: #ff0000;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
-        font-weight: bold;
-        border-radius: 4px;
-        cursor: pointer;
-        display: block;
-        margin: 20px auto;
-        transition: background 0.2s;
-    }
-
-    .shuffle-btn:hover {
-        background-color: #cc0000;
-    }
 </style>
 </head>
 <body>
 
-<div class="videoWrapper" id="player"></div>
-<button class="shuffle-btn" onclick="reshufflePlaylist()">Reshuffle Playlist</button>
+<div class="videoWrapper">
+    <iframe
+        src="https://www.youtube.com/embed/videoseries?list=PLJpGrYbV_YhA"
+        title="YouTube playlist test"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
 
-<script>
-    // 1. Asynchronously load the global YouTube Framework 
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    var player;
-    var initialShuffleDone = false; // Block loops during startup initialization
-
-    // 2. Map structural values inside playerVars object container
-    function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-            playerVars: {
-                listType: 'playlist',  // REQUIRED FIX: Tells the engine how to parse 'list'
-                list: 'PLJpGrYbV_YhA',  // Your exact target playlist ID
-                autoplay: 1,
-                mute: 1,                // Mandatory workaround for strict browser autoplay blocks
-                controls: 1
-            },
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    }
-        
-    function onPlayerReady(event) {
-        event.target.playVideo();
-    }
-
-    // 3. Shuffle tracks immediately upon validated content playback
-    function onPlayerStateChange(event) {
-        // YT.PlayerState.PLAYING (1) confirms the index array is loaded from the servers
-        if (event.data === 1 && !initialShuffleDone) {
-            initialShuffleDone = true;
-            executeRandomShuffle(event.target);
-        }
-    }
-
-    function executeRandomShuffle(playerInstance) {
-    playerInstance.setShuffle(true);
-    playerInstance.playVideoAt(0);
-}
-    function reshufflePlaylist() {
-        if (player && typeof player.setShuffle === 'function') {
-            executeRandomShuffle(player);
-        }
-    }
-</script>
 </body>
 </html>
