@@ -34,7 +34,7 @@
         border-radius: 4px;
         cursor: pointer;
         display: block;
-        margin: 10px auto;
+        margin: 20px auto;
         transition: background 0.2s;
     }
 
@@ -53,69 +53,60 @@
 <button class="shuffle-btn" onclick="reshufflePlaylist()">Reshuffle Playlist</button>
 
 <script>
-    const TARGET_PLAYLIST_ID = 'PLJpGrYbV_YhA'; // Target Playlist ID
-
     // 1. Load the YouTube IFrame API script asynchronously
     var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
+    tag.src = "https://youtube.com";
    
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     var player;
-    var hasShuffledOnLoad = false; // Prevents loop cycles during initial setup
 
-    // 2. Initialize an empty player shell layout frame
+    // 2. Initialize the player with the playlist inside playerVars directly
     function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
-            // Note: Keep autoplay/mute parameters here to establish global permissions
             playerVars: {
+                listType: 'playlist',
+                list: 'PLJpGrYbV_YhA', // Your target playlist ID
                 autoplay: 1,
-                mute: 1,
+                mute: 1,         // Mandatory for Chrome autoplay policies
                 controls: 1
             },
             events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
+                'onReady': onPlayerReady
             }
         });
     }
         
-    // 3. Force the empty frame to load your target playlist data
+    // 3. Handle playlist initialization and layout generation
     function onPlayerReady(event) {
-        event.target.cuePlaylist({
-            listType: 'playlist',
-            list: TARGET_PLAYLIST_ID
-        });
-    }
-
-    // 4. Monitor state changes to read the playlist once fully processed
-    function onPlayerStateChange(event) {
-        // YT.PlayerState.CUED (5) means the array index data is ready to parse
-        if (event.data === YT.PlayerState.CUED && !hasShuffledOnLoad) {
-            hasShuffledOnLoad = true; 
+        // A short 600ms timeout provides the API window it needs to map the index track array
+        setTimeout(function() {
             executeRandomShuffle(event.target);
-        }
+        }, 600);
     }
 
-    // 5. Core logic to shuffle layout lists and pick random starting entries
+    // 4. Core logic to shuffle layout lists and pick random starting entries
     function executeRandomShuffle(playerInstance) {
-        // Step A: Tell YouTube to randomize its internal track array indexes
+        // Step A: Force the player queue array into random shuffle mode
         playerInstance.setShuffle(true);
         
-        // Step B: Safely retrieve the newly populated playlist array tracking data
+        // Step B: Safely retrieve the freshly populated list entries
         var playlistArray = playerInstance.getPlaylist();
         
         if (playlistArray && playlistArray.length > 0) {
-            // Step C: Calculate a random index number based on the playlist length
+            // Step C: Calculate a random index number based on playlist length
             var randomIndex = Math.floor(Math.random() * playlistArray.length);
             
             // Step D: Jump straight to that random position and start playing
             playerInstance.playVideoAt(randomIndex);
+        } else {
+            // Fallback: If network lag delayed the array, force playing the deck from the start 
+            playerInstance.playVideoAt(0);
         }
     }
 
-    // 6. Action function linked directly to your button
+    // 5. Action function linked directly to your reshuffle button
     function reshufflePlaylist() {
         if (player && typeof player.setShuffle === 'function') {
             executeRandomShuffle(player);
