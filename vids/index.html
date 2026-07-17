@@ -108,7 +108,7 @@
           },
           events: {
             
-            'onReady': initialize
+            'onReady': initialize,'onStateChange': onPlayerStateChange
           }
         });
         // This is the source "window" that will emit the events.
@@ -191,7 +191,26 @@
     }
 
       
+// 2. Detect when the video starts playing
+function onPlayerStateChange(event) {
+  // YT.PlayerState.PLAYING corresponds to state code 1
+  if (event.data == YT.PlayerState.PLAYING) {
+    launchFullscreen(document.getElementById('video-fullscreen-wrapper'));
+  }
+}
 
+// 3. Request native browser fullscreen for the wrapper element
+function launchFullscreen(element) {
+  if (element.requestFullscreen) {
+    element.requestFullscreen();
+  } else if (element.mozRequestFullScreen) { /* Firefox */
+    element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+    element.webkitRequestFullscreen();
+  } else if (element.msRequestFullscreen) { /* IE/Edge */
+    element.msRequestFullscreen();
+  }
+}
 
 
     </script>
