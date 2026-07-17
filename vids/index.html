@@ -6,6 +6,24 @@
          background-color: black;
         
       }
+
+      #video-fullscreen-wrapper {
+  width: 100%;
+  max-width: 800px; /* Your standard page layout width */
+  margin: 0 auto;
+  position: relative;
+  aspect-ratio: 16 / 9; /* Maintains video aspect ratio */
+}
+
+/* Forces the YouTube iframe to stretch to full width of the wrapper */
+#video-fullscreen-wrapper iframe {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
        .yt-container {
     position: relative;
     width: 100vw;
@@ -65,8 +83,9 @@
 
     <div style="color: white;">Timestamp: <span id="time">00:00:00</span></div>
     <br>
+    <div id="video-fullscreen-wrapper">
     <div style="width: 100vw;" id="player"></div>
-  
+    </div>
 
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
@@ -83,7 +102,7 @@
       function onYouTubeIframeAPIReady() {
         player = new YT.Player('player', {
          
-          videoId: 'nCp1egc8kww',//'3Mbynm0pGX0',
+          videoId: '3Mbynm0pGX0', //'nCp1egc8kww',//
           playerVars: {
             'playsinline': 1
           },
