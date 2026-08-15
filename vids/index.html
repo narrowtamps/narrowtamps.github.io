@@ -116,7 +116,7 @@
         
         // This is the source "window" that will emit the events.
         var iframeWindow = player.getIframe().contentWindow;
-      
+      player.loadPlaylist('PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi');
         // So we can compare against new updates.
         var lastTimeUpdate = 0;
         // Listen to events triggered by postMessage,
@@ -158,7 +158,7 @@
       }
 
     function initialize(){
-      player.loadPlaylist('PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi');
+      
         event.target.playVideo();
         // Update the controls on load
         updateTimerDisplay();
