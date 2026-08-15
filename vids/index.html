@@ -113,7 +113,7 @@
             'onReady': initialize
           }
         });
-        player.loadPlaylist('PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi');
+        
         // This is the source "window" that will emit the events.
         var iframeWindow = player.getIframe().contentWindow;
       
@@ -158,6 +158,7 @@
       }
 
     function initialize(){
+      player.loadPlaylist('PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi');
         event.target.playVideo();
         // Update the controls on load
         updateTimerDisplay();
