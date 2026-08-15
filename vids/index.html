@@ -106,7 +106,9 @@
          
           videoId: '3Mbynm0pGX0', //'nCp1egc8kww',//
           playerVars: {
-            'playsinline': 1
+            'playsinline': 1,
+            listType:'playlist',
+            list: 'PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi'
           },
           events: {
             
@@ -116,7 +118,7 @@
         
         // This is the source "window" that will emit the events.
         var iframeWindow = player.getIframe().contentWindow;
-      player.loadPlaylist('PL1tiwbzkOjQxygnACZdKLhzTTB3CoM8gi');
+      
         // So we can compare against new updates.
         var lastTimeUpdate = 0;
         // Listen to events triggered by postMessage,
