@@ -229,8 +229,14 @@ font-family: 'Grape Nuts', cursive;
     padding-bottom: 5px;
    
 }
+        .page-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh; /* Takes full viewport height dynamically */
+}
     </style>
 </head>
+    <div class="page-page-container" >
 <body>
 
      <div class="page-header" style="text-align: center;  style="font-size:small;">
@@ -239,11 +245,11 @@ font-family: 'Grape Nuts', cursive;
     Narrow Tamps</div>
     </div>
 
-    <nav>
-        <ul>
+
+    
             
                <br>
-    More info to come!</p>
+    More info to come!
 
     <p>
 <a href="https://www.youtube.com/@narrowtamps" style="color:Tomato;">YouTube</a> <a href="https://www.twitch.com/narrowtamps" style="color: fuchsia;">Twitch</a>
@@ -279,6 +285,7 @@ font-family: 'Grape Nuts', cursive;
     </div> -->
 </footer>
 <div id="footer-placeholder"></div>
+    </div>
 
 <!-- Link your JavaScript file -->
 <script src="../pages/script-footer.js"></script>
