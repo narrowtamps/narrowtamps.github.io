@@ -6,7 +6,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Coral+Pixels&family=Fuzzy+Bubbles:wght@400;700&family=Grape+Nuts&family=Luxurious+Roman&family=Neonderthaw&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Rubik+Dirt&family=Science+Gothic:wght@100..900&family=Sixtyfour+Convergence&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Splash&family=Tilt+Neon&family=Twinkle+Star&display=swap" rel="stylesheet">
+
     <title>The Narrow Tamps</title>
     
     <style>
@@ -70,6 +73,161 @@
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
+}
+        body { 
+    background: linear-gradient(45deg, #ff7f5fcb, #feb47bc6); 
+    margin: 0; 
+    
+    display: flex;
+  flex-direction: column;
+  min-height:100vh;
+}
+.gradient-text {
+  /* 1. Define the linear gradient background */
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b);filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.753));
+  
+  /* 2. Clip the background strictly to the text characters */
+  -webkit-background-clip: text;
+  background-clip: text;
+  
+  /* 3. Make the inner text color completely transparent */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  
+  /* 4. Good practice: ensure the element behaves like inline-block */
+  display: inline-block;
+}
+.luxurious-roman-regular {
+  font-family: "Luxurious Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.twinkle-star-regular {
+  font-family: "Twinkle Star", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grape-nuts-regular {
+  font-family: "Grape Nuts", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.fuzzy-bubbles-regular {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fuzzy-bubbles-bold {
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.splash-regular { 
+    font-family: "Splash", cursive; 
+    font-weight: 400; 
+    font-style: normal; 
+}
+
+/* Logo using your Splash font */
+.logo { 
+    font-family: 'Splash', cursive; 
+    font-size: 2.5rem; 
+    font-weight: bolder;
+    filter: drop-shadow(1px 0px 0px rgba(0,0,0,0.2)) 
+          drop-shadow(-1px 0px 0px rgba(0,0,0,0.2)) 
+          drop-shadow(0px 1px 0px rgba(0,0,0,0.2)) 
+          drop-shadow(0px -1px 0px rgba(0,0,0,0.2));
+    
+}
+
+/* The horizontal row configuration */
+.nav-links { 
+    display: flex; /* Aligns items side-by-side */
+    list-style: none; /* Removes bullet points */
+    gap: 30px; /* Adds equal space between links */
+    margin: 0; 
+    padding: 0; 
+    justify-content: center; 
+font-family: 'Grape Nuts', cursive; 
+}
+
+/* Link styling */
+.nav-links a { 
+    text-decoration: none; 
+    color: #ffffff; /* Keeping your white link style for gradient contrast */
+    font-weight: 600; 
+    font-size: 1.3rem; 
+    transition: opacity 0.2s ease; 
+    text-align: center; 
+ 
+ filter: drop-shadow(1px 0px 0px rgba(0,0,0,0.15)) 
+          drop-shadow(-1px 0px 0px rgba(0,0,0,0.15)) 
+          drop-shadow(0px 1px 0px rgba(0,0,0,0.15)) 
+          drop-shadow(0px -1px 0px rgba(0,0,0,0.15));
+  
+ 
+    
+  /* horizontal | vertical | blur | color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+
+}
+
+/* Hover effect */
+.nav-links a:hover { 
+    opacity: 0.8; /* Subtle fade effect on hover */
+}
+
+.page-header, .page-header-space { 
+    height: 130px; 
+    font-family: "Splash", cursive; 
+    font-weight: 400; 
+    font-style: normal; 
+    padding-bottom: 20px;
+    -webkit-mask-image: linear-gradient(to bottom, black calc(100% - 15px), transparent 100%);
+  mask-image: linear-gradient(to bottom, black calc(100% - 35px), transparent 100%);
+
+}
+
+.page-footer, .page-footer-space { 
+    height: 50px;
+   text-align: center; 
+    font-family: 'Grape Nuts', cursive; 
+    font-size: 1rem; 
+    padding-top: 20px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+.page-footer { 
+      justify-content: center; 
+       text-align: center; 
+  
+    margin: 0;
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: linear-gradient(45deg, #9f5eab, #7bfeea);  -webkit-mask-image: linear-gradient(to top, black calc(100% - 15px), transparent 100%);
+  mask-image: linear-gradient(to top, black calc(100% - 35px), transparent 100%);
+    
+}
+
+.page-header { 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background: linear-gradient(45deg, #9f5eab, #7bfeea); 
+    
+    padding-top: 20px;
+    padding-bottom: 5px;
+   
 }
     </style>
 </head>
