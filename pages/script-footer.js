@@ -48,7 +48,6 @@ document.getElementById('footer-placeholder').innerHTML = `
     <div class="footer-links">
         <a href="https://www.narrowtamps.com/index.html">Home</a>
         <a href="https://www.narrowtamps.com/pages/socials.html">Socials</a>
-            <a href="https://www.narrowtamps.com/pages/resources.html">Resources</a>
           
     </div>
     <p>&copy; 2026 The Narrow Tamps™. All rights reserved.</p>
